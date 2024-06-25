@@ -53268,15 +53268,13 @@ A.a8A.prototype={
 $1(a){return B.a08},
 $S:405}
 A.Q5.prototype={
-C(a){var s,r,q,p,o="Degree Programs",n=null,m=t.l,l=A.e(a,n,m).w.a.a>=1080?B.fO:B.fL,k=A.c(o,n,n,n,n,A.j().$3$color$fontSize$fontWeight(B.t,18,B.l),n,n,n)
-A.e(a,n,m).toString
-s=t.p
-k=A.q(A.a([k,B.ar,A.c("Begin your degree pathway today",n,n,n,n,A.j().$2$fontSize$fontWeight(18,B.y),n,n,n),B.ar,A.c("These courses empower you to develop essential skills, gain professional certifications, and advance towards your degree, all before officially enrolling.",n,n,n,n,A.j().$1$fontSize(14),n,n,n)],s),B.j,B.d,B.c)
-r=A.e(a,n,m).w.a.a>=1080?new A.p(B.cy,A.a8(A.a([A.aR(!1,n,!0,B.ql,n,!0,n,n,n,n,n,n,n,n,n,new A.ag3(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qf,n,!0,n,n,n,n,n,n,n,n,n,new A.ag4(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qF,n,!0,n,n,n,n,n,n,n,n,n,new A.ag5(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qk,n,!0,n,n,n,n,n,n,n,n,n,new A.ag6(a),n,n,n,n,n),B.D],s),B.o,B.d,B.c),n):new A.p(B.fK,A.q(A.a([A.aR(!1,n,!0,B.ql,n,!0,n,n,n,n,n,n,n,n,n,new A.ag7(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qf,n,!0,n,n,n,n,n,n,n,n,n,new A.ag8(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qF,n,!0,n,n,n,n,n,n,n,n,n,new A.ag9(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qk,n,!0,n,n,n,n,n,n,n,n,n,new A.aga(a),n,n,n,n,n)],s),B.o,B.d,B.c),n)
-m=A.e(a,n,m).w.a.a>=1080?B.cy:B.dg
-q=A.G(8)
-p=A.dO(B.t,1)
-return A.oG(!1,A.co(n,B.i,A.q(A.a([new A.p(l,k,n),B.bv,r,B.H,new A.p(m,A.aR(!1,n,!0,A.t(n,A.c("View All Programs",n,n,n,n,A.ca().$2$color$fontSize(B.t,16),n,n,n),B.f,n,n,new A.Q(B.i,n,p,q,n,n,B.p),n,n,n,B.dK,n,n,n),n,!0,n,n,n,n,n,n,n,n,n,new A.agb(a),n,n,n,n,n),n)],s),B.j,B.d,B.c),n,n),n,o)}}
+C(a){var s,r,q,p="Degree Programs",o=null,n=t.l,m=A.e(a,o,n).w.a.a>=1080?B.fO:B.fL,l=A.c(p,o,o,o,o,A.j().$3$color$fontSize$fontWeight(B.t,18,B.l),o,o,o),k=t.p
+l=A.q(A.a([l,B.ar,A.c("Begin your degree pathway today",o,o,o,o,A.j().$2$fontSize$fontWeight(A.e(a,o,n).w.a.a>=1080?20:18,B.y),o,o,o),B.ar,A.c("These courses empower you to develop essential skills, gain professional certifications, and advance towards your degree, all before officially enrolling.",o,o,o,o,A.j().$1$fontSize(14),o,o,o)],k),B.j,B.d,B.c)
+s=A.e(a,o,n).w.a.a>=1080?new A.p(B.cy,A.a8(A.a([A.aR(!1,o,!0,B.ql,o,!0,o,o,o,o,o,o,o,o,o,new A.ag3(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qf,o,!0,o,o,o,o,o,o,o,o,o,new A.ag4(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qF,o,!0,o,o,o,o,o,o,o,o,o,new A.ag5(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qk,o,!0,o,o,o,o,o,o,o,o,o,new A.ag6(a),o,o,o,o,o),B.D],k),B.o,B.d,B.c),o):new A.p(B.fK,A.q(A.a([A.aR(!1,o,!0,B.ql,o,!0,o,o,o,o,o,o,o,o,o,new A.ag7(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qf,o,!0,o,o,o,o,o,o,o,o,o,new A.ag8(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qF,o,!0,o,o,o,o,o,o,o,o,o,new A.ag9(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qk,o,!0,o,o,o,o,o,o,o,o,o,new A.aga(a),o,o,o,o,o)],k),B.o,B.d,B.c),o)
+n=A.e(a,o,n).w.a.a>=1080?B.cy:B.dg
+r=A.G(8)
+q=A.dO(B.t,1)
+return A.oG(!1,A.co(o,B.i,A.q(A.a([new A.p(m,l,o),B.bv,s,B.H,new A.p(n,A.aR(!1,o,!0,A.t(o,A.c("View All Programs",o,o,o,o,A.ca().$2$color$fontSize(B.t,16),o,o,o),B.f,o,o,new A.Q(B.i,o,q,r,o,o,B.p),o,o,o,B.dK,o,o,o),o,!0,o,o,o,o,o,o,o,o,o,new A.agb(a),o,o,o,o,o),o)],k),B.j,B.d,B.c),o,o),o,p)}}
 A.ag3.prototype={
 $0(){var s=A.aT(new A.ag2(),null,t.z)
 A.aq(this.a,!1).ar(s)},
@@ -53346,15 +53344,13 @@ q=A.e(a,r,q).w.a.a>=1080?330:A.e(a,r,q).w.a.a*0.9
 s=t.p
 return A.t(r,A.q(A.a([A.dv(m,A.bb(this.c,r,B.P,200,r,r,q),B.W),B.ar,A.c(this.d,2,B.aa,r,r,A.j().$2$fontSize$fontWeight(16,B.y),r,r,r),B.f2,A.a8(A.a([A.c("Qualifications",r,r,r,r,A.j().$2$color$fontWeight(B.en,B.y),B.ae,r,r),B.D,A.c(this.e,r,r,r,r,A.j().$2$color$fontWeight(B.t,B.l),B.ae,r,r)],s),B.o,B.d,B.c)],s),B.o,B.d,B.c),B.f,r,r,new A.Q(r,r,o,n,r,r,B.p),r,360,r,B.ch,r,r,p)}}
 A.Q7.prototype={
-C(a){var s,r,q,p,o="Master's Programs",n=null,m=t.l,l=A.e(a,n,m).w.a.a>=1080?B.fO:B.fL,k=A.c(o,n,n,n,n,A.j().$3$color$fontSize$fontWeight(B.t,18,B.l),n,n,n)
-A.e(a,n,m).toString
-s=t.p
-k=A.q(A.a([k,B.ar,A.c("Cultivate your master's path today",n,n,n,n,A.j().$2$fontSize$fontWeight(18,B.y),n,n,n),B.ar,A.c("With our diverse range of courses, you can gain advanced knowledge, refine your skills, and prepare for success in your chosen field.",n,n,n,n,A.j().$1$fontSize(14),n,n,n)],s),B.j,B.d,B.c)
-r=A.e(a,n,m).w.a.a>=1080?new A.p(B.cy,A.a8(A.a([A.aR(!1,n,!0,B.qo,n,!0,n,n,n,n,n,n,n,n,n,new A.agD(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qj,n,!0,n,n,n,n,n,n,n,n,n,new A.agE(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qt,n,!0,n,n,n,n,n,n,n,n,n,new A.agF(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qx,n,!0,n,n,n,n,n,n,n,n,n,new A.agG(a),n,n,n,n,n),B.D],s),B.o,B.d,B.c),n):new A.p(B.fK,A.q(A.a([A.aR(!1,n,!0,B.qo,n,!0,n,n,n,n,n,n,n,n,n,new A.agH(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qj,n,!0,n,n,n,n,n,n,n,n,n,new A.agI(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qt,n,!0,n,n,n,n,n,n,n,n,n,new A.agJ(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qx,n,!0,n,n,n,n,n,n,n,n,n,new A.agK(a),n,n,n,n,n)],s),B.o,B.d,B.c),n)
-m=A.e(a,n,m).w.a.a>=1080?B.cy:B.dg
-q=A.G(8)
-p=A.dO(B.t,1)
-return A.oG(!1,A.co(n,B.i,A.q(A.a([new A.p(l,k,n),B.bv,r,B.H,new A.p(m,A.aR(!1,n,!0,A.t(n,A.c("View All Programs",n,n,n,n,A.ca().$2$color$fontSize(B.t,16),n,n,n),B.f,n,n,new A.Q(B.i,n,p,q,n,n,B.p),n,n,n,B.dK,n,n,n),n,!0,n,n,n,n,n,n,n,n,n,new A.agL(a),n,n,n,n,n),n)],s),B.j,B.d,B.c),n,n),n,o)}}
+C(a){var s,r,q,p="Master's Programs",o=null,n=t.l,m=A.e(a,o,n).w.a.a>=1080?B.fO:B.fL,l=A.c(p,o,o,o,o,A.j().$3$color$fontSize$fontWeight(B.t,18,B.l),o,o,o),k=t.p
+l=A.q(A.a([l,B.ar,A.c("Cultivate your master's path today",o,o,o,o,A.j().$2$fontSize$fontWeight(A.e(a,o,n).w.a.a>=1080?20:18,B.y),o,o,o),B.ar,A.c("With our diverse range of courses, you can gain advanced knowledge, refine your skills, and prepare for success in your chosen field.",o,o,o,o,A.j().$1$fontSize(14),o,o,o)],k),B.j,B.d,B.c)
+s=A.e(a,o,n).w.a.a>=1080?new A.p(B.cy,A.a8(A.a([A.aR(!1,o,!0,B.qo,o,!0,o,o,o,o,o,o,o,o,o,new A.agD(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qj,o,!0,o,o,o,o,o,o,o,o,o,new A.agE(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qt,o,!0,o,o,o,o,o,o,o,o,o,new A.agF(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qx,o,!0,o,o,o,o,o,o,o,o,o,new A.agG(a),o,o,o,o,o),B.D],k),B.o,B.d,B.c),o):new A.p(B.fK,A.q(A.a([A.aR(!1,o,!0,B.qo,o,!0,o,o,o,o,o,o,o,o,o,new A.agH(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qj,o,!0,o,o,o,o,o,o,o,o,o,new A.agI(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qt,o,!0,o,o,o,o,o,o,o,o,o,new A.agJ(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qx,o,!0,o,o,o,o,o,o,o,o,o,new A.agK(a),o,o,o,o,o)],k),B.o,B.d,B.c),o)
+n=A.e(a,o,n).w.a.a>=1080?B.cy:B.dg
+r=A.G(8)
+q=A.dO(B.t,1)
+return A.oG(!1,A.co(o,B.i,A.q(A.a([new A.p(m,l,o),B.bv,s,B.H,new A.p(n,A.aR(!1,o,!0,A.t(o,A.c("View All Programs",o,o,o,o,A.ca().$2$color$fontSize(B.t,16),o,o,o),B.f,o,o,new A.Q(B.i,o,q,r,o,o,B.p),o,o,o,B.dK,o,o,o),o,!0,o,o,o,o,o,o,o,o,o,new A.agL(a),o,o,o,o,o),o)],k),B.j,B.d,B.c),o,o),o,p)}}
 A.agD.prototype={
 $0(){var s=A.aT(new A.agC(),null,t.z)
 A.aq(this.a,!1).ar(s)},
@@ -53424,15 +53420,13 @@ q=A.e(a,r,q).w.a.a>=1080?330:A.e(a,r,q).w.a.a*0.9
 s=t.p
 return A.t(r,A.q(A.a([A.dv(m,A.bb(this.c,r,B.P,200,r,r,q),B.W),B.ar,A.c(this.d,r,r,r,r,A.j().$2$fontSize$fontWeight(16,B.y),r,r,r),B.f2,A.a8(A.a([A.c("Qualifications",r,r,r,r,A.j().$2$color$fontWeight(B.en,B.y),B.ae,r,r),B.D,A.c(this.e,r,r,r,r,A.j().$2$color$fontWeight(B.t,B.l),B.ae,r,r)],s),B.o,B.d,B.c)],s),B.o,B.d,B.c),B.f,r,r,new A.Q(r,r,o,n,r,r,B.p),r,360,r,B.ch,r,r,p)}}
 A.Q6.prototype={
-C(a){var s,r,q,p,o="Discover Our Newest Course Catalog",n=null,m=t.l,l=A.e(a,n,m).w.a.a>=1080?B.fO:B.fL,k=A.c(o,n,n,n,n,A.j().$3$color$fontSize$fontWeight(B.t,18,B.l),n,n,n)
-A.e(a,n,m).toString
-s=t.p
-k=A.q(A.a([k,B.ar,A.c("Find the latest courses on eG that fits your life",n,n,n,n,A.j().$2$fontSize$fontWeight(18,B.y),n,n,n),B.ar,A.c("Discover our latest offerings, designed to equip you with highly sought-after skills.",n,n,n,n,A.j().$1$fontSize(14),n,n,n)],s),B.j,B.d,B.c)
-r=A.e(a,n,m).w.a.a>=1080?new A.p(B.cy,A.a8(A.a([A.aR(!1,n,!0,B.qm,n,!0,n,n,n,n,n,n,n,n,n,new A.agl(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qp,n,!0,n,n,n,n,n,n,n,n,n,new A.agm(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qh,n,!0,n,n,n,n,n,n,n,n,n,new A.agn(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qg,n,!0,n,n,n,n,n,n,n,n,n,new A.ago(a),n,n,n,n,n),B.D],s),B.o,B.d,B.c),n):new A.p(B.fK,A.q(A.a([A.aR(!1,n,!0,B.qm,n,!0,n,n,n,n,n,n,n,n,n,new A.agp(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qp,n,!0,n,n,n,n,n,n,n,n,n,new A.agq(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qh,n,!0,n,n,n,n,n,n,n,n,n,new A.agr(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qg,n,!0,n,n,n,n,n,n,n,n,n,new A.ags(a),n,n,n,n,n)],s),B.o,B.d,B.c),n)
-m=A.e(a,n,m).w.a.a>=1080?B.cy:B.dg
-q=A.G(8)
-p=A.dO(B.t,1)
-return A.oG(!1,A.co(n,B.i,A.q(A.a([new A.p(l,k,n),B.bv,r,B.H,new A.p(m,A.aR(!1,n,!0,A.t(n,A.c("View All Programs",n,n,n,n,A.ca().$2$color$fontSize(B.t,16),n,n,n),B.f,n,n,new A.Q(B.i,n,p,q,n,n,B.p),n,n,n,B.dK,n,n,n),n,!0,n,n,n,n,n,n,n,n,n,new A.agt(a),n,n,n,n,n),n)],s),B.j,B.d,B.c),n,n),n,o)}}
+C(a){var s,r,q,p="Discover Our Newest Course Catalog",o=null,n=t.l,m=A.e(a,o,n).w.a.a>=1080?B.fO:B.fL,l=A.c(p,o,o,o,o,A.j().$3$color$fontSize$fontWeight(B.t,18,B.l),o,o,o),k=t.p
+l=A.q(A.a([l,B.ar,A.c("Find the latest courses on eG that fits your life",o,o,o,o,A.j().$2$fontSize$fontWeight(A.e(a,o,n).w.a.a>=1080?20:18,B.y),o,o,o),B.ar,A.c("Discover our latest offerings, designed to equip you with highly sought-after skills.",o,o,o,o,A.j().$1$fontSize(14),o,o,o)],k),B.j,B.d,B.c)
+s=A.e(a,o,n).w.a.a>=1080?new A.p(B.cy,A.a8(A.a([A.aR(!1,o,!0,B.qm,o,!0,o,o,o,o,o,o,o,o,o,new A.agl(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qp,o,!0,o,o,o,o,o,o,o,o,o,new A.agm(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qh,o,!0,o,o,o,o,o,o,o,o,o,new A.agn(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qg,o,!0,o,o,o,o,o,o,o,o,o,new A.ago(a),o,o,o,o,o),B.D],k),B.o,B.d,B.c),o):new A.p(B.fK,A.q(A.a([A.aR(!1,o,!0,B.qm,o,!0,o,o,o,o,o,o,o,o,o,new A.agp(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qp,o,!0,o,o,o,o,o,o,o,o,o,new A.agq(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qh,o,!0,o,o,o,o,o,o,o,o,o,new A.agr(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qg,o,!0,o,o,o,o,o,o,o,o,o,new A.ags(a),o,o,o,o,o)],k),B.o,B.d,B.c),o)
+n=A.e(a,o,n).w.a.a>=1080?B.cy:B.dg
+r=A.G(8)
+q=A.dO(B.t,1)
+return A.oG(!1,A.co(o,B.i,A.q(A.a([new A.p(m,l,o),B.bv,s,B.H,new A.p(n,A.aR(!1,o,!0,A.t(o,A.c("View All Programs",o,o,o,o,A.ca().$2$color$fontSize(B.t,16),o,o,o),B.f,o,o,new A.Q(B.i,o,q,r,o,o,B.p),o,o,o,B.dK,o,o,o),o,!0,o,o,o,o,o,o,o,o,o,new A.agt(a),o,o,o,o,o),o)],k),B.j,B.d,B.c),o,o),o,p)}}
 A.agl.prototype={
 $0(){var s=A.aT(new A.agk(),null,t.z)
 A.aq(this.a,!1).ar(s)},
@@ -53502,15 +53496,13 @@ q=A.e(a,r,q).w.a.a>=1080?330:A.e(a,r,q).w.a.a*0.9
 s=t.p
 return A.t(r,A.q(A.a([A.dv(m,A.bb(this.c,r,B.P,200,r,r,q),B.W),B.ar,A.c(this.d,2,B.aa,r,r,A.j().$2$fontSize$fontWeight(16,B.y),r,r,r),B.f2,A.a8(A.a([A.c("Qualifications",r,r,r,r,A.j().$2$color$fontWeight(B.en,B.y),B.ae,r,r),B.D,A.c(this.e,r,r,r,r,A.j().$2$color$fontWeight(B.t,B.l),B.ae,r,r)],s),B.o,B.d,B.c)],s),B.o,B.d,B.c),B.f,r,r,new A.Q(r,r,o,n,r,r,B.p),r,360,r,B.ch,r,r,p)}}
 A.Q3.prototype={
-C(a){var s,r,q,p,o="Free of Charge",n=null,m=t.l,l=A.e(a,n,m).w.a.a>=1080?B.fO:B.fL,k=A.c(o,n,n,n,n,A.j().$3$color$fontSize$fontWeight(B.t,18,B.l),n,n,n)
-A.e(a,n,m).toString
-s=t.p
-k=A.q(A.a([k,B.ar,A.c("Start learning with no-cost courses.",n,n,n,n,A.j().$2$fontSize$fontWeight(18,B.y),n,n,n),B.ar,A.c("Explore a range of free online courses from top universities and industry leaders.",n,n,n,n,A.j().$1$fontSize(14),n,n,n)],s),B.j,B.d,B.c)
-r=A.e(a,n,m).w.a.a>=1080?new A.p(B.cy,A.a8(A.a([A.aR(!1,n,!0,B.qr,n,!0,n,n,n,n,n,n,n,n,n,new A.afK(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qE,n,!0,n,n,n,n,n,n,n,n,n,new A.afL(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qn,n,!0,n,n,n,n,n,n,n,n,n,new A.afM(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qs,n,!0,n,n,n,n,n,n,n,n,n,new A.afN(a),n,n,n,n,n),B.D],s),B.o,B.d,B.c),n):new A.p(B.fK,A.q(A.a([A.aR(!1,n,!0,B.qr,n,!0,n,n,n,n,n,n,n,n,n,new A.afO(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qE,n,!0,n,n,n,n,n,n,n,n,n,new A.afP(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qn,n,!0,n,n,n,n,n,n,n,n,n,new A.afQ(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qs,n,!0,n,n,n,n,n,n,n,n,n,new A.afR(a),n,n,n,n,n)],s),B.o,B.d,B.c),n)
-m=A.e(a,n,m).w.a.a>=1080?B.cy:B.dg
-q=A.G(8)
-p=A.dO(B.t,1)
-return A.oG(!1,A.co(n,B.i,A.q(A.a([new A.p(l,k,n),B.bv,r,B.H,new A.p(m,A.aR(!1,n,!0,A.t(n,A.c("View All Programs",n,n,n,n,A.ca().$2$color$fontSize(B.t,16),n,n,n),B.f,n,n,new A.Q(B.i,n,p,q,n,n,B.p),n,n,n,B.dK,n,n,n),n,!0,n,n,n,n,n,n,n,n,n,new A.afS(a),n,n,n,n,n),n)],s),B.j,B.d,B.c),n,n),n,o)}}
+C(a){var s,r,q,p="Free of Charge",o=null,n=t.l,m=A.e(a,o,n).w.a.a>=1080?B.fO:B.fL,l=A.c(p,o,o,o,o,A.j().$3$color$fontSize$fontWeight(B.t,18,B.l),o,o,o),k=t.p
+l=A.q(A.a([l,B.ar,A.c("Start learning with no-cost courses.",o,o,o,o,A.j().$2$fontSize$fontWeight(A.e(a,o,n).w.a.a>=1080?20:18,B.y),o,o,o),B.ar,A.c("Explore a range of free online courses from top universities and industry leaders.",o,o,o,o,A.j().$1$fontSize(14),o,o,o)],k),B.j,B.d,B.c)
+s=A.e(a,o,n).w.a.a>=1080?new A.p(B.cy,A.a8(A.a([A.aR(!1,o,!0,B.qr,o,!0,o,o,o,o,o,o,o,o,o,new A.afK(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qE,o,!0,o,o,o,o,o,o,o,o,o,new A.afL(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qn,o,!0,o,o,o,o,o,o,o,o,o,new A.afM(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qs,o,!0,o,o,o,o,o,o,o,o,o,new A.afN(a),o,o,o,o,o),B.D],k),B.o,B.d,B.c),o):new A.p(B.fK,A.q(A.a([A.aR(!1,o,!0,B.qr,o,!0,o,o,o,o,o,o,o,o,o,new A.afO(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qE,o,!0,o,o,o,o,o,o,o,o,o,new A.afP(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qn,o,!0,o,o,o,o,o,o,o,o,o,new A.afQ(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qs,o,!0,o,o,o,o,o,o,o,o,o,new A.afR(a),o,o,o,o,o)],k),B.o,B.d,B.c),o)
+n=A.e(a,o,n).w.a.a>=1080?B.cy:B.dg
+r=A.G(8)
+q=A.dO(B.t,1)
+return A.oG(!1,A.co(o,B.i,A.q(A.a([new A.p(m,l,o),B.bv,s,B.H,new A.p(n,A.aR(!1,o,!0,A.t(o,A.c("View All Programs",o,o,o,o,A.ca().$2$color$fontSize(B.t,16),o,o,o),B.f,o,o,new A.Q(B.i,o,q,r,o,o,B.p),o,o,o,B.dK,o,o,o),o,!0,o,o,o,o,o,o,o,o,o,new A.afS(a),o,o,o,o,o),o)],k),B.j,B.d,B.c),o,o),o,p)}}
 A.afK.prototype={
 $0(){var s=A.aT(new A.afJ(),null,t.z)
 A.aq(this.a,!1).ar(s)},
@@ -53781,15 +53773,13 @@ A.ob.prototype={
 C(a){var s=this,r=null,q=A.dO(B.bc,1),p=A.G(20),o=t.p
 return A.t(r,A.q(A.a([A.c(s.c,1,B.aa,r,r,A.j().$2$fontSize$fontWeight(18,B.l),r,r,r),A.c(s.d,1,B.aa,r,r,A.j().$3$color$fontSize$fontWeight(B.t,16,B.m),r,r,r),B.a37,B.qP,B.ar,new A.p(B.Q,A.q(A.a([A.c(s.e,1,B.aa,r,r,A.j().$2$fontSize$fontWeight(14,B.m),r,r,r),B.A,A.c(s.f,1,B.aa,r,r,A.j().$2$fontSize$fontWeight(14,B.m),r,r,r),B.A,A.c(s.r,1,B.aa,r,r,A.j().$2$fontSize$fontWeight(14,B.m),r,r,r),B.A,A.c(s.w,1,B.aa,r,r,A.j().$2$fontSize$fontWeight(14,B.m),r,r,r),B.A,A.c(s.x,1,B.aa,r,r,A.j().$2$fontSize$fontWeight(14,B.m),r,r,r)],o),B.j,B.d,B.c),r)],o),B.j,B.d,B.c),B.f,r,r,new A.Q(r,r,q,p,r,r,B.p),r,270,r,B.ii,r,r,330)}}
 A.Q8.prototype={
-C(a){var s,r,q,p,o="Foundation Programs",n=null,m=t.l,l=A.e(a,n,m).w.a.a>=1080?B.fO:B.fL,k=A.c(o,n,n,n,n,A.j().$3$color$fontSize$fontWeight(B.t,18,B.l),n,n,n)
-A.e(a,n,m).toString
-s=t.p
-k=A.q(A.a([k,B.ar,A.c("Start your educational journey with our foundation programs",n,n,n,n,A.j().$2$fontSize$fontWeight(18,B.y),n,n,n),B.ar,A.c("Our foundation programs offer a comprehensive introduction to various fields, providing essential knowledge and skills to prepare you for further academic pursuits.",n,n,n,n,A.j().$1$fontSize(14),n,n,n)],s),B.j,B.d,B.c)
-r=A.e(a,n,m).w.a.a>=1080?new A.p(B.cy,A.a8(A.a([A.aR(!1,n,!0,B.qB,n,!0,n,n,n,n,n,n,n,n,n,new A.agV(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qv,n,!0,n,n,n,n,n,n,n,n,n,new A.agW(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qq,n,!0,n,n,n,n,n,n,n,n,n,new A.agX(a),n,n,n,n,n),B.D,A.aR(!1,n,!0,B.qi,n,!0,n,n,n,n,n,n,n,n,n,new A.agY(a),n,n,n,n,n),B.D],s),B.o,B.d,B.c),n):new A.p(B.fK,A.q(A.a([A.aR(!1,n,!0,B.qB,n,!0,n,n,n,n,n,n,n,n,n,new A.agZ(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qv,n,!0,n,n,n,n,n,n,n,n,n,new A.ah_(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qq,n,!0,n,n,n,n,n,n,n,n,n,new A.ah0(a),n,n,n,n,n),B.A,A.aR(!1,n,!0,B.qi,n,!0,n,n,n,n,n,n,n,n,n,new A.ah1(a),n,n,n,n,n),B.A],s),B.o,B.d,B.c),n)
-m=A.e(a,n,m).w.a.a>=1080?B.cy:B.dg
-q=A.G(8)
-p=A.dO(B.t,1)
-return A.oG(!1,A.co(n,B.i,A.q(A.a([new A.p(l,k,n),B.bv,r,B.H,new A.p(m,A.aR(!1,n,!0,A.t(n,A.c("View All Programs",n,n,n,n,A.ca().$2$color$fontSize(B.t,16),n,n,n),B.f,n,n,new A.Q(B.i,n,p,q,n,n,B.p),n,n,n,B.dK,n,n,n),n,!0,n,n,n,n,n,n,n,n,n,new A.ah2(a),n,n,n,n,n),n)],s),B.j,B.d,B.c),n,n),n,o)}}
+C(a){var s,r,q,p="Foundation Programs",o=null,n=t.l,m=A.e(a,o,n).w.a.a>=1080?B.fO:B.fL,l=A.c(p,o,o,o,o,A.j().$3$color$fontSize$fontWeight(B.t,18,B.l),o,o,o),k=t.p
+l=A.q(A.a([l,B.ar,A.c("Start your educational journey with our foundation programs",o,o,o,o,A.j().$2$fontSize$fontWeight(A.e(a,o,n).w.a.a>=1080?20:18,B.y),o,o,o),B.ar,A.c("Our foundation programs offer a comprehensive introduction to various fields, providing essential knowledge and skills to prepare you for further academic pursuits.",o,o,o,o,A.j().$1$fontSize(14),o,o,o)],k),B.j,B.d,B.c)
+s=A.e(a,o,n).w.a.a>=1080?new A.p(B.cy,A.a8(A.a([A.aR(!1,o,!0,B.qB,o,!0,o,o,o,o,o,o,o,o,o,new A.agV(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qv,o,!0,o,o,o,o,o,o,o,o,o,new A.agW(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qq,o,!0,o,o,o,o,o,o,o,o,o,new A.agX(a),o,o,o,o,o),B.D,A.aR(!1,o,!0,B.qi,o,!0,o,o,o,o,o,o,o,o,o,new A.agY(a),o,o,o,o,o),B.D],k),B.o,B.d,B.c),o):new A.p(B.fK,A.q(A.a([A.aR(!1,o,!0,B.qB,o,!0,o,o,o,o,o,o,o,o,o,new A.agZ(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qv,o,!0,o,o,o,o,o,o,o,o,o,new A.ah_(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qq,o,!0,o,o,o,o,o,o,o,o,o,new A.ah0(a),o,o,o,o,o),B.A,A.aR(!1,o,!0,B.qi,o,!0,o,o,o,o,o,o,o,o,o,new A.ah1(a),o,o,o,o,o),B.A],k),B.o,B.d,B.c),o)
+n=A.e(a,o,n).w.a.a>=1080?B.cy:B.dg
+r=A.G(8)
+q=A.dO(B.t,1)
+return A.oG(!1,A.co(o,B.i,A.q(A.a([new A.p(m,l,o),B.bv,s,B.H,new A.p(n,A.aR(!1,o,!0,A.t(o,A.c("View All Programs",o,o,o,o,A.ca().$2$color$fontSize(B.t,16),o,o,o),B.f,o,o,new A.Q(B.i,o,q,r,o,o,B.p),o,o,o,B.dK,o,o,o),o,!0,o,o,o,o,o,o,o,o,o,new A.ah2(a),o,o,o,o,o),o)],k),B.j,B.d,B.c),o,o),o,p)}}
 A.agV.prototype={
 $0(){var s=A.aT(new A.agU(),null,t.z)
 A.aq(this.a,!1).ar(s)},
@@ -55232,14 +55222,13 @@ else if(k==="Why")q="Unlock Excellence: Discover the Benefits of Choosing Our Se
 else if(k==="Start")q="Inquire with Confidence: Explore Our Enquiry Services"
 else if(k==="About")q="Discover Our Story: Learn More About Us"
 else q=k==="Contact"?"Connect with Us: Reach Out Through Our Contact Information":n
-A.e(a,p,m).toString
-m=A.c(q,p,p,p,p,A.j().$3$color$fontSize$fontWeight(B.n,18,B.y),p,p,p)
-if(j)k="Explore a comprehensive suite of services meticulously crafted to cater to your needs and aspirations, ensuring unparalleled support and guidance every step of the way."
-else if(k==="Why")k="Discover the compelling reasons behind choosing our services, crafted to exceed your expectations, enhance your journey, and empower your success."
-else if(k==="Start")k="Submit your details and concerns with assurance, as our enquiry services offer prompt and knowledgeable assistance, ensuring clarity and peace of mind."
-else if(k==="About")k="Delve into the origins, values, and mission that drive us forward. From humble beginnings to impactful endeavors, explore our journey and commitment to excellence."
-else k=k==="Contact"?"Get in touch with our dedicated team through phone, email, or visit our office. We're here to assist you with any inquiries, feedback, or collaboration opportunities.":n
-return new A.p(l,A.q(A.a([s,B.ar,m,B.ar,A.c(k,p,p,p,p,A.j().$2$color$fontSize(B.n,14),p,p,p),B.DD],r),B.j,B.d,B.c),p)}}
+q=A.c(q,p,p,p,p,A.j().$3$color$fontSize$fontWeight(B.n,A.e(a,p,m).w.a.a>=1080?20:18,B.y),p,p,p)
+if(j)m="Explore a comprehensive suite of services meticulously crafted to cater to your needs and aspirations, ensuring unparalleled support and guidance every step of the way."
+else if(k==="Why")m="Discover the compelling reasons behind choosing our services, crafted to exceed your expectations, enhance your journey, and empower your success."
+else if(k==="Start")m="Submit your details and concerns with assurance, as our enquiry services offer prompt and knowledgeable assistance, ensuring clarity and peace of mind."
+else if(k==="About")m="Delve into the origins, values, and mission that drive us forward. From humble beginnings to impactful endeavors, explore our journey and commitment to excellence."
+else m=k==="Contact"?"Get in touch with our dedicated team through phone, email, or visit our office. We're here to assist you with any inquiries, feedback, or collaboration opportunities.":n
+return new A.p(l,A.q(A.a([s,B.ar,q,B.ar,A.c(m,p,p,p,p,A.j().$2$color$fontSize(B.n,14),p,p,p),B.DD],r),B.j,B.d,B.c),p)}}
 A.qq.prototype={
 a5(){return new A.O0(new A.bf(null,t.sW),B.x)}}
 A.O0.prototype={
