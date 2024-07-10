@@ -58681,14 +58681,14 @@ A.ug.prototype={
 vx(){var s=0,r=A.a2(t.H)
 var $async$vx=A.a3(function(a,b){if(a===1)return A.a_(b,r)
 while(true)switch(s){case 0:s=5
-return A.a6(A.aP1("https://tabby.ai/s/1f81lzu"),$async$vx)
+return A.a6(A.aP1("https://tabby.ai/en-AE"),$async$vx)
 case 5:s=b?2:4
 break
 case 2:s=6
-return A.a6(A.aL6("https://tabby.ai/s/1f81lzu"),$async$vx)
+return A.a6(A.aL6("https://tabby.ai/en-AE"),$async$vx)
 case 6:s=3
 break
-case 4:throw A.h("Could not launch https://tabby.ai/s/1f81lzu")
+case 4:throw A.h("Could not launch https://tabby.ai/en-AE")
 case 3:return A.a0(null,r)}})
 return A.a1($async$vx,r)},
 amB(){},
