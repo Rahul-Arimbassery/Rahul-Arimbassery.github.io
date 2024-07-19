@@ -15,7 +15,6 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference. -->
 
-
 # eduGuardian - Empowering Education Excellence at eduGuardian
 At eduGuardian, we are dedicated to offering high-quality education globally, catering to the diverse needs of our students. Our courses, crafted by industry experts, ensure relevance and applicability in today's competitive world.
 
