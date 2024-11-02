@@ -51097,8 +51097,9 @@ $0(){$.lm().hs(0,B.bs,B.bN)},
 $S:0}
 A.aZg.prototype={
 $0(){var s,r=this,q=null,p="/",o="/egacademy",n="/egstudyabroad",m="/egpathways",l=r.a.a.c
-if(l==="CourseFinal")A.a2(r.b).K(0,p,q)
-else if(l==="egContactus")A.a2(r.b).K(0,p,q)
+if(l==="CourseFinal"){l=r.b
+A.a2(l).K(0,p,q)
+A.S(l,!1).aA(q)}else if(l==="egContactus")A.a2(r.b).K(0,p,q)
 else if(l==="CourseFinalnew")A.a2(r.b).K(0,p,q)
 else if(l==="CourseFinalnewegacademy")A.a2(r.b).K(0,o,q)
 else if(l==="CourseFinalnewstudyabroad")A.a2(r.b).K(0,n,q)
