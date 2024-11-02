@@ -50087,27 +50087,27 @@ $2(a,b){A.dB(a,u.gx)
 return B.hF},
 $S:356}
 A.b0M.prototype={
-$2(a,b){A.dB(a,"eG Academy - eduGuardian")
+$2(a,b){A.dB(a,"eG Academy - Empowering Futures")
 return new A.kC(null)},
 $S:361}
 A.b0N.prototype={
-$2(a,b){A.dB(a,"eG Study Abroad - eduGuardian")
+$2(a,b){A.dB(a,"eG Study Abroad - Discover New Horizons")
 return new A.lH(null)},
 $S:369}
 A.b0Y.prototype={
-$2(a,b){A.dB(a,"eG Jobs - eduGuardian")
+$2(a,b){A.dB(a,"eG Jobs - Your Path to Success")
 return A.b3T()},
 $S:370}
 A.b18.prototype={
-$2(a,b){A.dB(a,"eG Scholarships - eduGuardian")
+$2(a,b){A.dB(a,"eG Scholarships - Funding Your Dreams")
 return A.an5()},
 $S:374}
 A.b1e.prototype={
-$2(a,b){A.dB(a,"eG Pathways - eduGuardian")
+$2(a,b){A.dB(a,"eG Pathways - Charting Your Course")
 return A.b3U()},
 $S:375}
 A.b1f.prototype={
-$2(a,b){A.dB(a,"eG Career Hub - eduGuardian")
+$2(a,b){A.dB(a,"eG Careers - Shaping Careers Ahead")
 return A.b3S()},
 $S:376}
 A.b1g.prototype={
@@ -50199,7 +50199,7 @@ if(r!=null&&r<J.cJ($.QY))return new A.Lf(J.ba($.QY,r),null)
 else return B.aas},
 $S:208}
 A.b15.prototype={
-$2(a,b){A.dB(a,"Idea Station - eduGuardian")
+$2(a,b){A.dB(a,"Idea Station - Where Ideas Ignite")
 return B.W0},
 $S:423}
 A.b16.prototype={
