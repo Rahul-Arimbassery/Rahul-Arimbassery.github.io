@@ -51273,7 +51273,7 @@ $S:0}
 A.aZO.prototype={
 $0(){var s,r=this,q=null,p="/",o="/egacademy",n="/egstudyabroad",m="/egpathways",l=r.a.a.c
 if(l==="CourseFinal"){l=r.b
-A.S(l).K(0,p,q)
+A.S(l).K(0,"",q)
 A.a4(l,!1).aA(q)}else if(l==="egContactus")A.S(r.b).K(0,p,q)
 else if(l==="CourseFinalnew")A.S(r.b).K(0,p,q)
 else if(l==="CourseFinalnewegacademy")A.S(r.b).K(0,o,q)
@@ -52000,7 +52000,7 @@ r.push(B.q)
 i=A.b(a,k,i).w
 r.push(A.o(A.c(u.R,k,k,k,k,A.d().$2$color$fontSize(B.eK,16),k,k,k),k,i.a.a*0.65))
 f.push(new A.f(s,A.j(r,B.i,B.c,B.b,k),k))
-return A.n6(!1,A.aD(k,k,A.bQ(A.bR(B.a4,A.a([A.o(A.bR(B.a4,f,B.I,B.a5,k),h,1/0),new A.EC(l.z,p,k)],g),B.I,B.a5,k),k,B.L,k,k,B.O),k,k))},
+return A.aD(k,k,A.bQ(A.bR(B.a4,A.a([A.o(A.bR(B.a4,f,B.I,B.a5,k),h,1/0),new A.EC(l.z,p,k)],g),B.I,B.a5,k),k,B.L,k,k,B.O),k,k)},
 zI(a,b,c,d){return this.a6c(a,b,c,d)},
 a6c(a,b,c,d){var s=0,r=A.X(t.H),q=1,p,o,n,m,l,k
 var $async$zI=A.Y(function(e,f){if(e===1){p=f
@@ -53571,7 +53571,7 @@ h=A.bQ(A.j(h,B.k,B.c,B.b,e),e,B.L,e,e,B.O)
 g=A.a([],o)
 if(k){k=$.av().pw(5,5,B.aI)
 B.d.H(g,A.a([A.bR(B.a4,A.a([A.o(A.yY(A.hy(f.a3B(a),0.04),k),600,1/0),A.IL(0,A.bn(A.Wz(),e,e))],o),B.I,B.a5,e)],o))}else B.d.H(g,A.a([f.a3B(a)],o))
-return A.aD(new A.cC(q,s,e),B.m,A.j(A.a([A.ajz(A.j(A.a([A.q(e,A.j(A.a([B.w,new A.f(B.Y,p,e),new A.f(B.v,A.o(A.xP(A.a([m,l,j,i,h,A.bQ(A.j(g,B.k,B.c,B.b,e),e,B.L,e,e,B.O)],o)),d,e),e)],o),B.i,B.c,B.b,e),B.f,e,e,e,e,e,e,e,e,e,e)],o),B.i,B.c,B.b,e),6)],o),B.k,B.c,B.b,e),r,e)},
+return A.n6(!1,A.aD(new A.cC(q,s,e),B.m,A.j(A.a([A.ajz(A.j(A.a([A.q(e,A.j(A.a([B.w,new A.f(B.Y,p,e),new A.f(B.v,A.o(A.xP(A.a([m,l,j,i,h,A.bQ(A.j(g,B.k,B.c,B.b,e),e,B.L,e,e,B.O)],o)),d,e),e)],o),B.i,B.c,B.b,e),B.f,e,e,e,e,e,e,e,e,e,e)],o),B.i,B.c,B.b,e),6)],o),B.k,B.c,B.b,e),r,e))},
 ap7(a){A.cY(new A.aVR(this),a,!1,null,t.z)},
 ap8(a){A.cY(new A.aVS(this),a,!1,null,t.z)},
 VT(a,b,c,d,e){var s,r=null,q=$.b7B(),p=t.p,o=A.a([],p)
@@ -53623,7 +53623,7 @@ m=A.j(A.a([r,B.y,A.q(d,A.j(A.a([new A.f(B.cp,A.c(a,d,d,d,d,A.d().$4$color$fontSi
 r=m}q=A.b(b2,d,a9).w
 p=A.n(0)
 if(A.b(b2,d,a9).w.a.a>=700){o=A.b(b2,d,a9).w
-o=A.B(A.a([A.B(A.a([A.j(A.a([new A.f(B.aE,A.o(A.ak("assets/images/eelearning1.png",d,B.C,d,d,d,d),450,o.a.a*0.48),d)],s),B.k,B.c,B.b,d),A.o(d,d,A.b(b2,d,a9).w.a.a*0.08),A.j(A.a([A.c(a2,d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,26,B.u),d,d,d),B.y,A.c("Discover exciting career opportunities with this degree! \nStart your journey towards a rewarding future today!",d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,14,B.u),d,d,d),B.y,A.a8(!1,d,!0,A.c(a3,d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,14,B.u),d,d,d),d,!0,d,d,d,d,d,d,d,d,d,d,new A.aWe(e),d,d,d,d,d)],s),B.i,B.P,B.b,d)],s),B.k,B.c,B.b,d)],s),B.k,B.c,B.b,d)}else{o=A.j(A.a([B.y,A.c(a2,d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,26,B.u),d,d,d),B.y,A.c(u.z,d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,12,B.u),d,d,d),B.y,A.a8(!1,d,!0,A.c(a3,d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,14,B.u),d,d,d),d,!0,d,d,d,d,d,d,d,d,d,d,new A.aWf(e),d,d,d,d,d)],s),B.i,B.P,B.b,d)
+o=A.B(A.a([A.B(A.a([A.j(A.a([new A.f(B.aE,A.o(A.ak("assets/images/eelearning1.png",d,B.C,d,d,d,d),450,o.a.a*0.48),d)],s),B.k,B.c,B.b,d),A.o(d,d,A.b(b2,d,a9).w.a.a*0.08),A.j(A.a([A.c(a2,d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,26,B.u),d,d,d),B.y,A.c(u.w,d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,14,B.u),d,d,d),B.y,A.a8(!1,d,!0,A.c(a3,d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,14,B.u),d,d,d),d,!0,d,d,d,d,d,d,d,d,d,d,new A.aWe(e),d,d,d,d,d)],s),B.i,B.P,B.b,d)],s),B.k,B.c,B.b,d)],s),B.k,B.c,B.b,d)}else{o=A.j(A.a([B.y,A.c(a2,d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,26,B.u),d,d,d),B.y,A.c(u.z,d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,12,B.u),d,d,d),B.y,A.a8(!1,d,!0,A.c(a3,d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,14,B.u),d,d,d),d,!0,d,d,d,d,d,d,d,d,d,d,new A.aWf(e),d,d,d,d,d)],s),B.i,B.P,B.b,d)
 n=A.b(b2,d,a9).w
 n=A.j(A.a([o,B.y,A.j(A.a([new A.f(B.M,A.o(A.ak("assets/images/elearning.png",d,B.C,d,d,d,d),d,n.a.a*0.9),d)],s),B.k,B.c,B.b,d)],s),B.k,B.c,B.b,d)
 o=n}q=A.q(d,new A.f(B.aa,o,d),B.f,d,d,new A.I(B.cA,d,d,p,d,d,B.p),d,d,d,d,d,d,q.a.a)
@@ -58731,7 +58731,7 @@ if(A.b(a,n,m).w.a.a>=700)m=A.b(a,n,m).w.a.b-150
 else if(A.b(a,n,m).w.a.a<=380)m=A.b(a,n,m).w.a.b-150
 else if(A.cV(a))m=A.b(a,n,m).w.a.b-140
 else m=A.fx(a)?A.b(a,n,m).w.a.b-180:A.b(a,n,m).w.a.b-320
-return A.aD(new A.cC(q,s,n),B.m,A.ajz(A.j(A.a([A.q(n,A.j(A.a([B.w,new A.f(B.Y,r,n),new A.f(B.v,A.o(A.xP(A.a([A.bQ(this.yT(a),n,B.L,n,n,B.O),A.bQ(this.Fm(a),n,B.L,n,n,B.O)],o)),m,n),n)],o),B.i,B.c,B.b,n),B.f,n,n,n,n,n,n,n,n,n,n)],o),B.i,B.c,B.b,n),6),n,n)},
+return A.n6(!1,A.aD(new A.cC(q,s,n),B.m,A.ajz(A.j(A.a([A.q(n,A.j(A.a([B.w,new A.f(B.Y,r,n),new A.f(B.v,A.o(A.xP(A.a([A.bQ(this.yT(a),n,B.L,n,n,B.O),A.bQ(this.Fm(a),n,B.L,n,n,B.O)],o)),m,n),n)],o),B.i,B.c,B.b,n),B.f,n,n,n,n,n,n,n,n,n,n)],o),B.i,B.c,B.b,n),6),n,n))},
 yT(a7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this,c=null,b="History and Background",a="Mission and Vision",a0=u.B,a1="Welcome back to your learning journey!",a2="Discover exciting career opportunities with this university! Start your journey towards a rewarding future today!",a3="Enroll Now",a4="assets/images/elearning.png",a5="Accreditations",a6=d.a.c
 a6=A.o(new A.a1h(a6.a,a6.fr,4.7,28303,a6.x,a6.z,a6.Q,c),620,c)
 s=t.w
@@ -59168,7 +59168,7 @@ j=A.b(a,g,f).w
 j=A.o(A.c(u.R,g,g,g,g,A.d().$2$color$fontSize(B.eK,13),g,g,g),g,j.a.a*0.55)
 i=A.c("About the Locations",g,g,g,g,A.d().$3$color$fontSize$fontWeight(B.m,20,B.h),g,g,g)
 f=A.b(a,g,f).w
-return A.n6(!1,A.aD(g,B.dJ,A.bQ(A.o(A.bR(B.a4,A.a([e,s,q,new A.f(B.fx,A.j(A.a([r,B.ab,o,B.df,B.cr,n,B.w,m,B.y,k,B.Hg,l,B.q,j,B.Hg,i,B.q,A.o(A.c(h.x,g,g,g,g,A.d().$2$color$fontSize(B.eK,13),g,g,g),g,f.a.a*0.55)],p),B.i,B.c,B.b,g),g)],p),B.I,B.a5,g),620,1/0),g,B.L,g,g,B.O),g,g))},
+return A.aD(g,B.dJ,A.bQ(A.o(A.bR(B.a4,A.a([e,s,q,new A.f(B.fx,A.j(A.a([r,B.ab,o,B.df,B.cr,n,B.w,m,B.y,k,B.Hg,l,B.q,j,B.Hg,i,B.q,A.o(A.c(h.x,g,g,g,g,A.d().$2$color$fontSize(B.eK,13),g,g,g),g,f.a.a*0.55)],p),B.i,B.c,B.b,g),g)],p),B.I,B.a5,g),620,1/0),g,B.L,g,g,B.O),g,g)},
 zJ(a,b,c,d){return this.a6d(a,b,c,d)},
 a6d(a,b,c,d){var s=0,r=A.X(t.H),q=1,p,o,n,m,l,k
 var $async$zJ=A.Y(function(e,f){if(e===1){p=f
