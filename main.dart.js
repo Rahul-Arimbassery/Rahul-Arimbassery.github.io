@@ -51606,9 +51606,9 @@ q.push(B.aa6)
 o=$.lo()
 p=A.a([],p)
 if(A.b(a,l,j).w.a.a>=700){n=A.b(a,l,j).w
-p.push(A.o(m.d[0],n.a.b*0.7,l))}if(A.cP(a))p.push(A.o(m.d[0],420,l))
-if(A.fx(a))p.push(A.o(m.d[0],420,l))
-if(A.b(a,l,j).w.a.a<=380)p.push(A.o(m.d[0],420,l))
+p.push(A.o(m.d[0],n.a.b*0.7,l))}if(A.cP(a))p.push(A.o(m.d[0],400,l))
+if(A.fx(a))p.push(A.o(m.d[0],390,l))
+if(A.b(a,l,j).w.a.a<=380)p.push(A.o(m.d[0],390,l))
 if(A.b(a,l,j).w.a.a>=700){n=A.b(a,l,j).w
 p.push(A.o(m.d[13],n.a.b*0.32,l))}if(A.b(a,l,j).w.a.a>=700){n=A.b(a,l,j).w
 p.push(A.o(m.d[19],n.a.b*0.75,l))}if(A.b(a,l,j).w.a.a>=700){n=A.b(a,l,j).w
