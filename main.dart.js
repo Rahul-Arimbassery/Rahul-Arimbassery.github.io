@@ -55585,29 +55585,29 @@ nt(a,b,c){var s=null,r=t.p
 return new A.f(B.eK,A.C(A.a([A.C(A.a([A.fH(c,B.ay,s,20),B.f2,A.c(a,s,s,s,s,B.Ic,s,s,s)],r),B.k,B.c,B.b,s),A.c("$"+B.e.ao(b,2),s,s,s,s,B.Ic,s,s,s)],r),B.k,B.eO,B.b,s),s)},
 acF(a){var s=null
 return A.dV(A.bO(A.a([A.dW(A.a7(!1,s,!0,B.bg,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aOd(a),s,s,s,s,s),B.aP),A.aj(!1,s,s,s,!0,s,!1,s,s,s,new A.aOe(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a9().$1$fontSize(12),s,s,s),s,s),A.aj(!1,s,s,s,!0,s,!1,s,s,s,new A.aOf(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a9().$1$fontSize(12),s,s,s),s,s),A.aj(!1,s,s,s,!0,s,!1,s,s,s,new A.aOg(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a9().$1$fontSize(12),s,s,s),s,s),A.aj(!1,s,s,s,!0,s,!1,s,s,s,new A.aOh(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a9().$1$fontSize(12),s,s,s),s,s),A.aj(!1,s,s,s,!0,s,!1,s,s,s,new A.aOi(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a9().$1$fontSize(12),s,s,s),s,s),A.aj(!1,s,s,s,!0,s,!1,s,s,s,new A.aOj(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a9().$1$fontSize(12),s,s,s),s,s),A.aj(!1,s,s,s,!0,s,!1,s,s,s,new A.aOk(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a9().$1$fontSize(12),s,s,s),s,s)],t.p),B.t,s,!1))},
-q(a){var s,r,q,p,o,n,m=this,l=null,k="assets/images/empty_cart.png",j="Subtotal",i="Tax (5%)",h="Total Scholarship Reduction",g="Total Cost",f="assets/images/education.png",e=t.w,d=A.b(a,l,e).w.a.a>=700?B.ao:B.aT
-if(A.b(a,l,e).w.a.a>=700)s=A.o(new A.cp("forms",l),80,l)
-else{A.b(a,l,e).toString
-if(A.b(a,l,e).w.a.a>=700){s=A.p(30)
-r=A.b(a,l,e).w.a.a>=700?A.bw(l,l,B.aS,l,new A.aOy(a),l,l,l,l):B.P
+q(a){var s,r,q,p,o,n,m=this,l=null,k="assets/images/empty_cart.png",j="Subtotal",i="Tax (5%)",h="Total Cost",g="assets/images/education.png",f=t.w,e=A.b(a,l,f).w.a.a>=700?B.ao:B.aT
+if(A.b(a,l,f).w.a.a>=700)s=A.o(new A.cp("forms",l),80,l)
+else{A.b(a,l,f).toString
+if(A.b(a,l,f).w.a.a>=700){s=A.p(30)
+r=A.b(a,l,f).w.a.a>=700?A.bw(l,l,B.aS,l,new A.aOy(a),l,l,l,l):B.P
 s=A.t(l,r,B.h,l,l,new A.R(B.aQ,l,l,s,l,l,B.q),l,l,l,l,l,l,40)}else s=B.P
-s=A.C(A.a([new A.f(B.t,s,l),B.bm,A.al(new A.bR(B.S,l,l,A.b(a,l,e).w.a.a>=700?l:A.c("eG Cart",l,l,l,l,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.j,1.5,1.2),l,l,l),l),1)],t.p),B.k,B.c,B.b,l)}r=!(A.b(a,l,e).w.a.a>=700)?new A.bG(new A.aOz(),l):l
-q=!(A.b(a,l,e).w.a.a>=700)?A.dK(l,l,l,B.bC,new A.aOA(),new A.aOC(),l,l,t.N):B.P
+s=A.C(A.a([new A.f(B.t,s,l),B.bm,A.al(new A.bR(B.S,l,l,A.b(a,l,f).w.a.a>=700?l:A.c("eG Cart",l,l,l,l,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.j,1.5,1.2),l,l,l),l),1)],t.p),B.k,B.c,B.b,l)}r=!(A.b(a,l,f).w.a.a>=700)?new A.bG(new A.aOz(),l):l
+q=!(A.b(a,l,f).w.a.a>=700)?A.dK(l,l,l,B.bC,new A.aOA(),new A.aOC(),l,l,t.N):B.P
 p=t.p
 r=A.cw(A.a([q],p),!1,B.aX,l,0,new A.f(B.t,s,l),r,l)
-s=!(A.b(a,l,e).w.a.a>=700)?m.acF(a):l
-if(A.b(a,l,e).w.a.a>=700){q=J.f9(m.d)?A.bi(new A.f(B.dK,A.j(A.a([A.am(k,l,B.bd,400,l,l,l),B.x,B.Ir],p),B.k,B.O,B.b,l),l),l,l):A.Xh(l,new A.aOD(m),J.cH(m.d),l,!1,B.Q,!0)
+s=!(A.b(a,l,f).w.a.a>=700)?m.acF(a):l
+if(A.b(a,l,f).w.a.a>=700){q=J.f9(m.d)?A.bi(new A.f(B.dK,A.j(A.a([A.am(k,l,B.bd,400,l,l,l),B.x,B.Ir],p),B.k,B.O,B.b,l),l),l,l):A.Xh(l,new A.aOD(m),J.cH(m.d),l,!1,B.Q,!0)
 q=A.a([A.al(A.j(A.a([q,B.u,A.bcN(B.wd,B.IH,new A.aOE(a))],p),B.f,B.c,B.b,l),2),B.cV],p)
 if(J.hP(m.d)){o=A.p(15)
-q.push(A.al(A.bz(new A.f(B.U,A.j(A.a([B.Cp,B.u,m.nt(j,m.r2(),B.w4),m.nt(i,m.r2()*0.05,B.w8),m.nt(h,m.H2(),B.wb),B.hw,m.nt(g,m.Ox(),B.w7),B.u,new A.f(B.aH,A.C(A.a([A.al(A.o(A.aY(B.IC,new A.aOF(m,a),A.b3(l,l,B.kc,l,l,l,l,l,l,B.m,l,l,B.hA,l,new A.af(A.p(8),B.w),l,l,l,l)),l,1/0),1),B.d8,A.al(A.o(A.aY(B.IE,new A.aOG(m,a),A.b3(l,l,B.kc,l,l,l,l,l,l,B.m,l,l,B.hA,l,new A.af(A.p(8),B.w),l,l,l,l)),l,1/0),1)],p),B.k,B.eO,B.b,l),l),B.x,A.bi(A.am(f,l,B.bd,A.b(a,l,e).w.a.b*0.26,l,l,l),l,l)],p),B.f,B.c,B.b,l),l),B.m,4,B.ef,l,new A.af(o,B.w)),1))}q=A.C(q,B.f,B.c,B.b,l)}else{q=A.b(a,l,e).w
+q.push(A.al(A.bz(new A.f(B.U,A.j(A.a([B.Cp,B.u,m.nt(j,m.r2(),B.w4),m.nt(i,m.r2()*0.05,B.w8),m.nt("Total Scholarship Reduction",m.H2(),B.wb),B.hw,m.nt(h,m.Ox(),B.w7),B.u,new A.f(B.aH,A.C(A.a([A.al(A.o(A.aY(B.IC,new A.aOF(m,a),A.b3(l,l,B.kc,l,l,l,l,l,l,B.m,l,l,B.hA,l,new A.af(A.p(8),B.w),l,l,l,l)),l,1/0),1),B.d8,A.al(A.o(A.aY(B.IE,new A.aOG(m,a),A.b3(l,l,B.kc,l,l,l,l,l,l,B.m,l,l,B.hA,l,new A.af(A.p(8),B.w),l,l,l,l)),l,1/0),1)],p),B.k,B.eO,B.b,l),l),B.x,A.bi(A.am(g,l,B.bd,A.b(a,l,f).w.a.b*0.26,l,l,l),l,l)],p),B.f,B.c,B.b,l),l),B.m,4,B.ef,l,new A.af(o,B.w)),1))}q=A.C(q,B.f,B.c,B.b,l)}else{q=A.b(a,l,f).w
 o=J.f9(m.d)?A.bi(new A.f(B.dK,A.j(A.a([A.am(k,l,B.bd,200,l,l,l),B.x,B.Ir],p),B.k,B.O,B.b,l),l),l,l):A.Xh(l,new A.aOH(m),J.cH(m.d),l,!1,B.Q,!0)
 q=A.a([A.o(A.j(A.a([o,B.u,A.bcN(B.wd,B.IH,new A.aOI(a))],p),B.f,B.c,B.b,l),500,q.a.a),B.cV],p)
-if(J.hP(m.d)){o=A.b(a,l,e).w
+if(J.hP(m.d)){o=A.b(a,l,f).w
 n=A.p(15)
-q.push(A.o(A.bz(new A.f(B.U,A.j(A.a([B.Cp,B.u,m.nt(j,m.r2(),B.w4),m.nt(i,m.r2()*0.05,B.w8),m.nt(h,m.H2(),B.wb),B.hw,m.nt(g,m.Ox(),B.w7),B.u,new A.f(B.aH,A.C(A.a([A.al(A.o(A.aY(B.IC,new A.aOJ(m,a),A.b3(l,l,B.kc,l,l,l,l,l,l,B.m,l,l,B.hA,l,new A.af(A.p(8),B.w),l,l,l,l)),l,1/0),1),B.d8,A.al(A.o(A.aY(B.IE,new A.aOB(m,a),A.b3(l,l,B.kc,l,l,l,l,l,l,B.m,l,l,B.hA,l,new A.af(A.p(8),B.w),l,l,l,l)),l,1/0),1)],p),B.k,B.eO,B.b,l),l),B.x,A.bi(A.am(f,l,B.bd,A.b(a,l,e).w.a.b*0.26,l,l,l),l,l)],p),B.f,B.c,B.b,l),l),B.m,4,B.ef,l,new A.af(n,B.w)),680,o.a.a))}q=A.j(q,B.f,B.c,B.b,l)}p=A.a([new A.f(B.U,A.c3(q,l,B.L,l,l,l,B.Q),l)],p)
-if(A.b(a,l,e).w.a.a>=700)p.push(B.c6)
-p.push(A.o(B.b6,A.b(a,l,e).w.a.a>=700?300:630,1/0))
-return A.aC(new A.cu(r,d,l),l,A.c3(A.j(p,B.k,B.c,B.b,l),l,B.L,l,l,l,B.Q),s,l)}}
+q.push(A.o(A.bz(new A.f(B.U,A.j(A.a([B.Cp,B.u,m.nt(j,m.r2(),B.w4),m.nt(i,m.r2()*0.05,B.w8),m.nt("Scholarship Reduction",m.H2(),B.wb),B.hw,m.nt(h,m.Ox(),B.w7),B.u,new A.f(B.aH,A.C(A.a([A.al(A.o(A.aY(B.IC,new A.aOJ(m,a),A.b3(l,l,B.kc,l,l,l,l,l,l,B.m,l,l,B.hA,l,new A.af(A.p(8),B.w),l,l,l,l)),l,1/0),1),B.d8,A.al(A.o(A.aY(B.IE,new A.aOB(m,a),A.b3(l,l,B.kc,l,l,l,l,l,l,B.m,l,l,B.hA,l,new A.af(A.p(8),B.w),l,l,l,l)),l,1/0),1)],p),B.k,B.eO,B.b,l),l),B.x,A.bi(A.am(g,l,B.bd,A.b(a,l,f).w.a.b*0.26,l,l,l),l,l)],p),B.f,B.c,B.b,l),l),B.m,4,B.ef,l,new A.af(n,B.w)),680,o.a.a))}q=A.j(q,B.f,B.c,B.b,l)}p=A.a([new A.f(B.U,A.c3(q,l,B.L,l,l,l,B.Q),l)],p)
+if(A.b(a,l,f).w.a.a>=700)p.push(B.c6)
+p.push(A.o(B.b6,A.b(a,l,f).w.a.a>=700?300:630,1/0))
+return A.aC(new A.cu(r,e,l),l,A.c3(A.j(p,B.k,B.c,B.b,l),l,B.L,l,l,l,B.Q),s,l)}}
 A.aOl.prototype={
 $0(){this.a.d=this.b},
 $S:0}
