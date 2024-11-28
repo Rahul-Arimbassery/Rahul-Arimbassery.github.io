@@ -51620,7 +51620,7 @@ if(A.cM(a))p.push(A.o(m.d[10],k,l))
 if(A.fw(a))p.push(A.o(m.d[10],k,l))
 if(A.b(a,l,i).w.a.a>=700){n=A.b(a,l,i).w
 p.push(A.o(m.d[16],n.a.b*0.65,l))}if(A.b(a,l,i).w.a.a<=380){n=A.b(a,l,i).w
-p.push(A.o(m.d[16],n.a.b*1.7,l))}if(A.cM(a)){n=A.b(a,l,i).w
+p.push(A.o(m.d[16],n.a.b*1.8,l))}if(A.cM(a)){n=A.b(a,l,i).w
 p.push(A.o(m.d[16],n.a.b*1.35,l))}if(A.fw(a)){n=A.b(a,l,i).w
 p.push(A.o(m.d[16],n.a.b*1.5,l))}if(A.b(a,l,i).w.a.a>=700){n=A.b(a,l,i).w
 p.push(A.o(m.d[11],n.a.b*0.9,l))}if(A.b(a,l,i).w.a.a<=380){n=A.b(a,l,i).w
