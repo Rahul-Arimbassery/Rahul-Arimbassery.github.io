@@ -51589,25 +51589,31 @@ S(){return new A.aaQ(new A.aM(null,t.o))}}
 A.aaQ.prototype={
 aqi(a){var s=null
 A.Rt(s,s,!0,s,new A.b02(),a,s,!0,t.z)},
-q(a){var s,r,q,p=this,o=null,n="assets/images/companylogonewfinal.png"
+q(a){var s,r,q,p=this,o=null,n="assets/images/companylogonewfinal.png",m="CourseFinalauthbusiness"
 A.b(a,o,t.w).toString
 s=A.dQ(a,!0,t.zj).a
 r=A.a([],t.p)
 if(p.a.c==="homePage")r.push(A.a7(!1,o,!0,A.r(o,A.am(n,o,o,o,o,1.3,o),B.h,o,o,B.rE,o,150,o,o,o,o,110),o,!0,o,o,B.C,o,o,o,o,o,o,o,new A.b03(),o,o,B.C,o,o))
 q=p.a.c
-if(q==="egAcademy"||q==="egApplication"||q==="egContactus"||q==="egStudyAbroadApplication"||q==="egScholarshipsApplication"||q==="AcademyApplication"||q==="egJobApplication"||q==="egBusinessApplication"||q==="PathwaysApplications"||q==="CareersApplications"||q==="Accommodation"||q==="CourseFinal"||q==="CourseFinalnew"||q==="CourseFinalnewegacademy"||q==="CourseFinalnewstudyabroad"||q==="CourseFinalnewpathways"||q==="CourseFinalcourse"||q==="CourseFinaluni"||q==="egIdeaStation"||q==="CourseFinalauth"||q==="forms")r.push(A.a7(!1,o,!0,A.r(o,A.am(n,o,o,o,o,1.3,o),B.h,o,o,B.rE,o,150,o,o,o,o,110),o,!0,o,o,B.C,o,o,o,o,o,o,o,new A.b04(p,a),o,o,B.C,o,o))
+if(q==="egAcademy"||q==="egApplication"||q==="egContactus"||q==="egStudyAbroadApplication"||q==="egScholarshipsApplication"||q==="AcademyApplication"||q==="egJobApplication"||q==="egBusinessApplication"||q==="PathwaysApplications"||q==="CareersApplications"||q==="Accommodation"||q==="CourseFinal"||q==="CourseFinalnew"||q==="CourseFinalnewegacademy"||q==="CourseFinalnewstudyabroad"||q==="CourseFinalnewpathways"||q==="CourseFinalcourse"||q==="CourseFinaluni"||q==="egIdeaStation"||q==="CourseFinalauth"||q===m||q==="forms")r.push(A.a7(!1,o,!0,A.r(o,A.am(n,o,o,o,o,1.3,o),B.h,o,o,B.rE,o,150,o,o,o,o,110),o,!0,o,o,B.C,o,o,o,o,o,o,o,new A.b04(p,a),o,o,B.C,o,o))
 r.push(B.N)
 if(!A.bW(a))r.push(new A.Y6(p.a.c,o))
-if(p.a.c!=="CourseFinal")r.push(new A.e4("Student Portal",B.iR,B.o,new A.b05(a),o))
+q=p.a.c
+if(q!=="CourseFinal"&&q!==m)r.push(new A.e4("Student Portal",B.iR,B.o,new A.b05(a),o))
 r.push(B.cp)
-if(p.a.c!=="CourseFinal")r.push(new A.e4("Parent Portal",B.iR,B.o,new A.b06(a),o))
+q=p.a.c
+if(q!=="CourseFinal"&&q!==m)r.push(new A.e4("Parent Portal",B.iR,B.o,new A.b06(a),o))
 r.push(B.HD)
-if(p.a.c==="CourseFinal")r.push(new A.e4("Business Portal",B.iR,B.o,new A.b07(a),o))
-if(p.a.c==="CourseFinal")r.push(B.cp)
-if(p.a.c==="CourseFinal")r.push(new A.e4("Partner Portal",B.iR,B.o,new A.b08(a),o))
+q=p.a.c
+if(q==="CourseFinal"||q===m)r.push(new A.e4("Business Portal",B.iR,B.o,new A.b07(a),o))
+q=p.a.c
+if(q==="CourseFinal"||q===m)r.push(B.cp)
+q=p.a.c
+if(q==="CourseFinal"||q===m)r.push(new A.e4("Partner Portal",B.iR,B.o,new A.b08(a),o))
 r.push(B.HD)
 r.push(B.cp)
-if(p.a.c!=="CourseFinal")if(s==="")r.push(new A.e4("Sign In",B.iR,B.o,new A.b09(a),o))
+q=p.a.c
+if(q!=="CourseFinal"&&q!==m)if(s==="")r.push(new A.e4("Sign In",B.iR,B.o,new A.b09(a),o))
 r.push(B.aG)
 q=s===""
 if(q)r.push(new A.e4("   Sign Up   ",B.o,B.m,new A.b0a(a),o))
@@ -51652,6 +51658,7 @@ else if(l==="egBusinessApplication")A.k(r.b).n(0,"/egjobs",q)
 else if(l==="PathwaysApplications")A.k(r.b).n(0,m,q)
 else if(l==="CareersApplications")A.k(r.b).n(0,"/egcareerhub",q)
 else if(l==="Accommodation")A.k(r.b).n(0,p,q)
+else if(l==="CourseFinalauthbusiness")A.k(r.b).n(0,p,q)
 else if(l==="egIdeaStation")A.k(r.b).n(0,"/egideastation",q)
 else if(l==="CourseFinaluni")A.k(r.b).n(0,p,q)
 else if(l==="CourseFinalauth")A.k(r.b).n(0,p,q)
@@ -55555,7 +55562,7 @@ return A.V($async$Aj,r)},
 acH(a){var s=null
 return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aNL(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNM(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNN(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNO(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNP(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNQ(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNR(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNS(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aO
-if(A.b(a,o,n).w.a.a>=700)s=A.o(new A.cf("CourseFinalauth",o),80,o)
+if(A.b(a,o,n).w.a.a>=700)s=A.o(new A.cf("CourseFinalauthbusiness",o),80,o)
 else{A.b(a,o,n).toString
 if(A.b(a,o,n).w.a.a>=700){s=A.p(30)
 r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aN,o,new A.aNU(a),o,o,o,o):B.O
@@ -55983,7 +55990,7 @@ return A.V($async$Bx,r)},
 anL(a){var s=null
 return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aVK(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVL(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVM(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVN(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVO(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVP(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVQ(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVR(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aO
-if(A.b(a,o,n).w.a.a>=700)s=A.o(new A.cf("CourseFinalauth",o),80,o)
+if(A.b(a,o,n).w.a.a>=700)s=A.o(new A.cf("CourseFinalauthbusiness",o),80,o)
 else{A.b(a,o,n).toString
 if(A.b(a,o,n).w.a.a>=700){s=A.p(30)
 r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aN,o,new A.aVT(a),o,o,o,o):B.O
