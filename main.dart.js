@@ -585,7 +585,7 @@ bmD(a,b,c){return new A.Fw(a,b,c,new A.EO(new A.afL()))},
 Tf(a,b){var s=0,r=A.W(t.Lh),q,p,o
 var $async$Tf=A.X(function(c,d){if(c===1)return A.T(d,r)
 while(true)switch(s){case 0:o=A.bxH(a)
-if(o==null)throw A.i(A.rl("Failed to detect image file format using the file header.\nFile header was "+(!B.aQ.gai(a)?"["+A.bwX(B.aQ.cL(a,0,Math.min(10,a.length)))+"]":"empty")+".\nImage source: "+b))
+if(o==null)throw A.i(A.rl("Failed to detect image file format using the file header.\nFile header was "+(!B.aR.gai(a)?"["+A.bwX(B.aR.cL(a,0,Math.min(10,a.length)))+"]":"empty")+".\nImage source: "+b))
 p=A.bmD(o,a,b)
 s=3
 return A.N(p.rl(),$async$Tf)
@@ -5877,7 +5877,7 @@ $.beG=r
 $.beF=q
 return r},
 Eq(a,b,c,d){var s,r,q,p,o,n="0123456789ABCDEF"
-if(c===B.b6){s=$.bjX()
+if(c===B.b7){s=$.bjX()
 s=s.b.test(b)}else s=!1
 if(s)return b
 r=c.jO(b)
@@ -6335,9 +6335,9 @@ aLJ(a){var s,r,q=0,p=null
 try{s=A.ct(a,q,p)
 return s}catch(r){if(t.bE.b(A.aX(r)))return null
 else throw r}},
-bsC(a){return A.lr(a,0,a.length,B.b6,!1)},
+bsC(a){return A.lr(a,0,a.length,B.b7,!1)},
 beI(a){var s=t.N
-return B.d.xJ(A.a(a.split("&"),t.s),A.M(s,s),new A.aLI(B.b6))},
+return B.d.xJ(A.a(a.split("&"),t.s),A.M(s,s),new A.aLI(B.b7))},
 bsB(a,b,c){var s,r,q,p,o,n,m="IPv4 address should contain exactly 4 parts",l="each part must be in the range 0..255",k=new A.aLE(a),j=new Uint8Array(4)
 for(s=b,r=s,q=0;s<c;++s){p=a.charCodeAt(s)
 if(p!==46){if((p^48)>9)k.$2("invalid character",s)}else{if(q===3)k.$2(m,s)
@@ -6598,7 +6598,7 @@ if(r>127||(B.wQ[r>>>4]&1<<(r&15))===0)break}return a},
 buu(a,b){if(a.azC("package")&&a.c==null)return A.bgK(b,0,b.length)
 return-1},
 buo(){return A.a([],t.s)},
-bfQ(a){var s,r,q,p,o,n=A.M(t.N,t.yp),m=new A.b19(a,B.b6,n)
+bfQ(a){var s,r,q,p,o,n=A.M(t.N,t.yp),m=new A.b19(a,B.b7,n)
 for(s=a.length,r=0,q=0,p=-1;r<s;){o=a.charCodeAt(r)
 if(o===61){if(p<0)p=r}else if(o===38){m.$3(q,p,r)
 q=r+1
@@ -6616,7 +6616,7 @@ break}r=a.charCodeAt(o)
 q=!0
 if(r<=127)if(r!==37)q=e&&r===43
 if(q){s=!1
-break}++o}if(s)if(B.b6===d)return B.j.W(a,b,c)
+break}++o}if(s)if(B.b7===d)return B.j.W(a,b,c)
 else p=new A.hz(B.j.W(a,b,c))
 else{p=A.a([],t.t)
 for(q=a.length,o=b;o<c;++o){r=a.charCodeAt(o)
@@ -11321,7 +11321,7 @@ break
 default:s=o}q=A.b9M(d,new A.nw(o,o,o,o,s.e,s.f,s.r,s.w),t.lu)}else q=d
 p=A.oc(q,new A.P(a,o,b,o,o,o,B.q),B.dr)
 if((a.gl(a)>>>24&255)===255)return p
-return A.qX(A.z5(p,$.av().pB(10,10,B.aU)),B.B,o)},
+return A.qX(A.z5(p,$.av().pB(10,10,B.aV)),B.B,o)},
 btr(a,b,c,d,e){var s,r
 if(d instanceof A.iR){if(!d.gtL()){s=d.ee$
 s=s!=null&&s.length!==0}else s=!0
@@ -16420,7 +16420,7 @@ break $label0$0}s="FloatingLabelAlignment(x: "+B.n.ao(a,1)+")"
 break $label0$0}return s},
 lo(a,b){var s=a==null?null:a.af(B.bD,b,a.gbD())
 return s==null?0:s},
-E6(a,b){var s=a==null?null:a.af(B.bc,b,a.gbh())
+E6(a,b){var s=a==null?null:a.af(B.bd,b,a.gbh())
 return s==null?0:s},
 E7(a,b){var s=a==null?null:a.af(B.bE,b,a.gbC())
 return s==null?0:s},
@@ -19046,7 +19046,7 @@ a4=a2?B.m:B.l
 a3=a3===B.bN?B.m:B.l
 a5=n?B.m:B.l
 a6=n?B.l:B.m
-c7=A.ahe(p,o,B.tE,c2,c2,c2,a2?B.m:B.l,a6,c2,c2,a4,c2,c2,c2,a3,c2,c2,c2,a5,c2,c2,c2,c2,c2,c2,c2,B.eW,c2,c2,c2,c2,a1,c2,c2,c2,c2,f,c2,c2,c2,c2,c2,c2,c2,c2,c2,c2,c2,c2,c2)}if(d1==null)d1=n?B.aV:B.at
+c7=A.ahe(p,o,B.tE,c2,c2,c2,a2?B.m:B.l,a6,c2,c2,a4,c2,c2,c2,a3,c2,c2,c2,a5,c2,c2,c2,c2,c2,c2,c2,B.eW,c2,c2,c2,c2,a1,c2,c2,c2,c2,f,c2,c2,c2,c2,c2,c2,c2,c2,c2,c2,c2,c2,c2)}if(d1==null)d1=n?B.aW:B.at
 a7=n?B.ah:B.kl
 if(g==null)g=n?B.eg:B.m
 if(h==null){h=c7.y
@@ -19200,7 +19200,7 @@ g7=A.bsv(g8.jV,g9.jV,h0)
 return A.b7i(b7,r,b8,q,b9,new A.I9(c2,c3,c4,c5,c6,c7,c8,c0),c1,c9,d0,A.bmj(g8.bH,g9.bH,h0),s,g,f,d1,d2,d3,e,p,d4,d5,d,d6,c,b,d7,d8,d9,e0,e1,o,e2,e3,a,a0,a1,a2,e4,b2,a3,n,e5,m,e6,e7,e8,e9,f0,f1,f2,l,k,f3,a4,a5,a6,b3,b4,f4,f5,a7,j,f6,f7,a8,f8,a9,f9,g0,b0,i,g1,g2,g3,g4,b5,g5,g6,g7,b6,b1,!0,h)},
 bcu(a,b){return new A.XF(a,b,B.qV,b.a,b.b,b.c,b.d,b.e,b.f,b.r)},
 bsF(a){var s
-$label0$0:{if(B.bJ===a||B.b3===a||B.df===a){s=B.iv
+$label0$0:{if(B.bJ===a||B.b4===a||B.df===a){s=B.iv
 break $label0$0}if(B.dA===a||B.cP===a||B.dB===a){s=B.mc
 break $label0$0}s=null}return s},
 bsG(a,b,c){var s,r
@@ -19426,7 +19426,7 @@ for(r=s.length,q=0;q<s.length;s.length===r||(0,A.ag)(s),++q)s[q].w8(B.a8)
 return!0}return!1},
 bew(a){var s
 $label0$0:{if(B.cP===a||B.dA===a||B.dB===a){s=12
-break $label0$0}if(B.bJ===a||B.df===a||B.b3===a){s=14
+break $label0$0}if(B.bJ===a||B.df===a||B.b4===a){s=14
 break $label0$0}s=null}return s},
 a4Q:function a4Q(a,b,c,d,e,f){var _=this
 _.e=a
@@ -19523,7 +19523,7 @@ _.w=h
 _.x=i},
 aaO:function aaO(){},
 bsy(a){return A.beD(a,null,null,B.ajy,B.ajI,B.ajH)},
-beD(a,b,c,d,e,f){switch(a){case B.b3:b=B.ajC
+beD(a,b,c,d,e,f){switch(a){case B.b4:b=B.ajC
 c=B.ajJ
 break
 case B.bJ:case B.df:b=B.ajG
@@ -19630,7 +19630,7 @@ case 1:s=B.aJ
 break
 default:s=null}return s},
 bO(a){var s
-$label0$0:{if(B.b0===a||B.aR===a){s=B.R
+$label0$0:{if(B.b1===a||B.aS===a){s=B.R
 break $label0$0}if(B.cx===a||B.ec===a){s=B.aJ
 break $label0$0}s=null}return s},
 b4Y(a){var s
@@ -19640,18 +19640,18 @@ case 1:s=B.ec
 break
 default:s=null}return s},
 b8o(a){var s
-switch(a.a){case 0:s=B.aR
+switch(a.a){case 0:s=B.aS
 break
 case 1:s=B.cx
 break
-case 2:s=B.b0
+case 2:s=B.b1
 break
 case 3:s=B.ec
 break
 default:s=null}return s},
 u9(a){var s
-$label0$0:{if(B.b0===a||B.cx===a){s=!0
-break $label0$0}if(B.aR===a||B.ec===a){s=!1
+$label0$0:{if(B.b1===a||B.cx===a){s=!0
+break $label0$0}if(B.aS===a||B.ec===a){s=!1
 break $label0$0}s=null}return s},
 Jj:function Jj(a,b){this.a=a
 this.b=b},
@@ -24786,7 +24786,7 @@ switch(b.a){case 0:s=a.V(t.I)
 s.toString
 r=A.b4Y(s.w)
 return c?A.b8o(r):r
-case 1:return c?B.b0:B.aR}},
+case 1:return c?B.b1:B.aS}},
 bQ(a,b,c,d,e){return new A.Cy(a,e,d,c,b,null)},
 ci(a,b,c,d,e,f,g,h){return new A.rT(e,g,f,a,h,c,b,d)},
 BB(a,b){return new A.rT(b.a,b.b,b.c,b.d,null,null,a,null)},
@@ -25504,7 +25504,7 @@ bnY(){var s,r,q,p=null,o=$.aC(),n=t.A,m=new A.ak5()
 m.a=B.a8B
 s=A.a([],t.RW)
 r=A.bI()
-$label0$0:{if(B.bJ===r||B.b3===r){q=!0
+$label0$0:{if(B.bJ===r||B.b4===r){q=!0
 break $label0$0}if(B.df===r||B.dA===r||B.cP===r||B.dB===r){q=!1
 break $label0$0}q=p}return new A.r8(new A.cu(!0,o,t.uh),new A.aM(p,n),new A.aby(B.n0,B.n1,o),new A.aM(p,n),new A.HN(),new A.HN(),new A.HN(),m,s,q,p,p,p)},
 bnZ(a){var s=a==null,r=s?null:a.a,q=s||a.k(0,B.jS)
@@ -26225,8 +26225,8 @@ bo0(a){a.bM()
 a.bo(A.bhd())},
 GK(a){var s=a.a,r=s instanceof A.w1?s:null
 return new A.VC("",r,new A.q8())},
-bp3(a){return new A.i4(A.iK(null,null,null,t.h,t.X),a,B.b5)},
-bpH(a){return new A.k7(A.eb(t.h),a,B.b5)},
+bp3(a){return new A.i4(A.iK(null,null,null,t.h,t.X),a,B.b6)},
+bpH(a){return new A.k7(A.eb(t.h),a,B.b6)},
 b2F(a,b,c,d){var s=new A.cN(b,c,"widgets library",a,d,!1)
 A.ej(s)
 return s},
@@ -28914,7 +28914,7 @@ _.db=!1
 _.dx=null
 _.dy=!0
 _.fr=null},
-be3(a,b){return new A.Cq(b,A.b78(t.S,t.Dv),a,B.b5)},
+be3(a,b){return new A.Cq(b,A.b78(t.S,t.Dv),a,B.b6)},
 brE(a,b,c,d,e){if(b===e-1)return d
 return d+(d-c)/(b-a+1)*(e-b-1)},
 bpe(a,b){return new A.HI(b,a,null)},
@@ -29768,11 +29768,11 @@ aM1(a,b){var s
 switch(b.a){case 0:s=a.V(t.I)
 s.toString
 return A.b4Y(s.w)
-case 1:return B.aR
+case 1:return B.aS
 case 2:s=a.V(t.I)
 s.toString
 return A.b4Y(s.w)
-case 3:return B.aR}},
+case 3:return B.aS}},
 yf:function yf(a,b,c,d,e,f,g,h,i){var _=this
 _.e=a
 _.r=b
@@ -30695,7 +30695,7 @@ this.b=b},
 bqV(a,b){var s=new Uint8Array(0),r=$.bi9()
 if(!r.b.test(a))A.ar(A.jb(a,"method","Not a valid method"))
 r=t.N
-return new A.aFI(B.b6,s,a,b,A.kQ(new A.afj(),new A.afk(),r,r))},
+return new A.aFI(B.b7,s,a,b,A.kQ(new A.afj(),new A.afk(),r,r))},
 aFI:function aFI(a,b,c,d,e){var _=this
 _.x=a
 _.y=b
@@ -31254,7 +31254,7 @@ _.d=d
 _.e=-1
 _.f=null},
 aK3:function aK3(a){this.a=a},
-brz(a){return new A.Kq(null,a,B.b5)},
+brz(a){return new A.Kq(null,a,B.b6)},
 Bd:function Bd(){},
 a6C:function a6C(a,b,c,d){var _=this
 _.ae=a
@@ -33366,7 +33366,7 @@ return s},
 bw7(a){var s
 switch(a.a){case 1:s=B.bJ
 break
-case 0:s=B.b3
+case 0:s=B.b4
 break
 case 2:s=B.dA
 break
@@ -36963,7 +36963,7 @@ $.av().gxK().ga0K().awS(a,s)
 this.a.addText(a)},
 ft(){var s,r,q,p,o,n,m,l,k,j="Paragraph"
 if($.bkd()){s=this.a
-r=B.b6.c_(0,new A.hz(s.getText()))
+r=B.b7.c_(0,new A.hz(s.getText()))
 q=A.brm($.blm(),r)
 p=q==null
 o=p?null:q.i(0,r)
@@ -38233,7 +38233,7 @@ switch(a){case"flutter/skia":s=B.cA.jN(a0)
 switch(s.a){case"Skia.setResourceCacheMaxBytes":if($.av() instanceof A.Fn){r=A.cI(s.b)
 $.agb.bU().d.P2(r)}c.fU(a1,B.bm.cK([A.a([!0],t.HZ)]))
 break}return
-case"flutter/assets":c.vD(B.b6.c_(0,A.eq(a0.buffer,0,b)),a1)
+case"flutter/assets":c.vD(B.b7.c_(0,A.eq(a0.buffer,0,b)),a1)
 return
 case"flutter/platform":s=B.cA.jN(a0)
 switch(s.a){case"SystemNavigator.pop":q=t.e8
@@ -40468,7 +40468,7 @@ if(b<o)for(s=p.a,r=b;r<o;++r)s[r]=0
 else{o=p.a.length
 if(b>o){if(o===0)q=new Uint8Array(b)
 else q=p.Ao(b)
-B.aQ.hL(q,0,p.b,p.a)
+B.aR.hL(q,0,p.b,p.a)
 p.a=q}}p.b=b},
 fK(a,b){var s=this,r=s.b
 if(r===s.a.length)s.Qk(r)
@@ -40492,36 +40492,36 @@ r=p.b+s
 p.afp(r)
 o=p.a
 q=a+s
-B.aQ.co(o,q,p.b+s,o,a)
-B.aQ.co(p.a,a,q,b,c)
+B.aR.co(o,q,p.b+s,o,a)
+B.aR.co(p.a,a,q,b,c)
 p.b=r},
 i3(a,b,c){var s,r,q=this,p=q.b
 if(b>p)throw A.i(A.dk(b,0,p,null,null))
 s=q.a
-if(p<s.length){B.aQ.co(s,b+1,p+1,s,b)
+if(p<s.length){B.aR.co(s,b+1,p+1,s,b)
 q.a[b]=c;++q.b
 return}r=q.Ao(null)
-B.aQ.hL(r,0,b,q.a)
-B.aQ.co(r,b+1,q.b+1,q.a,b)
+B.aR.hL(r,0,b,q.a)
+B.aR.co(r,b+1,q.b+1,q.a,b)
 r[b]=c;++q.b
 q.a=r},
 afp(a){var s,r=this
 if(a<=r.a.length)return
 s=r.Ao(a)
-B.aQ.hL(s,0,r.b,r.a)
+B.aR.hL(s,0,r.b,r.a)
 r.a=s},
 Ao(a){var s=this.a.length*2
 if(a!=null&&s<a)s=a
 else if(s<8)s=8
 return new Uint8Array(s)},
 Qk(a){var s=this.Ao(null)
-B.aQ.hL(s,0,a,this.a)
+B.aR.hL(s,0,a,this.a)
 this.a=s},
 co(a,b,c,d,e){var s=this.b
 if(c>s)throw A.i(A.dk(c,0,s,null,null))
 s=this.a
-if(A.x(this).h("nS<nS.E>").b(d))B.aQ.co(s,b,c,d.a,e)
-else B.aQ.co(s,b,c,d,e)}}
+if(A.x(this).h("nS<nS.E>").b(d))B.aR.co(s,b,c,d.a,e)
+else B.aR.co(s,b,c,d,e)}}
 A.a5M.prototype={}
 A.a1u.prototype={}
 A.kT.prototype={
@@ -41922,7 +41922,7 @@ l=m.gcD(m).length===0?"/":m.gcD(m)
 k=m.gqn()
 k=k.gai(k)?null:m.gqn()
 l=A.aw(m.gjW().length===0?null:m.gjW(),l,k).ga9()
-j=A.lr(l,0,l.length,B.b6,!1)}else{l=A.cA(o.i(h,"location"))
+j=A.lr(l,0,l.length,B.b7,!1)}else{l=A.cA(o.i(h,"location"))
 l.toString
 j=l}l=p.a.gCG()
 k=o.i(h,"state")
@@ -45698,12 +45698,12 @@ s|=s>>>4
 s|=s>>>8
 r=new Uint8Array((((s|s>>>16)>>>0)+1)*2)
 p=q.b
-B.aQ.hL(r,0,p.length,p)
+B.aR.hL(r,0,p.length,p)
 q.b=r}p=q.b
 o=q.c
-B.aQ.hL(p,o,o+n.gD(b),b)
+B.aR.hL(p,o,o+n.gD(b),b)
 q.c=q.c+n.gD(b)},
-aS(a){this.a.$1(B.aQ.cL(this.b,0,this.c))}}
+aS(a){this.a.$1(B.aR.cL(this.b,0,this.c))}}
 A.Tc.prototype={}
 A.a9z.prototype={
 G(a,b){this.b.push(b)},
@@ -45925,7 +45925,7 @@ if(q===0)return new Uint8Array(0)
 s=new Uint8Array(q*3)
 r=new A.abq(s)
 if(r.SG(a,0,q)!==q)r.Cm()
-return B.aQ.cL(s,0,r.b)},
+return B.aR.cL(s,0,r.b)},
 im(a){return new A.b1d(new A.Mh(a),new Uint8Array(1024))}}
 A.abq.prototype={
 Cm(){var s=this,r=s.c,q=s.b,p=s.b=q+1
@@ -45988,7 +45988,7 @@ p=r.length-3
 do{b=n.SG(a,b,c)
 o=d&&b===c
 if(b===q&&(a.charCodeAt(b)&64512)===55296){if(d&&n.b<p)n.Cm()
-else n.a=a.charCodeAt(b);++b}s.G(0,B.aQ.cL(r,0,n.b))
+else n.a=a.charCodeAt(b);++b}s.G(0,B.aR.cL(r,0,n.b))
 if(o)s.aS(0)
 n.b=0}while(b<c)
 if(d)n.aS(0)}}
@@ -46511,10 +46511,10 @@ A.b17.prototype={
 $2(a,b){var s=this.b,r=this.a
 s.a+=r.a
 r.a="&"
-r=A.Eq(B.lf,a,B.b6,!0)
+r=A.Eq(B.lf,a,B.b7,!0)
 r=s.a+=r
 if(b!=null&&b.length!==0){s.a=r+"="
-r=A.Eq(B.lf,b,B.b6,!0)
+r=A.Eq(B.lf,b,B.b7,!0)
 s.a+=r}},
 $S:748}
 A.b16.prototype={
@@ -46544,7 +46544,7 @@ j(a){var s=this.a
 return this.b[0]===-1?"data:"+s:s}}
 A.b24.prototype={
 $2(a,b){var s=this.a[a]
-B.aQ.axk(s,0,96,b)
+B.aR.axk(s,0,96,b)
 return s},
 $S:770}
 A.b25.prototype={
@@ -47886,7 +47886,7 @@ ay2(a){var s,r,q,p,o,n,m,l="Invalid arguments for 'resize' method sent to dev.fl
 if(j[0]===7){s=j[1]
 if(s>=254)throw A.i(A.e8("Unrecognized message sent to dev.flutter/channel-buffers (method name too long)"))
 r=2+s
-q=B.b6.c_(0,B.aQ.cL(j,2,r))
+q=B.b7.c_(0,B.aR.cL(j,2,r))
 switch(q){case"resize":if(j[r]!==12)throw A.i(A.e8(l))
 p=r+1
 if(j[p]<2)throw A.i(A.e8(l));++p
@@ -47894,7 +47894,7 @@ if(j[p]!==7)throw A.i(A.e8("Invalid arguments for 'resize' method sent to dev.fl
 o=j[p]
 if(o>=254)throw A.i(A.e8("Invalid arguments for 'resize' method sent to dev.flutter/channel-buffers (channel name must be less than 254 characters long)"));++p
 r=p+o
-n=B.b6.c_(0,B.aQ.cL(j,p,r))
+n=B.b7.c_(0,B.aR.cL(j,p,r))
 if(j[r]!==3)throw A.i(A.e8("Invalid arguments for 'resize' method sent to dev.flutter/channel-buffers (second argument must be an integer in the range 0 to 2147483647)"))
 this.a3b(0,n,a.getUint32(r+1,B.bW===$.fe()))
 break
@@ -47905,11 +47905,11 @@ if(j[p]!==7)throw A.i(A.e8("Invalid arguments for 'overflow' method sent to dev.
 o=j[p]
 if(o>=254)throw A.i(A.e8("Invalid arguments for 'overflow' method sent to dev.flutter/channel-buffers (channel name must be less than 254 characters long)"));++p
 r=p+o
-B.b6.c_(0,B.aQ.cL(j,p,r))
+B.b7.c_(0,B.aR.cL(j,p,r))
 r=j[r]
 if(r!==1&&r!==2)throw A.i(A.e8("Invalid arguments for 'overflow' method sent to dev.flutter/channel-buffers (second argument must be a boolean)"))
 break
-default:throw A.i(A.e8("Unrecognized method '"+q+"' sent to dev.flutter/channel-buffers"))}}else{m=A.a(B.b6.c_(0,j).split("\r"),t.s)
+default:throw A.i(A.e8("Unrecognized method '"+q+"' sent to dev.flutter/channel-buffers"))}}else{m=A.a(B.b7.c_(0,j).split("\r"),t.s)
 if(m.length===3&&J.k(m[0],"resize"))this.a3b(0,m[1],A.iw(m[2],null))
 else throw A.i(A.e8("Unrecognized message "+A.u(m)+" sent to dev.flutter/channel-buffers."))}},
 a3b(a,b,c){var s=this.a,r=s.i(0,b)
@@ -48315,14 +48315,14 @@ gv(a){return A.a9(null,null,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,
 j(a){return"GestureSettings(physicalTouchSlop: null, physicalDoubleTapSlop: null)"}}
 A.af7.prototype={
 FN(a){var s,r,q
-if(A.ct(a,0,null).ga18())return A.Eq(B.oQ,a,B.b6,!1)
+if(A.ct(a,0,null).ga18())return A.Eq(B.oQ,a,B.b7,!1)
 s=this.b
 if(s==null){s=self.window.document.querySelector("meta[name=assetBase]")
 r=s==null?null:s.content
 s=r==null
 if(!s)self.window.console.warn("The `assetBase` meta tag is now deprecated.\nUse engineInitializer.initializeEngine(config) instead.\nSee: https://docs.flutter.dev/development/platform-integration/web/initialization")
 q=this.b=s?"":r
-s=q}return A.Eq(B.oQ,s+"assets/"+a,B.b6,!1)}}
+s=q}return A.Eq(B.oQ,s+"assets/"+a,B.b7,!1)}}
 A.Fj.prototype={
 M(){return"BrowserEngine."+this.b}}
 A.pt.prototype={
@@ -49508,7 +49508,7 @@ r=J.eS(o.d)
 q=o.a.r
 s.push(new A.e9(1,B.bv,A.c(r,n,B.ae,n,n,q,n,n,n),n))
 o.a.toString
-p=A.f_(!1,new A.f(B.ba,A.bbr(s,B.i,B.aJ,n,B.c,B.az,n,n,B.bq),n),n,n,B.bo,n,n,n,n,o.ga5Y(),n,n)
+p=A.f_(!1,new A.f(B.bb,A.bbr(s,B.i,B.aJ,n,B.c,B.az,n,n,B.bq),n),n,n,B.bo,n,n,n,n,o.ga5Y(),n,n)
 return p},
 bc(){var s,r,q=this
 q.cz()
@@ -50657,7 +50657,7 @@ s.push(A.am(b,l,B.D,A.b(a,l,j).w.a.b*0.45,l,l,q.a.a))}s.push(B.t)
 if(e&&r){q=A.agh(!0,B.fw,!0,200,B.aJ,0.9)
 p=A.a6(c).h("F<1,bD>")
 s.push(new A.e9(1,B.bv,A.agi(A.a_(new A.F(c,new A.ae4(),p),!0,p.h("ak.E")),q),l))}if(f){q=A.b_(l,l,B.o,l,l,l,l,l,l,l,l,l,l,l,new A.ac(A.p(5),B.w),l,l,l,l)
-s.push(new A.e9(1,B.bv,new A.f(B.vh,A.aR(new A.f(B.aX,A.c(k,l,l,l,l,A.d().$3$color$fontSize$fontWeight(B.m,18,B.k),l,l,l),l),new A.ae5(a),q),l),l))}if(g)s.push(B.k1)
+s.push(new A.e9(1,B.bv,new A.f(B.vh,A.aR(new A.f(B.aY,A.c(k,l,l,l,l,A.d().$3$color$fontSize$fontWeight(B.m,18,B.k),l,l,l),l),new A.ae5(a),q),l),l))}if(g)s.push(B.k1)
 s=A.j(s,B.i,B.c,B.b,l)
 q=A.a([],i)
 if(r&&e)if(g){p=A.b(a,l,j).w
@@ -51159,7 +51159,7 @@ return A.bQ(B.a6,A.a([new A.XB(new A.aM(o,s),r,o),A.ci(35,A.hc(B.aa,!0,o,A.a7(!1
 A.auW.prototype={
 $0(){var s=0,r=A.W(t.H),q
 var $async$$0=A.X(function(a,b){if(a===1)return A.T(b,r)
-while(true)switch(s){case 0:q="https://wa.me/+971568849699?text="+A.Eq(B.wY,u.fd,B.b6,!1)
+while(true)switch(s){case 0:q="https://wa.me/+971568849699?text="+A.Eq(B.wY,u.fd,B.b7,!1)
 s=4
 return A.N(A.mu(q),$async$$0)
 case 4:s=b?2:3
@@ -51171,7 +51171,7 @@ return A.V($async$$0,r)},
 $S:14}
 A.auU.prototype={
 $3(a,b,c){var s=null,r=A.a([new A.aE(4,B.L,A.w(102,113,109,109),B.ls,20)],t.V)
-return A.aL2(B.S,A.r(s,A.am("assets/images/whatsappweb.png",s,s,40,s,s,40),B.h,s,s,new A.P(B.m,s,s,s,r,s,B.fh),s,s,s,B.ba,s,s,s),b)},
+return A.aL2(B.S,A.r(s,A.am("assets/images/whatsappweb.png",s,s,40,s,s,40),B.h,s,s,new A.P(B.m,s,s,s,r,s,B.fh),s,s,s,B.bb,s,s,s),b)},
 $S:146}
 A.auV.prototype={
 $0(){},
@@ -51581,7 +51581,7 @@ $S:0}
 A.e4.prototype={
 q(a){var s=this,r=null,q=A.b(a,r,t.w).w.a.a>=700?80:40,p=A.p(5),o=s.d
 o=A.a([o,o],t.W)
-return new A.f(B.j_,A.a7(!1,r,!0,A.r(r,A.B(A.a([new A.f(B.dQ,A.c(s.c,r,r,r,r,A.d().$1$textStyle(A.ab(a).p2.as.avj(s.e,B.x,1.2)),r,r,r),r)],t.p),B.i,B.K,B.b,r),B.h,r,r,new A.P(r,r,r,p,r,new A.em(B.cS,B.eb,B.aU,o,r,r),B.q),r,q,r,r,r,r,r),r,!0,r,r,r,r,r,r,r,r,r,r,s.f,r,r,r,r,r),r)}}
+return new A.f(B.j_,A.a7(!1,r,!0,A.r(r,A.B(A.a([new A.f(B.dQ,A.c(s.c,r,r,r,r,A.d().$1$textStyle(A.ab(a).p2.as.avj(s.e,B.x,1.2)),r,r,r),r)],t.p),B.i,B.K,B.b,r),B.h,r,r,new A.P(r,r,r,p,r,new A.em(B.cS,B.eb,B.aV,o,r,r),B.q),r,q,r,r,r,r,r),r,!0,r,r,r,r,r,r,r,r,r,r,s.f,r,r,r,r,r),r)}}
 A.cf.prototype={
 S(){return new A.aaP(new A.aM(null,t.o))}}
 A.aaP.prototype={
@@ -51621,7 +51621,7 @@ r.push(B.N)
 return A.ay(o,B.C,A.r(o,A.B(r,B.i,B.c,B.b,o),B.h,o,o,B.Li,o,o,o,B.iZ,o,o,o),o,o)}}
 A.b01.prototype={
 $1(a){var s=null,r=A.p(15)
-return A.b9G(A.a([new A.f(B.ba,A.f_(!1,B.IL,s,s,B.bo,s,s,s,s,new A.b0_(a),s,A.L7(s,s,B.m,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s)),s),new A.f(B.ba,A.aR(B.ajZ,new A.b00(a),A.b_(s,s,B.m,s,s,s,s,s,s,s,s,s,s,s,new A.ac(A.p(10),B.w),s,s,s,s)),s)],t.p),new A.q(4288165887),B.IN,new A.ac(r,B.w),B.ak3)},
+return A.b9G(A.a([new A.f(B.bb,A.f_(!1,B.IL,s,s,B.bo,s,s,s,s,new A.b0_(a),s,A.L7(s,s,B.m,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s)),s),new A.f(B.bb,A.aR(B.ajZ,new A.b00(a),A.b_(s,s,B.m,s,s,s,s,s,s,s,s,s,s,s,new A.ac(A.p(10),B.w),s,s,s,s)),s)],t.p),new A.q(4288165887),B.IN,new A.ac(r,B.w),B.ak3)},
 $S:213}
 A.b0_.prototype={
 $0(){var s=0,r=A.W(t.H),q=this
@@ -51706,7 +51706,7 @@ if(!s&&j){j=A.w(255,156,84,245)
 r=A.p(8)
 q=A.a([new A.aE(2,B.L,A.w(B.e.K(76.5),158,158,158),new A.v(0,3),5)],t.V)
 p=A.w(255,252,251,251)
-n.push(A.a7(!1,o,!0,A.r(o,new A.f(B.ba,A.c("eG Business",o,o,o,o,A.d().$1$textStyle(A.bf(o,o,p,o,o,o,o,o,o,o,o,16,o,o,B.x,o,o,!0,o,o,o,o,o,o,o,o)),o,o,o),o),B.h,o,o,new A.P(j,o,o,r,q,o,B.q),o,o,o,new A.K(16,0,16,0),o,o,o),o,!0,o,o,o,o,o,o,o,o,o,o,new A.aBt(a),o,o,o,o,o))}if(k)n.push(A.o(o,o,m*2000))
+n.push(A.a7(!1,o,!0,A.r(o,new A.f(B.bb,A.c("eG Business",o,o,o,o,A.d().$1$textStyle(A.bf(o,o,p,o,o,o,o,o,o,o,o,16,o,o,B.x,o,o,!0,o,o,o,o,o,o,o,o)),o,o,o),o),B.h,o,o,new A.P(j,o,o,r,q,o,B.q),o,o,o,new A.K(16,0,16,0),o,o,o),o,!0,o,o,o,o,o,o,o,o,o,o,new A.aBt(a),o,o,o,o,o))}if(k)n.push(A.o(o,o,m*2000))
 n.push(A.o(o,o,m*250))
 k=t.w
 if(!(A.b(a,o,k).w.a.a>=700)){k=s?A.b(a,o,k).w.a.a*0.3:A.b(a,o,k).w.a.a*0.2
@@ -51716,7 +51716,7 @@ q=A.p(40)
 n.push(new A.f(B.Vp,A.o(A.dE(!0,B.aw,!1,o,!0,B.B,o,A.dK(),o,o,o,o,o,o,2,A.bz(o,new A.aW(4,j,B.w),o,o,o,o,o,o,!0,new A.aW(4,r,B.KV),o,new A.aW(4,A.p(40),B.rt),o,o,o,o,o,o,o,o,o,new A.aW(4,q,B.KW),new A.aW(4,A.p(40),B.rt),o,o,o,o,o,o,B.agu,"What do you want to learn?",o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,B.a8V,o,o,o,o),B.G,!0,o,!0,o,!1,o,B.ax,o,o,o,o,o,o,o,1,o,o,!1,"\u2022",o,o,o,o,o,!1,o,!0,o,!0,o,B.H,o,o,B.av,B.as,o,o,o,o,o,o,o,B.T,o,B.aH,o,o,o,o),40,k),o))}n.push(A.o(o,o,m*1400))
 n.push(A.o(o,o,m*1700))
 if(s)n.push(A.o(o,o,m*100))
-if(l==="egContactus")n.push(A.o(o,o,m*500))
+if(l==="egContactus")n.push(A.o(o,o,m*600))
 n.push(A.o(o,o,m))
 return A.aL2(B.S,A.B(n,B.i,B.c,B.b,o),b)},
 $S:146}
@@ -51834,7 +51834,7 @@ A.Rs(s,s,!0,s,new A.axG(A.dQ(a,!1,t.zj).a),a,s,!0,t.z)},
 $S:607}
 A.axG.prototype={
 $1(a){var s=null,r=A.p(15),q=A.c("Hi, "+this.a,s,s,s,s,B.aiu,s,s,s)
-return A.b9G(A.a([new A.f(B.ba,A.f_(!1,B.IL,s,s,B.bo,s,s,s,s,new A.axE(a),s,A.L7(s,s,B.m,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s)),s),new A.f(B.ba,A.aR(B.ajY,new A.axF(a),A.b_(s,s,B.m,s,s,s,s,s,s,s,s,s,s,s,new A.ac(A.p(10),B.w),s,s,s,s)),s)],t.p),B.o,B.IN,new A.ac(r,B.w),q)},
+return A.b9G(A.a([new A.f(B.bb,A.f_(!1,B.IL,s,s,B.bo,s,s,s,s,new A.axE(a),s,A.L7(s,s,B.m,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s)),s),new A.f(B.bb,A.aR(B.ajY,new A.axF(a),A.b_(s,s,B.m,s,s,s,s,s,s,s,s,s,s,s,new A.ac(A.p(10),B.w),s,s,s,s)),s)],t.p),B.o,B.IN,new A.ac(r,B.w),q)},
 $S:213}
 A.axE.prototype={
 $0(){var s=0,r=A.W(t.H),q=this
@@ -51855,7 +51855,7 @@ $0(){$.mB().h8(0,B.bK,B.bT)},
 $S:0}
 A.axL.prototype={
 $1(a){var s=null
-return A.bl(s,s,B.aZ,s,new A.axC(a),s,s,s,s)},
+return A.bl(s,s,B.b_,s,new A.axC(a),s,s,s,s)},
 $S:608}
 A.axC.prototype={
 $0(){A.d_(this.a).cm()},
@@ -51867,7 +51867,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.axI.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.axK.prototype={
 $0(){this.a.$1(this.b)},
@@ -51909,40 +51909,40 @@ A.l(s).n(0,"/egstudios",null)},
 $S:0}
 A.RX.prototype={
 q(a){var s=null,r=this.c,q=A.a6(r).h("F<1,vA>")
-return A.ay(s,s,new A.f(B.aT,A.j(A.a([new A.f(B.a9,A.c("Diverse Accommodation Solutions",s,s,s,s,A.d().$2$fontSize$fontWeight(22,B.x),s,s,s),s),B.P,new A.f(B.aY,A.c("At eduGuardian, we offer diverse accommodation solutions to cater to the unique needs of our students. Whether you are looking for shared flats, private studios, or homestays, we ensure quality options that provide comfort, convenience, and a supportive living environment. Our trusted partners are dedicated to making your stay enjoyable and fulfilling, allowing you to focus on your studies and personal growth.",s,s,s,s,A.d().$2$color$fontSize(B.ah,14),s,s,s),s),A.ah(A.dt(A.a_(new A.F(r,new A.aen(),q),!0,q.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
+return A.ay(s,s,new A.f(B.aU,A.j(A.a([new A.f(B.a9,A.c("Diverse Accommodation Solutions",s,s,s,s,A.d().$2$fontSize$fontWeight(22,B.x),s,s,s),s),B.P,new A.f(B.aZ,A.c("At eduGuardian, we offer diverse accommodation solutions to cater to the unique needs of our students. Whether you are looking for shared flats, private studios, or homestays, we ensure quality options that provide comfort, convenience, and a supportive living environment. Our trusted partners are dedicated to making your stay enjoyable and fulfilling, allowing you to focus on your studies and personal growth.",s,s,s,s,A.d().$2$color$fontSize(B.ah,14),s,s,s),s),A.ah(A.dt(A.a_(new A.F(r,new A.aen(),q),!0,q.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.aen.prototype={
 $1(a){return new A.vA(a,null)},
 $S:612}
 A.oG.prototype={}
 A.vA.prototype={
 q(a){var s=null,r=A.b(a,s,t.w).w,q=A.p(16),p=A.w(B.e.K(178.5),0,0,0),o=this.c,n=o.c,m=A.a6(n).h("F<1,cH>")
-return A.o(A.bA(A.j(A.a([A.o(A.aF(B.aD,A.am(o.a,s,B.D,s,s,s,s),B.F),200,1/0),new A.f(B.ap,A.c(o.b,s,s,s,s,A.d().$1$textStyle(B.jV),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(n,new A.aqi(),m),!0,m.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,B.b9,p,new A.ac(q,B.w)),470,r.a.a/4-24)}}
+return A.o(A.bA(A.j(A.a([A.o(A.aF(B.aD,A.am(o.a,s,B.D,s,s,s,s),B.F),200,1/0),new A.f(B.ap,A.c(o.b,s,s,s,s,A.d().$1$textStyle(B.jV),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(n,new A.aqi(),m),!0,m.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,B.ba,p,new A.ac(q,B.w)),470,r.a.a/4-24)}}
 A.aqi.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,13),a+"\n\n")},
 $S:11}
 A.yU.prototype={
 aC(a,b){var s=null,r=A.hj(s,s,B.C,s,s,B.C,s),q=A.c(a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.l,16,B.x),s,s,s)
 return new A.hN(r,A.cW(B.C,A.a([new A.f(B.V,A.c(b,s,s,s,s,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),14,B.I),s,s,s),s)],t.p),B.C,B.u,q,s),s)},
-q(a){var s,r,q,p=null,o=t.w,n=A.b(a,p,o).w,m=A.b(a,p,o).w.a.a>=700?B.ai:B.aO
+q(a){var s,r,q,p=null,o=t.w,n=A.b(a,p,o).w,m=A.b(a,p,o).w.a.a>=700?B.ai:B.aP
 if(A.b(a,p,o).w.a.a>=700)s=A.o(new A.cf("CourseFinal",p),80,p)
 else{A.b(a,p,o).toString
 if(A.b(a,p,o).w.a.a>=700){s=A.p(30)
-r=A.b(a,p,o).w.a.a>=700?A.bl(p,p,B.aN,p,new A.aeq(a),p,p,p,p):B.O
+r=A.b(a,p,o).w.a.a>=700?A.bl(p,p,B.aO,p,new A.aeq(a),p,p,p,p):B.O
 s=A.r(p,r,B.h,p,p,new A.P(B.aL,p,p,s,p,p,B.q),p,p,p,p,p,p,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,p),A.ah(new A.bJ(B.S,p,p,A.b(a,p,o).w.a.a>=700?p:A.c("eG Accommodation",p,p,p,p,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,26,B.k,1.5,1.2),p,p,p),p),1)],t.p),B.i,B.c,B.b,p)}r=!(A.b(a,p,o).w.a.a>=700)?new A.bD(new A.aer(),p):p
 o=!(A.b(a,p,o).w.a.a>=700)?A.ds(p,p,p,B.lv,new A.aes(),new A.aet(),p,p,t.N):B.O
 q=t.p
-r=A.co(A.a([o],q),!1,B.aP,p,0,new A.f(B.u,s,p),r,p)
+r=A.co(A.a([o],q),!1,B.aQ,p,0,new A.f(B.u,s,p),r,p)
 o=n.a.a>600?B.dz:A.qW(p,B.F,new A.SO(p))
 return A.ay(new A.cj(r,m,p),p,A.bX(A.j(A.a([o,this.L0(a)],q),B.f,B.c,B.b,p),p,B.G,p,p,p,B.R),p,p)},
 L0(a){var s,r,q=this,p=null,o=t.p,n=A.a([B.ad2],o),m=t.w
 if(A.b(a,p,m).w.a.a>=700){s=t.s
-n.push(A.r(p,A.o(new A.RV(A.a([new A.ow("assets/images/eACM1.png","Convenient Locations",A.a(["Our accommodations are strategically situated near universities and colleges, ensuring easy access to classes and essential services."],s)),new A.ow("assets/images/eACM2.png","Comfortable Living Spaces",A.a(["Enjoy fully furnished rooms equipped with modern amenities, providing a homely atmosphere for students to relax and study."],s)),new A.ow("assets/images/eACM3.png","Safety and Security",A.a(["We prioritize student safety with 24/7 security, secure entry systems, and on-site support staff to create a safe living environment."],s)),new A.ow("assets/images/eACM4.png","Community and Support",A.a(["Experience a sense of belonging with our vibrant community, offering networking opportunities, social events, and access to student support services."],s))],t.EB),p),640,p),B.h,B.aS,p,p,p,p,p,B.u,p,p,p))}if(A.b(a,p,m).w.a.a>=700){s=A.aF(B.ab,A.am("assets/images/accomodationstudents.png",p,B.D,550,p,p,A.b(a,p,m).w.a.a/2.2),B.F)
+n.push(A.r(p,A.o(new A.RV(A.a([new A.ow("assets/images/eACM1.png","Convenient Locations",A.a(["Our accommodations are strategically situated near universities and colleges, ensuring easy access to classes and essential services."],s)),new A.ow("assets/images/eACM2.png","Comfortable Living Spaces",A.a(["Enjoy fully furnished rooms equipped with modern amenities, providing a homely atmosphere for students to relax and study."],s)),new A.ow("assets/images/eACM3.png","Safety and Security",A.a(["We prioritize student safety with 24/7 security, secure entry systems, and on-site support staff to create a safe living environment."],s)),new A.ow("assets/images/eACM4.png","Community and Support",A.a(["Experience a sense of belonging with our vibrant community, offering networking opportunities, social events, and access to student support services."],s))],t.EB),p),640,p),B.h,B.aT,p,p,p,p,p,B.u,p,p,p))}if(A.b(a,p,m).w.a.a>=700){s=A.aF(B.ab,A.am("assets/images/accomodationstudents.png",p,B.D,550,p,p,A.b(a,p,m).w.a.a/2.2),B.F)
 r=A.b(a,p,m).w
 r=A.B(A.a([new A.f(B.du,s,p),new A.f(B.j4,A.aF(B.ab,A.r(p,new A.f(B.V,A.j(A.a([A.c("eG Accommodation FAQs",p,p,p,p,A.d().$3$color$fontSize$fontWeight(B.o,22,B.k),p,p,p),B.t,A.c("Find answers to common questions about eG Accommodation, including details on living arrangements, amenities, safety measures, and the application process. Our FAQs are designed to help you make informed decisions about your housing options and ensure a smooth transition to student life.",p,p,p,p,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),14,B.I),p,p,p),B.r,A.ah(A.bH(A.a([q.aC("Is Accommodation provided by eduguardian?","No, it will be provided by eduguardian\u2019s trusted partners who offer quality accommodation options for student at various price ranges."),q.aC("Will I be allocated a flat with other people on my course?","The demand for housing with peers is high so submit your application as soon as possible to have a higher chance at being allocated a place with your peers"),q.aC("How do I apply for accommodation?","You can apply for accommodation through filling out the application form and sending it to us at accomodation@myeduguardian.com.Our housing team will review your application and get back to you with the available options"),q.aC("When should I apply for accommodation?","It is best to apply for accommodation as soon as you receive your acceptance letter. As mentioned earlier, Early applications have a higher chance of securing your preferred type of accommodation."),q.aC("What happens if I have a problem with my accommodation?","If you encounter any issues with your accommodation, please get in touch with us at help@myeduguardian.com and we shall attempt to resolve your issue as quickly as possible"),q.aC("What amenities are included in the accommodation?","The accommodation provided by eduGuardian\u2019s trusted partners typically includes essential amenities such as Wi-Fi, laundry facilities, kitchen access, and common living spaces. For specific details, please refer to the accommodation options available during your application process."),q.aC("Can I change my accommodation after I\u2019ve been allocated a place?","Yes, if you wish to change your accommodation after allocation, you can contact our housing team at help@myeduguardian.com. They will guide you through the process and discuss available options, depending on the circumstances and availability.")],o),p,p,!1),1)],o),B.f,B.c,B.b,p),p),B.h,p,p,B.bi,p,690,p,p,p,p,r.a.a/2.3),B.F),p)],o),B.i,B.c,B.b,p)
 s=A.b_(p,p,B.o,p,p,p,p,p,p,p,p,p,B.j2,p,new A.ac(A.p(10),B.w),p,p,p,p)
-n.push(A.r(p,A.bQ(B.a6,A.a([r,A.ci(p,A.aR(new A.f(B.aX,A.c("Apply for eG Accommodation",p,p,p,p,A.d().$3$color$fontSize$fontWeight(B.m,16,B.k),p,p,p),p),new A.aeu(a),s),p,p,p,30,50,p)],o),B.B,B.a7,p),B.h,B.c7,p,p,p,p,p,p,p,p,p))}if(A.b(a,p,m).w.a.a>=700){o=t.s
-n.push(A.r(p,A.o(new A.RX(A.a([new A.oG("assets/images/eACCC1.png","Shared Apartments",A.a(["Shared apartments provide students with private bedrooms while sharing common areas such as the kitchen and living room. This option fosters a communal living environment and is often more affordable."],o)),new A.oG("assets/images/eACCC2.png","Private Studios",A.a(["Private studios offer students complete privacy with their own living space, including a bedroom, kitchenette, and bathroom. This option is ideal for those who prefer independence and comfort."],o)),new A.oG("assets/images/eACCC3.png","Homestays",A.a(["Homestays allow students to live with local families, providing a unique cultural experience. This option often includes meals and a supportive environment, helping students integrate into the local community."],o)),new A.oG("assets/images/eACCC4.png","University Halls of Residence",A.a(["University halls provide a vibrant living environment with other students from various courses. These accommodations typically include communal facilities, social activities, and proximity to campus resources."],o))],t.yj),p),640,p),B.h,B.aS,p,p,p,p,p,B.u,p,p,p))}n.push(A.o(B.bg,A.b(a,p,m).w.a.a>=700?300:630,1/0))
+n.push(A.r(p,A.bQ(B.a6,A.a([r,A.ci(p,A.aR(new A.f(B.aY,A.c("Apply for eG Accommodation",p,p,p,p,A.d().$3$color$fontSize$fontWeight(B.m,16,B.k),p,p,p),p),new A.aeu(a),s),p,p,p,30,50,p)],o),B.B,B.a7,p),B.h,B.c7,p,p,p,p,p,p,p,p,p))}if(A.b(a,p,m).w.a.a>=700){o=t.s
+n.push(A.r(p,A.o(new A.RX(A.a([new A.oG("assets/images/eACCC1.png","Shared Apartments",A.a(["Shared apartments provide students with private bedrooms while sharing common areas such as the kitchen and living room. This option fosters a communal living environment and is often more affordable."],o)),new A.oG("assets/images/eACCC2.png","Private Studios",A.a(["Private studios offer students complete privacy with their own living space, including a bedroom, kitchenette, and bathroom. This option is ideal for those who prefer independence and comfort."],o)),new A.oG("assets/images/eACCC3.png","Homestays",A.a(["Homestays allow students to live with local families, providing a unique cultural experience. This option often includes meals and a supportive environment, helping students integrate into the local community."],o)),new A.oG("assets/images/eACCC4.png","University Halls of Residence",A.a(["University halls provide a vibrant living environment with other students from various courses. These accommodations typically include communal facilities, social activities, and proximity to campus resources."],o))],t.yj),p),640,p),B.h,B.aT,p,p,p,p,p,B.u,p,p,p))}n.push(A.o(B.aN,A.b(a,p,m).w.a.a>=700?300:630,1/0))
 return A.j(n,B.f,B.c,B.b,p)}}
 A.aeq.prototype={
 $0(){return A.l(this.a).n(0,"/",null)},
@@ -51977,14 +51977,14 @@ return q},
 m9(a){return!1}}
 A.RV.prototype={
 q(a){var s=null,r=this.c,q=A.a6(r).h("F<1,vL>")
-return A.ay(s,s,new A.f(B.aT,A.j(A.a([new A.f(B.a9,A.c("Why Choose eG Accommodation?",s,s,s,s,A.d().$2$fontSize$fontWeight(22,B.x),s,s,s),s),B.P,new A.f(B.aY,A.c("eG Accommodation offers students a safe, comfortable, and supportive living environment close to their educational institutions. With fully furnished spaces, top-notch security, and a vibrant community, we provide everything students need to focus on their studies and enjoy their time away from home..",s,s,s,s,A.d().$2$color$fontSize(B.ah,14),s,s,s),s),A.ah(A.dt(A.a_(new A.F(r,new A.aeg(),q),!0,q.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
+return A.ay(s,s,new A.f(B.aU,A.j(A.a([new A.f(B.a9,A.c("Why Choose eG Accommodation?",s,s,s,s,A.d().$2$fontSize$fontWeight(22,B.x),s,s,s),s),B.P,new A.f(B.aZ,A.c("eG Accommodation offers students a safe, comfortable, and supportive living environment close to their educational institutions. With fully furnished spaces, top-notch security, and a vibrant community, we provide everything students need to focus on their studies and enjoy their time away from home..",s,s,s,s,A.d().$2$color$fontSize(B.ah,14),s,s,s),s),A.ah(A.dt(A.a_(new A.F(r,new A.aeg(),q),!0,q.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.aeg.prototype={
 $1(a){return new A.vL(a,null)},
 $S:614}
 A.ow.prototype={}
 A.vL.prototype={
 q(a){var s=null,r=A.b(a,s,t.w).w,q=A.p(16),p=A.w(B.e.K(178.5),0,0,0),o=this.c,n=o.c,m=A.a6(n).h("F<1,cH>")
-return A.o(A.bA(A.j(A.a([A.o(A.aF(B.aD,A.am(o.a,s,B.D,s,s,s,s),B.F),200,1/0),new A.f(B.ap,A.c(o.b,s,s,s,s,A.d().$1$textStyle(B.jV),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(n,new A.aqp(),m),!0,m.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,B.b9,p,new A.ac(q,B.w)),470,r.a.a/4-24)}}
+return A.o(A.bA(A.j(A.a([A.o(A.aF(B.aD,A.am(o.a,s,B.D,s,s,s,s),B.F),200,1/0),new A.f(B.ap,A.c(o.b,s,s,s,s,A.d().$1$textStyle(B.jV),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(n,new A.aqp(),m),!0,m.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,B.ba,p,new A.ac(q,B.w)),470,r.a.a/4-24)}}
 A.aqp.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,13),a+"\n\n")},
 $S:11}
@@ -51996,7 +51996,7 @@ s=A.ci(0,A.r(k,k,B.h,B.hB,k,k,k,k,k,k,k,k,k),k,k,0,s.a.a*0.75,0,k)
 r=A.he(A.am("assets/images/accomodation.png",k,B.D,500,k,k,A.b(a,k,i).w.a.a*0.45),0.75)
 q=A.b(a,k,i).w
 p=t.p
-i=A.ci(0,A.bQ(B.a6,A.a([r,A.r(k,k,B.h,k,k,new A.P(k,k,k,k,k,new A.em(B.cw,B.cR,B.aU,A.a([A.w(B.e.K(76.5),0,0,0),B.C],t.W),k,k),B.q),k,300,k,k,k,k,q.a.a*0.45),A.ci(78,A.o(B.ie,k,A.b(a,k,i).w.a.a),k,k,0,20,k,k)],p),B.B,B.a7,k),k,k,k,0,0,k)
+i=A.ci(0,A.bQ(B.a6,A.a([r,A.r(k,k,B.h,k,k,new A.P(k,k,k,k,k,new A.em(B.cw,B.cR,B.aV,A.a([A.w(B.e.K(76.5),0,0,0),B.C],t.W),k,k),B.q),k,300,k,k,k,k,q.a.a*0.45),A.ci(78,A.o(B.ie,k,A.b(a,k,i).w.a.a),k,k,0,20,k,k)],p),B.B,B.a7,k),k,k,k,0,0,k)
 q=A.o(A.c("eG Accommodation",2,k,k,k,A.d().$2$fontSize$fontWeight(40,B.k),k,k,k),k,700)
 r=A.o(A.c("eG Accommodation provides a comfortable and supportive living environment for students, ensuring they have a safe and welcoming place to stay while pursuing their education. Our accommodations are conveniently located near educational institutions and come equipped with essential amenities to meet the needs of students. With a focus on creating a home-away-from-home atmosphere, eG Accommodation helps students settle in quickly and focus on their academic success.",k,k,k,k,A.d().$2$color$fontSize(A.w(134,29,28,28),16),k,k,k),k,710)
 o=A.b_(k,k,k,k,k,k,k,k,k,k,k,k,B.an,k,new A.ac(A.p(8),B.w),k,k,k,k)
@@ -52030,23 +52030,23 @@ A.aem.prototype={
 $0(){},
 $S:0}
 A.T6.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Why work with us",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vs>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Why work with us",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vs>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("At eG Careers, our work culture is built on collaboration, innovation, and inclusivity. We foster a supportive environment where creativity thrives, diversity is celebrated, and work-life balance is prioritized, empowering our team to achieve both personal and professional success.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.age(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.age.prototype={
 $1(a){return new A.vs(a,null)},
 $S:615}
 A.on.prototype={}
 A.vs.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?440:400,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?440:400,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aq0(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aq0.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.T7.prototype={
-q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.aT:B.bY,l=A.b(a,o,n).w.a.a>=700?B.a9:B.Z
+q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.aU:B.bY,l=A.b(a,o,n).w.a.a>=700?B.a9:B.Z
 A.b(a,o,n).toString
 s=A.c("Enriching Extracurricular Activities at eG",o,o,o,o,A.d().$2$fontSize$fontWeight(A.b(a,o,n).w.a.a>=700?22:14,B.x),o,o,o)
-r=A.b(a,o,n).w.a.a>=700?B.aY:B.bO
+r=A.b(a,o,n).w.a.a>=700?B.aZ:B.bO
 q=this.c
 p=A.a6(q).h("F<1,vq>")
 return A.ay(o,o,new A.f(m,A.j(A.a([new A.f(l,s,o),B.P,new A.f(r,A.c("At eG, we believe in fostering a vibrant workplace beyond professional responsibilities. Our extracurricular activities encourage personal growth, teamwork, and community engagement, allowing employees to explore their passions, build connections, and contribute to a positive work culture.",o,o,o,o,A.d().$2$color$fontSize(B.ah,A.b(a,o,n).w.a.a>=700?14:12),o,o,o),o),A.ah(A.dt(A.a_(new A.F(q,new A.agf(),p),!0,p.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,o),o),o,o)}}
@@ -52055,7 +52055,7 @@ $1(a){return new A.vq(a,null)},
 $S:616}
 A.op.prototype={}
 A.vq.prototype={
-q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?A.b(a,r,q).w.a.a/4-24:A.b(a,r,q).w.a.a/1-24,o=A.b(a,r,q).w.a.a>=700?470:425,n=A.b(a,r,q).w.a.a>=700?B.b9:B.bA,m=A.p(16),l=A.w(B.e.K(178.5),0,0,0),k=this.c,j=A.o(A.aF(B.aD,A.am(k.a,r,B.D,r,r,r,r),B.F),200,1/0)
+q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?A.b(a,r,q).w.a.a/4-24:A.b(a,r,q).w.a.a/1-24,o=A.b(a,r,q).w.a.a>=700?470:425,n=A.b(a,r,q).w.a.a>=700?B.ba:B.bA,m=A.p(16),l=A.w(B.e.K(178.5),0,0,0),k=this.c,j=A.o(A.aF(B.aD,A.am(k.a,r,B.D,r,r,r,r),B.F),200,1/0)
 A.b(a,r,q).toString
 q=k.c
 s=A.a6(q).h("F<1,cH>")
@@ -52070,17 +52070,17 @@ a6(){this.aj()
 var s=this.a.c
 this.d=s==null?"":s},
 adm(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ahk(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahl(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahm(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahx(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahI(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahS(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahT(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahU(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ahk(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahl(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahm(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahx(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahI(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahS(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahT(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahU(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aP
 if(A.b(a,o,n).w.a.a>=700)s=A.o(new A.cf("CourseFinalnew",o),80,o)
 else{A.b(a,o,n).toString
 if(A.b(a,o,n).w.a.a>=700){s=A.p(30)
-r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aN,o,new A.ai2(a),o,o,o,o):B.O
+r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aO,o,new A.ai2(a),o,o,o,o):B.O
 s=A.r(o,r,B.h,o,o,new A.P(B.aL,o,o,s,o,o,B.q),o,o,o,o,o,o,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,o),A.ah(new A.bJ(B.S,o,o,A.b(a,o,n).w.a.a>=700?o:A.c("eG Courses",o,o,o,o,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),o,o,o),o),1)],t.p),B.i,B.c,B.b,o)}r=!(A.b(a,o,n).w.a.a>=700)?new A.bD(new A.ai3(),o):o
 q=!(A.b(a,o,n).w.a.a>=700)?A.ds(o,o,o,B.bp,new A.ai4(),new A.aie(a),o,o,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,o,0,new A.f(B.u,s,o),r,o)
+r=A.co(A.a([q],p),!1,B.aQ,o,0,new A.f(B.u,s,o),r,o)
 n=!(A.b(a,o,n).w.a.a>=700)?this.adm(a):o
 s=this.d
 s===$&&A.e()
@@ -52132,7 +52132,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.ai3.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.ahY(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.ahY(a),s,s,s,s),s)},
 $S:9}
 A.ahY.prototype={
 $0(){A.d_(this.a).cm()},
@@ -52144,21 +52144,21 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.ai4.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.zH.prototype={
 adF(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aiG(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiH(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiI(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiJ(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiK(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiL(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiM(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiN(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o,n,m,l,k,j,i=null,h=t.w,g=A.b(a,i,h).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aiG(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiH(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiI(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiJ(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiK(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiL(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiM(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiN(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o,n,m,l,k,j,i=null,h=t.w,g=A.b(a,i,h).w.a.a>=700?B.ai:B.aP
 if(A.b(a,i,h).w.a.a>=700)s=A.o(new A.cf("egAcademy",i),80,i)
 else{A.b(a,i,h).toString
 if(A.b(a,i,h).w.a.a>=700){s=A.p(30)
-r=A.b(a,i,h).w.a.a>=700?A.bl(i,i,B.aN,i,new A.aiP(a),i,i,i,i):B.O
+r=A.b(a,i,h).w.a.a>=700?A.bl(i,i,B.aO,i,new A.aiP(a),i,i,i,i):B.O
 s=A.r(i,r,B.h,i,i,new A.P(B.aL,i,i,s,i,i,B.q),i,i,i,i,i,i,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,i),A.ah(new A.bJ(B.S,i,i,A.b(a,i,h).w.a.a>=700?i:A.c("Connect with us today",i,i,i,i,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),i,i,i),i),1)],t.p),B.i,B.c,B.b,i)}r=!(A.b(a,i,h).w.a.a>=700)?new A.bD(new A.aiQ(),i):i
 q=!(A.b(a,i,h).w.a.a>=700)?A.ds(i,i,i,B.bp,new A.aiR(),new A.aiS(a),i,i,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,i,0,new A.f(B.u,s,i),r,i)
+r=A.co(A.a([q],p),!1,B.aQ,i,0,new A.f(B.u,s,i),r,i)
 s=!(A.b(a,i,h).w.a.a>=700)?this.adF(a):i
 q=t.V
 if(A.b(a,i,h).w.a.a>=700){o=A.o(A.r(i,i,B.h,i,i,i,i,i,i,i,i,i,i),700,i)
@@ -52175,14 +52175,14 @@ m=A.b(a,i,h).w
 k=A.p(20)
 q=A.a([new A.aE(5,B.L,A.w(l,158,158,158),B.a3,7)],q)
 m=A.bQ(B.a6,A.a([o,n,j,A.ci(i,A.r(i,A.r(i,B.SA,B.h,i,i,i,i,620,i,i,i,i,A.b(a,i,h).w.a.a*0.4),B.h,i,i,new A.P(B.hC,i,i,k,q,i,B.q),i,i,i,i,i,i,i),i,i,m.a.a*0.55,i,35,i)],p),B.B,B.a7,i)
-q=A.bX(A.j(A.a([m,A.o(B.bg,A.b(a,i,h).w.a.a>=700?300:630,1/0)],p),B.i,B.c,B.b,i),i,B.G,i,i,i,B.R)
+q=A.bX(A.j(A.a([m,A.o(B.aN,A.b(a,i,h).w.a.a>=700?300:630,1/0)],p),B.i,B.c,B.b,i),i,B.G,i,i,i,B.R)
 h=q}else{o=A.p(20)
 n=B.e.K(127.5)
 m=A.a([new A.aE(5,B.L,A.w(n,158,158,158),B.a3,7)],q)
 l=A.b(a,i,h).w
 l=A.r(i,A.j(A.a([A.c("Contact Us To Start Your Training Now!",i,i,i,i,A.d().$3$color$fontSize$fontWeight(B.l,14,B.k),i,i,i),B.t,A.c("We provide a wide range of courses covering many professional aspects. Our faculty comprises of educators who believe that \u201cit\u2019s a beautiful thing when a profession and one\u2019s passion come together.\u201d",i,i,i,i,A.d().$2$color$fontSize(B.l,12),i,i,i),B.r,B.ak5,B.akg],p),B.f,B.c,B.b,i),B.h,i,i,new A.P(B.hC,i,i,o,m,i,B.q),i,i,B.H,B.H,i,i,l.a.a*0.9)
 q=A.r(i,B.hQ,B.h,i,i,new A.P(B.hC,i,i,A.p(20),A.a([new A.aE(5,B.L,A.w(n,158,158,158),B.a3,7)],q),i,B.q),i,i,B.H,B.H,i,i,A.b(a,i,h).w.a.a*0.9)
-q=A.bX(A.j(A.a([l,q,B.r,A.o(B.bg,A.b(a,i,h).w.a.a>=700?300:630,1/0)],p),B.i,B.c,B.b,i),i,B.G,i,i,i,B.R)
+q=A.bX(A.j(A.a([l,q,B.r,A.o(B.aN,A.b(a,i,h).w.a.a>=700?300:630,1/0)],p),B.i,B.c,B.b,i),i,B.G,i,i,i,B.R)
 h=q}return A.ay(new A.cj(r,g,i),i,h,s,i)}}
 A.aiG.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -52227,7 +52227,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aiQ.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aiO(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aiO(a),s,s,s,s),s)},
 $S:9}
 A.aiO.prototype={
 $0(){A.d_(this.a).cm()},
@@ -52239,7 +52239,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aiR.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.TR.prototype={
 q(a){var s=null,r=t.p
@@ -52247,7 +52247,7 @@ return A.aF(A.p(16),A.r(s,A.j(A.a([A.r(s,A.j(A.a([A.c("Other ways to reach us",s
 A.aiF.prototype={
 $0(){var s=0,r=A.W(t.H),q
 var $async$$0=A.X(function(a,b){if(a===1)return A.T(b,r)
-while(true)switch(s){case 0:q="https://wa.me/+971568849699?text="+A.Eq(B.wY,u.fd,B.b6,!1)
+while(true)switch(s){case 0:q="https://wa.me/+971568849699?text="+A.Eq(B.wY,u.fd,B.b7,!1)
 s=4
 return A.N(A.mu(q),$async$$0)
 case 4:s=b?2:3
@@ -52434,7 +52434,7 @@ q(a){var s,r,q=null,p=A.ci(0,A.r(q,q,B.h,B.ej,q,q,q,q,q,q,q,q,q),q,q,0,0,0,q),o=
 l=A.a([A.he(A.am("assets/images/education.png",q,B.D,A.b(a,q,o).w.a.a>=700?500:250,q,q,k),l)],j)
 if(A.b(a,q,o).w.a.a>=700){k=A.b(a,q,o).w
 s=A.w(255,242,240,240).a
-l.push(A.r(q,q,B.h,q,q,new A.P(q,q,q,q,q,new A.em(B.cw,B.cR,B.aU,A.a([A.w(B.e.K(76.5),s>>>16&255,s>>>8&255,s&255),B.C],t.W),q,q),B.q),q,300,q,q,q,q,k.a.a*0.45))}n=A.ci(0,A.bQ(B.a6,l,B.B,B.a7,q),q,q,m,0,n,q)
+l.push(A.r(q,q,B.h,q,q,new A.P(q,q,q,q,q,new A.em(B.cw,B.cR,B.aV,A.a([A.w(B.e.K(76.5),s>>>16&255,s>>>8&255,s&255),B.C],t.W),q,q),B.q),q,300,q,q,q,q,k.a.a*0.45))}n=A.ci(0,A.bQ(B.a6,l,B.B,B.a7,q),q,q,m,0,n,q)
 m=this.c
 if(m==="egAcademy")m="eG Academy"
 else if(m==="egStudyAbroad")m="eG Study Abroad"
@@ -52455,7 +52455,7 @@ if(A.b(a,q,o).w.a.a>=700)m.push(B.r)
 if(A.b(a,q,o).w.a.a>=700)m.push(A.c("Unlock Career Potential with Our Programs",q,q,q,q,A.d().$2$fontSize$fontWeight(18,B.k),q,q,q))
 if(A.b(a,q,o).w.a.a>=700)m.push(B.t)
 if(A.b(a,q,o).w.a.a>=700)m.push(A.o(A.c("Discover our programs crafted to deliver comprehensive skills and practical knowledge, empowering you with the expertise needed for career growth and success in your chosen field.",q,q,q,q,A.d().$2$color$fontSize(B.hx,13),q,q,q),q,800))
-return A.ay(q,B.dH,A.bX(A.o(A.bQ(B.a6,A.a([p,n,new A.f(B.aX,A.j(m,B.f,B.c,B.b,q),q)],j),B.B,B.a7,q),380,1/0),q,B.G,q,q,q,B.R),q,q)}}
+return A.ay(q,B.dH,A.bX(A.o(A.bQ(B.a6,A.a([p,n,new A.f(B.aY,A.j(m,B.f,B.c,B.b,q),q)],j),B.B,B.a7,q),380,1/0),q,B.G,q,q,q,B.R),q,q)}}
 A.at1.prototype={
 $0(){},
 $S:0}
@@ -52469,8 +52469,8 @@ A.at4.prototype={
 $0(){},
 $S:0}
 A.Us.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,p=A.c("Top Global Study Destinations",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?24:14,B.k),s,s,s),o=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,n=this.c,m=A.a6(n).h("F<1,vJ>")
-return A.ay(s,s,new A.f(B.aT,A.j(A.a([new A.f(q,p,s),B.P,new A.f(o,A.c("Here are twelve dream destinations for studying abroad, each offering unique cultural experiences, top-tier education, and vibrant student life.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(n,new A.aki(),m),!0,m.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,p=A.c("Top Global Study Destinations",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?24:14,B.k),s,s,s),o=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,n=this.c,m=A.a6(n).h("F<1,vJ>")
+return A.ay(s,s,new A.f(B.aU,A.j(A.a([new A.f(q,p,s),B.P,new A.f(o,A.c("Here are twelve dream destinations for studying abroad, each offering unique cultural experiences, top-tier education, and vibrant student life.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(n,new A.aki(),m),!0,m.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.aki.prototype={
 $1(a){return new A.vJ(a,null)},
 $S:644}
@@ -52496,7 +52496,7 @@ s=A.ci(0,A.r(j,j,B.h,B.hB,j,j,j,j,j,j,j,j,j),j,j,0,s.a.a*0.75,0,j)
 r=A.he(A.am("assets/images/destinationstudents.png",j,B.D,500,j,j,A.b(a,j,h).w.a.a*0.45),0.75)
 q=A.b(a,j,h).w
 p=t.p
-h=A.ci(0,A.bQ(B.a6,A.a([r,A.r(j,j,B.h,j,j,new A.P(j,j,j,j,j,new A.em(B.cw,B.cR,B.aU,A.a([A.w(B.e.K(76.5),0,0,0),B.C],t.W),j,j),B.q),j,300,j,j,j,j,q.a.a*0.45),A.ci(78,A.o(B.ie,j,A.b(a,j,h).w.a.a),j,j,0,20,j,j)],p),B.B,B.a7,j),j,j,j,0,0,j)
+h=A.ci(0,A.bQ(B.a6,A.a([r,A.r(j,j,B.h,j,j,new A.P(j,j,j,j,j,new A.em(B.cw,B.cR,B.aV,A.a([A.w(B.e.K(76.5),0,0,0),B.C],t.W),j,j),B.q),j,300,j,j,j,j,q.a.a*0.45),A.ci(78,A.o(B.ie,j,A.b(a,j,h).w.a.a),j,j,0,20,j,j)],p),B.B,B.a7,j),j,j,j,0,0,j)
 q=A.o(A.c("Your Study Abroad Journey\nBegins Here",2,j,j,j,A.d().$2$fontSize$fontWeight(40,B.k),j,j,j),j,700)
 r=A.o(A.c("123,032 students have achieved their study abroad dreams with eduGuardian.",j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.fl,20,B.k),j,j,j),j,710)
 o=A.o(A.c("Embark on an exciting academic journey with our tailored study abroad programs. Whether you want to experience new cultures, enhance your education, or gain a global perspective, we\u2019re here to support you every step of the way.\n\nUnlock endless possibilities as you broaden your horizons and achieve your academic goals with our expert guidance and resources.",j,j,j,j,A.d().$2$color$fontSize(B.fl,16),j,j,j),j,710)
@@ -52536,10 +52536,10 @@ l=A.j(A.a([m,B.P,l,B.P,A.c("Discover the world\u2019s leading universities renow
 m=A.b(a,q,o).w.a.a>=700?new A.f(B.a9,A.B(A.a([A.a7(!1,q,!0,B.un,q,!0,q,q,q,q,q,q,q,q,q,q,new A.akp(a),q,q,q,q,q),B.N,A.a7(!1,q,!0,B.SD,q,!0,q,q,q,q,q,q,q,q,q,q,new A.akq(a),q,q,q,q,q),B.N,A.a7(!1,q,!0,B.SM,q,!0,q,q,q,q,q,q,q,q,q,q,new A.akr(a),q,q,q,q,q),B.N,A.a7(!1,q,!0,B.u1,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aks(a),q,q,q,q,q),B.N],k),B.i,B.c,B.b,q),q):new A.f(B.bu,A.j(A.a([A.a7(!1,q,!0,B.un,q,!0,q,q,q,q,q,q,q,q,q,q,new A.akt(a),q,q,q,q,q),B.t,A.a7(!1,q,!0,B.SJ,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aku(a),q,q,q,q,q),B.t,A.a7(!1,q,!0,B.SF,q,!0,q,q,q,q,q,q,q,q,q,q,new A.akv(a),q,q,q,q,q),B.t,A.a7(!1,q,!0,B.u1,q,!0,q,q,q,q,q,q,q,q,q,q,new A.akw(a),q,q,q,q,q)],k),B.i,B.c,B.b,q),q)
 if(A.b(a,q,o).w.a.a>=700){o=A.b(a,q,o).w.a.a>=700?B.a9:B.u
 s=A.b_(q,q,B.o,q,q,q,q,q,q,q,q,q,B.j2,q,new A.ac(A.p(10),B.w),q,q,q,q)
-s=A.B(A.a([new A.f(o,A.aR(new A.f(B.aX,A.c(p,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.m,16,B.k),q,q,q),q),new A.akx(a),s),q)],k),B.i,B.c,B.b,q)
+s=A.B(A.a([new A.f(o,A.aR(new A.f(B.aY,A.c(p,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.m,16,B.k),q,q,q),q),new A.akx(a),s),q)],k),B.i,B.c,B.b,q)
 o=s}else{s=A.b(a,q,o).w.a.a>=700?B.a9:B.eo
 r=A.b_(q,q,B.o,q,q,q,q,q,q,q,q,q,B.nY,q,new A.ac(A.p(10),B.w),q,q,q,q)
-s=A.j(A.a([new A.f(s,A.aR(new A.f(B.aX,A.c(p,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.m,A.b(a,q,o).w.a.a>=700?16:12,B.k),q,q,q),q),new A.aky(a),r),q)],k),B.f,B.c,B.b,q)
+s=A.j(A.a([new A.f(s,A.aR(new A.f(B.aY,A.c(p,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.m,A.b(a,q,o).w.a.a>=700?16:12,B.k),q,q,q),q),new A.aky(a),r),q)],k),B.f,B.c,B.b,q)
 o=s}return A.ay(q,B.m,A.j(A.a([new A.f(n,l,q),B.ac,m,B.y,o,B.r],k),B.f,B.c,B.b,q),q,q)}}
 A.akp.prototype={
 $0(){var s=A.aw(null,"/completeuniversitydetails",A.C(["index",B.n.j(0)],t.N,t.z)).ga9()
@@ -52584,7 +52584,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?330:A.b(a,r,q).w.a.a*0.9,o=A.c3(
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,r,r,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.Hk.prototype={
 S(){return new A.a5r(A.Bi(0,0.8),A.a(["assets/images/courseoutlinenew.png","assets/images/adduniversitynew.png","assets/images/elearninguninew.png","assets/images/winning_personal_statementnew.png"],t.s))}}
 A.a5r.prototype={
@@ -52608,7 +52608,7 @@ q=A.p(0)
 p=A.a([new A.aE(0,B.L,A.w(B.e.K(76.5),0,0,0),B.a7W,15)],t.V)
 o=A.p(0)
 n=A.a([A.w(51,0,0,0),B.C],t.W)
-return A.a7(!1,m,!0,A.b5(A.j(A.a([A.r(m,A.aF(o,A.r(B.cR,A.c(["Courses","Universities","Institutes","Schools"][b],m,m,m,m,A.d().$1$textStyle(A.bf(m,m,B.m,m,m,m,m,m,m,m,m,20,m,m,B.k,m,m,!0,m,m,m,m,m,A.a([new A.m7(A.w(B.e.K(127.5),0,0,0),B.fZ,10)],t.kO),m,m)),m,m,m),B.h,m,m,new A.P(m,m,m,m,m,new A.em(B.cR,B.cw,B.aU,n,m,m),B.q),m,m,m,B.V,m,m,m),B.F),B.h,m,m,new A.P(m,r,m,q,p,m,B.q),m,s.a.b*0.7,m,m,m,m,l.a.a*0.8),B.t],t.p),B.i,B.K,B.b,m),m,m),m,!0,m,m,B.C,B.C,m,m,m,m,m,m,new A.aSx(this,b),m,m,B.C,m,m)},
+return A.a7(!1,m,!0,A.b5(A.j(A.a([A.r(m,A.aF(o,A.r(B.cR,A.c(["Courses","Universities","Institutes","Schools"][b],m,m,m,m,A.d().$1$textStyle(A.bf(m,m,B.m,m,m,m,m,m,m,m,m,20,m,m,B.k,m,m,!0,m,m,m,m,m,A.a([new A.m7(A.w(B.e.K(127.5),0,0,0),B.fZ,10)],t.kO),m,m)),m,m,m),B.h,m,m,new A.P(m,m,m,m,m,new A.em(B.cR,B.cw,B.aV,n,m,m),B.q),m,m,m,B.V,m,m,m),B.F),B.h,m,m,new A.P(m,r,m,q,p,m,B.q),m,s.a.b*0.7,m,m,m,m,l.a.a*0.8),B.t],t.p),B.i,B.K,B.b,m),m,m),m,!0,m,m,B.C,B.C,m,m,m,m,m,m,new A.aSx(this,b),m,m,B.C,m,m)},
 ami(a){var s,r=this
 switch(a){case 0:s=r.c
 s.toString
@@ -52836,7 +52836,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?A.b(a,r,q).w.a.a*0.215:A.b(a,r,q
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,2,B.ae,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.Wx.prototype={
 q(a){var s,r,q=null,p=t.w,o=A.b(a,q,p).w.a.a>=700?B.j6:B.Z,n=A.c("Master's Programs",q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a,q,p).w.a.a>=700?18:14,B.k),q,q,q),m=A.c("Cultivate your master's path today",q,q,q,q,A.d().$2$fontSize$fontWeight(A.b(a,q,p).w.a.a>=700?20:14,B.x),q,q,q),l=t.p
 m=A.j(A.a([n,B.P,m,B.P,A.c("With our diverse range of courses, you can gain advanced knowledge, refine your skills, and prepare for success in your chosen field.",q,q,q,q,A.d().$1$fontSize(A.b(a,q,p).w.a.a>=700?14:12),q,q,q)],l),B.f,B.c,B.b,q)
@@ -52885,7 +52885,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?A.b(a,r,q).w.a.a*0.215:A.b(a,r,q
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,r,r,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.Ww.prototype={
 q(a){var s,r,q=null,p=t.w,o=A.b(a,q,p).w.a.a>=700?B.j6:B.cF,n=A.c("Discover Our Latest Course",q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a,q,p).w.a.a>=700?18:14,B.k),q,q,q),m=A.c("Find Courses on eG for Your Life.",q,q,q,q,A.d().$2$fontSize$fontWeight(A.b(a,q,p).w.a.a>=700?20:14,B.x),q,q,q),l=t.p
 m=A.j(A.a([n,B.P,m,B.P,A.c("Discover our latest offerings, designed to equip you with highly sought-after skills.",q,q,q,q,A.d().$1$fontSize(A.b(a,q,p).w.a.a>=700?14:12),q,q,q)],l),B.f,B.c,B.b,q)
@@ -52934,7 +52934,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?A.b(a,r,q).w.a.a*0.215:A.b(a,r,q
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,2,B.ae,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.Wt.prototype={
 q(a){var s,r,q=null,p=t.w,o=A.b(a,q,p).w.a.a>=700?B.j6:B.cF,n=A.c("Affordable Learning Opportunities",q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a,q,p).w.a.a>=700?18:14,B.k),q,q,q),m=A.c("Start learning with cost-effective courses.",q,q,q,q,A.d().$2$fontSize$fontWeight(A.b(a,q,p).w.a.a>=700?20:14,B.x),q,q,q),l=t.p
 m=A.j(A.a([n,B.P,m,B.P,A.c("Explore a wide range of online courses offered by top universities and industry leaders at competitive prices.",q,q,q,q,A.d().$1$fontSize(A.b(a,q,p).w.a.a>=700?14:12),q,q,q)],l),B.f,B.c,B.b,q)
@@ -52983,7 +52983,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?A.b(a,r,q).w.a.a*0.215:A.b(a,r,q
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,2,B.ae,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.Wr.prototype={
 q(a){var s,r,q,p=null,o=t.w,n=A.b(a,p,o).w.a.a>=700?B.vx:B.o0,m=A.c(u.fa,p,p,p,p,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a,p,o).w.a.a>=700?18:14,B.k),p,p,p),l=A.c(u.es,p,p,p,p,A.d().$2$fontSize$fontWeight(A.b(a,p,o).w.a.a>=700?20:14,B.p),p,p,p),k=t.p
 l=A.j(A.a([m,B.P,new A.f(B.nO,l,p),B.P,new A.f(B.eP,A.c(u.fV,p,p,p,p,A.d().$1$fontSize(A.b(a,p,o).w.a.a>=700?14:12),p,p,p),p)],k),B.f,B.c,B.b,p)
@@ -53033,7 +53033,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?330:A.b(a,r,q).w.a.a*0.9,o=A.c3(
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,r,r,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.p),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.p),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.Ws.prototype={
 q(a){var s,r,q,p=null,o=t.w,n=A.b(a,p,o).w.a.a>=700?B.vx:B.o0,m=A.c(u.fa,p,p,p,p,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a,p,o).w.a.a>=700?18:14,B.k),p,p,p),l=A.c(u.es,p,p,p,p,A.d().$2$fontSize$fontWeight(A.b(a,p,o).w.a.a>=700?20:14,B.p),p,p,p),k=t.p
 l=A.j(A.a([m,B.P,new A.f(B.nO,l,p),B.P,new A.f(B.eP,A.c(u.fV,p,p,p,p,A.d().$1$fontSize(A.b(a,p,o).w.a.a>=700?14:12),p,p,p),p)],k),B.f,B.c,B.b,p)
@@ -53083,7 +53083,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?330:A.b(a,r,q).w.a.a*0.9,o=A.c3(
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,r,r,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.p),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.p),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.Wo.prototype={
 q(a){var s=null,r="assets/images/corsera1.png",q="World-class learning for you",p="   Sign Up   ",o=t.p,n=A.a([],o),m=t.w
 if(A.b(a,s,m).w.a.a>=700)n.push(new A.f(B.dv,A.B(A.a([A.am(r,s,B.D,s,s,s,A.b(a,s,m).w.a.a>=700?680:A.b(a,s,m).w.a.a*0.9),B.lX,A.j(A.a([A.c(q,s,s,s,s,A.d().$1$textStyle(B.afB),s,s,s),B.y,A.c("Seek a raise, a promotion, or a career change. 91% \nof learners who completed a course report career \nbenefits.",s,s,s,s,A.d().$1$textStyle(B.afC),s,s,s),B.t,A.o(new A.e4(p,B.o,B.m,new A.atI(a),s),90,130)],o),B.f,B.K,B.b,s)],o),B.i,B.K,B.b,s),s))
@@ -53117,7 +53117,7 @@ KA(a,b){var s=A.a6(b).h("F<1,f>")
 return A.B(A.a_(new A.F(b,new A.aiU(this,a),s),!0,s.h("ak.E")),B.i,B.lo,B.b,null)}}
 A.aiU.prototype={
 $1(a){var s=null,r=this.b,q=t.w,p=A.b(r,s,q).w,o=A.c3(B.tI,1),n=A.p(8),m=A.a([new A.aE(3,B.L,A.w(102,185,183,183),B.a3,5)],t.V),l=t.p
-return new A.f(B.aX,A.a7(!1,s,!0,A.r(s,A.B(A.a([A.am(a.a,s,B.D,70,s,s,A.b(r,s,q).w.a.a*0.05),B.lW,new A.f(B.eR,A.j(A.a([A.c(a.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,new A.q(4288165887),s,s,s,s,s,s,s,s,A.b(r,s,q).w.a.a*0.009,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),A.c(a.c,s,s,s,s,A.d().$1$textStyle(B.Iq),s,s,s)],l),B.f,B.c,B.b,s),s)],l),B.i,B.c,B.b,s),B.h,s,s,new A.P(B.m,s,o,n,m,s,B.q),s,s,s,B.u,s,s,p.a.a*0.2),s,!0,s,s,s,s,s,s,s,s,s,s,new A.aiT(r),s,s,s,s,s),s)},
+return new A.f(B.aY,A.a7(!1,s,!0,A.r(s,A.B(A.a([A.am(a.a,s,B.D,70,s,s,A.b(r,s,q).w.a.a*0.05),B.lW,new A.f(B.eR,A.j(A.a([A.c(a.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,new A.q(4288165887),s,s,s,s,s,s,s,s,A.b(r,s,q).w.a.a*0.009,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),A.c(a.c,s,s,s,s,A.d().$1$textStyle(B.Iq),s,s,s)],l),B.f,B.c,B.b,s),s)],l),B.i,B.c,B.b,s),B.h,s,s,new A.P(B.m,s,o,n,m,s,B.q),s,s,s,B.u,s,s,p.a.a*0.2),s,!0,s,s,s,s,s,s,s,s,s,s,new A.aiT(r),s,s,s,s,s),s)},
 $S:674}
 A.aiT.prototype={
 $0(){A.l(this.a).n(0,"/completecourse",null)},
@@ -53214,7 +53214,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?A.b(a,r,q).w.a.a*0.215:A.b(a,r,q
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,2,B.ae,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.a_7.prototype={
 q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.vA:B.vl,p=A.c("Resource Center",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),o=A.b(a,s,r).w.a.a>=700?B.vB:B.vm,n=this.c,m=A.a6(n).h("F<1,xu>")
 return A.ay(s,s,new A.f(B.j1,A.j(A.a([new A.f(q,p,s),B.P,new A.f(o,A.c("Explore our extensive collection of resources designed to support your educational and career goals. Access a wide range of guides, e-books, webinars, and more to enhance your learning experience and achieve your objectives. Discover in-depth tutorials to master new skills, read expert insights to stay ahead in your field, and attend live webinars to interact with industry leaders.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(n,new A.aFN(),m),!0,m.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
@@ -53240,17 +53240,17 @@ A.Bo.prototype={
 av(a,b,c){var s=null,r=A.hj(s,s,B.C,s,s,B.C,s),q=t.w,p=A.c(a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.l,A.b(c,s,q).w.a.a>=700?16:12,B.x),s,s,s),o=A.w(B.e.K(178.5),0,0,0)
 return new A.hN(r,A.cW(B.C,A.a([new A.f(B.V,A.c(b,s,s,s,s,A.d().$3$color$fontSize$fontWeight(o,A.b(c,s,q).w.a.a>=700?14:12,B.I),s,s,s),s)],t.p),B.C,B.u,p,s),s)},
 anJ(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aCg(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCh(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCi(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCj(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCk(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCl(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCm(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCn(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(b0){var s,r,q,p,o,n,m,l=this,k=null,j="assets/images/enrollementprocesspartner.png",i="Enrollment Process for eG Business",h='The enrollment process for eG Business is designed to foster effective collaboration between educational institutions, companies, and various organizations. It begins with an initial inquiry, allowing potential partners to express their interest and learn more about partnership opportunities. We guide you through an information session, application submission, and thorough evaluation of your organization\u2019s qualifications.\n\nTo submit your application form, please use the "Apply for eG Business" button above.',g="Initial Inquiry",f="Potential partners express interest by reaching out to eG Business through the website, email, or phone. They can request information about partnership opportunities and benefits.",e="Information Session",d="eG Business conducts an information session or consultation to discuss partnership goals, programs, and mutual benefits. This session can be held virtually or in person.",c="Submission of Partnership Application",b="Interested partners complete and submit a partnership application form, providing details about their institution, programs offered, and any relevant documentation.",a="Evaluation of Application",a0="The eG Business team reviews the application to assess the alignment of the partner\u2019s goals with eG\u2019s mission. This may include a thorough evaluation of the institutions credentials and offerings.",a1="Partnership Agreement",a2="Once the application is approved, eG Business prepares a partnership agreement outlining the terms, responsibilities, and expectations for both parties. This agreement is shared for review and signature.",a3="Onboarding and Training",a4="After signing the agreement, partners undergo an onboarding process that includes training on eGs systems, procedures, and support services to ensure effective collaboration.",a5="Launch and Ongoing Support",a6="The partnership is officially launched, and eG Business provides ongoing support, resources, and communication to foster a successful and collaborative relationship.",a7=t.w,a8=A.b(b0,k,a7).w,a9=A.b(b0,k,a7).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aCg(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCh(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCi(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCj(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCk(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCl(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCm(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aCn(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(b0){var s,r,q,p,o,n,m,l=this,k=null,j="assets/images/enrollementprocesspartner.png",i="Enrollment Process for eG Business",h='The enrollment process for eG Business is designed to foster effective collaboration between educational institutions, companies, and various organizations. It begins with an initial inquiry, allowing potential partners to express their interest and learn more about partnership opportunities. We guide you through an information session, application submission, and thorough evaluation of your organization\u2019s qualifications.\n\nTo submit your application form, please use the "Apply for eG Business" button above.',g="Initial Inquiry",f="Potential partners express interest by reaching out to eG Business through the website, email, or phone. They can request information about partnership opportunities and benefits.",e="Information Session",d="eG Business conducts an information session or consultation to discuss partnership goals, programs, and mutual benefits. This session can be held virtually or in person.",c="Submission of Partnership Application",b="Interested partners complete and submit a partnership application form, providing details about their institution, programs offered, and any relevant documentation.",a="Evaluation of Application",a0="The eG Business team reviews the application to assess the alignment of the partner\u2019s goals with eG\u2019s mission. This may include a thorough evaluation of the institutions credentials and offerings.",a1="Partnership Agreement",a2="Once the application is approved, eG Business prepares a partnership agreement outlining the terms, responsibilities, and expectations for both parties. This agreement is shared for review and signature.",a3="Onboarding and Training",a4="After signing the agreement, partners undergo an onboarding process that includes training on eGs systems, procedures, and support services to ensure effective collaboration.",a5="Launch and Ongoing Support",a6="The partnership is officially launched, and eG Business provides ongoing support, resources, and communication to foster a successful and collaborative relationship.",a7=t.w,a8=A.b(b0,k,a7).w,a9=A.b(b0,k,a7).w.a.a>=700?B.ai:B.aP
 if(A.b(b0,k,a7).w.a.a>=700)s=A.o(new A.cf("CourseFinal",k),80,k)
 else{A.b(b0,k,a7).toString
 if(A.b(b0,k,a7).w.a.a>=700){s=A.p(30)
-r=A.b(b0,k,a7).w.a.a>=700?A.bl(k,k,B.aN,k,new A.aCp(b0),k,k,k,k):B.O
+r=A.b(b0,k,a7).w.a.a>=700?A.bl(k,k,B.aO,k,new A.aCp(b0),k,k,k,k):B.O
 s=A.r(k,r,B.h,k,k,new A.P(B.aL,k,k,s,k,k,B.q),k,k,k,k,k,k,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,k),A.ah(new A.bJ(B.S,k,k,A.b(b0,k,a7).w.a.a>=700?k:A.c("eG Business",k,k,k,k,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),k,k,k),k),1)],t.p),B.i,B.c,B.b,k)}r=!(A.b(b0,k,a7).w.a.a>=700)?new A.bD(new A.aCq(),k):k
 q=!(A.b(b0,k,a7).w.a.a>=700)?A.ds(k,k,k,B.bp,new A.aCr(),new A.aCs(b0),k,k,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,k,0,new A.f(B.u,s,k),r,k)
+r=A.co(A.a([q],p),!1,B.aQ,k,0,new A.f(B.u,s,k),r,k)
 s=!(A.b(b0,k,a7).w.a.a>=700)?l.anJ(b0):k
 a8=a8.a.a>600?B.dz:A.qW(k,B.F,new A.SR(k))
 if(A.b(b0,k,a7).w.a.a>=700)q=600
@@ -53260,14 +53260,14 @@ if(A.b(b0,k,a7).w.a.a>=700)q.push(A.o(B.d7,A.b(b0,k,a7).w.a.a>=700?300:1230,1/0)
 if(A.b(b0,k,a7).w.a.a>=700)q.push(B.ad0)
 o=A.b(b0,k,a7).w.a.a>=700?640:2250
 n=t.s
-q.push(A.r(k,A.o(new A.Yx(A.a([new A.oP("assets/images/eP1.png","Extensive Network and Reach",A.a(["At eduGuardian, we maintain a vast network of students and institutions. Partnering with us gives you access to diverse potential students, enhancing your institutions visibility and creating growth opportunities."],n)),new A.oP("assets/images/eP2.png","Proven Track Record",A.a(["With years of experience in education, eduGuardian has built a reputation for reliability. Our success stories and satisfied partners reflect our commitment to quality and collaboration, helping your institution thrive."],n)),new A.oP("assets/images/eP3.png","Comprehensive Support Services",A.a(["We provide support services, including student counseling, visa assistance, and pre-departure briefings. Our team ensures students have a seamless experience from application to graduation, positively impacting our partners."],n)),new A.oP("assets/images/eP4.png","Collaborative Opportunities",A.a(["Partnering with eduGuardian opens doors to collaborative opportunities like joint programs and academic exchanges. These partnerships foster innovation and benefit both institutions and students."],n))],t.XV),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(new A.Yx(A.a([new A.oP("assets/images/eP1.png","Extensive Network and Reach",A.a(["At eduGuardian, we maintain a vast network of students and institutions. Partnering with us gives you access to diverse potential students, enhancing your institutions visibility and creating growth opportunities."],n)),new A.oP("assets/images/eP2.png","Proven Track Record",A.a(["With years of experience in education, eduGuardian has built a reputation for reliability. Our success stories and satisfied partners reflect our commitment to quality and collaboration, helping your institution thrive."],n)),new A.oP("assets/images/eP3.png","Comprehensive Support Services",A.a(["We provide support services, including student counseling, visa assistance, and pre-departure briefings. Our team ensures students have a seamless experience from application to graduation, positively impacting our partners."],n)),new A.oP("assets/images/eP4.png","Collaborative Opportunities",A.a(["Partnering with eduGuardian opens doors to collaborative opportunities like joint programs and academic exchanges. These partnerships foster innovation and benefit both institutions and students."],n))],t.XV),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 if(A.b(b0,k,a7).w.a.a>=700){o=A.aF(B.ab,A.am(j,k,B.D,550,k,k,A.b(b0,k,a7).w.a.a/2.2),B.F)
 m=A.b(b0,k,a7).w
 q.push(A.r(k,A.bQ(B.a6,A.a([A.B(A.a([new A.f(B.du,o,k),new A.f(B.j4,A.aF(B.ab,A.r(k,new A.f(B.V,A.j(A.a([A.c(i,k,k,k,k,A.d().$3$color$fontSize$fontWeight(B.o,22,B.k),k,k,k),B.t,A.c(h,k,k,k,k,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),14,B.I),k,k,k),B.r,A.ah(A.bH(A.a([l.av(g,f,b0),l.av(e,d,b0),l.av(c,b,b0),l.av(a,a0,b0),l.av(a1,a2,b0),l.av(a3,a4,b0),l.av(a5,a6,b0)],p),k,k,!1),1)],p),B.f,B.c,B.b,k),k),B.h,k,k,B.bi,k,690,k,k,k,k,m.a.a/2.3),B.F),k)],p),B.i,B.c,B.b,k)],p),B.B,B.a7,k),B.h,B.c7,k,k,k,k,k,k,k,k,k))}if(!(A.b(b0,k,a7).w.a.a>=700)){o=A.aF(B.ab,A.am(j,k,B.D,350,k,k,A.b(b0,k,a7).w.a.a),B.F)
 m=A.b(b0,k,a7).w
 q.push(A.j(A.a([new A.f(B.fy,o,k),new A.f(B.eQ,A.aF(B.ab,A.r(k,new A.f(B.V,A.j(A.a([A.c(i,k,k,k,k,A.d().$3$color$fontSize$fontWeight(B.o,14,B.k),k,k,k),B.t,A.c(h,k,k,k,k,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),12,B.I),k,k,k),B.r,A.ah(A.bH(A.a([l.av(g,f,b0),l.av(e,d,b0),l.av(c,b,b0),l.av(a,a0,b0),l.av(a1,a2,b0),l.av(a3,a4,b0),l.av(a5,a6,b0)],p),k,k,!1),1)],p),B.f,B.c,B.b,k),k),B.h,k,k,B.bi,k,700,k,k,k,k,m.a.a),B.F),k)],p),B.i,B.c,B.b,k))}o=A.b(b0,k,a7).w.a.a>=700?640:2250
-q.push(A.r(k,A.o(new A.Yz(A.a([new A.oQ("assets/images/ePP1.png","Customized Partnership Solutions",A.a(["eG tailors partnership strategies to meet the specific needs and goals of your organization, ensuring a mutually beneficial collaboration."],n)),new A.oQ("assets/images/ePP2.png","Enhanced Marketing Support",A.a(["Gain access to marketing resources and promotional strategies to effectively reach your target audience, boosting enrollment and engagement."],n)),new A.oQ("assets/images/ePP3.png","Professional Development Opportunities",A.a(["Benefit from training and workshops for your staff, enhancing their skills and knowledge in areas such as student support, recruitment, and program development."],n)),new A.oQ("assets/images/ePP4.png","Ongoing Evaluation and Feedback",A.a(["eG offers continuous assessment and feedback on partnership effectiveness, allowing you to refine your approach and maximize the impact of your collaboration."],n))],t.mf),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
-q.push(A.o(B.bg,A.b(b0,k,a7).w.a.a>=700?300:630,1/0))
+q.push(A.r(k,A.o(new A.Yz(A.a([new A.oQ("assets/images/ePP1.png","Customized Partnership Solutions",A.a(["eG tailors partnership strategies to meet the specific needs and goals of your organization, ensuring a mutually beneficial collaboration."],n)),new A.oQ("assets/images/ePP2.png","Enhanced Marketing Support",A.a(["Gain access to marketing resources and promotional strategies to effectively reach your target audience, boosting enrollment and engagement."],n)),new A.oQ("assets/images/ePP3.png","Professional Development Opportunities",A.a(["Benefit from training and workshops for your staff, enhancing their skills and knowledge in areas such as student support, recruitment, and program development."],n)),new A.oQ("assets/images/ePP4.png","Ongoing Evaluation and Feedback",A.a(["eG offers continuous assessment and feedback on partnership effectiveness, allowing you to refine your approach and maximize the impact of your collaboration."],n))],t.mf),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
+q.push(A.o(B.aN,A.b(b0,k,a7).w.a.a>=700?300:630,1/0))
 return A.ay(new A.cj(r,a9,k),k,A.bX(A.j(A.a([a8,A.j(q,B.f,B.c,B.b,k)],p),B.f,B.c,B.b,k),k,B.G,k,k,k,B.R),s,k)}}
 A.aCg.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -53312,7 +53312,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aCq.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aCo(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aCo(a),s,s,s,s),s)},
 $S:9}
 A.aCo.prototype={
 $0(){A.d_(this.a).cm()},
@@ -53324,7 +53324,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aCr.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.SR.prototype={
 m0(a){var s,r,q=$.av().ca(),p=a.b,o=p-60
@@ -53338,8 +53338,8 @@ q.aS(0)
 return q},
 m9(a){return!1}}
 A.Yx.prototype={
-q(a){var s,r,q=null,p=t.w,o=A.b(a,q,p).w.a.a>=700?B.aT:B.nS,n=A.b(a,q,p).w.a.a>=700?B.a9:B.o_,m=A.c("Why Should You Business with eduGuardian?",q,q,q,q,A.d().$2$fontSize$fontWeight(A.b(a,q,p).w.a.a>=700?22:14,B.x),q,q,q)
-p=A.b(a,q,p).w.a.a>=700?B.aY:B.eo
+q(a){var s,r,q=null,p=t.w,o=A.b(a,q,p).w.a.a>=700?B.aU:B.nS,n=A.b(a,q,p).w.a.a>=700?B.a9:B.o_,m=A.c("Why Should You Business with eduGuardian?",q,q,q,q,A.d().$2$fontSize$fontWeight(A.b(a,q,p).w.a.a>=700?22:14,B.x),q,q,q)
+p=A.b(a,q,p).w.a.a>=700?B.aZ:B.eo
 s=this.c
 r=A.a6(s).h("F<1,vV>")
 return A.ay(q,q,new A.f(o,A.j(A.a([new A.f(n,m,q),B.P,new A.f(p,A.c(u.f,q,q,q,q,A.d().$2$color$fontSize(B.ah,14),q,q,q),q),A.ah(A.dt(A.a_(new A.F(s,new A.aC8(),r),!0,r.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,q),q),q,q)}}
@@ -53348,14 +53348,14 @@ $1(a){return new A.vV(a,null)},
 $S:693}
 A.oP.prototype={}
 A.vV.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),200,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),200,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([l,new A.f(B.ap,A.c(m.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(k,new A.apY(a),j),!0,j.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,p,n,new A.ac(o,B.w)),470,q)}}
 A.apY.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.Yz.prototype={
-q(a){var s,r,q=null,p=t.w,o=A.b(a,q,p).w.a.a>=700?B.aT:B.nS,n=A.b(a,q,p).w.a.a>=700?B.a9:B.o_,m=A.c("Benefits of partnering with us",q,q,q,q,A.d().$2$fontSize$fontWeight(A.b(a,q,p).w.a.a>=700?22:14,B.x),q,q,q)
-p=A.b(a,q,p).w.a.a>=700?B.aY:B.eo
+q(a){var s,r,q=null,p=t.w,o=A.b(a,q,p).w.a.a>=700?B.aU:B.nS,n=A.b(a,q,p).w.a.a>=700?B.a9:B.o_,m=A.c("Benefits of partnering with us",q,q,q,q,A.d().$2$fontSize$fontWeight(A.b(a,q,p).w.a.a>=700?22:14,B.x),q,q,q)
+p=A.b(a,q,p).w.a.a>=700?B.aZ:B.eo
 s=this.c
 r=A.a6(s).h("F<1,vU>")
 return A.ay(q,q,new A.f(o,A.j(A.a([new A.f(n,m,q),B.P,new A.f(p,A.c("Partnering with eG opens up a world of opportunities for educational institutions and organizations. By joining forces, you gain access to a vast network of students and industry professionals, enhancing your visibility and outreach. eG provides comprehensive support services that ensure a seamless experience for both partners and students, from enrollment to graduation.",q,q,q,q,A.d().$2$color$fontSize(B.ah,14),q,q,q),q),A.ah(A.dt(A.a_(new A.F(s,new A.aCf(),r),!0,r.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,q),q),q,q)}}
@@ -53364,7 +53364,7 @@ $1(a){return new A.vU(a,null)},
 $S:694}
 A.oQ.prototype={}
 A.vU.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),200,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),200,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([l,new A.f(B.ap,A.c(m.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(k,new A.aqu(a),j),!0,j.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,p,n,new A.ac(o,B.w)),470,q)}}
 A.aqu.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
@@ -53446,7 +53446,7 @@ q.push(A.ah(A.j(A.a([A.ah(A.bX(A.r(j,A.j(o,B.f,B.c,B.b,j),B.h,j,j,new A.P(B.hD,j
 p=A.c3(B.dF,1)
 q.push(A.ah(A.r(j,k.acv(k.a.r),B.h,j,j,new A.P(B.hD,j,p,B.KO,j,j,B.q),j,j,j,j,j,j,j),13))
 s=A.o(A.B(q,B.i,B.c,B.b,j),s,j)
-s=A.bX(new A.f(B.nR,A.j(A.a([s,A.o(B.bg,A.b(a,j,h).w.a.a>=700?300:630,1/0)],r),B.i,B.c,B.b,j),j),j,B.G,j,j,j,B.R)
+s=A.bX(new A.f(B.nR,A.j(A.a([s,A.o(B.aN,A.b(a,j,h).w.a.a>=700?300:630,1/0)],r),B.i,B.c,B.b,j),j),j,B.G,j,j,j,B.R)
 if(!(A.b(a,j,h).w.a.a>=700)){h=A.a([A.dB(A.c(i,j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.m,14,B.x),j,j,j),B.aK)],r)
 B.d.J(h,k.QU(a))
 h=A.dA(A.bH(h,B.u,j,!1))}else h=B.O
@@ -53679,19 +53679,19 @@ case 5:return A.U(null,r)
 case 1:return A.T(p,r)}})
 return A.V($async$rA,r)},
 aos(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aWv(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWw(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWx(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWy(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWz(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWA(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWB(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWC(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aWv(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWw(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWx(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWy(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWz(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWA(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWB(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aWC(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 q(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d=t.w
 A.b(a,e,d).toString
-s=A.b(a,e,d).w.a.a>=700?B.ai:B.aO
+s=A.b(a,e,d).w.a.a>=700?B.ai:B.aP
 if(A.b(a,e,d).w.a.a>=700)r=A.o(new A.cf("CourseFinaluni",e),80,e)
 else{A.b(a,e,d).toString
 if(A.b(a,e,d).w.a.a>=700){r=A.p(30)
-q=A.b(a,e,d).w.a.a>=700?A.bl(e,e,B.aN,e,new A.aWG(a),e,e,e,e):B.O
+q=A.b(a,e,d).w.a.a>=700?A.bl(e,e,B.aO,e,new A.aWG(a),e,e,e,e):B.O
 r=A.r(e,q,B.h,e,e,new A.P(B.aL,e,e,r,e,e,B.q),e,e,e,e,e,e,40)}else r=B.O
 r=A.B(A.a([new A.f(B.u,r,e),A.ah(new A.bJ(B.S,e,e,A.b(a,e,d).w.a.a>=700?e:A.c("Courses",e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),e,e,e),e),1)],t.p),B.i,B.c,B.b,e)}q=!(A.b(a,e,d).w.a.a>=700)?new A.bD(new A.aWH(),e):e
 p=!(A.b(a,e,d).w.a.a>=700)?A.ds(e,e,e,B.CB,new A.aWI(),new A.aWJ(a),e,e,t.N):B.O
 o=t.p
-q=A.co(A.a([p],o),!1,B.aP,e,0,new A.f(B.u,r,e),q,e)
+q=A.co(A.a([p],o),!1,B.aQ,e,0,new A.f(B.u,r,e),q,e)
 r=!(A.b(a,e,d).w.a.a>=700)?f.aos(a):e
 n=A.dQ(a,!0,t.zj).a
 p=A.lb(B.nq,1,e,2,!0,e,e,new A.cl(B.C,t.rc),B.eA,B.Zr,e)
@@ -53702,28 +53702,28 @@ else d=A.fB(a)?A.b(a,e,d).w.a.b-180:A.b(a,e,d).w.a.b-320
 m=A.bX(f.yW(a),e,B.G,e,e,e,B.R)
 l=A.a([],o)
 k=n===""
-if(k){j=$.av().pB(5,5,B.aU)
+if(k){j=$.av().pB(5,5,B.aV)
 B.d.J(l,A.a([A.bQ(B.a6,A.a([A.o(A.z5(A.he(f.Fr(a),0.04),j),600,1/0),A.IX(0,A.b5(A.WU(),e,e))],o),B.B,B.a7,e)],o))}else B.d.J(l,A.a([f.Fr(a)],o))
 l=A.bX(A.j(l,B.i,B.c,B.b,e),e,B.G,e,e,e,B.R)
 j=A.a([],o)
-if(k){i=$.av().pB(5,5,B.aU)
+if(k){i=$.av().pB(5,5,B.aV)
 B.d.J(j,A.a([A.bQ(B.a6,A.a([A.o(A.z5(A.he(f.a3q(a),0.04),i),500,1/0),A.IX(0,A.b5(A.WU(),e,e))],o),B.B,B.a7,e)],o))}else B.d.J(j,A.a([f.a3q(a)],o))
 j=A.bX(A.j(j,B.i,B.c,B.b,e),e,B.G,e,e,e,B.R)
 i=A.a([],o)
-if(k){h=$.av().pB(5,5,B.aU)
+if(k){h=$.av().pB(5,5,B.aV)
 B.d.J(i,A.a([A.bQ(B.a6,A.a([A.o(A.z5(A.he(f.a3o(a),0.04),h),500,1/0),A.IX(0,A.b5(A.WU(),e,e))],o),B.B,B.a7,e)],o))}else B.d.J(i,A.a([f.a3o(a)],o))
 i=A.bX(A.j(i,B.i,B.c,B.b,e),e,B.G,e,e,e,B.R)
 h=A.a([],o)
-if(k){g=$.av().pB(5,5,B.aU)
+if(k){g=$.av().pB(5,5,B.aV)
 B.d.J(h,A.a([A.bQ(B.a6,A.a([A.o(A.z5(A.he(f.a3n(a),0.04),g),500,1/0),A.IX(0,A.b5(A.WU(),e,e))],o),B.B,B.a7,e)],o))}else B.d.J(h,A.a([f.a3n(a)],o))
 h=A.bX(A.j(h,B.i,B.c,B.b,e),e,B.G,e,e,e,B.R)
 g=A.a([],o)
-if(k){k=$.av().pB(5,5,B.aU)
+if(k){k=$.av().pB(5,5,B.aV)
 B.d.J(g,A.a([A.bQ(B.a6,A.a([A.o(A.z5(A.he(f.a3p(a),0.04),k),600,1/0),A.IX(0,A.b5(A.WU(),e,e))],o),B.B,B.a7,e)],o))}else B.d.J(g,A.a([f.a3p(a)],o))
 return A.ay(new A.cj(q,s,e),B.m,A.j(A.a([A.r5(A.j(A.a([A.r(e,A.j(A.a([B.r,new A.f(B.Z,p,e),new A.f(B.u,A.o(A.lc(A.a([m,l,j,i,h,A.bX(A.j(g,B.i,B.c,B.b,e),e,B.G,e,e,e,B.R)],o)),d,e),e)],o),B.f,B.c,B.b,e),B.h,e,e,e,e,e,e,e,e,e,e)],o),B.f,B.c,B.b,e),6)],o),B.i,B.c,B.b,e),r,e)},
 yW(b3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this,c=null,b="A deeply engaging online program from a top-tier university powerhouse.",a="What\u2019s in this degree program?",a0=u.m,a1=u.h,a2=u.b,a3="Welcome back to your learning journey!",a4="Enroll Now",a5="Is the program right for you?",a6="For many programs, tuition costs can exceed significant amounts. With our program, you can save substantially on your total cost while pursuing your education from a leading institution.",a7="Pay-as-you-go",a8="You pay tuition only for courses you're enrolled in. If a scheduling conflict arises, you are free to take a term off and won\u2019t be charged during that term.",a9="Financial aid & scholarships",b0=t.w,b1=A.b(b3,c,b0).w.a.a>=700?590:920,b2=d.a.c
 b1=A.o(new A.TX(b2.a,b2.c,4.8,18303,b2.z,b2.hD,b2.hC,c),b1,c)
-b2=A.b(b3,c,b0).w.a.a>=700?B.UR:B.aX
+b2=A.b(b3,c,b0).w.a.a>=700?B.UR:B.aY
 if(A.b(b3,c,b0).w.a.a>=700){s=A.b(b3,c,b0).w
 r=A.c(b,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b3,c,b0).w.a.a>=700?26:16,B.k),c,c,c)
 q=d.a.c
@@ -53749,7 +53749,7 @@ q=A.p(10)
 p=A.a([new A.aE(3,B.L,A.w(B.e.K(127.5),158,158,158),B.a3,5)],t.V)
 o=A.c(a0,c,c,c,c,A.d().$4$color$fontSize$fontWeight$height(B.z,A.b(b3,c,b0).w.a.a>=700?14:12,B.k,1.8),c,c,c)
 n=A.c(a1,c,c,c,c,A.d().$4$color$fontSize$fontWeight$height(B.z,A.b(b3,c,b0).w.a.a>=700?14:12,B.p,1.8),c,c,c)
-s=A.B(A.a([s,B.bw,A.r(c,A.j(A.a([new A.f(B.cu,o,c),new A.f(B.b8,n,c),new A.f(B.b8,A.c(a2,c,c,c,c,A.d().$4$color$fontSize$fontWeight$height(B.z,A.b(b3,c,b0).w.a.a>=700?14:12,B.p,1.8),c,c,c),c)],k),B.f,B.c,B.b,c),B.h,c,c,new A.P(B.aW,c,c,q,p,c,B.q),c,c,c,c,c,c,r.a.a*0.27)],k),B.f,B.c,B.b,c)}else{s=A.b(b3,c,b0).w
+s=A.B(A.a([s,B.bw,A.r(c,A.j(A.a([new A.f(B.cu,o,c),new A.f(B.b9,n,c),new A.f(B.b9,A.c(a2,c,c,c,c,A.d().$4$color$fontSize$fontWeight$height(B.z,A.b(b3,c,b0).w.a.a>=700?14:12,B.p,1.8),c,c,c),c)],k),B.f,B.c,B.b,c),B.h,c,c,new A.P(B.aX,c,c,q,p,c,B.q),c,c,c,c,c,c,r.a.a*0.27)],k),B.f,B.c,B.b,c)}else{s=A.b(b3,c,b0).w
 A.b(b3,c,b0).toString
 r=A.c(b,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.l,14,B.k),c,c,c)
 q=A.c(d.a.c.at,c,c,c,c,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),c,c,c)
@@ -53773,11 +53773,11 @@ r=A.b(b3,c,b0).w
 q=A.p(25)
 p=A.c(a0,c,c,c,c,A.d().$4$color$fontSize$fontWeight$height(B.z,A.b(b3,c,b0).w.a.a>=700?14:12,B.k,1.8),c,c,c)
 o=A.c(a1,c,c,c,c,A.d().$4$color$fontSize$fontWeight$height(B.z,A.b(b3,c,b0).w.a.a>=700?14:12,B.p,1.8),c,c,c)
-s=A.j(A.a([s,B.y,A.r(c,A.j(A.a([new A.f(B.cu,p,c),new A.f(B.b8,o,c),new A.f(B.b8,A.c(a2,c,c,c,c,A.d().$4$color$fontSize$fontWeight$height(B.z,A.b(b3,c,b0).w.a.a>=700?14:12,B.p,1.8),c,c,c),c)],k),B.f,B.c,B.b,c),B.h,c,c,new A.P(B.ei,c,c,q,c,c,B.q),c,c,c,c,c,c,r.a.a*0.95)],k),B.f,B.c,B.b,c)}r=A.b(b3,c,b0).w
+s=A.j(A.a([s,B.y,A.r(c,A.j(A.a([new A.f(B.cu,p,c),new A.f(B.b9,o,c),new A.f(B.b9,A.c(a2,c,c,c,c,A.d().$4$color$fontSize$fontWeight$height(B.z,A.b(b3,c,b0).w.a.a>=700?14:12,B.p,1.8),c,c,c),c)],k),B.f,B.c,B.b,c),B.h,c,c,new A.P(B.ei,c,c,q,c,c,B.q),c,c,c,c,c,c,r.a.a*0.95)],k),B.f,B.c,B.b,c)}r=A.b(b3,c,b0).w
 q=A.p(0)
 if(A.b(b3,c,b0).w.a.a>=700){p=A.b(b3,c,b0).w
 o=t.p
-p=A.j(A.a([new A.f(B.aX,A.o(A.am("assets/images/eelearning1.png",c,B.D,c,c,c,c),450,p.a.a*0.48),c)],o),B.i,B.c,B.b,c)
+p=A.j(A.a([new A.f(B.aY,A.o(A.am("assets/images/eelearning1.png",c,B.D,c,c,c,c),450,p.a.a*0.48),c)],o),B.i,B.c,B.b,c)
 n=A.o(c,c,A.b(b3,c,b0).w.a.a*0.08)
 m=A.c(a3,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b3,c,b0).w.a.a>=700?26:14,B.x),c,c,c)
 l=A.c(u.w,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b3,c,b0).w.a.a>=700?14:12,B.x),c,c,c)
@@ -53851,7 +53851,7 @@ h=d.a.c
 h=A.c(h.dx,c,c,c,c,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b3,c,b0).w.a.a>=700?14:12,B.p,1.5,1.2),c,c,c)
 g=A.c("Qualify for in-demand jobs",c,c,c,c,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b3,c,b0).w.a.a>=700?17:14,B.k,1.5,1.2),c,c,c)
 f=d.a.c
-n=A.a([A.r(c,new A.f(B.H,A.j(A.a([i,B.r,h,B.r,g,B.r,A.c(f.dy,c,c,c,c,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b3,c,b0).w.a.a>=700?14:12,B.p,1.5,1.2),c,c,c)],k),B.f,B.c,B.b,c),c),B.h,c,c,new A.P(B.aW,c,c,n,m,c,B.q),c,c,c,c,c,c,j)],k)
+n=A.a([A.r(c,new A.f(B.H,A.j(A.a([i,B.r,h,B.r,g,B.r,A.c(f.dy,c,c,c,c,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b3,c,b0).w.a.a>=700?14:12,B.p,1.5,1.2),c,c,c)],k),B.f,B.c,B.b,c),c),B.h,c,c,new A.P(B.aX,c,c,n,m,c,B.q),c,c,c,c,c,c,j)],k)
 if(A.b(b3,c,b0).w.a.a>=700)n.push(B.lX)
 if(A.b(b3,c,b0).w.a.a>=700)n.push(A.ah(A.j(A.a([A.r(c,A.am("assets/images/elearning1.png",c,B.D,c,c,c,c),B.h,c,c,c,c,c,c,c,c,c,c)],k),B.i,B.c,B.b,c),1))
 p=A.r(c,new A.f(p,A.j(A.a([A.B(n,B.i,B.c,B.b,c),B.d_],k),B.f,B.c,B.b,c),c),B.h,c,c,c,c,c,c,c,c,c,l.a.a)
@@ -53861,29 +53861,29 @@ l=A.p(2)
 j=d.a.c
 j=A.c(j.fr,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b3,c,b0).w.a.a>=700?16:12,B.p),c,c,c)
 i=d.a.c
-l=A.bA(A.cW(c,A.a([new A.f(B.V,A.c(i.fx,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b3,c,b0).w.a.a>=700?14:12,B.p),c,c,c),c)],k),B.be,c,j,c),c,0,c,c,new A.ac(l,B.bd))
+l=A.bA(A.cW(c,A.a([new A.f(B.V,A.c(i.fx,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b3,c,b0).w.a.a>=700?14:12,B.p),c,c,c),c)],k),B.bf,c,j,c),c,0,c,c,new A.ac(l,B.be))
 j=A.p(2)
 i=d.a.c
 i=A.c(i.fy,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b3,c,b0).w.a.a>=700?16:12,B.p),c,c,c)
 h=d.a.c
-j=A.bA(A.cW(c,A.a([new A.f(B.V,A.c(h.go,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b3,c,b0).w.a.a>=700?14:12,B.p),c,c,c),c)],k),B.be,c,i,c),c,0,c,c,new A.ac(j,B.bd))
+j=A.bA(A.cW(c,A.a([new A.f(B.V,A.c(h.go,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b3,c,b0).w.a.a>=700?14:12,B.p),c,c,c),c)],k),B.bf,c,i,c),c,0,c,c,new A.ac(j,B.be))
 i=A.p(2)
 h=d.a.c
 h=A.c(h.id,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b3,c,b0).w.a.a>=700?16:12,B.p),c,c,c)
 g=d.a.c
-i=A.bA(A.cW(c,A.a([new A.f(B.V,A.c(g.k1,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b3,c,b0).w.a.a>=700?14:12,B.p),c,c,c),c)],k),B.be,c,h,c),c,0,c,c,new A.ac(i,B.bd))
+i=A.bA(A.cW(c,A.a([new A.f(B.V,A.c(g.k1,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b3,c,b0).w.a.a>=700?14:12,B.p),c,c,c),c)],k),B.bf,c,h,c),c,0,c,c,new A.ac(i,B.be))
 h=A.p(2)
 g=d.a.c
 g=A.c(g.k2,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b3,c,b0).w.a.a>=700?16:12,B.p),c,c,c)
 f=d.a.c
-h=A.bA(A.cW(c,A.a([new A.f(B.V,A.c(f.k3,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b3,c,b0).w.a.a>=700?14:12,B.p),c,c,c),c)],k),B.be,c,g,c),c,0,c,c,new A.ac(h,B.bd))
+h=A.bA(A.cW(c,A.a([new A.f(B.V,A.c(f.k3,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b3,c,b0).w.a.a>=700?14:12,B.p),c,c,c),c)],k),B.bf,c,g,c),c,0,c,c,new A.ac(h,B.be))
 g=A.p(2)
 f=d.a.c
 f=A.c(f.k4,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b3,c,b0).w.a.a>=700?16:12,B.p),c,c,c)
 e=d.a.c
-n=A.r(c,A.j(A.a([new A.f(B.er,m,c),B.r,A.j(A.a([new A.f(B.bf,l,c),new A.f(B.bf,j,c),new A.f(B.bf,i,c),new A.f(B.bf,h,c),new A.f(B.bf,A.bA(A.cW(c,A.a([new A.f(B.V,A.c(e.ok,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b3,c,b0).w.a.a>=700?14:12,B.p),c,c,c),c)],k),B.be,c,f,c),c,0,c,c,new A.ac(g,B.bd)),c)],k),B.i,B.c,B.b,c)],k),B.f,B.c,B.b,c),B.h,c,c,new A.P(B.cD,c,c,n,c,c,B.q),c,c,c,B.o2,c,c,c)
-return A.B(A.a([A.ah(A.j(A.a([b1,new A.f(b2,new A.f(B.H,s,c),c),B.q1,r,B.r,q,B.y,o,B.y,p,B.y,n,A.o(B.bg,A.b(b3,c,b0).w.a.a>=700?300:630,1/0)],k),B.f,B.c,B.b,c),1)],k),B.f,B.c,B.b,c)},
-Fr(a6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d="Admissions",c="Applications Requirements",b=u.m,a=u.h,a0=u.b,a1="Enroll Now",a2="assets/images/elearning.png",a3=t.w,a4=A.b(a6,e,a3).w.a.a>=700?B.fz:B.aX,a5=t.p
+n=A.r(c,A.j(A.a([new A.f(B.er,m,c),B.r,A.j(A.a([new A.f(B.bg,l,c),new A.f(B.bg,j,c),new A.f(B.bg,i,c),new A.f(B.bg,h,c),new A.f(B.bg,A.bA(A.cW(c,A.a([new A.f(B.V,A.c(e.ok,c,c,c,c,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b3,c,b0).w.a.a>=700?14:12,B.p),c,c,c),c)],k),B.bf,c,f,c),c,0,c,c,new A.ac(g,B.be)),c)],k),B.i,B.c,B.b,c)],k),B.f,B.c,B.b,c),B.h,c,c,new A.P(B.cD,c,c,n,c,c,B.q),c,c,c,B.o2,c,c,c)
+return A.B(A.a([A.ah(A.j(A.a([b1,new A.f(b2,new A.f(B.H,s,c),c),B.q1,r,B.r,q,B.y,o,B.y,p,B.y,n,A.o(B.aN,A.b(b3,c,b0).w.a.a>=700?300:630,1/0)],k),B.f,B.c,B.b,c),1)],k),B.f,B.c,B.b,c)},
+Fr(a6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d="Admissions",c="Applications Requirements",b=u.m,a=u.h,a0=u.b,a1="Enroll Now",a2="assets/images/elearning.png",a3=t.w,a4=A.b(a6,e,a3).w.a.a>=700?B.fz:B.aY,a5=t.p
 if(A.b(a6,e,a3).w.a.a>=700){s=A.b(a6,e,a3).w
 r=A.c(d,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,26,B.k),e,e,e)
 q=A.c(f.a.c.p1,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e)
@@ -53895,14 +53895,14 @@ s=A.r(e,A.j(A.a([r,B.t,q,B.r,p,B.y,A.B(A.a([o,B.dc,A.o(A.j(A.a([A.c(f.a.c.RG,e,e
 n=A.b(a6,e,a3).w
 o=A.p(10)
 p=A.a([new A.aE(3,B.L,A.w(B.e.K(127.5),158,158,158),B.a3,5)],t.V)
-n=A.B(A.a([s,B.bw,A.r(e,A.j(A.a([new A.f(B.cu,A.c(b,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),e,e,e),e),new A.f(B.b8,A.c(a,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e),new A.f(B.b8,A.c(a0,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e)],a5),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.aW,e,e,o,p,e,B.q),e,e,e,e,e,e,n.a.a*0.27)],a5),B.f,B.c,B.b,e)
+n=A.B(A.a([s,B.bw,A.r(e,A.j(A.a([new A.f(B.cu,A.c(b,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),e,e,e),e),new A.f(B.b9,A.c(a,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e),new A.f(B.b9,A.c(a0,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e)],a5),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.aX,e,e,o,p,e,B.q),e,e,e,e,e,e,n.a.a*0.27)],a5),B.f,B.c,B.b,e)
 s=n}else{s=A.b(a6,e,a3).w
 s=A.r(e,A.j(A.a([A.c(d,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,14,B.k),e,e,e),B.t,A.c(f.a.c.p1,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),B.r,A.c(c,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.l,14,B.k,1.8),e,e,e),B.y,A.j(A.a([A.c(f.a.c.p2,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),B.t,A.c(f.a.c.p2,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),B.t,A.c(f.a.c.p3,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),B.t,A.c(f.a.c.p4,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),B.t,A.c(f.a.c.R8,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),B.t,A.c(f.a.c.RG,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),B.t],a5),B.f,B.c,B.b,e)],a5),B.f,B.c,B.b,e),B.h,B.m,e,e,e,e,e,e,e,e,s.a.a*0.9)
 r=A.b(a6,e,a3).w
 q=A.p(25)
 p=A.c(b,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,A.b(a6,e,a3).w.a.a>=700?14:12,B.k,1.8),e,e,e)
 o=A.c(a,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,A.b(a6,e,a3).w.a.a>=700?14:12,B.p,1.8),e,e,e)
-s=A.j(A.a([s,B.y,A.r(e,A.j(A.a([new A.f(B.cu,p,e),new A.f(B.b8,o,e),new A.f(B.b8,A.c(a0,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,A.b(a6,e,a3).w.a.a>=700?14:12,B.p,1.8),e,e,e),e)],a5),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.ei,e,e,q,e,e,B.q),e,e,e,e,e,e,r.a.a*0.9)],a5),B.f,B.c,B.b,e)}r=A.b(a6,e,a3).w
+s=A.j(A.a([s,B.y,A.r(e,A.j(A.a([new A.f(B.cu,p,e),new A.f(B.b9,o,e),new A.f(B.b9,A.c(a0,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,A.b(a6,e,a3).w.a.a>=700?14:12,B.p,1.8),e,e,e),e)],a5),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.ei,e,e,q,e,e,B.q),e,e,e,e,e,e,r.a.a*0.9)],a5),B.f,B.c,B.b,e)}r=A.b(a6,e,a3).w
 q=A.p(0)
 p=A.b(a6,e,a3).w.a.a>=700?B.a9:B.Z
 if(A.b(a6,e,a3).w.a.a>=700)o=A.B(A.a([A.j(A.a([A.c("Welcome back to your learning journey!",e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,26,B.x),e,e,e),B.y,A.c(u.z,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,14,B.x),e,e,e),B.y,A.a7(!1,e,!0,A.c(a1,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,14,B.x),e,e,e),e,!0,e,e,e,e,e,e,e,e,e,e,new A.aX5(f),e,e,e,e,e)],a5),B.f,B.K,B.b,e),A.o(e,e,A.b(a6,e,a3).w.a.a*0.07),A.j(A.a([new A.f(B.H,A.o(A.am(a2,e,B.D,e,e,e,e),e,500),e)],a5),B.i,B.c,B.b,e)],a5),B.i,B.c,B.b,e)
@@ -53917,56 +53917,56 @@ o=A.p(2)
 n=f.a.c
 n=A.c(n.ry,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a6,e,a3).w.a.a>=700?16:12,B.p),e,e,e)
 m=f.a.c
-o=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(m.to,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.be,e,n,e),e,0,e,e,new A.ac(o,B.bd))
+o=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(m.to,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.bf,e,n,e),e,0,e,e,new A.ac(o,B.be))
 n=A.p(2)
 m=f.a.c
 m=A.c(m.x1,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a6,e,a3).w.a.a>=700?16:12,B.p),e,e,e)
 l=f.a.c
-n=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(l.x2,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.be,e,m,e),e,0,e,e,new A.ac(n,B.bd))
+n=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(l.x2,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.bf,e,m,e),e,0,e,e,new A.ac(n,B.be))
 m=A.p(2)
 l=f.a.c
 l=A.c(l.xr,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a6,e,a3).w.a.a>=700?16:12,B.p),e,e,e)
 k=f.a.c
-m=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(k.y1,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.be,e,l,e),e,0,e,e,new A.ac(m,B.bd))
+m=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(k.y1,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.bf,e,l,e),e,0,e,e,new A.ac(m,B.be))
 l=A.p(2)
 k=f.a.c
 k=A.c(k.y2,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a6,e,a3).w.a.a>=700?16:12,B.p),e,e,e)
 j=f.a.c
-l=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(j.aQ,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.be,e,k,e),e,0,e,e,new A.ac(l,B.bd))
+l=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(j.aQ,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.bf,e,k,e),e,0,e,e,new A.ac(l,B.be))
 k=A.p(2)
 j=f.a.c
 j=A.c(j.b3,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a6,e,a3).w.a.a>=700?16:12,B.p),e,e,e)
 i=f.a.c
-o=A.j(A.a([new A.f(B.bf,o,e),new A.f(B.bf,n,e),new A.f(B.bf,m,e),new A.f(B.bf,l,e),new A.f(B.bf,A.bA(A.cW(e,A.a([new A.f(B.V,A.c(i.ae,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.be,e,j,e),e,0,e,e,new A.ac(k,B.bd)),e)],a5),B.i,B.c,B.b,e)
+o=A.j(A.a([new A.f(B.bg,o,e),new A.f(B.bg,n,e),new A.f(B.bg,m,e),new A.f(B.bg,l,e),new A.f(B.bg,A.bA(A.cW(e,A.a([new A.f(B.V,A.c(i.ae,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.bf,e,j,e),e,0,e,e,new A.ac(k,B.be)),e)],a5),B.i,B.c,B.b,e)
 n=A.c("Required Documents",e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a6,e,a3).w.a.a>=700?24:14,B.x),e,e,e)
 m=A.p(2)
 l=f.a.c
 l=A.c(l.aV,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a6,e,a3).w.a.a>=700?16:12,B.p),e,e,e)
 k=f.a.c
-m=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(k.bs,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.be,e,l,e),e,0,e,e,new A.ac(m,B.bd))
+m=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(k.bs,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.bf,e,l,e),e,0,e,e,new A.ac(m,B.be))
 l=A.p(2)
 k=f.a.c
 k=A.c(k.bR,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a6,e,a3).w.a.a>=700?16:12,B.p),e,e,e)
 j=f.a.c
-l=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(j.A,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.be,e,k,e),e,0,e,e,new A.ac(l,B.bd))
+l=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(j.A,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.bf,e,k,e),e,0,e,e,new A.ac(l,B.be))
 k=A.p(2)
 j=f.a.c
 j=A.c(j.F,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a6,e,a3).w.a.a>=700?16:12,B.p),e,e,e)
 i=f.a.c
-k=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(i.I,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.be,e,j,e),e,0,e,e,new A.ac(k,B.bd))
+k=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(i.I,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.bf,e,j,e),e,0,e,e,new A.ac(k,B.be))
 j=A.p(2)
 i=f.a.c
 i=A.c(i.R,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a6,e,a3).w.a.a>=700?16:12,B.p),e,e,e)
 h=f.a.c
-j=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(h.U,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.be,e,i,e),e,0,e,e,new A.ac(j,B.bd))
+j=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(h.U,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.bf,e,i,e),e,0,e,e,new A.ac(j,B.be))
 i=A.p(2)
 h=f.a.c
 h=A.c(h.ar,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a6,e,a3).w.a.a>=700?16:12,B.p),e,e,e)
 g=f.a.c
-q=A.r(e,A.j(A.a([new A.f(B.er,p,e),B.r,o,B.d_,new A.f(B.er,n,e),B.r,A.j(A.a([new A.f(B.bf,m,e),new A.f(B.bf,l,e),new A.f(B.bf,k,e),new A.f(B.bf,j,e),new A.f(B.bf,A.bA(A.cW(e,A.a([new A.f(B.V,A.c(g.aw,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.be,e,h,e),e,0,e,e,new A.ac(i,B.bd)),e)],a5),B.i,B.c,B.b,e),B.r],a5),B.f,B.c,B.b,e),B.h,e,e,new A.P(e,e,e,q,e,e,B.q),e,e,e,B.o2,e,e,e)
-return A.B(A.a([A.ah(A.j(A.a([new A.f(a4,new A.f(B.H,s,e),e),B.t,r,q,A.o(B.bg,A.b(a6,e,a3).w.a.a>=700?300:630,1/0)],a5),B.f,B.c,B.b,e),1)],a5),B.f,B.c,B.b,e)},
+q=A.r(e,A.j(A.a([new A.f(B.er,p,e),B.r,o,B.d_,new A.f(B.er,n,e),B.r,A.j(A.a([new A.f(B.bg,m,e),new A.f(B.bg,l,e),new A.f(B.bg,k,e),new A.f(B.bg,j,e),new A.f(B.bg,A.bA(A.cW(e,A.a([new A.f(B.V,A.c(g.aw,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a6,e,a3).w.a.a>=700?14:12,B.p),e,e,e),e)],a5),B.bf,e,h,e),e,0,e,e,new A.ac(i,B.be)),e)],a5),B.i,B.c,B.b,e),B.r],a5),B.f,B.c,B.b,e),B.h,e,e,new A.P(e,e,e,q,e,e,B.q),e,e,e,B.o2,e,e,e)
+return A.B(A.a([A.ah(A.j(A.a([new A.f(a4,new A.f(B.H,s,e),e),B.t,r,q,A.o(B.aN,A.b(a6,e,a3).w.a.a>=700?300:630,1/0)],a5),B.f,B.c,B.b,e),1)],a5),B.f,B.c,B.b,e)},
 a3q(a7){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g="Academics",f="Key Academic Achievements and Highlights",e="\u2714\ufe0f Career-centric curriculum:",d="\u2714\ufe0f Next-gen leadership skills:",c="\u2714\ufe0f Worldwide virtual classrooms:",b="\u2714\ufe0f Program length:",a="\u2714\ufe0f Flexibility:",a0="\u2714\ufe0f Mobile-friendly education:",a1=u.m,a2=u.h,a3=u.b,a4="Enroll Now",a5="assets/images/elearning.png",a6=t.w
-if(A.b(a7,h,a6).w.a.a>=700){s=A.b(a7,h,a6).w.a.a>=700?B.fz:B.aX
+if(A.b(a7,h,a6).w.a.a>=700){s=A.b(a7,h,a6).w.a.a>=700?B.fz:B.aY
 r=A.b(a7,h,a6).w
 q=A.c(g,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.l,26,B.k),h,h,h)
 p=A.c(i.a.c.aH,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),h,h,h)
@@ -53979,8 +53979,8 @@ r=A.r(h,A.j(A.a([q,B.t,p,B.r,o,B.r,A.B(A.a([n,B.dc,A.o(A.j(A.a([A.j(A.a([A.c(b,h
 l=A.b(a7,h,a6).w
 n=A.p(10)
 o=A.a([new A.aE(3,B.L,A.w(B.e.K(127.5),158,158,158),B.a3,5)],t.V)
-m=new A.f(s,new A.f(B.H,A.B(A.a([r,B.bw,A.r(h,A.j(A.a([new A.f(B.cu,A.c(a1,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),h,h,h),h),new A.f(B.b8,A.c(a2,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),h,h,h),h),new A.f(B.b8,A.c(a3,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),h,h,h),h)],m),B.f,B.c,B.b,h),B.h,h,h,new A.P(B.aW,h,h,n,o,h,B.q),h,h,h,h,h,h,l.a.a*0.27)],m),B.f,B.c,B.b,h),h),h)
-s=m}else{s=A.b(a7,h,a6).w.a.a>=700?B.fz:B.aX
+m=new A.f(s,new A.f(B.H,A.B(A.a([r,B.bw,A.r(h,A.j(A.a([new A.f(B.cu,A.c(a1,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),h,h,h),h),new A.f(B.b9,A.c(a2,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),h,h,h),h),new A.f(B.b9,A.c(a3,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),h,h,h),h)],m),B.f,B.c,B.b,h),B.h,h,h,new A.P(B.aX,h,h,n,o,h,B.q),h,h,h,h,h,h,l.a.a*0.27)],m),B.f,B.c,B.b,h),h),h)
+s=m}else{s=A.b(a7,h,a6).w.a.a>=700?B.fz:B.aY
 r=t.p
 if(A.b(a7,h,a6).w.a.a>=700){q=A.b(a7,h,a6).w
 p=A.c(g,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.l,26,B.k),h,h,h)
@@ -53992,9 +53992,9 @@ l=A.b(a7,h,a6).w
 q=A.r(h,A.j(A.a([p,B.t,o,B.r,n,B.r,A.B(A.a([m,B.dc,A.o(A.j(A.a([A.c(b,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,16,B.k),h,h,h),A.c(i.a.c.a1,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),h,h,h),B.y,A.c(a,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,16,B.k),h,h,h),A.c(i.a.c.dd,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),h,h,h),B.y,A.c(a0,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,16,B.k),h,h,h),A.c(i.a.c.bG,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),h,h,h)],r),B.f,B.c,B.b,h),h,l.a.a*0.3)],r),B.i,B.c,B.b,h)],r),B.f,B.c,B.b,h),B.h,B.m,h,h,h,h,h,h,h,h,q.a.a*0.64)
 l=A.b(a7,h,a6).w
 m=A.p(25)
-r=A.B(A.a([q,B.bw,A.r(h,A.j(A.a([new A.f(B.cu,A.c(a1,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),h,h,h),h),new A.f(B.b8,A.c(a2,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),h,h,h),h),new A.f(B.b8,A.c(a3,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),h,h,h),h)],r),B.f,B.c,B.b,h),B.h,h,h,new A.P(B.ei,h,h,m,h,h,B.q),h,h,h,h,h,h,l.a.a*0.27)],r),B.f,B.c,B.b,h)}else{q=A.r(h,A.j(A.a([A.c(g,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.l,14,B.k),h,h,h),B.t,A.c(i.a.c.aH,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),B.r,A.c(f,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.l,14,B.k,1.8),h,h,h),B.r,A.j(A.a([A.c(e,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),h,h,h),A.c(i.a.c.bF,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),B.y,A.c(d,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),h,h,h),A.c(i.a.c.C,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),B.y,A.c(c,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),h,h,h),A.c(i.a.c.bY,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h)],r),B.f,B.c,B.b,h),B.r,A.j(A.a([A.c(b,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),h,h,h),A.c(i.a.c.a1,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),B.y,A.c(a,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),h,h,h),A.c(i.a.c.dd,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),B.y,A.c(a0,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),h,h,h),A.c(i.a.c.bG,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h)],r),B.f,B.c,B.b,h)],r),B.f,B.c,B.b,h),B.h,B.m,h,h,h,h,h,h,h,h,1/0)
+r=A.B(A.a([q,B.bw,A.r(h,A.j(A.a([new A.f(B.cu,A.c(a1,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),h,h,h),h),new A.f(B.b9,A.c(a2,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),h,h,h),h),new A.f(B.b9,A.c(a3,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),h,h,h),h)],r),B.f,B.c,B.b,h),B.h,h,h,new A.P(B.ei,h,h,m,h,h,B.q),h,h,h,h,h,h,l.a.a*0.27)],r),B.f,B.c,B.b,h)}else{q=A.r(h,A.j(A.a([A.c(g,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.l,14,B.k),h,h,h),B.t,A.c(i.a.c.aH,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),B.r,A.c(f,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.l,14,B.k,1.8),h,h,h),B.r,A.j(A.a([A.c(e,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),h,h,h),A.c(i.a.c.bF,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),B.y,A.c(d,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),h,h,h),A.c(i.a.c.C,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),B.y,A.c(c,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),h,h,h),A.c(i.a.c.bY,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h)],r),B.f,B.c,B.b,h),B.r,A.j(A.a([A.c(b,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),h,h,h),A.c(i.a.c.a1,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),B.y,A.c(a,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),h,h,h),A.c(i.a.c.dd,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),B.y,A.c(a0,h,h,h,h,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),h,h,h),A.c(i.a.c.bG,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h)],r),B.f,B.c,B.b,h)],r),B.f,B.c,B.b,h),B.h,B.m,h,h,h,h,h,h,h,h,1/0)
 p=A.p(25)
-r=A.j(A.a([q,B.y,A.r(h,A.j(A.a([new A.f(B.cu,A.c(a1,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.k,1.8),h,h,h),h),new A.f(B.b8,A.c(a2,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),h),new A.f(B.b8,A.c(a3,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),h)],r),B.f,B.c,B.b,h),B.h,h,h,new A.P(B.ei,h,h,p,h,h,B.q),h,h,h,h,h,h,1/0)],r),B.f,B.c,B.b,h)}r=new A.f(s,new A.f(B.H,r,h),h)
+r=A.j(A.a([q,B.y,A.r(h,A.j(A.a([new A.f(B.cu,A.c(a1,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.k,1.8),h,h,h),h),new A.f(B.b9,A.c(a2,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),h),new A.f(B.b9,A.c(a3,h,h,h,h,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),h,h,h),h)],r),B.f,B.c,B.b,h),B.h,h,h,new A.P(B.ei,h,h,p,h,h,B.q),h,h,h,h,h,h,1/0)],r),B.f,B.c,B.b,h)}r=new A.f(s,new A.f(B.H,r,h),h)
 s=r}r=A.b(a7,h,a6).w
 q=A.p(0)
 p=A.b(a7,h,a6).w.a.a>=700?B.a9:B.Z
@@ -54027,8 +54027,8 @@ m.push(A.o(A.j(A.a([k,B.t,A.c("More than 80 percent of degree students on eduGua
 m.push(B.dc)
 if(A.b(a7,h,a6).w.a.a>=700){l=A.b(a7,h,a6).w
 m.push(A.o(A.aF(A.p(20),A.am("assets/images/edumobile.png",h,B.D,450,h,h,A.b(a7,h,a6).w.a.a),B.F),h,l.a.a*0.4))}p=A.r(h,new A.f(n,A.B(m,B.i,B.c,B.b,h),h),B.h,h,h,new A.P(B.cD,h,h,p,h,h,B.q),h,h,h,h,h,h,h)
-return A.B(A.a([A.ah(A.j(A.a([s,B.t,r,B.y,q,B.r,p,A.o(B.bg,A.b(a7,h,a6).w.a.a>=700?300:630,1/0)],o),B.f,B.c,B.b,h),1)],o),B.f,B.c,B.b,h)},
-a3o(c7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a="Tuition & Financing",a0="Our courses have a competitive tuition fee structure designed to provide excellent value for your investment in education. We offer various financing options, including installment plans, scholarships, and financial aid, to help make our programs accessible to a diverse range of learners. Detailed information about tuition fees and available financing options will be provided during the application process. Additionally, we collaborate with financial institutions to offer student loans at favorable terms. Our dedicated support team is available to guide you through the financing options and help you find the best solution to suit your needs.Furthermore, we are committed to transparency and affordability, ensuring that all students have access to the resources they need to pursue their educational goals without financial barriers.",a1="\u2714\ufe0f Total Tuition Fee:",a2="Complete 4 core specializations and also choose 2 additional specializations from a range of focus areas and electives.",a3="\u2714\ufe0f Scholarships Available:",a4="eG Academy offers a range of scholarships to support students based on academic merit, leadership qualities, and community involvement, providing financial assistance toward tuition fees.",a5="\u2714\ufe0f Payment Structure:",a6="The payment structure at eG Academy involves tuition fees structured per semester or academic year, with options for payment plans and potential financial aid assistance available.",a7="\u2714\ufe0f Flexible Payment Plans:",a8="eG Academy offers flexible payment plans to accommodate students' financial situations, allowing for installment payments of tuition fees over the course of the semester or academic year.",a9="\u2714\ufe0f Financial Aid Programs:",b0="eG Academy provides various financial aid programs, including scholarships, grants, and student loans, to assist eligible students in managing the costs of their education.",b1="\u2714\ufe0f Private Loans:",b2="eG Academy facilitates access to private loans through partnering financial institutions to help students cover educational expenses beyond scholarships and grants.",b3=u.m,b4=u.h,b5=u.b,b6="Enroll Now",b7="assets/images/elearning.png",b8="Scholarships Opportunities",b9="Tuition costs for many programs can exceed substantial amounts. Our program offers significant savings while pursuing your education from a leading institution.",c0="Employer Tuition Reimbursement",c1="eG Academy offers a variety of scholarship opportunities to eligible students based on academic achievement, leadership potential, and financial need, aiming to support their educational goals and reduce tuition costs.",c2="University Payment Plan",c3="eG Academy offers a university payment plan that allows students to spread out tuition payments over the course of the semester or academic year, providing flexibility in managing educational expenses.",c4=t.w,c5=A.b(c7,b,c4).w.a.a>=700?B.fz:B.aX,c6=t.p
+return A.B(A.a([A.ah(A.j(A.a([s,B.t,r,B.y,q,B.r,p,A.o(B.aN,A.b(a7,h,a6).w.a.a>=700?300:630,1/0)],o),B.f,B.c,B.b,h),1)],o),B.f,B.c,B.b,h)},
+a3o(c7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a="Tuition & Financing",a0="Our courses have a competitive tuition fee structure designed to provide excellent value for your investment in education. We offer various financing options, including installment plans, scholarships, and financial aid, to help make our programs accessible to a diverse range of learners. Detailed information about tuition fees and available financing options will be provided during the application process. Additionally, we collaborate with financial institutions to offer student loans at favorable terms. Our dedicated support team is available to guide you through the financing options and help you find the best solution to suit your needs.Furthermore, we are committed to transparency and affordability, ensuring that all students have access to the resources they need to pursue their educational goals without financial barriers.",a1="\u2714\ufe0f Total Tuition Fee:",a2="Complete 4 core specializations and also choose 2 additional specializations from a range of focus areas and electives.",a3="\u2714\ufe0f Scholarships Available:",a4="eG Academy offers a range of scholarships to support students based on academic merit, leadership qualities, and community involvement, providing financial assistance toward tuition fees.",a5="\u2714\ufe0f Payment Structure:",a6="The payment structure at eG Academy involves tuition fees structured per semester or academic year, with options for payment plans and potential financial aid assistance available.",a7="\u2714\ufe0f Flexible Payment Plans:",a8="eG Academy offers flexible payment plans to accommodate students' financial situations, allowing for installment payments of tuition fees over the course of the semester or academic year.",a9="\u2714\ufe0f Financial Aid Programs:",b0="eG Academy provides various financial aid programs, including scholarships, grants, and student loans, to assist eligible students in managing the costs of their education.",b1="\u2714\ufe0f Private Loans:",b2="eG Academy facilitates access to private loans through partnering financial institutions to help students cover educational expenses beyond scholarships and grants.",b3=u.m,b4=u.h,b5=u.b,b6="Enroll Now",b7="assets/images/elearning.png",b8="Scholarships Opportunities",b9="Tuition costs for many programs can exceed substantial amounts. Our program offers significant savings while pursuing your education from a leading institution.",c0="Employer Tuition Reimbursement",c1="eG Academy offers a variety of scholarship opportunities to eligible students based on academic achievement, leadership potential, and financial need, aiming to support their educational goals and reduce tuition costs.",c2="University Payment Plan",c3="eG Academy offers a university payment plan that allows students to spread out tuition payments over the course of the semester or academic year, providing flexibility in managing educational expenses.",c4=t.w,c5=A.b(c7,b,c4).w.a.a>=700?B.fz:B.aY,c6=t.p
 if(A.b(c7,b,c4).w.a.a>=700){s=A.b(c7,b,c4).w
 r=A.c(a,b,b,b,b,A.d().$3$color$fontSize$fontWeight(B.l,26,B.k),b,b,b)
 q=A.c(a0,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),b,b,b)
@@ -54039,12 +54039,12 @@ s=A.r(b,A.j(A.a([r,B.t,q,B.r,A.B(A.a([p,B.dc,A.o(A.j(A.a([A.j(A.a([A.c(a7,b,b,b,
 o=A.b(c7,b,c4).w
 p=A.p(10)
 q=A.a([new A.aE(3,B.L,A.w(B.e.K(127.5),158,158,158),B.a3,5)],t.V)
-o=A.B(A.a([s,B.bw,A.r(b,A.j(A.a([new A.f(B.cu,A.c(b3,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),b,b,b),b),new A.f(B.b8,A.c(b4,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),b,b,b),b),new A.f(B.b8,A.c(b5,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),b,b,b),b)],c6),B.f,B.c,B.b,b),B.h,b,b,new A.P(B.aW,b,b,p,q,b,B.q),b,b,b,b,b,b,o.a.a*0.27)],c6),B.f,B.c,B.b,b)
+o=A.B(A.a([s,B.bw,A.r(b,A.j(A.a([new A.f(B.cu,A.c(b3,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),b,b,b),b),new A.f(B.b9,A.c(b4,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),b,b,b),b),new A.f(B.b9,A.c(b5,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),b,b,b),b)],c6),B.f,B.c,B.b,b),B.h,b,b,new A.P(B.aX,b,b,p,q,b,B.q),b,b,b,b,b,b,o.a.a*0.27)],c6),B.f,B.c,B.b,b)
 s=o}else{s=A.b(c7,b,c4).w
 s=A.r(b,A.j(A.a([A.c(a,b,b,b,b,A.d().$3$color$fontSize$fontWeight(B.l,14,B.k),b,b,b),B.t,A.c(a0,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),b,b,b),B.r,A.j(A.a([A.c(a1,b,b,b,b,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),b,b,b),A.c(a2,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),b,b,b),B.y,A.c(a3,b,b,b,b,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),b,b,b),A.c(a4,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),b,b,b),B.y,A.c(a5,b,b,b,b,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),b,b,b),A.c(a6,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),b,b,b),B.y,A.c(a7,b,b,b,b,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),b,b,b),A.c(a8,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),b,b,b),B.y,A.c(a9,b,b,b,b,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),b,b,b),A.c(b0,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),b,b,b),B.y,A.c(b1,b,b,b,b,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),b,b,b),A.c(b2,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),b,b,b),B.t],c6),B.f,B.c,B.b,b)],c6),B.f,B.c,B.b,b),B.h,B.m,b,b,b,b,b,b,b,b,s.a.a)
 r=A.b(c7,b,c4).w
 q=A.p(25)
-r=A.j(A.a([s,B.y,A.r(b,A.j(A.a([new A.f(B.cu,A.c(b3,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.k,1.8),b,b,b),b),new A.f(B.b8,A.c(b4,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),b,b,b),b),new A.f(B.b8,A.c(b5,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),b,b,b),b)],c6),B.f,B.c,B.b,b),B.h,b,b,new A.P(B.ei,b,b,q,b,b,B.q),b,b,b,b,b,b,r.a.a)],c6),B.f,B.c,B.b,b)
+r=A.j(A.a([s,B.y,A.r(b,A.j(A.a([new A.f(B.cu,A.c(b3,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.k,1.8),b,b,b),b),new A.f(B.b9,A.c(b4,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),b,b,b),b),new A.f(B.b9,A.c(b5,b,b,b,b,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),b,b,b),b)],c6),B.f,B.c,B.b,b),B.h,b,b,new A.P(B.ei,b,b,q,b,b,B.q),b,b,b,b,b,b,r.a.a)],c6),B.f,B.c,B.b,b)
 s=r}r=A.b(c7,b,c4).w
 q=A.p(0)
 p=A.b(c7,b,c4).w.a.a>=700?B.a9:B.Z
@@ -54062,17 +54062,17 @@ l=t.V
 k=A.a([new A.aE(3,B.L,A.w(m,158,158,158),B.a3,5)],l)
 j=A.b(c7,b,c4).w
 i=A.c(b8,b,b,b,b,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(c7,b,c4).w.a.a>=700?18:14,B.x,1.5,1.2),b,b,b)
-n=A.r(b,new A.f(B.H,A.j(A.a([i,B.r,A.c(b9,b,b,b,b,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(c7,b,c4).w.a.a>=700?14:12,B.p,1.5,1.2),b,b,b)],c6),B.f,B.c,B.b,b),b),B.h,b,b,new A.P(B.aW,b,b,n,k,b,B.q),b,200,b,b,b,b,j.a.a*0.3)
+n=A.r(b,new A.f(B.H,A.j(A.a([i,B.r,A.c(b9,b,b,b,b,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(c7,b,c4).w.a.a>=700?14:12,B.p,1.5,1.2),b,b,b)],c6),B.f,B.c,B.b,b),b),B.h,b,b,new A.P(B.aX,b,b,n,k,b,B.q),b,200,b,b,b,b,j.a.a*0.3)
 k=A.p(10)
 j=A.a([new A.aE(3,B.L,A.w(m,158,158,158),B.a3,5)],l)
 i=A.b(c7,b,c4).w
 h=A.c(c0,b,b,b,b,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(c7,b,c4).w.a.a>=700?18:14,B.x,1.5,1.2),b,b,b)
-k=A.r(b,new A.f(B.H,A.j(A.a([h,B.r,A.c(c1,b,b,b,b,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(c7,b,c4).w.a.a>=700?14:12,B.p,1.5,1.2),b,b,b)],c6),B.f,B.c,B.b,b),b),B.h,b,b,new A.P(B.aW,b,b,k,j,b,B.q),b,200,b,b,b,b,i.a.a*0.3)
+k=A.r(b,new A.f(B.H,A.j(A.a([h,B.r,A.c(c1,b,b,b,b,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(c7,b,c4).w.a.a>=700?14:12,B.p,1.5,1.2),b,b,b)],c6),B.f,B.c,B.b,b),b),B.h,b,b,new A.P(B.aX,b,b,k,j,b,B.q),b,200,b,b,b,b,i.a.a*0.3)
 j=A.p(10)
 l=A.a([new A.aE(3,B.L,A.w(m,158,158,158),B.a3,5)],l)
 m=A.b(c7,b,c4).w
 i=A.c(c2,b,b,b,b,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(c7,b,c4).w.a.a>=700?18:14,B.x,1.5,1.2),b,b,b)
-n=A.B(A.a([n,B.bw,k,B.bw,A.r(b,new A.f(B.H,A.j(A.a([i,B.r,A.c(c3,b,b,b,b,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(c7,b,c4).w.a.a>=700?14:12,B.p,1.5,1.2),b,b,b)],c6),B.f,B.c,B.b,b),b),B.h,b,b,new A.P(B.aW,b,b,j,l,b,B.q),b,200,b,b,b,b,m.a.a*0.3)],c6),B.i,B.c,B.b,b)}else{n=A.p(25)
+n=A.B(A.a([n,B.bw,k,B.bw,A.r(b,new A.f(B.H,A.j(A.a([i,B.r,A.c(c3,b,b,b,b,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(c7,b,c4).w.a.a>=700?14:12,B.p,1.5,1.2),b,b,b)],c6),B.f,B.c,B.b,b),b),B.h,b,b,new A.P(B.aX,b,b,j,l,b,B.q),b,200,b,b,b,b,m.a.a*0.3)],c6),B.i,B.c,B.b,b)}else{n=A.p(25)
 m=A.b(c7,b,c4).w
 l=A.c(b8,b,b,b,b,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(c7,b,c4).w.a.a>=700?18:14,B.x,1.5,1.2),b,b,b)
 n=A.r(b,new A.f(B.H,A.j(A.a([l,B.r,A.c(b9,b,b,b,b,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(c7,b,c4).w.a.a>=700?14:12,B.p,1.5,1.2),b,b,b)],c6),B.f,B.c,B.b,b),b),B.h,b,b,new A.P(B.ei,b,b,n,b,b,B.q),b,280,b,b,b,b,m.a.a*0.9)
@@ -54094,7 +54094,7 @@ q=A.j(A.a([q,B.t,A.c("Pay for your degree as you go. That means each time you ta
 p=A.o(b,b,A.b(c7,b,c4).w.a.a*0.06)
 o=A.b(c7,b,c4).w
 c5.push(A.r(b,new A.f(B.a9,A.B(A.a([A.B(A.a([new A.f(B.j_,q,b),p,A.j(A.a([new A.f(B.eq,A.o(A.aF(A.p(20),A.am("assets/images/elearning3.png",b,B.D,350,b,b,350),B.F),b,o.a.a*0.4),b)],c6),B.i,B.c,B.b,b)],c6),B.i,B.c,B.b,b)],c6),B.i,B.c,B.b,b),b),B.h,b,b,new A.P(B.cD,b,b,r,b,b,B.q),b,b,b,b,b,b,s.a.a))}if(A.b(c7,b,c4).w.a.a>=700)c5.push(B.r)
-s=A.b(c7,b,c4).w.a.a>=700?B.dO:B.aX
+s=A.b(c7,b,c4).w.a.a>=700?B.dO:B.aY
 r=A.b(c7,b,c4).w.a.a>=700?A.b(c7,b,c4).w.a.a*0.8:A.b(c7,b,c4).w.a.a*0.9
 q=A.b(c7,b,c4).w.a.a>=700?680:850
 p=A.p(10)
@@ -54125,10 +54125,10 @@ e.push(A.aR(A.c("Apply Now",b,b,b,b,A.d().$3$color$fontSize$fontWeight(B.o,A.b(c
 d=A.b_(b,b,b,b,b,b,3,b,b,b,b,b,B.ap,b,new A.ac(A.p(3),B.w),b,b,b,b)
 e.push(A.aR(A.c("Pay Now",b,b,b,b,A.d().$3$color$fontSize$fontWeight(B.o,A.b(c7,b,c4).w.a.a>=700?16:12,B.k),b,b,b),c.gaot(),d))
 e=A.B(e,B.i,B.K,B.b,b)
-c5.push(A.r(b,new A.f(s,A.b5(A.r(b,new A.f(B.H,A.j(A.a([n,B.P,m,B.cq,l,B.t,k,B.r,j,B.cq,i,B.P,h,B.ac,g,B.cq,f,B.r,e,B.t,B.N,new A.bJ(B.eF,b,b,A.a7(!1,b,!0,A.c("Pay with Tabby",b,b,b,b,A.d().$3$color$fontSize$fontWeight(B.o,A.b(c7,b,c4).w.a.a>=700?16:12,B.k),b,b,b),b,!0,b,b,b,b,b,b,b,b,b,b,new A.aWZ(c),b,b,b,b,b),b)],c6),B.f,B.c,B.b,b),b),B.h,b,b,new A.P(B.aW,b,b,p,o,b,B.q),b,q,b,b,b,b,r),b,b),b),B.h,B.m,b,b,b,b,b,b,b,b,b))
-c5.push(A.o(B.bg,A.b(c7,b,c4).w.a.a>=700?300:630,1/0))
+c5.push(A.r(b,new A.f(s,A.b5(A.r(b,new A.f(B.H,A.j(A.a([n,B.P,m,B.cq,l,B.t,k,B.r,j,B.cq,i,B.P,h,B.ac,g,B.cq,f,B.r,e,B.t,B.N,new A.bJ(B.eF,b,b,A.a7(!1,b,!0,A.c("Pay with Tabby",b,b,b,b,A.d().$3$color$fontSize$fontWeight(B.o,A.b(c7,b,c4).w.a.a>=700?16:12,B.k),b,b,b),b,!0,b,b,b,b,b,b,b,b,b,b,new A.aWZ(c),b,b,b,b,b),b)],c6),B.f,B.c,B.b,b),b),B.h,b,b,new A.P(B.aX,b,b,p,o,b,B.q),b,q,b,b,b,b,r),b,b),b),B.h,B.m,b,b,b,b,b,b,b,b,b))
+c5.push(A.o(B.aN,A.b(c7,b,c4).w.a.a>=700?300:630,1/0))
 return A.B(A.a([A.ah(A.j(c5,B.f,B.c,B.b,b),1)],c6),B.f,B.c,B.b,b)},
-a3n(b8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d="\u2714\ufe0f Industry-focused curriculum:",c="The industry-focused curriculum integrates real-world case studies and practical projects to prepare students with relevant skills and knowledge for today's competitive business environment",b="\u2714\ufe0f Network with alumni worldwide:",a="\u2714\ufe0f A degree esteemed by hiring managers:",a0="A degree esteemed by hiring managers, recognized for its rigorous curriculum and preparation of graduates for success in the competitive job market.",a1="\u2714\ufe0f Gain practical experience through internships:",a2="Gain practical experience through internships, providing hands-on learning opportunities and industry-relevant skills",a3="\u2714\ufe0f Access to exclusive career services and resources:",a4="Access exclusive career services and resources to enhance job placement readiness and career advancement opportunities",a5="\u2714\ufe0f Flexible learning options to fit your schedule:",a6="Enjoy flexible learning options designed to accommodate your schedule and maximize educational convenience.",a7=u.m,a8=u.h,a9=u.b,b0="Enroll Now",b1="assets/images/elearning.png",b2="Career growth opportunities",b3="Advance your career",b4="Job recommendations",b5=t.w,b6=A.b(b8,e,b5).w.a.a>=700?B.fz:B.aX,b7=t.p
+a3n(b8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d="\u2714\ufe0f Industry-focused curriculum:",c="The industry-focused curriculum integrates real-world case studies and practical projects to prepare students with relevant skills and knowledge for today's competitive business environment",b="\u2714\ufe0f Network with alumni worldwide:",a="\u2714\ufe0f A degree esteemed by hiring managers:",a0="A degree esteemed by hiring managers, recognized for its rigorous curriculum and preparation of graduates for success in the competitive job market.",a1="\u2714\ufe0f Gain practical experience through internships:",a2="Gain practical experience through internships, providing hands-on learning opportunities and industry-relevant skills",a3="\u2714\ufe0f Access to exclusive career services and resources:",a4="Access exclusive career services and resources to enhance job placement readiness and career advancement opportunities",a5="\u2714\ufe0f Flexible learning options to fit your schedule:",a6="Enjoy flexible learning options designed to accommodate your schedule and maximize educational convenience.",a7=u.m,a8=u.h,a9=u.b,b0="Enroll Now",b1="assets/images/elearning.png",b2="Career growth opportunities",b3="Advance your career",b4="Job recommendations",b5=t.w,b6=A.b(b8,e,b5).w.a.a>=700?B.fz:B.aY,b7=t.p
 if(A.b(b8,e,b5).w.a.a>=700){s=A.b(b8,e,b5).w
 r=A.c("Careers",e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,26,B.k),e,e,e)
 q=A.c(f.a.c.eg,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e)
@@ -54139,12 +54139,12 @@ s=A.r(e,A.j(A.a([r,B.t,q,B.r,A.B(A.a([p,B.dc,A.o(A.j(A.a([A.j(A.a([A.c(a1,e,e,e,
 o=A.b(b8,e,b5).w
 p=A.p(10)
 q=A.a([new A.aE(3,B.L,A.w(B.e.K(127.5),158,158,158),B.a3,5)],t.V)
-o=A.B(A.a([s,B.bw,A.r(e,A.j(A.a([new A.f(B.cu,A.c(a7,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),e,e,e),e),new A.f(B.b8,A.c(a8,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e),new A.f(B.b8,A.c(a9,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e)],b7),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.aW,e,e,p,q,e,B.q),e,e,e,e,e,e,o.a.a*0.27)],b7),B.f,B.c,B.b,e)
+o=A.B(A.a([s,B.bw,A.r(e,A.j(A.a([new A.f(B.cu,A.c(a7,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),e,e,e),e),new A.f(B.b9,A.c(a8,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e),new A.f(B.b9,A.c(a9,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e)],b7),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.aX,e,e,p,q,e,B.q),e,e,e,e,e,e,o.a.a*0.27)],b7),B.f,B.c,B.b,e)
 s=o}else{s=A.b(b8,e,b5).w
 s=A.r(e,A.j(A.a([A.c("Careers",e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,14,B.k),e,e,e),B.t,A.c(f.a.c.eg,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),B.r,A.j(A.a([A.j(A.a([A.c(d,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),e,e,e),A.c(c,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e)],b7),B.f,B.c,B.b,e),B.y,A.j(A.a([A.c(b,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),e,e,e),A.c(c,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e)],b7),B.f,B.c,B.b,e),B.y,A.j(A.a([A.c(a,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),e,e,e),A.c(a0,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e)],b7),B.f,B.c,B.b,e),B.t,A.j(A.a([A.c(a1,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),e,e,e),A.c(a2,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e)],b7),B.f,B.c,B.b,e),B.y,A.j(A.a([A.c(a3,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),e,e,e),A.c(a4,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e)],b7),B.f,B.c,B.b,e),B.y,A.j(A.a([A.c(a5,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.z,14,B.k),e,e,e),A.c(a6,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e)],b7),B.f,B.c,B.b,e),B.t],b7),B.f,B.c,B.b,e)],b7),B.f,B.c,B.b,e),B.h,B.m,e,e,e,e,e,e,e,e,s.a.a*0.94)
 r=A.b(b8,e,b5).w
 q=A.p(25)
-r=A.j(A.a([s,B.y,A.r(e,A.j(A.a([new A.f(B.cu,A.c(a7,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.k,1.8),e,e,e),e),new A.f(B.b8,A.c(a8,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),e),new A.f(B.b8,A.c(a9,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),e)],b7),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.ei,e,e,q,e,e,B.q),e,e,e,e,e,e,r.a.a*0.94)],b7),B.f,B.c,B.b,e)
+r=A.j(A.a([s,B.y,A.r(e,A.j(A.a([new A.f(B.cu,A.c(a7,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.k,1.8),e,e,e),e),new A.f(B.b9,A.c(a8,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),e),new A.f(B.b9,A.c(a9,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),e)],b7),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.ei,e,e,q,e,e,B.q),e,e,e,e,e,e,r.a.a*0.94)],b7),B.f,B.c,B.b,e)
 s=r}r=A.b(b8,e,b5).w
 q=A.p(0)
 p=A.b(b8,e,b5).w.a.a>=700?40:0
@@ -54163,37 +54163,37 @@ k=A.a([new A.aE(3,B.L,A.w(m,158,158,158),B.a3,5)],l)
 j=A.b(b8,e,b5).w
 i=A.c("Take a steap ahead",e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b8,e,b5).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e)
 h=f.a.c
-n=A.r(e,new A.f(B.H,A.j(A.a([i,B.r,A.c(h.aP,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b8,e,b5).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],b7),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,n,k,e,B.q),e,200,e,e,e,e,j.a.a*0.3)
+n=A.r(e,new A.f(B.H,A.j(A.a([i,B.r,A.c(h.aP,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b8,e,b5).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],b7),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,n,k,e,B.q),e,200,e,e,e,e,j.a.a*0.3)
 k=A.p(10)
 j=A.a([new A.aE(3,B.L,A.w(m,158,158,158),B.a3,5)],l)
 i=A.b(b8,e,b5).w
 h=A.c(b3,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b8,e,b5).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e)
 g=f.a.c
-k=A.r(e,new A.f(B.H,A.j(A.a([h,B.r,A.c(g.eu,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b8,e,b5).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],b7),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,k,j,e,B.q),e,200,e,e,e,e,i.a.a*0.3)
+k=A.r(e,new A.f(B.H,A.j(A.a([h,B.r,A.c(g.eu,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b8,e,b5).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],b7),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,k,j,e,B.q),e,200,e,e,e,e,i.a.a*0.3)
 j=A.p(10)
 l=A.a([new A.aE(3,B.L,A.w(m,158,158,158),B.a3,5)],l)
 m=A.b(b8,e,b5).w
 i=A.c(b4,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b8,e,b5).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e)
 h=f.a.c
-o=A.j(A.a([o,B.y,A.B(A.a([n,B.bw,k,B.bw,A.r(e,new A.f(B.H,A.j(A.a([i,B.r,A.c(h.dP,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b8,e,b5).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],b7),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,j,l,e,B.q),e,200,e,e,e,e,m.a.a*0.3)],b7),B.i,B.c,B.b,e),B.d_],b7),B.f,B.c,B.b,e)}else{o=A.c(b2,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b8,e,b5).w.a.a>=700?26:14,B.k,1.5,1.2),e,e,e)
+o=A.j(A.a([o,B.y,A.B(A.a([n,B.bw,k,B.bw,A.r(e,new A.f(B.H,A.j(A.a([i,B.r,A.c(h.dP,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b8,e,b5).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],b7),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,j,l,e,B.q),e,200,e,e,e,e,m.a.a*0.3)],b7),B.i,B.c,B.b,e),B.d_],b7),B.f,B.c,B.b,e)}else{o=A.c(b2,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b8,e,b5).w.a.a>=700?26:14,B.k,1.5,1.2),e,e,e)
 n=A.p(10)
 m=B.e.K(127.5)
 l=t.V
 k=A.a([new A.aE(3,B.L,A.w(m,158,158,158),B.a3,5)],l)
 j=A.b(b8,e,b5).w
-n=A.r(e,new A.f(B.H,A.j(A.a([A.c("Take a step ahead",e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b8,e,b5).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e),B.r,A.c(f.a.c.aP,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,14,B.p,1.5,1.2),e,e,e)],b7),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,n,k,e,B.q),e,200,e,e,e,e,j.a.a*0.9)
+n=A.r(e,new A.f(B.H,A.j(A.a([A.c("Take a step ahead",e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b8,e,b5).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e),B.r,A.c(f.a.c.aP,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,14,B.p,1.5,1.2),e,e,e)],b7),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,n,k,e,B.q),e,200,e,e,e,e,j.a.a*0.9)
 k=A.p(10)
 j=A.a([new A.aE(3,B.L,A.w(m,158,158,158),B.a3,5)],l)
 i=A.b(b8,e,b5).w
 h=A.c(b3,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b8,e,b5).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e)
 g=f.a.c
-k=A.r(e,new A.f(B.H,A.j(A.a([h,B.r,A.c(g.eu,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b8,e,b5).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],b7),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,k,j,e,B.q),e,250,e,e,e,e,i.a.a*0.9)
+k=A.r(e,new A.f(B.H,A.j(A.a([h,B.r,A.c(g.eu,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b8,e,b5).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],b7),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,k,j,e,B.q),e,250,e,e,e,e,i.a.a*0.9)
 j=A.p(10)
 l=A.a([new A.aE(3,B.L,A.w(m,158,158,158),B.a3,5)],l)
 m=A.b(b8,e,b5).w
 i=A.c(b4,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b8,e,b5).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e)
 h=f.a.c
-o=A.a([o,B.y,n,B.y,k,B.y,A.r(e,new A.f(B.H,A.j(A.a([i,B.r,A.c(h.dP,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b8,e,b5).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],b7),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,j,l,e,B.q),e,250,e,e,e,e,m.a.a*0.9)],b7)
+o=A.a([o,B.y,n,B.y,k,B.y,A.r(e,new A.f(B.H,A.j(A.a([i,B.r,A.c(h.dP,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b8,e,b5).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],b7),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,j,l,e,B.q),e,250,e,e,e,e,m.a.a*0.9)],b7)
 if(A.b(b8,e,b5).w.a.a>=700)o.push(B.d_)
 o=A.j(o,B.f,B.c,B.b,e)}q=A.a([new A.f(b6,new A.f(B.H,s,e),e),B.t,r,B.y,A.o(new A.f(p,o,e),e,q.a.a)],b7)
 if(A.b(b8,e,b5).w.a.a>=700)q.push(B.y)
@@ -54210,70 +54210,70 @@ r=A.p(2)
 p=f.a.c
 p=A.c(p.e1,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b8,e,b5).w.a.a>=700?16:14,B.p),e,e,e)
 o=f.a.c
-r=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(o.hZ,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.be,e,p,e),e,0,e,e,new A.ac(r,B.bd))
+r=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(o.hZ,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.bf,e,p,e),e,0,e,e,new A.ac(r,B.be))
 p=A.p(2)
 o=f.a.c
 o=A.c(o.fB,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b8,e,b5).w.a.a>=700?16:14,B.p),e,e,e)
 n=f.a.c
-p=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(n.cH,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.be,e,o,e),e,0,e,e,new A.ac(p,B.bd))
+p=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(n.cH,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.bf,e,o,e),e,0,e,e,new A.ac(p,B.be))
 o=A.p(2)
 n=f.a.c
 n=A.c(n.ev,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b8,e,b5).w.a.a>=700?16:14,B.p),e,e,e)
 m=f.a.c
-o=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(m.dT,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.be,e,n,e),e,0,e,e,new A.ac(o,B.bd))
+o=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(m.dT,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.bf,e,n,e),e,0,e,e,new A.ac(o,B.be))
 n=A.p(2)
 m=f.a.c
 m=A.c(m.eP,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b8,e,b5).w.a.a>=700?16:14,B.p),e,e,e)
 l=f.a.c
-n=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(l.mE,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.be,e,m,e),e,0,e,e,new A.ac(n,B.bd))
+n=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(l.mE,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.bf,e,m,e),e,0,e,e,new A.ac(n,B.be))
 m=A.p(2)
 l=f.a.c
 l=A.c(l.jV,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b8,e,b5).w.a.a>=700?16:14,B.p),e,e,e)
 k=f.a.c
-r=A.j(A.a([new A.f(B.bf,r,e),new A.f(B.bf,p,e),new A.f(B.bf,o,e),new A.f(B.bf,n,e),new A.f(B.bf,A.bA(A.cW(e,A.a([new A.f(B.V,A.c(k.bH,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.be,e,l,e),e,0,e,e,new A.ac(m,B.bd)),e)],b7),B.i,B.c,B.b,e)
+r=A.j(A.a([new A.f(B.bg,r,e),new A.f(B.bg,p,e),new A.f(B.bg,o,e),new A.f(B.bg,n,e),new A.f(B.bg,A.bA(A.cW(e,A.a([new A.f(B.V,A.c(k.bH,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.bf,e,l,e),e,0,e,e,new A.ac(m,B.be)),e)],b7),B.i,B.c,B.b,e)
 p=A.p(2)
 o=f.a.c
 o=A.c(o.fC,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b8,e,b5).w.a.a>=700?16:14,B.p),e,e,e)
 n=f.a.c
-p=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(n.E,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.be,e,o,e),e,0,e,e,new A.ac(p,B.bd))
+p=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(n.E,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.bf,e,o,e),e,0,e,e,new A.ac(p,B.be))
 o=A.p(2)
 n=f.a.c
 n=A.c(n.a7,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b8,e,b5).w.a.a>=700?16:14,B.p),e,e,e)
 m=f.a.c
-o=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(m.az,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.be,e,n,e),e,0,e,e,new A.ac(o,B.bd))
+o=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(m.az,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.bf,e,n,e),e,0,e,e,new A.ac(o,B.be))
 n=A.p(2)
 m=f.a.c
 m=A.c(m.b4,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b8,e,b5).w.a.a>=700?16:14,B.p),e,e,e)
 l=f.a.c
-n=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(l.bX,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.be,e,m,e),e,0,e,e,new A.ac(n,B.bd))
+n=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(l.bX,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.bf,e,m,e),e,0,e,e,new A.ac(n,B.be))
 m=A.p(2)
 l=f.a.c
 l=A.c(l.bO,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b8,e,b5).w.a.a>=700?16:14,B.p),e,e,e)
 k=f.a.c
-m=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(k.cd,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.be,e,l,e),e,0,e,e,new A.ac(m,B.bd))
+m=A.bA(A.cW(e,A.a([new A.f(B.V,A.c(k.cd,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.bf,e,l,e),e,0,e,e,new A.ac(m,B.be))
 l=A.p(2)
 k=f.a.c
 k=A.c(k.eh,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b8,e,b5).w.a.a>=700?2166:14,B.p),e,e,e)
 j=f.a.c
-q.push(A.r(e,A.j(A.a([new A.f(B.er,s,e),B.r,r,A.j(A.a([new A.f(B.bf,p,e),new A.f(B.bf,o,e),new A.f(B.bf,n,e),new A.f(B.bf,m,e),new A.f(B.bf,A.bA(A.cW(e,A.a([new A.f(B.V,A.c(j.e2,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.be,e,k,e),e,0,e,e,new A.ac(l,B.bd)),e)],b7),B.i,B.c,B.b,e)],b7),B.f,B.c,B.b,e),B.h,e,e,new A.P(e,e,e,b6,e,e,B.q),e,e,e,B.dO,e,e,e))
+q.push(A.r(e,A.j(A.a([new A.f(B.er,s,e),B.r,r,A.j(A.a([new A.f(B.bg,p,e),new A.f(B.bg,o,e),new A.f(B.bg,n,e),new A.f(B.bg,m,e),new A.f(B.bg,A.bA(A.cW(e,A.a([new A.f(B.V,A.c(j.e2,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(b8,e,b5).w.a.a>=700?14:12,B.p),e,e,e),e)],b7),B.bf,e,k,e),e,0,e,e,new A.ac(l,B.be)),e)],b7),B.i,B.c,B.b,e)],b7),B.f,B.c,B.b,e),B.h,e,e,new A.P(e,e,e,b6,e,e,B.q),e,e,e,B.dO,e,e,e))
 if(A.b(b8,e,b5).w.a.a>=700)q.push(B.r)
-q.push(A.o(B.bg,A.b(b8,e,b5).w.a.a>=700?300:630,1/0))
+q.push(A.o(B.aN,A.b(b8,e,b5).w.a.a>=700?300:630,1/0))
 return A.B(A.a([A.ah(A.j(q,B.f,B.c,B.b,e),1)],b7),B.f,B.c,B.b,e)},
-a3p(b1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d="Student Experience",c="What's the experience of earning your degree through eduGuardian like?",b=u.m,a=u.h,a0=u.b,a1="Enroll Now",a2="assets/images/elearning.png",a3="Meet Your Instructors",a4="Meet your instructors at eduGuardian who are accomplished experts in their fields, dedicated to providing enriching learning experiences and practical insights that prepare you for success in business management and strategy.",a5="Students Review",a6="Students consistently praise the BA (Hons) in Business Management & Strategy at eduGuardian for its enriching curriculum, supportive faculty, and practical approach,for real-world challenges.",a7="Cutting-edge Learning Resources",a8="Access cutting-edge learning resources at eduGuardian, empowering students with the latest tools and knowledge essential for success in business management and strategy",a9=t.w,b0=A.b(b1,e,a9).w.a.a>=700?B.fz:B.aX
+a3p(b1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d="Student Experience",c="What's the experience of earning your degree through eduGuardian like?",b=u.m,a=u.h,a0=u.b,a1="Enroll Now",a2="assets/images/elearning.png",a3="Meet Your Instructors",a4="Meet your instructors at eduGuardian who are accomplished experts in their fields, dedicated to providing enriching learning experiences and practical insights that prepare you for success in business management and strategy.",a5="Students Review",a6="Students consistently praise the BA (Hons) in Business Management & Strategy at eduGuardian for its enriching curriculum, supportive faculty, and practical approach,for real-world challenges.",a7="Cutting-edge Learning Resources",a8="Access cutting-edge learning resources at eduGuardian, empowering students with the latest tools and knowledge essential for success in business management and strategy",a9=t.w,b0=A.b(b1,e,a9).w.a.a>=700?B.fz:B.aY
 if(A.b(b1,e,a9).w.a.a>=700){s=A.b(b1,e,a9).w.a.a>=700?A.b(b1,e,a9).w.a.a*0.64:A.b(b1,e,a9).w.a.a*0.9
 r=t.p
 s=A.r(e,A.j(A.a([A.c(d,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,26,B.k),e,e,e),B.t,A.c(c,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,16,B.k),e,e,e),B.t,A.c(f.a.c.eQ,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e)],r),B.f,B.c,B.b,e),B.h,B.m,e,e,e,e,e,e,e,e,s)
 q=A.b(b1,e,a9).w
 p=A.p(10)
 o=A.a([new A.aE(3,B.L,A.w(B.e.K(127.5),158,158,158),B.a3,5)],t.V)
-r=A.B(A.a([s,B.bw,A.r(e,A.j(A.a([new A.f(B.cu,A.c(b,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),e,e,e),e),new A.f(B.b8,A.c(a,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e),new A.f(B.b8,A.c(a0,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e)],r),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.aW,e,e,p,o,e,B.q),e,e,e,e,e,e,q.a.a*0.27)],r),B.f,B.c,B.b,e)
+r=A.B(A.a([s,B.bw,A.r(e,A.j(A.a([new A.f(B.cu,A.c(b,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),e,e,e),e),new A.f(B.b9,A.c(a,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e),new A.f(B.b9,A.c(a0,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e)],r),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.aX,e,e,p,o,e,B.q),e,e,e,e,e,e,q.a.a*0.27)],r),B.f,B.c,B.b,e)
 s=r}else{s=A.b(b1,e,a9).w.a.a>=700?A.b(b1,e,a9).w.a.a*0.64:A.b(b1,e,a9).w.a.a*0.85
 r=t.p
 s=A.r(e,A.j(A.a([A.c(d,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,14,B.k),e,e,e),B.t,A.c(c,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,12,B.k),e,e,e),B.t,A.c(f.a.c.eQ,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e)],r),B.f,B.c,B.b,e),B.h,B.m,e,e,e,e,e,e,e,e,s)
 q=A.b(b1,e,a9).w.a.a>=700?A.b(b1,e,a9).w.a.a*0.64:A.b(b1,e,a9).w.a.a*0.85
 p=A.p(10)
 o=A.a([new A.aE(3,B.L,A.w(B.e.K(127.5),158,158,158),B.a3,5)],t.V)
-r=A.j(A.a([s,B.y,A.r(e,A.j(A.a([new A.f(B.cu,A.c(b,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.k,1.8),e,e,e),e),new A.f(B.b8,A.c(a,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),e),new A.f(B.b8,A.c(a0,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),e)],r),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.aW,e,e,p,o,e,B.q),e,e,e,e,e,e,q)],r),B.f,B.c,B.b,e)
+r=A.j(A.a([s,B.y,A.r(e,A.j(A.a([new A.f(B.cu,A.c(b,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.k,1.8),e,e,e),e),new A.f(B.b9,A.c(a,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),e),new A.f(B.b9,A.c(a0,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),e)],r),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.aX,e,e,p,o,e,B.q),e,e,e,e,e,e,q)],r),B.f,B.c,B.b,e)
 s=r}r=A.b(b1,e,a9).w
 q=A.p(0)
 p=A.b(b1,e,a9).w.a.a>=700?B.a9:B.u
@@ -54292,32 +54292,32 @@ k=B.e.K(127.5)
 j=A.a([new A.aE(3,B.L,A.w(k,158,158,158),B.a3,5)],m)
 i=A.b(b1,e,a9).w.a.a>=700?A.b(b1,e,a9).w.a.a*0.3:A.b(b1,e,a9).w.a.a*0.7
 h=A.c(a3,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b1,e,a9).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e)
-l=A.r(e,new A.f(B.H,A.j(A.a([h,B.r,A.c(a4,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b1,e,a9).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],o),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,l,j,e,B.q),e,200,e,e,e,e,i)
+l=A.r(e,new A.f(B.H,A.j(A.a([h,B.r,A.c(a4,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b1,e,a9).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],o),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,l,j,e,B.q),e,200,e,e,e,e,i)
 j=A.p(10)
 i=A.a([new A.aE(3,B.L,A.w(k,158,158,158),B.a3,5)],m)
 h=A.b(b1,e,a9).w
 g=A.c(a5,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b1,e,a9).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e)
-j=A.r(e,new A.f(B.H,A.j(A.a([g,B.r,A.c(a6,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b1,e,a9).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],o),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,j,i,e,B.q),e,200,e,e,e,e,h.a.a*0.3)
+j=A.r(e,new A.f(B.H,A.j(A.a([g,B.r,A.c(a6,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b1,e,a9).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],o),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,j,i,e,B.q),e,200,e,e,e,e,h.a.a*0.3)
 i=A.p(10)
 m=A.a([new A.aE(3,B.L,A.w(k,158,158,158),B.a3,5)],m)
 k=A.b(b1,e,a9).w
 h=A.c(a7,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b1,e,a9).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e)
-m=A.B(A.a([l,B.bw,j,B.bw,A.r(e,new A.f(B.H,A.j(A.a([h,B.r,A.c(a8,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b1,e,a9).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],o),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,i,m,e,B.q),e,200,e,e,e,e,k.a.a*0.3)],o),B.i,B.c,B.b,e)}else{l=A.p(10)
+m=A.B(A.a([l,B.bw,j,B.bw,A.r(e,new A.f(B.H,A.j(A.a([h,B.r,A.c(a8,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b1,e,a9).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],o),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,i,m,e,B.q),e,200,e,e,e,e,k.a.a*0.3)],o),B.i,B.c,B.b,e)}else{l=A.p(10)
 k=B.e.K(127.5)
 j=A.a([new A.aE(3,B.L,A.w(k,158,158,158),B.a3,5)],m)
 i=A.b(b1,e,a9).w.a.a>=700?A.b(b1,e,a9).w.a.a*0.3:A.b(b1,e,a9).w.a.a*0.9
 h=A.c(a3,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b1,e,a9).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e)
-l=A.r(e,new A.f(B.H,A.j(A.a([h,B.r,A.c(a4,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b1,e,a9).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],o),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,l,j,e,B.q),e,300,e,e,e,e,i)
+l=A.r(e,new A.f(B.H,A.j(A.a([h,B.r,A.c(a4,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b1,e,a9).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],o),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,l,j,e,B.q),e,300,e,e,e,e,i)
 j=A.p(10)
 i=A.a([new A.aE(3,B.L,A.w(k,158,158,158),B.a3,5)],m)
 h=A.b(b1,e,a9).w.a.a>=700?A.b(b1,e,a9).w.a.a*0.3:A.b(b1,e,a9).w.a.a*0.9
 g=A.c(a5,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b1,e,a9).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e)
-j=A.r(e,new A.f(B.H,A.j(A.a([g,B.r,A.c(a6,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b1,e,a9).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],o),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,j,i,e,B.q),e,250,e,e,e,e,h)
+j=A.r(e,new A.f(B.H,A.j(A.a([g,B.r,A.c(a6,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b1,e,a9).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],o),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,j,i,e,B.q),e,250,e,e,e,e,h)
 i=A.p(10)
 m=A.a([new A.aE(3,B.L,A.w(k,158,158,158),B.a3,5)],m)
 k=A.b(b1,e,a9).w.a.a>=700?A.b(b1,e,a9).w.a.a*0.3:A.b(b1,e,a9).w.a.a*0.9
 h=A.c(a7,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(b1,e,a9).w.a.a>=700?18:14,B.x,1.5,1.2),e,e,e)
-m=A.j(A.a([l,B.y,j,B.y,A.r(e,new A.f(B.H,A.j(A.a([h,B.r,A.c(a8,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b1,e,a9).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],o),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,i,m,e,B.q),e,280,e,e,e,e,k)],o),B.f,B.c,B.b,e)}q=A.a([new A.f(b0,new A.f(B.H,s,e),e),B.t,r,B.y,A.o(new A.f(p,A.j(A.a([n,B.y,m,B.d_],o),B.f,B.c,B.b,e),e),e,q.a.a)],o)
+m=A.j(A.a([l,B.y,j,B.y,A.r(e,new A.f(B.H,A.j(A.a([h,B.r,A.c(a8,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.bn,A.b(b1,e,a9).w.a.a>=700?14:12,B.p,1.5,1.2),e,e,e)],o),B.f,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,i,m,e,B.q),e,280,e,e,e,e,k)],o),B.f,B.c,B.b,e)}q=A.a([new A.f(b0,new A.f(B.H,s,e),e),B.t,r,B.y,A.o(new A.f(p,A.j(A.a([n,B.y,m,B.d_],o),B.f,B.c,B.b,e),e),e,q.a.a)],o)
 if(A.b(b1,e,a9).w.a.a>=700)q.push(B.y)
 if(A.b(b1,e,a9).w.a.a>=700){b0=A.b(b1,e,a9).w
 s=A.p(0)
@@ -54325,8 +54325,8 @@ r=A.c("Choose a trusted course provider for quality\neducation and innovative le
 r=A.j(A.a([r,B.t,A.c("Choose eduGuardian as your trusted course provider for quality education and\ninnovative learning. With a commitment to excellence, eduGuardian offers a\ndynamic curriculum designed by industry experts, state-of-the-art learning\nfacilities, and personalized support to empower students for success in today's\ncompetitive landscape.",e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,A.b(b1,e,a9).w.a.a>=700?16:14,B.p),e,e,e)],o),B.f,B.c,B.b,e)
 p=A.o(e,e,A.b(b1,e,a9).w.a.a*0.03)
 n=A.b(b1,e,a9).w
-q.push(A.r(e,new A.f(B.a9,A.B(A.a([A.B(A.a([new A.f(B.j_,r,e),p,A.j(A.a([new A.f(B.eq,A.o(A.aF(A.p(20),A.am("assets/images/elearning5.png",e,B.D,450,e,e,e),B.F),e,n.a.a*0.43),e)],o),B.i,B.c,B.b,e)],o),B.i,B.c,B.b,e)],o),B.i,B.c,B.b,e),e),B.h,e,e,new A.P(B.aW,e,e,s,e,e,B.q),e,e,e,e,e,e,b0.a.a))}q.push(B.r)
-q.push(A.o(B.bg,A.b(b1,e,a9).w.a.a>=700?300:630,1/0))
+q.push(A.r(e,new A.f(B.a9,A.B(A.a([A.B(A.a([new A.f(B.j_,r,e),p,A.j(A.a([new A.f(B.eq,A.o(A.aF(A.p(20),A.am("assets/images/elearning5.png",e,B.D,450,e,e,e),B.F),e,n.a.a*0.43),e)],o),B.i,B.c,B.b,e)],o),B.i,B.c,B.b,e)],o),B.i,B.c,B.b,e),e),B.h,e,e,new A.P(B.aX,e,e,s,e,e,B.q),e,e,e,e,e,e,b0.a.a))}q.push(B.r)
+q.push(A.o(B.aN,A.b(b1,e,a9).w.a.a>=700?300:630,1/0))
 return A.B(A.a([A.ah(A.j(q,B.f,B.c,B.b,e),1)],o),B.f,B.c,B.b,e)}}
 A.aWD.prototype={
 $0(){A.is(J.aD(this.b.a,"isEnquirySubmitted"))},
@@ -54431,7 +54431,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aWH.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aWF(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aWF(a),s,s,s,s),s)},
 $S:9}
 A.aWF.prototype={
 $0(){A.d_(this.a).cm()},
@@ -54443,7 +54443,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aWI.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.aX_.prototype={
 $0(){this.a.fH()},
@@ -54603,27 +54603,27 @@ q(a){var s=this,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?A.b(a,r,q).w.a.a*0.25:A.b(a
 return A.r(r,A.j(A.a([l,B.r,k,B.cc,j,B.t,A.c(s.f,r,r,r,r,A.a0().$1$fontSize(A.b(a,r,q).w.a.a>=700?16:12),B.J,r,r)],t.p),B.i,B.c,B.b,r),B.h,r,r,new A.P(B.m,r,r,n,m,r,B.q),r,o,r,B.H,r,r,p)}}
 A.a1p.prototype={
 q(a){var s=null,r=this.c,q=A.a6(r).h("F<1,vp>")
-return A.ay(s,s,new A.f(B.aT,A.j(A.a([new A.f(B.a9,A.c("Why Choose eG Transportation Services?",s,s,s,s,A.d().$2$fontSize$fontWeight(22,B.x),s,s,s),s),B.P,new A.f(B.aY,A.c("eG Transportation Services offer students studying abroad a reliable, safe, and convenient way to navigate their new environments. With global coverage, professional drivers, and customizable options, we ensure stress-free travel at competitive prices, allowing students to focus on their studies and enjoy their time abroad with peace of mind.",s,s,s,s,A.d().$2$color$fontSize(B.ah,14),s,s,s),s),A.ah(A.dt(A.a_(new A.F(r,new A.aL9(),q),!0,q.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
+return A.ay(s,s,new A.f(B.aU,A.j(A.a([new A.f(B.a9,A.c("Why Choose eG Transportation Services?",s,s,s,s,A.d().$2$fontSize$fontWeight(22,B.x),s,s,s),s),B.P,new A.f(B.aZ,A.c("eG Transportation Services offer students studying abroad a reliable, safe, and convenient way to navigate their new environments. With global coverage, professional drivers, and customizable options, we ensure stress-free travel at competitive prices, allowing students to focus on their studies and enjoy their time abroad with peace of mind.",s,s,s,s,A.d().$2$color$fontSize(B.ah,14),s,s,s),s),A.ah(A.dt(A.a_(new A.F(r,new A.aL9(),q),!0,q.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.aL9.prototype={
 $1(a){return new A.vp(a,null)},
 $S:736}
 A.ol.prototype={}
 A.vp.prototype={
 q(a){var s=null,r=A.b(a,s,t.w).w,q=A.p(16),p=A.w(B.e.K(178.5),0,0,0),o=this.c,n=o.c,m=A.a6(n).h("F<1,cH>")
-return A.o(A.bA(A.j(A.a([A.o(A.aF(B.aD,A.am(o.a,s,B.D,s,s,s,s),B.F),200,1/0),new A.f(B.ap,A.c(o.b,s,s,s,s,A.d().$1$textStyle(B.jV),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(n,new A.aq7(),m),!0,m.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,B.b9,p,new A.ac(q,B.w)),470,r.a.a/4-24)}}
+return A.o(A.bA(A.j(A.a([A.o(A.aF(B.aD,A.am(o.a,s,B.D,s,s,s,s),B.F),200,1/0),new A.f(B.ap,A.c(o.b,s,s,s,s,A.d().$1$textStyle(B.jV),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(n,new A.aq7(),m),!0,m.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,B.ba,p,new A.ac(q,B.w)),470,r.a.a/4-24)}}
 A.aq7.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,13),a+"\n\n")},
 $S:11}
 A.a1r.prototype={
 q(a){var s=null,r=this.c,q=A.a6(r).h("F<1,vo>")
-return A.ay(s,s,new A.f(B.aT,A.j(A.a([new A.f(B.a9,A.c("Essential Features for eG Transportation Services",s,s,s,s,A.d().$2$fontSize$fontWeight(22,B.x),s,s,s),s),B.P,new A.f(B.aY,A.c("eG Transportation Services is committed to providing college students with a comprehensive and convenient travel experience. By incorporating essential features such as real-time tracking, 24/7 customer support, and flexible booking options, we prioritize safety, comfort, and affordability.",s,s,s,s,A.d().$2$color$fontSize(B.ah,14),s,s,s),s),A.ah(A.dt(A.a_(new A.F(r,new A.aLg(),q),!0,q.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
+return A.ay(s,s,new A.f(B.aU,A.j(A.a([new A.f(B.a9,A.c("Essential Features for eG Transportation Services",s,s,s,s,A.d().$2$fontSize$fontWeight(22,B.x),s,s,s),s),B.P,new A.f(B.aZ,A.c("eG Transportation Services is committed to providing college students with a comprehensive and convenient travel experience. By incorporating essential features such as real-time tracking, 24/7 customer support, and flexible booking options, we prioritize safety, comfort, and affordability.",s,s,s,s,A.d().$2$color$fontSize(B.ah,14),s,s,s),s),A.ah(A.dt(A.a_(new A.F(r,new A.aLg(),q),!0,q.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.aLg.prototype={
 $1(a){return new A.vo(a,null)},
 $S:740}
 A.om.prototype={}
 A.vo.prototype={
 q(a){var s=null,r=A.b(a,s,t.w).w,q=A.p(16),p=A.w(B.e.K(178.5),0,0,0),o=this.c,n=o.c,m=A.a6(n).h("F<1,cH>")
-return A.o(A.bA(A.j(A.a([A.o(A.aF(B.aD,A.am(o.a,s,B.D,s,s,s,s),B.F),200,1/0),new A.f(B.ap,A.c(o.b,s,s,s,s,A.d().$1$textStyle(B.jV),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(n,new A.apX(),m),!0,m.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,B.b9,p,new A.ac(q,B.w)),470,r.a.a/4-24)}}
+return A.o(A.bA(A.j(A.a([A.o(A.aF(B.aD,A.am(o.a,s,B.D,s,s,s,s),B.F),200,1/0),new A.f(B.ap,A.c(o.b,s,s,s,s,A.d().$1$textStyle(B.jV),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(n,new A.apX(),m),!0,m.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,B.ba,p,new A.ac(q,B.w)),470,r.a.a/4-24)}}
 A.apX.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,13),a+"\n\n")},
 $S:11}
@@ -54635,7 +54635,7 @@ s=A.ci(0,A.r(k,k,B.h,B.hB,k,k,k,k,k,k,k,k,k),k,k,0,s.a.a*0.75,0,k)
 r=A.he(A.am("assets/images/transportationimage.png",k,B.D,500,k,k,A.b(a,k,j).w.a.a*0.45),0.75)
 q=A.b(a,k,j).w
 p=t.p
-j=A.ci(0,A.bQ(B.a6,A.a([r,A.r(k,k,B.h,k,k,new A.P(k,k,k,k,k,new A.em(B.cw,B.cR,B.aU,A.a([A.w(B.e.K(76.5),0,0,0),B.C],t.W),k,k),B.q),k,300,k,k,k,k,q.a.a*0.45),A.ci(78,A.o(B.ie,k,A.b(a,k,j).w.a.a),k,k,0,20,k,k)],p),B.B,B.a7,k),k,k,k,0,0,k)
+j=A.ci(0,A.bQ(B.a6,A.a([r,A.r(k,k,B.h,k,k,new A.P(k,k,k,k,k,new A.em(B.cw,B.cR,B.aV,A.a([A.w(B.e.K(76.5),0,0,0),B.C],t.W),k,k),B.q),k,300,k,k,k,k,q.a.a*0.45),A.ci(78,A.o(B.ie,k,A.b(a,k,j).w.a.a),k,k,0,20,k,k)],p),B.B,B.a7,k),k,k,k,0,0,k)
 q=A.o(A.c("eG Transportation Services",2,k,k,k,A.d().$2$fontSize$fontWeight(40,B.k),k,k,k),k,700)
 r=A.o(A.c("At eduGuardian, we understand the importance of reliable and convenient transportation for students studying abroad. Our eG Transportation Services are designed to ensure that students can navigate their new environments with ease and confidence. We offer a comprehensive range of transportation solutions, including airport transfers, daily commutes, and special event transportation, tailored to meet the diverse needs of our students.\n\nOur services are available in various countries and cities, ensuring that students can access safe and dependable transportation wherever they are. With a focus on comfort, safety, and punctuality, eG Transportation Services aim to provide a seamless travel experience that allows students to focus on their studies and enjoy their time abroad.",k,k,k,k,A.d().$2$color$fontSize(B.fl,16),k,k,k),k,710)
 o=A.b_(k,k,k,k,k,k,k,k,k,k,k,k,B.an,k,new A.ac(A.p(8),B.w),k,k,k,k)
@@ -54671,26 +54671,26 @@ $S:0}
 A.CX.prototype={
 aC(a,b){var s=null,r=A.hj(s,s,B.C,s,s,B.C,s),q=A.c(a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.l,16,B.x),s,s,s)
 return new A.hN(r,A.cW(B.C,A.a([new A.bJ(B.cS,s,s,new A.f(B.V,A.c(b,s,s,s,s,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),14,B.I),s,s,s),s),s)],t.p),B.C,B.u,q,s),s)},
-q(a){var s,r,q,p=null,o=t.w,n=A.b(a,p,o).w,m=A.b(a,p,o).w.a.a>=700?B.ai:B.aO
+q(a){var s,r,q,p=null,o=t.w,n=A.b(a,p,o).w,m=A.b(a,p,o).w.a.a>=700?B.ai:B.aP
 if(A.b(a,p,o).w.a.a>=700)s=A.o(new A.cf("CourseFinal",p),80,p)
 else{A.b(a,p,o).toString
 if(A.b(a,p,o).w.a.a>=700){s=A.p(30)
-r=A.b(a,p,o).w.a.a>=700?A.bl(p,p,B.aN,p,new A.aLi(a),p,p,p,p):B.O
+r=A.b(a,p,o).w.a.a>=700?A.bl(p,p,B.aO,p,new A.aLi(a),p,p,p,p):B.O
 s=A.r(p,r,B.h,p,p,new A.P(B.aL,p,p,s,p,p,B.q),p,p,p,p,p,p,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,p),A.ah(new A.bJ(B.S,p,p,A.b(a,p,o).w.a.a>=700?p:A.c("eG Transportation",p,p,p,p,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,26,B.k,1.5,1.2),p,p,p),p),1)],t.p),B.i,B.c,B.b,p)}r=!(A.b(a,p,o).w.a.a>=700)?new A.bD(new A.aLj(),p):p
 o=!(A.b(a,p,o).w.a.a>=700)?A.ds(p,p,p,B.lv,new A.aLk(),new A.aLl(),p,p,t.N):B.O
 q=t.p
-r=A.co(A.a([o],q),!1,B.aP,p,0,new A.f(B.u,s,p),r,p)
+r=A.co(A.a([o],q),!1,B.aQ,p,0,new A.f(B.u,s,p),r,p)
 o=n.a.a>600?B.dz:A.qW(p,B.F,new A.SN(p))
 return A.ay(new A.cj(r,m,p),p,A.bX(A.j(A.a([o,this.L0(a)],q),B.f,B.c,B.b,p),p,B.G,p,p,p,B.R),p,p)},
 L0(a){var s,r,q=this,p=null,o=t.p,n=A.a([B.ad1],o),m=t.w
 if(A.b(a,p,m).w.a.a>=700){s=t.s
-n.push(A.r(p,A.o(new A.a1p(A.a([new A.ol("assets/images/eTR1.png","Seamless Convenience",A.a(["Enjoy stress-free transportation with reliable services designed to cater to students unique schedules and needs, ensuring they can focus on their studies and experiences abroad."],s)),new A.ol("assets/images/eTR2.png","Safety First",A.a(["Travel with peace of mind, knowing that all our services prioritize student safety, with professional drivers and well-maintained vehicles."],s)),new A.ol("assets/images/eTR3.png","Global Reach",A.a(["Access dependable transportation in various countries and cities, providing consistent support wherever your studies take you."],s)),new A.ol("assets/images/eTR4.png","Affordable and Flexible",A.a(["Benefit from cost-effective and customizable transportation solutions, making quality travel accessible and adaptable to any budget."],s))],t.Qb),p),640,p),B.h,B.aS,p,p,p,p,p,B.u,p,p,p))}if(A.b(a,p,m).w.a.a>=700){s=A.aF(B.ab,A.am("assets/images/transportstudents.png",p,B.D,550,p,p,A.b(a,p,m).w.a.a/2.2),B.F)
+n.push(A.r(p,A.o(new A.a1p(A.a([new A.ol("assets/images/eTR1.png","Seamless Convenience",A.a(["Enjoy stress-free transportation with reliable services designed to cater to students unique schedules and needs, ensuring they can focus on their studies and experiences abroad."],s)),new A.ol("assets/images/eTR2.png","Safety First",A.a(["Travel with peace of mind, knowing that all our services prioritize student safety, with professional drivers and well-maintained vehicles."],s)),new A.ol("assets/images/eTR3.png","Global Reach",A.a(["Access dependable transportation in various countries and cities, providing consistent support wherever your studies take you."],s)),new A.ol("assets/images/eTR4.png","Affordable and Flexible",A.a(["Benefit from cost-effective and customizable transportation solutions, making quality travel accessible and adaptable to any budget."],s))],t.Qb),p),640,p),B.h,B.aT,p,p,p,p,p,B.u,p,p,p))}if(A.b(a,p,m).w.a.a>=700){s=A.aF(B.ab,A.am("assets/images/transportstudents.png",p,B.D,550,p,p,A.b(a,p,m).w.a.a/2.2),B.F)
 r=A.b(a,p,m).w
 r=A.B(A.a([new A.f(B.du,s,p),new A.f(B.j4,A.aF(B.ab,A.r(p,new A.f(B.V,A.j(A.a([A.c("Countries and Cities Covered by eG Transportation Services",p,p,p,p,A.d().$3$color$fontSize$fontWeight(B.o,22,B.k),p,p,p),B.t,A.c("eG Transportation Services are available in a wide range of countries and cities, ensuring students have access to dependable transportation no matter where they are. From major urban centers to smaller towns, our services are designed to meet the unique needs of students across diverse locations, providing seamless travel experiences in both popular study destinations and beyond.",p,p,p,p,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),14,B.I),p,p,p),B.r,A.ah(A.bH(A.a([q.aC("United States","\u27a4 New York City, New York                                 \n\u27a4\tLos Angeles, California\n\u27a4\tChicago, Illinois\n\u27a4\tBoston, Massachusetts\n\u27a4\tSan Francisco, California"),q.aC("United Kingdom","\u27a4 London\n\u27a4\tManchester\n\u27a4\tBirmingham\n\u27a4\tEdinburgh\n\u27a4\tGlasgow"),q.aC("Canada","\u27a4 Toronto, Ontario\n\u27a4 Vancouver, British Columbia\n\u27a4 Montreal, Quebec\n\u27a4 Calgary, Alberta\n\u27a4 Ottawa, Ontario"),q.aC("Australia","\u27a4 Sydney, New South Wales\n\u27a4 Melbourne, Victoria\n\u27a4 Brisbane, Queensland\n\u27a4 Perth, Western Australia\n\u27a4 Adelaide, South Australia"),q.aC("Germany","\u27a4 Berlin\n\u27a4 Munich\n\u27a4 Frankfurt\n\u27a4 Hamburg"),q.aC("United Arab Emirates","\u27a4 Abu Dhabi\n\u27a4 Dubai\n\u27a4 Sharjah\n\u27a4 Ajman\n\u27a4 Umm Al Quwain\n\u27a4 Ras Al Khaimah\n\u27a4 Fujairah")],o),p,p,!1),1)],o),B.f,B.c,B.b,p),p),B.h,p,p,B.bi,p,690,p,p,p,p,r.a.a/2.3),B.F),p)],o),B.i,B.c,B.b,p)
 s=A.b_(p,p,B.o,p,p,p,p,p,p,p,p,p,B.j2,p,new A.ac(A.p(10),B.w),p,p,p,p)
-n.push(A.r(p,A.bQ(B.a6,A.a([r,A.ci(p,A.aR(new A.f(B.aX,A.c("Apply for eG Transportation",p,p,p,p,A.d().$3$color$fontSize$fontWeight(B.m,16,B.k),p,p,p),p),new A.aLm(a),s),p,p,p,30,50,p)],o),B.B,B.a7,p),B.h,B.c7,p,p,p,p,p,p,p,p,p))}if(A.b(a,p,m).w.a.a>=700){o=t.s
-n.push(A.r(p,A.o(new A.a1r(A.a([new A.om("assets/images/eTRP1.png","Real-Time Tracking and Updates",A.a(["Provide students with a mobile app or web interface to track their rides in real time, ensuring they can plan their travel effectively."],o)),new A.om("assets/images/eTRP2.png","24/7 Customer Support",A.a(["Offer round-the-clock support for students to address any transportation-related inquiries or issues they may encounter."],o)),new A.om("assets/images/eTRP3.png","Student Discounts and Promotions",A.a(["Offer special discounts, loyalty programs, or promotional deals for students to make transportation more affordable."],o)),new A.om("assets/images/eTRP4.png","User Feedback Mechanism",A.a(["Establish a system for collecting and addressing student feedback to continuously improve transportation services."],o))],t.Yd),p),640,p),B.h,B.aS,p,p,p,p,p,B.u,p,p,p))}n.push(A.o(B.bg,A.b(a,p,m).w.a.a>=700?300:630,1/0))
+n.push(A.r(p,A.bQ(B.a6,A.a([r,A.ci(p,A.aR(new A.f(B.aY,A.c("Apply for eG Transportation",p,p,p,p,A.d().$3$color$fontSize$fontWeight(B.m,16,B.k),p,p,p),p),new A.aLm(a),s),p,p,p,30,50,p)],o),B.B,B.a7,p),B.h,B.c7,p,p,p,p,p,p,p,p,p))}if(A.b(a,p,m).w.a.a>=700){o=t.s
+n.push(A.r(p,A.o(new A.a1r(A.a([new A.om("assets/images/eTRP1.png","Real-Time Tracking and Updates",A.a(["Provide students with a mobile app or web interface to track their rides in real time, ensuring they can plan their travel effectively."],o)),new A.om("assets/images/eTRP2.png","24/7 Customer Support",A.a(["Offer round-the-clock support for students to address any transportation-related inquiries or issues they may encounter."],o)),new A.om("assets/images/eTRP3.png","Student Discounts and Promotions",A.a(["Offer special discounts, loyalty programs, or promotional deals for students to make transportation more affordable."],o)),new A.om("assets/images/eTRP4.png","User Feedback Mechanism",A.a(["Establish a system for collecting and addressing student feedback to continuously improve transportation services."],o))],t.Yd),p),640,p),B.h,B.aT,p,p,p,p,p,B.u,p,p,p))}n.push(A.o(B.aN,A.b(a,p,m).w.a.a>=700?300:630,1/0))
 return A.j(n,B.f,B.c,B.b,p)}}
 A.aLi.prototype={
 $0(){return A.l(this.a).n(0,"/",null)},
@@ -54784,17 +54784,17 @@ A.TG.prototype={
 a6(){this.aj()
 this.d=""},
 adp(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ahV(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahW(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahX(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahn(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aho(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahp(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahq(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahr(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ahV(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahW(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahX(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahn(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aho(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahp(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahq(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahr(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aP
 if(A.b(a,o,n).w.a.a>=700)s=A.o(new A.cf("CourseFinal",o),80,o)
 else{A.b(a,o,n).toString
 if(A.b(a,o,n).w.a.a>=700){s=A.p(30)
-r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aN,o,new A.aif(a),o,o,o,o):B.O
+r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aO,o,new A.aif(a),o,o,o,o):B.O
 s=A.r(o,r,B.h,o,o,new A.P(B.aL,o,o,s,o,o,B.q),o,o,o,o,o,o,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,o),A.ah(new A.bJ(B.S,o,o,A.b(a,o,n).w.a.a>=700?o:A.c("eG Jobs",o,o,o,o,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),o,o,o),o),1)],t.p),B.i,B.c,B.b,o)}r=!(A.b(a,o,n).w.a.a>=700)?new A.bD(new A.aig(),o):o
 q=!(A.b(a,o,n).w.a.a>=700)?A.ds(o,o,o,B.bp,new A.aih(),new A.aii(a),o,o,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,o,0,new A.f(B.u,s,o),r,o)
+r=A.co(A.a([q],p),!1,B.aQ,o,0,new A.f(B.u,s,o),r,o)
 n=!(A.b(a,o,n).w.a.a>=700)?this.adp(a):o
 s=this.d
 s===$&&A.e()
@@ -54842,7 +54842,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aig.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.ahZ(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.ahZ(a),s,s,s,s),s)},
 $S:9}
 A.ahZ.prototype={
 $0(){A.d_(this.a).cm()},
@@ -54854,14 +54854,14 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aih.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.Wf.prototype={
 q(a){var s,r,q=null,p=A.ci(0,A.r(q,q,B.h,B.ej,q,q,q,q,q,q,q,q,q),q,q,0,0,0,q),o=t.w,n=A.b(a,q,o).w.a.a>=700?0:210,m=A.b(a,q,o).w.a.a>=700?700:150,l=A.b(a,q,o).w.a.a>=700?0.35:0.3,k=A.b(a,q,o).w.a.a>=700?A.b(a,q,o).w.a.a*0.45:A.b(a,q,o).w.a.a*0.65,j=t.p
 l=A.a([A.he(A.am("assets/images/education.png",q,B.D,A.b(a,q,o).w.a.a>=700?500:250,q,q,k),l)],j)
 if(A.b(a,q,o).w.a.a>=700){k=A.b(a,q,o).w
 s=A.w(255,242,240,240).a
-l.push(A.r(q,q,B.h,q,q,new A.P(q,q,q,q,q,new A.em(B.cw,B.cR,B.aU,A.a([A.w(B.e.K(76.5),s>>>16&255,s>>>8&255,s&255),B.C],t.W),q,q),B.q),q,300,q,q,q,q,k.a.a*0.45))}n=A.ci(0,A.bQ(B.a6,l,B.B,B.a7,q),q,q,m,0,n,q)
+l.push(A.r(q,q,B.h,q,q,new A.P(q,q,q,q,q,new A.em(B.cw,B.cR,B.aV,A.a([A.w(B.e.K(76.5),s>>>16&255,s>>>8&255,s&255),B.C],t.W),q,q),B.q),q,300,q,q,q,q,k.a.a*0.45))}n=A.ci(0,A.bQ(B.a6,l,B.B,B.a7,q),q,q,m,0,n,q)
 m=A.a([A.o(A.c("eG Jobs",2,q,q,q,A.d().$2$fontSize$fontWeight(16,B.k),q,q,q),q,700),B.ac,A.o(A.c("Elevate your career journey with eG Jobs, where we offer meticulously curated opportunities to equip you with industry-ready skills across diverse sectors. Whether you are starting your professional path or seeking advancement, our platform is designed to connect you with expertise and knowledge, helping you achieve success in just a few months, regardless of your prior experience.",q,q,q,q,A.d().$2$color$fontSize(B.hx,14),q,q,q),q,850)],j)
 if(A.b(a,q,o).w.a.a>=700)m.push(B.dd)
 if(A.b(a,q,o).w.a.a>=700){l=A.b_(q,q,q,q,q,q,q,q,q,q,q,q,B.an,q,new A.ac(A.p(8),B.w),q,q,q,q)
@@ -54876,7 +54876,7 @@ if(A.b(a,q,o).w.a.a>=700)m.push(B.r)
 if(A.b(a,q,o).w.a.a>=700)m.push(A.c("Unlock Your Future with eG Jobs",q,q,q,q,A.d().$2$fontSize$fontWeight(18,B.k),q,q,q))
 if(A.b(a,q,o).w.a.a>=700)m.push(B.t)
 if(A.b(a,q,o).w.a.a>=700)m.push(A.o(A.c("Explore eG Jobs designed to equip you with in-depth skills and practical experience, empowering you with the expertise needed for career success and growth in your chosen field.",q,q,q,q,A.d().$2$color$fontSize(B.hx,13),q,q,q),q,800))
-return A.ay(q,B.dH,A.bX(A.o(A.bQ(B.a6,A.a([p,n,new A.f(B.aX,A.j(m,B.f,B.c,B.b,q),q)],j),B.B,B.a7,q),380,1/0),q,B.G,q,q,q,B.R),q,q)}}
+return A.ay(q,B.dH,A.bX(A.o(A.bQ(B.a6,A.a([p,n,new A.f(B.aY,A.j(m,B.f,B.c,B.b,q),q)],j),B.B,B.a7,q),380,1/0),q,B.G,q,q,q,B.R),q,q)}}
 A.asU.prototype={
 $0(){},
 $S:0}
@@ -55015,19 +55015,19 @@ case 5:return A.U(null,r)
 case 1:return A.T(p,r)}})
 return A.V($async$rn,r)},
 als(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aTn(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTo(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTp(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTq(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTr(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTs(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTt(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTu(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aTn(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTo(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTp(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTq(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTr(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTs(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTt(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aTu(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 q(a){var s,r,q,p,o,n=null,m=t.w
 A.b(a,n,m).toString
-s=A.b(a,n,m).w.a.a>=700?B.ai:B.aO
+s=A.b(a,n,m).w.a.a>=700?B.ai:B.aP
 if(A.b(a,n,m).w.a.a>=700)r=A.o(new A.cf("CourseFinal",n),80,n)
 else{A.b(a,n,m).toString
 if(A.b(a,n,m).w.a.a>=700){r=A.p(30)
-q=A.b(a,n,m).w.a.a>=700?A.bl(n,n,B.aN,n,new A.aTy(a),n,n,n,n):B.O
+q=A.b(a,n,m).w.a.a>=700?A.bl(n,n,B.aO,n,new A.aTy(a),n,n,n,n):B.O
 r=A.r(n,q,B.h,n,n,new A.P(B.aL,n,n,r,n,n,B.q),n,n,n,n,n,n,40)}else r=B.O
 r=A.B(A.a([new A.f(B.u,r,n),A.ah(new A.bJ(B.S,n,n,A.b(a,n,m).w.a.a>=700?n:A.c("eG Jobs",n,n,n,n,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),n,n,n),n),1)],t.p),B.i,B.c,B.b,n)}q=!(A.b(a,n,m).w.a.a>=700)?new A.bD(new A.aTz(),n):n
 p=!(A.b(a,n,m).w.a.a>=700)?A.ds(n,n,n,B.bp,new A.aTA(),new A.aTB(a),n,n,t.N):B.O
 o=t.p
-q=A.co(A.a([p],o),!1,B.aP,n,0,new A.f(B.u,r,n),q,n)
+q=A.co(A.a([p],o),!1,B.aQ,n,0,new A.f(B.u,r,n),q,n)
 r=!(A.b(a,n,m).w.a.a>=700)?this.als(a):n
 p=A.lb(B.nq,1,n,2,!0,n,n,new A.cl(B.C,t.rc),B.eA,B.a0e,n)
 if(A.b(a,n,m).w.a.a>=700)m=A.b(a,n,m).w.a.b-150
@@ -55037,7 +55037,7 @@ else m=A.fB(a)?A.b(a,n,m).w.a.b-180:A.b(a,n,m).w.a.b-320
 return A.ay(new A.cj(q,s,n),B.m,A.r5(A.j(A.a([A.r(n,A.j(A.a([B.r,new A.f(B.Z,p,n),new A.f(B.u,A.o(A.lc(A.a([A.bX(this.yW(a),n,B.G,n,n,n,B.R)],o)),m,n),n)],o),B.f,B.c,B.b,n),B.h,n,n,n,n,n,n,n,n,n,n)],o),B.f,B.c,B.b,n),6),r,n)},
 yW(a8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=null,c="Introduction",b="Position Summary",a="Welcome back to your career journey with eG Jobs!",a0="Explore exciting job opportunities with us and start your path toward a rewarding future today!",a1="Enroll Now",a2="assets/images/elearningjob.png",a3="Requirements",a4="Experience & Education",a5=t.w,a6=A.b(a8,d,a5).w.a.a>=700?580:420,a7=e.a.c
 a6=A.o(new A.X2(a7.a,a7.b,a7.c,a7.f,a7.d,a7.r,a7.e,a7.w,d),a6,d)
-a7=A.b(a8,d,a5).w.a.a>=700?B.fz:B.aX
+a7=A.b(a8,d,a5).w.a.a>=700?B.fz:B.aY
 if(A.b(a8,d,a5).w.a.a>=700){s=A.b(a8,d,a5).w
 r=A.c(c,d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a8,d,a5).w.a.a>=700?26:14,B.k),d,d,d)
 q=e.a.c
@@ -55082,7 +55082,7 @@ m=A.b(a8,d,a5).w
 n.push(A.o(A.j(A.a([A.c(a4,d,d,d,d,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,22,B.k,1.5,1.2),d,d,d),B.t,A.c(e.a.c.at,d,d,d,d,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.d4,16,B.I,2,1),d,d,d)],p),B.f,B.c,B.b,d),d,m.a.a*0.5))
 n=A.B(n,B.i,B.c,B.b,d)}else n=new A.f(B.H,A.j(A.a([A.c(a4,d,d,d,d,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,14,B.k,1.5,1.2),d,d,d),B.t,A.c(e.a.c.at,d,d,d,d,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.d4,12,B.I,2,1),d,d,d)],p),B.f,B.c,B.b,d),d)
 o=A.r(d,new A.f(B.en,n,d),B.h,d,d,new A.P(B.m,d,d,o,d,d,B.q),d,d,d,d,d,d,d)
-n=A.b(a8,d,a5).w.a.a>=700?B.dO:B.aX
+n=A.b(a8,d,a5).w.a.a>=700?B.dO:B.aY
 m=A.b(a8,d,a5).w.a.a>=700?A.b(a8,d,a5).w.a.a*0.74:A.b(a8,d,a5).w.a.a*0.9
 l=A.b(a8,d,a5).w.a.a>=700?230:280
 k=A.p(10)
@@ -55095,8 +55095,8 @@ f=A.b_(d,d,B.p7,d,d,d,3,d,d,d,d,d,B.ap,d,new A.ac(A.p(3),B.w),d,d,d,d)
 g=A.a([A.B(A.a([B.N,g,B.cp,A.aR(A.c("Pay Now",d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.m,A.b(a8,d,a5).w.a.a>=700?18:12,B.k),d,d,d),new A.aTN(e),f),B.N],p),B.i,B.c,B.b,d)],p)
 if(!(A.b(a8,d,a5).w.a.a>=700))g.push(B.y)
 i=A.j(A.a([i,B.P,h,B.ac,A.j(g,B.i,B.c,B.b,d)],p),B.i,B.K,B.b,d)
-n=A.r(d,new A.f(n,A.b5(A.r(d,new A.f(B.H,A.bQ(B.a6,A.a([i,A.ci(0,A.a7(!1,d,!0,A.c("Pay with Tabby",d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a8,d,a5).w.a.a>=700?14:12,B.k),d,d,d),d,!0,d,d,d,d,d,d,d,d,d,d,new A.aTO(e),d,d,d,d,d),d,d,d,10,d,d)],p),B.B,B.a7,d),d),B.h,d,d,new A.P(B.aW,d,d,k,j,d,B.q),d,l,d,d,d,d,m),d,d),d),B.h,B.cD,d,d,d,d,d,d,d,d,d)
-return A.B(A.a([A.ah(A.j(A.a([a6,new A.f(a7,new A.f(B.H,s,d),d),B.t,r,B.t,q,B.cq,o,B.y,n,A.o(B.bg,A.b(a8,d,a5).w.a.a>=700?300:630,1/0)],p),B.f,B.c,B.b,d),1)],p),B.f,B.c,B.b,d)}}
+n=A.r(d,new A.f(n,A.b5(A.r(d,new A.f(B.H,A.bQ(B.a6,A.a([i,A.ci(0,A.a7(!1,d,!0,A.c("Pay with Tabby",d,d,d,d,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a8,d,a5).w.a.a>=700?14:12,B.k),d,d,d),d,!0,d,d,d,d,d,d,d,d,d,d,new A.aTO(e),d,d,d,d,d),d,d,d,10,d,d)],p),B.B,B.a7,d),d),B.h,d,d,new A.P(B.aX,d,d,k,j,d,B.q),d,l,d,d,d,d,m),d,d),d),B.h,B.cD,d,d,d,d,d,d,d,d,d)
+return A.B(A.a([A.ah(A.j(A.a([a6,new A.f(a7,new A.f(B.H,s,d),d),B.t,r,B.t,q,B.cq,o,B.y,n,A.o(B.aN,A.b(a8,d,a5).w.a.a>=700?300:630,1/0)],p),B.f,B.c,B.b,d),1)],p),B.f,B.c,B.b,d)}}
 A.aTv.prototype={
 $0(){A.is(J.aD(this.b.a,"isEnquirySubmitted"))},
 $S:0}
@@ -55209,7 +55209,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aTz.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aTx(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aTx(a),s,s,s,s),s)},
 $S:9}
 A.aTx.prototype={
 $0(){A.d_(this.a).cm()},
@@ -55221,7 +55221,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aTA.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.aTK.prototype={
 $0(){this.a.fH()},
@@ -55432,7 +55432,7 @@ r=t.p
 q=A.a([],r)
 if(A.b(a,f,e).w.a.a>=700)q.push(A.he(A.am("assets/images/JB2.png",f,B.D,500,f,f,A.b(a,f,e).w.a.a*0.45),0.75))
 p=A.b(a,f,e).w
-q.push(A.r(f,f,B.h,f,f,new A.P(f,f,f,f,f,new A.em(B.cw,B.cR,B.aU,A.a([A.w(B.e.K(76.5),0,0,0),B.C],t.W),f,f),B.q),f,300,f,f,f,f,p.a.a*0.45))
+q.push(A.r(f,f,B.h,f,f,new A.P(f,f,f,f,f,new A.em(B.cw,B.cR,B.aV,A.a([A.w(B.e.K(76.5),0,0,0),B.C],t.W),f,f),B.q),f,300,f,f,f,f,p.a.a*0.45))
 q.push(A.ci(78,A.o(B.ie,f,A.b(a,f,e).w.a.a),f,f,0,20,f,f))
 q=A.ci(0,A.bQ(B.a6,q,B.B,B.a7,f),f,f,f,0,0,f)
 p=g.c
@@ -55537,17 +55537,17 @@ case 5:return A.U(null,r)
 case 1:return A.T(p,r)}})
 return A.V($async$Aj,r)},
 acH(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aNK(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNL(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNM(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNN(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNO(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNP(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNQ(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNR(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aNK(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNL(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNM(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNN(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNO(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNP(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNQ(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aNR(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aP
 if(A.b(a,o,n).w.a.a>=700)s=A.o(new A.cf("CourseFinalauthbusiness",o),80,o)
 else{A.b(a,o,n).toString
 if(A.b(a,o,n).w.a.a>=700){s=A.p(30)
-r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aN,o,new A.aNT(a),o,o,o,o):B.O
+r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aO,o,new A.aNT(a),o,o,o,o):B.O
 s=A.r(o,r,B.h,o,o,new A.P(B.aL,o,o,s,o,o,B.q),o,o,o,o,o,o,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,o),A.ah(new A.bJ(B.S,o,o,A.b(a,o,n).w.a.a>=700?o:A.c("eG Sign In",o,o,o,o,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),o,o,o),o),1)],t.p),B.i,B.c,B.b,o)}r=!(A.b(a,o,n).w.a.a>=700)?new A.bD(new A.aNU(),o):o
 q=!(A.b(a,o,n).w.a.a>=700)?A.ds(o,o,o,B.bp,new A.aNV(),new A.aNW(a),o,o,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,o,0,new A.f(B.u,s,o),r,o)
+r=A.co(A.a([q],p),!1,B.aQ,o,0,new A.f(B.u,s,o),r,o)
 n=!(A.b(a,o,n).w.a.a>=700)?this.acH(a):o
 return A.ay(new A.cj(r,m,o),B.m,A.r5(A.j(A.a([A.ah(A.lc(A.a([this.mO(a,"businesslogin")],p)),1)],p),B.i,B.c,B.b,o),1),n,o)},
 mO(a6,a7){var s,r,q,p,o,n=this,m=null,l="assets/images/signin.png",k="Log in to Student Portal",j="Log in to Parent Portal",i="Log in to Business Portal",h="Log in to Partner Portal",g="Log in to your eG account",f=u.a,e=u.U,d=u.j,c=u.Z,b=u.u,a="Student Id",a0="Parent Id",a1="Business Id",a2="Partner Id",a3="\u2022",a4="Password",a5=t.w
@@ -55624,10 +55624,11 @@ if(A.b(a6,m,a5).w.a.a>=700)p=600
 else if(A.bW(a6))p=510
 else p=A.b(a6,m,a5).w.a.a<=380?660:560
 p=A.o(B.abM,p,m)
-if(A.b(a6,m,a5).w.a.a>=700)a5=600
-else if(A.bW(a6))a5=510
-else a5=A.b(a6,m,a5).w.a.a<=380?660:560
-return A.bX(A.j(A.a([s,B.cq,r,q,p,B.r,A.o(B.abC,a5,m)],t.p),B.i,B.c,B.b,m),m,B.G,m,m,m,B.R)}}
+if(A.b(a6,m,a5).w.a.a>=700)o=600
+else if(A.bW(a6))o=510
+else o=A.b(a6,m,a5).w.a.a<=380?660:560
+o=A.o(B.abC,o,m)
+return A.bX(A.j(A.a([s,B.cq,r,q,p,B.r,o,A.o(B.aN,A.b(a6,m,a5).w.a.a>=700?300:630,1/0)],t.p),B.i,B.c,B.b,m),m,B.G,m,m,m,B.R)}}
 A.aNK.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
 $S:0}
@@ -55671,7 +55672,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aNU.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aNS(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aNS(a),s,s,s,s),s)},
 $S:9}
 A.aNS.prototype={
 $0(){A.d_(this.a).cm()},
@@ -55683,7 +55684,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aNV.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.aNY.prototype={
 $0(){var s=A.i7(new A.aNX(),null,t.z)
@@ -55756,17 +55757,17 @@ case 5:return A.U(null,r)
 case 1:return A.T(p,r)}})
 return A.V($async$Bv,r)},
 anB(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aVt(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVu(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVv(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVw(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVx(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVy(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVz(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVA(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aVt(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVu(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVv(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVw(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVx(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVy(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVz(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVA(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aP
 if(A.b(a,o,n).w.a.a>=700)s=A.o(new A.cf("CourseFinalauth",o),80,o)
 else{A.b(a,o,n).toString
 if(A.b(a,o,n).w.a.a>=700){s=A.p(30)
-r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aN,o,new A.aVC(a),o,o,o,o):B.O
+r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aO,o,new A.aVC(a),o,o,o,o):B.O
 s=A.r(o,r,B.h,o,o,new A.P(B.aL,o,o,s,o,o,B.q),o,o,o,o,o,o,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,o),A.ah(new A.bJ(B.S,o,o,A.b(a,o,n).w.a.a>=700?o:A.c("eG Sign In",o,o,o,o,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),o,o,o),o),1)],t.p),B.i,B.c,B.b,o)}r=!(A.b(a,o,n).w.a.a>=700)?new A.bD(new A.aVD(),o):o
 q=!(A.b(a,o,n).w.a.a>=700)?A.ds(o,o,o,B.bp,new A.aVE(),new A.aVF(a),o,o,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,o,0,new A.f(B.u,s,o),r,o)
+r=A.co(A.a([q],p),!1,B.aQ,o,0,new A.f(B.u,s,o),r,o)
 n=!(A.b(a,o,n).w.a.a>=700)?this.anB(a):o
 return A.ay(new A.cj(r,m,o),B.m,A.r5(A.j(A.a([A.ah(A.lc(A.a([this.mO(a,"parentlogin")],p)),1)],p),B.i,B.c,B.b,o),1),n,o)},
 mO(a6,a7){var s,r,q,p,o,n=this,m=null,l="assets/images/signin.png",k="Log in to Student Portal",j="Log in to Parent Portal",i="Log in to Business Portal",h="Log in to Partner Portal",g="Log in to your eG account",f=u.a,e=u.U,d=u.j,c=u.Z,b=u.u,a="Student Id",a0="Parent Id",a1="Business Id",a2="Partner Id",a3="\u2022",a4="Password",a5=t.w
@@ -55843,10 +55844,11 @@ if(A.b(a6,m,a5).w.a.a>=700)p=600
 else if(A.bW(a6))p=510
 else p=A.b(a6,m,a5).w.a.a<=380?660:560
 p=A.o(B.abN,p,m)
-if(A.b(a6,m,a5).w.a.a>=700)a5=600
-else if(A.bW(a6))a5=510
-else a5=A.b(a6,m,a5).w.a.a<=380?660:560
-return A.bX(A.j(A.a([s,B.cq,r,q,p,B.r,A.o(B.abH,a5,m)],t.p),B.i,B.c,B.b,m),m,B.G,m,m,m,B.R)}}
+if(A.b(a6,m,a5).w.a.a>=700)o=600
+else if(A.bW(a6))o=510
+else o=A.b(a6,m,a5).w.a.a<=380?660:560
+o=A.o(B.abH,o,m)
+return A.bX(A.j(A.a([s,B.cq,r,q,p,B.r,o,A.o(B.aN,A.b(a6,m,a5).w.a.a>=700?300:630,1/0)],t.p),B.i,B.c,B.b,m),m,B.G,m,m,m,B.R)}}
 A.aVt.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
 $S:0}
@@ -55890,7 +55892,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aVD.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aVB(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aVB(a),s,s,s,s),s)},
 $S:9}
 A.aVB.prototype={
 $0(){A.d_(this.a).cm()},
@@ -55902,7 +55904,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aVE.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.aVH.prototype={
 $0(){var s=A.i7(new A.aVG(),null,t.z)
@@ -55965,17 +55967,17 @@ case 5:return A.U(null,r)
 case 1:return A.T(p,r)}})
 return A.V($async$Bx,r)},
 anL(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aVJ(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVK(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVL(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVM(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVN(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVO(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVP(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVQ(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aVJ(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVK(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVL(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVM(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVN(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVO(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVP(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aVQ(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aP
 if(A.b(a,o,n).w.a.a>=700)s=A.o(new A.cf("CourseFinalauthbusiness",o),80,o)
 else{A.b(a,o,n).toString
 if(A.b(a,o,n).w.a.a>=700){s=A.p(30)
-r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aN,o,new A.aVS(a),o,o,o,o):B.O
+r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aO,o,new A.aVS(a),o,o,o,o):B.O
 s=A.r(o,r,B.h,o,o,new A.P(B.aL,o,o,s,o,o,B.q),o,o,o,o,o,o,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,o),A.ah(new A.bJ(B.S,o,o,A.b(a,o,n).w.a.a>=700?o:A.c("eG Sign In",o,o,o,o,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),o,o,o),o),1)],t.p),B.i,B.c,B.b,o)}r=!(A.b(a,o,n).w.a.a>=700)?new A.bD(new A.aVT(),o):o
 q=!(A.b(a,o,n).w.a.a>=700)?A.ds(o,o,o,B.bp,new A.aVU(),new A.aVV(a),o,o,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,o,0,new A.f(B.u,s,o),r,o)
+r=A.co(A.a([q],p),!1,B.aQ,o,0,new A.f(B.u,s,o),r,o)
 n=!(A.b(a,o,n).w.a.a>=700)?this.anL(a):o
 return A.ay(new A.cj(r,m,o),B.m,A.r5(A.j(A.a([A.ah(A.lc(A.a([this.mO(a,"partnerlogin")],p)),1)],p),B.i,B.c,B.b,o),1),n,o)},
 mO(a6,a7){var s,r,q,p,o,n=this,m=null,l="assets/images/signin.png",k="Log in to Student Portal",j="Log in to Parent Portal",i="Log in to Business Portal",h="Log in to Partner Portal",g="Log in to your eG account",f=u.a,e=u.U,d=u.j,c=u.Z,b=u.u,a="Student Id",a0="Parent Id",a1="Business Id",a2="Partner Id",a3="\u2022",a4="Password",a5=t.w
@@ -56052,10 +56054,11 @@ if(A.b(a6,m,a5).w.a.a>=700)p=600
 else if(A.bW(a6))p=510
 else p=A.b(a6,m,a5).w.a.a<=380?660:560
 p=A.o(B.abI,p,m)
-if(A.b(a6,m,a5).w.a.a>=700)a5=600
-else if(A.bW(a6))a5=510
-else a5=A.b(a6,m,a5).w.a.a<=380?660:560
-return A.bX(A.j(A.a([s,B.cq,r,q,p,B.r,A.o(B.aby,a5,m)],t.p),B.i,B.c,B.b,m),m,B.G,m,m,m,B.R)}}
+if(A.b(a6,m,a5).w.a.a>=700)o=600
+else if(A.bW(a6))o=510
+else o=A.b(a6,m,a5).w.a.a<=380?660:560
+o=A.o(B.aby,o,m)
+return A.bX(A.j(A.a([s,B.cq,r,q,p,B.r,o,A.o(B.aN,A.b(a6,m,a5).w.a.a>=700?300:630,1/0)],t.p),B.i,B.c,B.b,m),m,B.G,m,m,m,B.R)}}
 A.aVJ.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
 $S:0}
@@ -56099,7 +56102,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aVT.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aVR(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aVR(a),s,s,s,s),s)},
 $S:9}
 A.aVR.prototype={
 $0(){A.d_(this.a).cm()},
@@ -56111,7 +56114,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aVU.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.aVX.prototype={
 $0(){var s=A.i7(new A.aVW(),null,t.z)
@@ -56174,17 +56177,17 @@ case 5:return A.U(null,r)
 case 1:return A.T(p,r)}})
 return A.V($async$B8,r)},
 aql(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aUl(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUm(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUn(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUo(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUp(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUq(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUr(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUs(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aUl(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUm(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUn(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUo(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUp(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUq(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUr(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aUs(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aP
 if(A.b(a,o,n).w.a.a>=700)s=A.o(new A.cf("CourseFinalauth",o),80,o)
 else{A.b(a,o,n).toString
 if(A.b(a,o,n).w.a.a>=700){s=A.p(30)
-r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aN,o,new A.aUu(a),o,o,o,o):B.O
+r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aO,o,new A.aUu(a),o,o,o,o):B.O
 s=A.r(o,r,B.h,o,o,new A.P(B.aL,o,o,s,o,o,B.q),o,o,o,o,o,o,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,o),A.ah(new A.bJ(B.S,o,o,A.b(a,o,n).w.a.a>=700?o:A.c("eG Sign In",o,o,o,o,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),o,o,o),o),1)],t.p),B.i,B.c,B.b,o)}r=!(A.b(a,o,n).w.a.a>=700)?new A.bD(new A.aUv(),o):o
 q=!(A.b(a,o,n).w.a.a>=700)?A.ds(o,o,o,B.bp,new A.aUw(),new A.aUx(a),o,o,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,o,0,new A.f(B.u,s,o),r,o)
+r=A.co(A.a([q],p),!1,B.aQ,o,0,new A.f(B.u,s,o),r,o)
 n=!(A.b(a,o,n).w.a.a>=700)?this.aql(a):o
 return A.ay(new A.cj(r,m,o),B.m,A.r5(A.j(A.a([A.ah(A.lc(A.a([this.mO(a,"userlogin")],p)),1)],p),B.i,B.c,B.b,o),1),n,o)},
 mO(a6,a7){var s,r,q,p,o,n=this,m=null,l="assets/images/signin.png",k="Log in to Student Portal",j="Log in to Parent Portal",i="Log in to Business Portal",h="Log in to Partner Portal",g="Log in to your eG account",f=u.a,e=u.U,d=u.j,c=u.Z,b=u.u,a="Student Id",a0="Parent Id",a1="Business Id",a2="Partner Id",a3="\u2022",a4="Password",a5=t.w
@@ -56261,10 +56264,11 @@ if(A.b(a6,m,a5).w.a.a>=700)p=600
 else if(A.bW(a6))p=510
 else p=A.b(a6,m,a5).w.a.a<=380?660:560
 p=A.o(B.abE,p,m)
-if(A.b(a6,m,a5).w.a.a>=700)a5=600
-else if(A.bW(a6))a5=510
-else a5=A.b(a6,m,a5).w.a.a<=380?660:560
-return A.bX(A.j(A.a([s,B.cq,r,q,p,B.r,A.o(B.abG,a5,m)],t.p),B.i,B.c,B.b,m),m,B.G,m,m,m,B.R)}}
+if(A.b(a6,m,a5).w.a.a>=700)o=600
+else if(A.bW(a6))o=510
+else o=A.b(a6,m,a5).w.a.a<=380?660:560
+o=A.o(B.abG,o,m)
+return A.bX(A.j(A.a([s,B.cq,r,q,p,B.r,o,A.o(B.aN,A.b(a6,m,a5).w.a.a>=700?300:630,1/0)],t.p),B.i,B.c,B.b,m),m,B.G,m,m,m,B.R)}}
 A.aUl.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
 $S:0}
@@ -56308,7 +56312,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aUv.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aUt(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aUt(a),s,s,s,s),s)},
 $S:9}
 A.aUt.prototype={
 $0(){A.d_(this.a).cm()},
@@ -56320,7 +56324,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aUw.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.aUz.prototype={
 $0(){var s=A.i7(new A.aUy(),null,t.z)
@@ -56380,27 +56384,28 @@ case 7:case 3:return A.U(null,r)
 case 1:return A.T(p,r)}})
 return A.V($async$C2,r)},
 aqm(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aZ5(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZ6(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZ7(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZ8(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZ9(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZa(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZb(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZc(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o,n=this,m=null,l="assets/images/signupillustration1.png",k="Sign up and start learning",j=t.w,i=A.b(a,m,j).w.a.a>=700?B.ai:B.aO
-if(A.b(a,m,j).w.a.a>=700)s=A.o(new A.cf("CourseFinalauth",m),80,m)
-else{if(A.b(a,m,j).w.a.a>=700){s=A.p(30)
-s=A.r(m,A.bl(m,m,B.aN,m,new A.aZi(a),m,m,m,m),B.h,m,m,new A.P(B.aL,m,m,s,m,m,B.q),m,m,m,m,m,m,40)}else s=B.O
-s=A.B(A.a([new A.f(B.u,s,m),A.ah(new A.bJ(B.S,m,m,A.b(a,m,j).w.a.a>=700?m:A.c("eG Sign Up",m,m,m,m,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),m,m,m),m),1)],t.p),B.i,B.c,B.b,m)}r=!(A.b(a,m,j).w.a.a>=700)?new A.bD(new A.aZj(),m):m
-q=!(A.b(a,m,j).w.a.a>=700)?A.ds(m,m,m,B.bp,new A.aZk(),new A.aZl(a),m,m,t.N):B.O
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aZ5(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZ6(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZ7(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZ8(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZ9(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZa(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZb(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZc(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o,n,m=this,l=null,k="assets/images/signupillustration1.png",j="Sign up and start learning",i=t.w,h=A.b(a,l,i).w.a.a>=700?B.ai:B.aP
+if(A.b(a,l,i).w.a.a>=700)s=A.o(new A.cf("CourseFinalauth",l),80,l)
+else{if(A.b(a,l,i).w.a.a>=700){s=A.p(30)
+s=A.r(l,A.bl(l,l,B.aO,l,new A.aZi(a),l,l,l,l),B.h,l,l,new A.P(B.aL,l,l,s,l,l,B.q),l,l,l,l,l,l,40)}else s=B.O
+s=A.B(A.a([new A.f(B.u,s,l),A.ah(new A.bJ(B.S,l,l,A.b(a,l,i).w.a.a>=700?l:A.c("eG Sign Up",l,l,l,l,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),l,l,l),l),1)],t.p),B.i,B.c,B.b,l)}r=!(A.b(a,l,i).w.a.a>=700)?new A.bD(new A.aZj(),l):l
+q=!(A.b(a,l,i).w.a.a>=700)?A.ds(l,l,l,B.bp,new A.aZk(),new A.aZl(a),l,l,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,m,0,new A.f(B.u,s,m),r,m)
-s=!(A.b(a,m,j).w.a.a>=700)?n.aqm(a):m
-if(A.b(a,m,j).w.a.a>=700){q=A.ah(A.am(l,m,B.bj,m,m,m,m),1)
-q=A.B(A.a([q,A.ah(new A.f(B.o4,A.j(A.a([A.c(k,m,m,m,m,A.d().$2$fontSize$fontWeight(A.b(a,m,j).w.a.a>=700?24:12,B.k),m,m,m),B.r,A.cV(!1,n.r,B.ww,m,m,!1,m,m,m,!1,m,n.gYU()),B.r,A.cV(!1,n.e,B.wv,m,m,!1,m,m,m,!1,m,n.gYT()),B.r,A.cV(!1,n.f,B.wu,m,m,!0,m,m,m,!1,m,n.gYV()),B.t,A.B(A.a([A.b5H(m,!1,m,m,m,!1,m,m,new A.aZm(n),m,m,m,m,m,!1,n.w),B.vG],p),B.i,B.c,B.b,m),B.r,A.o(A.aR(B.IP,n.gXh(),A.b_(m,m,B.o,m,m,m,m,m,m,m,m,m,m,m,new A.ac(A.p(0),B.w),m,m,m,m)),50,750),B.t,B.re,B.t,A.B(A.a([B.IH,A.f_(!1,B.ID,m,m,B.bo,m,m,m,m,new A.aZn(a),m,m)],p),B.i,B.K,B.b,m)],p),B.f,B.K,B.b,m),m),1)],p),B.i,B.K,B.b,m)}else q=A.j(A.a([A.am(l,m,B.bj,m,m,m,m),new A.f(B.o4,A.j(A.a([A.c(k,m,m,m,m,A.d().$2$fontSize$fontWeight(14,B.k),m,m,m),B.r,A.cV(!1,n.r,B.ww,m,m,!1,m,m,m,!1,m,n.gYU()),B.r,A.cV(!1,n.e,B.wv,m,m,!1,m,m,m,!1,m,n.gYT()),B.r,A.cV(!1,n.f,B.wu,m,m,!0,m,m,m,!1,m,n.gYV()),B.t,A.B(A.a([A.b5H(m,!1,m,m,m,!1,m,m,new A.aZo(n),m,m,m,m,m,!1,n.w),B.vG],p),B.i,B.c,B.b,m),B.r,A.o(A.aR(B.IP,n.gXh(),A.b_(m,m,B.o,m,m,m,m,m,m,m,m,m,m,m,new A.ac(A.p(0),B.w),m,m,m,m)),50,750),B.t,B.re,B.t,A.B(A.a([B.IH,A.f_(!1,B.ID,m,m,B.bo,m,m,m,m,new A.aZp(a),m,m)],p),B.i,B.K,B.b,m)],p),B.f,B.K,B.b,m),m)],p),B.i,B.K,B.b,m)
-q=A.b5(A.bX(A.iH(m,A.j(A.a([new A.f(B.H,q,m)],p),B.i,B.c,B.b,m),n.d),m,B.G,m,m,m,B.R),m,m)
-if(A.b(a,m,j).w.a.a>=700)o=600
+r=A.co(A.a([q],p),!1,B.aQ,l,0,new A.f(B.u,s,l),r,l)
+s=!(A.b(a,l,i).w.a.a>=700)?m.aqm(a):l
+if(A.b(a,l,i).w.a.a>=700){q=A.ah(A.am(k,l,B.bj,l,l,l,l),1)
+q=A.B(A.a([q,A.ah(new A.f(B.o4,A.j(A.a([A.c(j,l,l,l,l,A.d().$2$fontSize$fontWeight(A.b(a,l,i).w.a.a>=700?24:12,B.k),l,l,l),B.r,A.cV(!1,m.r,B.ww,l,l,!1,l,l,l,!1,l,m.gYU()),B.r,A.cV(!1,m.e,B.wv,l,l,!1,l,l,l,!1,l,m.gYT()),B.r,A.cV(!1,m.f,B.wu,l,l,!0,l,l,l,!1,l,m.gYV()),B.t,A.B(A.a([A.b5H(l,!1,l,l,l,!1,l,l,new A.aZm(m),l,l,l,l,l,!1,m.w),B.vG],p),B.i,B.c,B.b,l),B.r,A.o(A.aR(B.IP,m.gXh(),A.b_(l,l,B.o,l,l,l,l,l,l,l,l,l,l,l,new A.ac(A.p(0),B.w),l,l,l,l)),50,750),B.t,B.re,B.t,A.B(A.a([B.IH,A.f_(!1,B.ID,l,l,B.bo,l,l,l,l,new A.aZn(a),l,l)],p),B.i,B.K,B.b,l)],p),B.f,B.K,B.b,l),l),1)],p),B.i,B.K,B.b,l)}else q=A.j(A.a([A.am(k,l,B.bj,l,l,l,l),new A.f(B.o4,A.j(A.a([A.c(j,l,l,l,l,A.d().$2$fontSize$fontWeight(14,B.k),l,l,l),B.r,A.cV(!1,m.r,B.ww,l,l,!1,l,l,l,!1,l,m.gYU()),B.r,A.cV(!1,m.e,B.wv,l,l,!1,l,l,l,!1,l,m.gYT()),B.r,A.cV(!1,m.f,B.wu,l,l,!0,l,l,l,!1,l,m.gYV()),B.t,A.B(A.a([A.b5H(l,!1,l,l,l,!1,l,l,new A.aZo(m),l,l,l,l,l,!1,m.w),B.vG],p),B.i,B.c,B.b,l),B.r,A.o(A.aR(B.IP,m.gXh(),A.b_(l,l,B.o,l,l,l,l,l,l,l,l,l,l,l,new A.ac(A.p(0),B.w),l,l,l,l)),50,750),B.t,B.re,B.t,A.B(A.a([B.IH,A.f_(!1,B.ID,l,l,B.bo,l,l,l,l,new A.aZp(a),l,l)],p),B.i,B.K,B.b,l)],p),B.f,B.K,B.b,l),l)],p),B.i,B.K,B.b,l)
+q=A.b5(A.bX(A.iH(l,A.j(A.a([new A.f(B.H,q,l)],p),B.i,B.c,B.b,l),m.d),l,B.G,l,l,l,B.R),l,l)
+if(A.b(a,l,i).w.a.a>=700)o=600
 else if(A.bW(a))o=510
-else o=A.b(a,m,j).w.a.a<=380?660:560
-o=A.o(B.abD,o,m)
-if(A.b(a,m,j).w.a.a>=700)j=600
-else if(A.bW(a))j=510
-else j=A.b(a,m,j).w.a.a<=380?660:560
-return A.ay(new A.cj(r,i,m),B.m,A.bX(new A.f(B.u,A.j(A.a([q,o,A.o(B.abx,j,m)],p),B.i,B.c,B.b,m),m),m,B.G,m,m,m,B.R),s,m)}}
+else o=A.b(a,l,i).w.a.a<=380?660:560
+o=A.o(B.abD,o,l)
+if(A.b(a,l,i).w.a.a>=700)n=600
+else if(A.bW(a))n=510
+else n=A.b(a,l,i).w.a.a<=380?660:560
+n=A.o(B.abx,n,l)
+return A.ay(new A.cj(r,h,l),B.m,A.bX(new A.f(B.u,A.j(A.a([q,o,n,A.o(B.aN,A.b(a,l,i).w.a.a>=700?300:630,1/0)],p),B.i,B.c,B.b,l),l),l,B.G,l,l,l,B.R),s,l)}}
 A.aZd.prototype={
 $0(){var s=this.a
 s.r.d4(0,B.bx)
@@ -56450,7 +56455,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aZj.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aZh(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aZh(a),s,s,s,s),s)},
 $S:9}
 A.aZh.prototype={
 $0(){A.d_(this.a).cm()},
@@ -56462,7 +56467,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aZk.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.aZm.prototype={
 $1(a){var s=this.a
@@ -56539,17 +56544,17 @@ case 5:return A.U(null,r)
 case 1:return A.T(p,r)}})
 return A.V($async$C0,r)},
 aqH(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aZE(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZF(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZG(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZH(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZI(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZJ(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZK(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZL(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aZE(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZF(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZG(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZH(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZI(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZJ(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZK(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aZL(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aP
 if(A.b(a,o,n).w.a.a>=700)s=A.o(new A.cf("CourseFinalauth",o),80,o)
 else{A.b(a,o,n).toString
 if(A.b(a,o,n).w.a.a>=700){s=A.p(30)
-r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aN,o,new A.aZN(a),o,o,o,o):B.O
+r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aO,o,new A.aZN(a),o,o,o,o):B.O
 s=A.r(o,r,B.h,o,o,new A.P(B.aL,o,o,s,o,o,B.q),o,o,o,o,o,o,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,o),A.ah(new A.bJ(B.S,o,o,A.b(a,o,n).w.a.a>=700?o:A.c("eG Sign In",o,o,o,o,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),o,o,o),o),1)],t.p),B.i,B.c,B.b,o)}r=!(A.b(a,o,n).w.a.a>=700)?new A.bD(new A.aZO(),o):o
 q=!(A.b(a,o,n).w.a.a>=700)?A.ds(o,o,o,B.bp,new A.aZP(),new A.aZQ(a),o,o,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,o,0,new A.f(B.u,s,o),r,o)
+r=A.co(A.a([q],p),!1,B.aQ,o,0,new A.f(B.u,s,o),r,o)
 n=!(A.b(a,o,n).w.a.a>=700)?this.aqH(a):o
 return A.ay(new A.cj(r,m,o),B.m,A.r5(A.j(A.a([A.ah(A.lc(A.a([this.mO(a,"studentlogin")],p)),1)],p),B.i,B.c,B.b,o),1),n,o)},
 mO(a6,a7){var s,r,q,p,o,n=this,m=null,l="assets/images/signin.png",k="Log in to Student Portal",j="Log in to Parent Portal",i="Log in to Business Portal",h="Log in to Partner Portal",g="Log in to your eG account",f=u.a,e=u.U,d=u.j,c=u.Z,b=u.u,a="Student Id",a0="Parent Id",a1="Business Id",a2="Partner Id",a3="\u2022",a4="Password",a5=t.w
@@ -56626,10 +56631,11 @@ if(A.b(a6,m,a5).w.a.a>=700)p=600
 else if(A.bW(a6))p=510
 else p=A.b(a6,m,a5).w.a.a<=380?660:560
 p=A.o(B.abB,p,m)
-if(A.b(a6,m,a5).w.a.a>=700)a5=600
-else if(A.bW(a6))a5=510
-else a5=A.b(a6,m,a5).w.a.a<=380?660:560
-return A.bX(A.j(A.a([s,B.cq,r,q,p,B.r,A.o(B.abK,a5,m)],t.p),B.i,B.c,B.b,m),m,B.G,m,m,m,B.R)}}
+if(A.b(a6,m,a5).w.a.a>=700)o=600
+else if(A.bW(a6))o=510
+else o=A.b(a6,m,a5).w.a.a<=380?660:560
+o=A.o(B.abK,o,m)
+return A.bX(A.j(A.a([s,B.cq,r,q,p,B.r,o,A.o(B.aN,A.b(a6,m,a5).w.a.a>=700?300:630,1/0)],t.p),B.i,B.c,B.b,m),m,B.G,m,m,m,B.R)}}
 A.aZE.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
 $S:0}
@@ -56673,7 +56679,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aZO.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aZM(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aZM(a),s,s,s,s),s)},
 $S:9}
 A.aZM.prototype={
 $0(){A.d_(this.a).cm()},
@@ -56685,7 +56691,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aZP.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.aZS.prototype={
 $0(){var s=A.i7(new A.aZR(),null,t.z)
@@ -56737,29 +56743,29 @@ OB(){return this.r5()+this.r5()*0.05-this.H6()},
 nx(a,b,c){var s=null,r=t.p
 return new A.f(B.eR,A.B(A.a([A.B(A.a([A.fN(c,B.aC,s,20),B.f8,A.c(a,s,s,s,s,B.Im,s,s,s)],r),B.i,B.c,B.b,s),A.c("$"+B.e.ao(b,2),s,s,s,s,B.Im,s,s,s)],r),B.i,B.eU,B.b,s),s)},
 acQ(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aOE(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOF(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOG(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOH(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOI(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOJ(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOK(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOL(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o,n,m=this,l=null,k="assets/images/empty_cart.png",j="Subtotal",i="Tax (5%)",h="Total Cost",g="assets/images/education.png",f=t.w,e=A.b(a,l,f).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aOE(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOF(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOG(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOH(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOI(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOJ(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOK(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aOL(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o,n,m=this,l=null,k="assets/images/empty_cart.png",j="Subtotal",i="Tax (5%)",h="Total Cost",g="assets/images/education.png",f=t.w,e=A.b(a,l,f).w.a.a>=700?B.ai:B.aP
 if(A.b(a,l,f).w.a.a>=700)s=A.o(new A.cf("forms",l),80,l)
 else{A.b(a,l,f).toString
 if(A.b(a,l,f).w.a.a>=700){s=A.p(30)
-r=A.b(a,l,f).w.a.a>=700?A.bl(l,l,B.aN,l,new A.aOZ(a),l,l,l,l):B.O
+r=A.b(a,l,f).w.a.a>=700?A.bl(l,l,B.aO,l,new A.aOZ(a),l,l,l,l):B.O
 s=A.r(l,r,B.h,l,l,new A.P(B.aL,l,l,s,l,l,B.q),l,l,l,l,l,l,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,l),B.bw,A.ah(new A.bJ(B.S,l,l,A.b(a,l,f).w.a.a>=700?l:A.c("eG Cart",l,l,l,l,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),l,l,l),l),1)],t.p),B.i,B.c,B.b,l)}r=!(A.b(a,l,f).w.a.a>=700)?new A.bD(new A.aP_(),l):l
 q=!(A.b(a,l,f).w.a.a>=700)?A.ds(l,l,l,B.bp,new A.aP0(),new A.aP2(),l,l,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,l,0,new A.f(B.u,s,l),r,l)
+r=A.co(A.a([q],p),!1,B.aQ,l,0,new A.f(B.u,s,l),r,l)
 s=!(A.b(a,l,f).w.a.a>=700)?m.acQ(a):l
 if(A.b(a,l,f).w.a.a>=700){q=J.ff(m.d)?A.b5(new A.f(B.dO,A.j(A.a([A.am(k,l,B.bj,400,l,l,l),B.r,B.IA],p),B.i,B.K,B.b,l),l),l,l):A.Xp(l,new A.aP3(m),J.cK(m.d),l,!1,B.R,!0)
 q=A.a([A.ah(A.j(A.a([q,B.t,A.bee(B.wm,B.IO,new A.aP4(a))],p),B.f,B.c,B.b,l),2),B.cp],p)
 if(J.hV(m.d)){o=A.p(15)
-q.push(A.ah(A.bA(new A.f(B.V,A.j(A.a([B.Cz,B.t,m.nx(j,m.r5(),B.wd),m.nx(i,m.r5()*0.05,B.wh),m.nx("Total Scholarship Reduction",m.H6(),B.wk),B.hG,m.nx(h,m.OB(),B.wg),B.t,new A.f(B.aX,A.B(A.a([A.ah(A.o(A.aR(B.IK,new A.aP5(m,a),A.b_(l,l,B.kp,l,l,l,l,l,l,B.m,l,l,B.hK,l,new A.ac(A.p(8),B.w),l,l,l,l)),l,1/0),1),B.cZ,A.ah(A.o(A.aR(B.IM,new A.aP6(m,a),A.b_(l,l,B.kp,l,l,l,l,l,l,B.m,l,l,B.hK,l,new A.ac(A.p(8),B.w),l,l,l,l)),l,1/0),1)],p),B.i,B.eU,B.b,l),l),B.r,A.b5(A.am(g,l,B.bj,A.b(a,l,f).w.a.b*0.26,l,l,l),l,l)],p),B.f,B.c,B.b,l),l),B.m,4,B.dN,l,new A.ac(o,B.w)),1))}q=A.B(q,B.f,B.c,B.b,l)}else{q=A.b(a,l,f).w
+q.push(A.ah(A.bA(new A.f(B.V,A.j(A.a([B.Cz,B.t,m.nx(j,m.r5(),B.wd),m.nx(i,m.r5()*0.05,B.wh),m.nx("Total Scholarship Reduction",m.H6(),B.wk),B.hG,m.nx(h,m.OB(),B.wg),B.t,new A.f(B.aY,A.B(A.a([A.ah(A.o(A.aR(B.IK,new A.aP5(m,a),A.b_(l,l,B.kp,l,l,l,l,l,l,B.m,l,l,B.hK,l,new A.ac(A.p(8),B.w),l,l,l,l)),l,1/0),1),B.cZ,A.ah(A.o(A.aR(B.IM,new A.aP6(m,a),A.b_(l,l,B.kp,l,l,l,l,l,l,B.m,l,l,B.hK,l,new A.ac(A.p(8),B.w),l,l,l,l)),l,1/0),1)],p),B.i,B.eU,B.b,l),l),B.r,A.b5(A.am(g,l,B.bj,A.b(a,l,f).w.a.b*0.26,l,l,l),l,l)],p),B.f,B.c,B.b,l),l),B.m,4,B.dN,l,new A.ac(o,B.w)),1))}q=A.B(q,B.f,B.c,B.b,l)}else{q=A.b(a,l,f).w
 o=J.ff(m.d)?A.b5(new A.f(B.dO,A.j(A.a([A.am(k,l,B.bj,200,l,l,l),B.r,B.IA],p),B.i,B.K,B.b,l),l),l,l):A.Xp(l,new A.aP7(m),J.cK(m.d),l,!1,B.R,!0)
 q=A.a([A.o(A.j(A.a([o,B.t,A.bee(B.wm,B.IO,new A.aP8(a))],p),B.f,B.c,B.b,l),500,q.a.a),B.cp],p)
 if(J.hV(m.d)){o=A.b(a,l,f).w
 n=A.p(15)
-q.push(A.o(A.bA(new A.f(B.V,A.j(A.a([B.Cz,B.t,m.nx(j,m.r5(),B.wd),m.nx(i,m.r5()*0.05,B.wh),m.nx("Scholarship Reduction",m.H6(),B.wk),B.hG,m.nx(h,m.OB(),B.wg),B.t,new A.f(B.aX,A.B(A.a([A.ah(A.o(A.aR(B.IK,new A.aP9(m,a),A.b_(l,l,B.kp,l,l,l,l,l,l,B.m,l,l,B.hK,l,new A.ac(A.p(8),B.w),l,l,l,l)),l,1/0),1),B.cZ,A.ah(A.o(A.aR(B.IM,new A.aP1(m,a),A.b_(l,l,B.kp,l,l,l,l,l,l,B.m,l,l,B.hK,l,new A.ac(A.p(8),B.w),l,l,l,l)),l,1/0),1)],p),B.i,B.eU,B.b,l),l),B.r,A.b5(A.am(g,l,B.bj,A.b(a,l,f).w.a.b*0.26,l,l,l),l,l)],p),B.f,B.c,B.b,l),l),B.m,4,B.dN,l,new A.ac(n,B.w)),680,o.a.a))}q=A.j(q,B.f,B.c,B.b,l)}p=A.a([new A.f(B.V,A.bX(q,l,B.G,l,l,l,B.R),l)],p)
+q.push(A.o(A.bA(new A.f(B.V,A.j(A.a([B.Cz,B.t,m.nx(j,m.r5(),B.wd),m.nx(i,m.r5()*0.05,B.wh),m.nx("Scholarship Reduction",m.H6(),B.wk),B.hG,m.nx(h,m.OB(),B.wg),B.t,new A.f(B.aY,A.B(A.a([A.ah(A.o(A.aR(B.IK,new A.aP9(m,a),A.b_(l,l,B.kp,l,l,l,l,l,l,B.m,l,l,B.hK,l,new A.ac(A.p(8),B.w),l,l,l,l)),l,1/0),1),B.cZ,A.ah(A.o(A.aR(B.IM,new A.aP1(m,a),A.b_(l,l,B.kp,l,l,l,l,l,l,B.m,l,l,B.hK,l,new A.ac(A.p(8),B.w),l,l,l,l)),l,1/0),1)],p),B.i,B.eU,B.b,l),l),B.r,A.b5(A.am(g,l,B.bj,A.b(a,l,f).w.a.b*0.26,l,l,l),l,l)],p),B.f,B.c,B.b,l),l),B.m,4,B.dN,l,new A.ac(n,B.w)),680,o.a.a))}q=A.j(q,B.f,B.c,B.b,l)}p=A.a([new A.f(B.V,A.bX(q,l,B.G,l,l,l,B.R),l)],p)
 if(A.b(a,l,f).w.a.a>=700)p.push(B.cd)
-p.push(A.o(B.bg,A.b(a,l,f).w.a.a>=700?300:630,1/0))
+p.push(A.o(B.aN,A.b(a,l,f).w.a.a>=700?300:630,1/0))
 return A.ay(new A.cj(r,e,l),l,A.bX(A.j(p,B.i,B.c,B.b,l),l,B.G,l,l,l,B.R),s,l)}}
 A.aOM.prototype={
 $0(){this.a.d=this.b},
@@ -56810,7 +56816,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aP_.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aOY(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aOY(a),s,s,s,s),s)},
 $S:9}
 A.aOY.prototype={
 $0(){A.d_(this.a).cm()},
@@ -56935,16 +56941,16 @@ a6(){this.aj()
 var s=this.c
 s.toString
 A.Rr(s,this.a.c)},
-q(a){var s,r,q,p=null,o=t.w,n=A.b(a,p,o).w.a.a>=700?B.ai:B.aO
+q(a){var s,r,q,p=null,o=t.w,n=A.b(a,p,o).w.a.a>=700?B.ai:B.aP
 if(A.b(a,p,o).w.a.a>=700)s=A.o(new A.cf("forms",p),80,p)
 else{A.b(a,p,o).toString
 if(A.b(a,p,o).w.a.a>=700){s=A.p(30)
-r=A.b(a,p,o).w.a.a>=700?A.bl(p,p,B.aN,p,new A.aW1(a),p,p,p,p):B.O
+r=A.b(a,p,o).w.a.a>=700?A.bl(p,p,B.aO,p,new A.aW1(a),p,p,p,p):B.O
 s=A.r(p,r,B.h,p,p,new A.P(B.aL,p,p,s,p,p,B.q),p,p,p,p,p,p,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,p),B.bw,A.ah(new A.bJ(B.S,p,p,A.b(a,p,o).w.a.a>=700?p:A.c("eG Cart",p,p,p,p,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,26,B.k,1.5,1.2),p,p,p),p),1)],t.p),B.i,B.c,B.b,p)}r=!(A.b(a,p,o).w.a.a>=700)?new A.bD(new A.aW2(),p):p
 o=!(A.b(a,p,o).w.a.a>=700)?A.ds(p,p,p,B.lv,new A.aW3(),new A.aW4(),p,p,t.N):B.O
 q=t.p
-return A.ay(new A.cj(A.co(A.a([o],q),!1,B.aP,p,0,new A.f(B.u,s,p),r,p),n,p),p,A.b5(new A.f(B.V,A.j(A.a([B.wn,B.r,B.IE,B.r,A.c(u.dp,p,p,p,p,A.bf(p,p,B.ah,p,p,p,p,p,p,p,p,16,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),B.J,p,p),B.r,A.c("Session ID: "+this.a.c,p,p,p,p,B.Il,B.J,p,p),B.cq,A.aR(B.IC,new A.aW5(a),A.b_(p,p,p,p,p,p,p,p,p,p,p,p,B.ay,p,p,p,p,p,p))],q),B.i,B.K,B.b,p),p),p,p),p,p)}}
+return A.ay(new A.cj(A.co(A.a([o],q),!1,B.aQ,p,0,new A.f(B.u,s,p),r,p),n,p),p,A.b5(new A.f(B.V,A.j(A.a([B.wn,B.r,B.IE,B.r,A.c(u.dp,p,p,p,p,A.bf(p,p,B.ah,p,p,p,p,p,p,p,p,16,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),B.J,p,p),B.r,A.c("Session ID: "+this.a.c,p,p,p,p,B.Il,B.J,p,p),B.cq,A.aR(B.IC,new A.aW5(a),A.b_(p,p,p,p,p,p,p,p,p,p,p,p,B.ay,p,p,p,p,p,p))],q),B.i,B.K,B.b,p),p),p,p),p,p)}}
 A.aW1.prototype={
 $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
@@ -57019,16 +57025,16 @@ a6(){this.aj()
 var s=this.c
 s.toString
 A.Rr(s,this.a.c)},
-q(a){var s,r,q,p=null,o=t.w,n=A.b(a,p,o).w.a.a>=700?B.ai:B.aO
+q(a){var s,r,q,p=null,o=t.w,n=A.b(a,p,o).w.a.a>=700?B.ai:B.aP
 if(A.b(a,p,o).w.a.a>=700)s=A.o(new A.cf("forms",p),80,p)
 else{A.b(a,p,o).toString
 if(A.b(a,p,o).w.a.a>=700){s=A.p(30)
-r=A.b(a,p,o).w.a.a>=700?A.bl(p,p,B.aN,p,new A.b_5(a),p,p,p,p):B.O
+r=A.b(a,p,o).w.a.a>=700?A.bl(p,p,B.aO,p,new A.b_5(a),p,p,p,p):B.O
 s=A.r(p,r,B.h,p,p,new A.P(B.aL,p,p,s,p,p,B.q),p,p,p,p,p,p,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,p),B.bw,A.ah(new A.bJ(B.S,p,p,A.b(a,p,o).w.a.a>=700?p:A.c("eG Cart",p,p,p,p,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,26,B.k,1.5,1.2),p,p,p),p),1)],t.p),B.i,B.c,B.b,p)}r=!(A.b(a,p,o).w.a.a>=700)?new A.bD(new A.b_6(),p):p
 o=!(A.b(a,p,o).w.a.a>=700)?A.ds(p,p,p,B.lv,new A.b_7(),new A.b_8(),p,p,t.N):B.O
 q=t.p
-return A.ay(new A.cj(A.co(A.a([o],q),!1,B.aP,p,0,new A.f(B.u,s,p),r,p),n,p),p,A.b5(new A.f(B.V,A.j(A.a([B.wn,B.r,B.IE,B.r,A.c(u.dp,p,p,p,p,A.bf(p,p,B.ah,p,p,p,p,p,p,p,p,16,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),B.J,p,p),B.r,A.c("Session ID: "+this.a.c,p,p,p,p,B.Il,B.J,p,p),B.cq,A.aR(B.IC,new A.b_9(a),A.b_(p,p,p,p,p,p,p,p,p,p,p,p,B.ay,p,p,p,p,p,p))],q),B.i,B.K,B.b,p),p),p,p),p,p)}}
+return A.ay(new A.cj(A.co(A.a([o],q),!1,B.aQ,p,0,new A.f(B.u,s,p),r,p),n,p),p,A.b5(new A.f(B.V,A.j(A.a([B.wn,B.r,B.IE,B.r,A.c(u.dp,p,p,p,p,A.bf(p,p,B.ah,p,p,p,p,p,p,p,p,16,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),B.J,p,p),B.r,A.c("Session ID: "+this.a.c,p,p,p,p,B.Il,B.J,p,p),B.cq,A.aR(B.IC,new A.b_9(a),A.b_(p,p,p,p,p,p,p,p,p,p,p,p,B.ay,p,p,p,p,p,p))],q),B.i,B.K,B.b,p),p),p,p),p,p)}}
 A.b_5.prototype={
 $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
@@ -57154,17 +57160,17 @@ a6(){this.aj()
 this.a.toString
 this.d=""},
 adn(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ahs(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aht(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahu(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahv(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahw(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahy(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahz(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahA(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o=this,n=null,m="CourseFinalnewpathways",l=t.w,k=A.b(a,n,l).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ahs(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aht(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahu(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahv(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahw(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahy(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahz(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahA(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o=this,n=null,m="CourseFinalnewpathways",l=t.w,k=A.b(a,n,l).w.a.a>=700?B.ai:B.aP
 if(A.b(a,n,l).w.a.a>=700)s=A.o(new A.cf(m,n),80,n)
 else{A.b(a,n,l).toString
 if(A.b(a,n,l).w.a.a>=700){s=A.p(30)
-r=A.b(a,n,l).w.a.a>=700?A.bl(n,n,B.aN,n,new A.aij(a),n,n,n,n):B.O
+r=A.b(a,n,l).w.a.a>=700?A.bl(n,n,B.aO,n,new A.aij(a),n,n,n,n):B.O
 s=A.r(n,r,B.h,n,n,new A.P(B.aL,n,n,s,n,n,B.q),n,n,n,n,n,n,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,n),A.ah(new A.bJ(B.S,n,n,A.b(a,n,l).w.a.a>=700?n:A.c("eG Pathways",n,n,n,n,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),n,n,n),n),1)],t.p),B.i,B.c,B.b,n)}r=!(A.b(a,n,l).w.a.a>=700)?new A.bD(new A.aik(),n):n
 q=!(A.b(a,n,l).w.a.a>=700)?A.ds(n,n,n,B.bp,new A.ail(),new A.ai5(a),n,n,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,n,0,new A.f(B.u,s,n),r,n)
+r=A.co(A.a([q],p),!1,B.aQ,n,0,new A.f(B.u,s,n),r,n)
 l=!(A.b(a,n,l).w.a.a>=700)?o.adn(a):n
 s=o.d
 s===$&&A.e()
@@ -57213,7 +57219,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aik.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.ai_(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.ai_(a),s,s,s,s),s)},
 $S:9}
 A.ai_.prototype={
 $0(){A.d_(this.a).cm()},
@@ -57225,7 +57231,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.ail.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.uJ.prototype={
 S(){return new A.TJ(new A.aM(null,t.sW))}}
@@ -57234,17 +57240,17 @@ a6(){this.aj()
 this.a.toString
 this.d=""},
 ado(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ahK(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahL(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahM(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahN(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahO(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahP(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahQ(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahR(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o=this,n=null,m=t.w,l=A.b(a,n,m).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ahK(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahL(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahM(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahN(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahO(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahP(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahQ(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahR(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o=this,n=null,m=t.w,l=A.b(a,n,m).w.a.a>=700?B.ai:B.aP
 if(A.b(a,n,m).w.a.a>=700)s=A.o(new A.cf("CourseFinalnewegacademy",n),80,n)
 else{A.b(a,n,m).toString
 if(A.b(a,n,m).w.a.a>=700){s=A.p(30)
-r=A.b(a,n,m).w.a.a>=700?A.bl(n,n,B.aN,n,new A.aia(a),n,n,n,n):B.O
+r=A.b(a,n,m).w.a.a>=700?A.bl(n,n,B.aO,n,new A.aia(a),n,n,n,n):B.O
 s=A.r(n,r,B.h,n,n,new A.P(B.aL,n,n,s,n,n,B.q),n,n,n,n,n,n,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,n),A.ah(new A.bJ(B.S,n,n,A.b(a,n,m).w.a.a>=700?n:A.c("eG Academy",n,n,n,n,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),n,n,n),n),1)],t.p),B.i,B.c,B.b,n)}r=!(A.b(a,n,m).w.a.a>=700)?new A.bD(new A.aib(),n):n
 q=!(A.b(a,n,m).w.a.a>=700)?A.ds(n,n,n,B.CB,new A.aic(),new A.aid(a),n,n,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,n,0,new A.f(B.u,s,n),r,n)
+r=A.co(A.a([q],p),!1,B.aQ,n,0,new A.f(B.u,s,n),r,n)
 m=!(A.b(a,n,m).w.a.a>=700)?o.ado(a):n
 s=o.d
 s===$&&A.e()
@@ -57298,7 +57304,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aib.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.ai1(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.ai1(a),s,s,s,s),s)},
 $S:9}
 A.ai1.prototype={
 $0(){A.d_(this.a).cm()},
@@ -57310,7 +57316,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aic.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.uH.prototype={
 S(){return new A.TI(new A.aM(null,t.sW))}}
@@ -57319,17 +57325,17 @@ a6(){this.aj()
 this.a.toString
 this.d=""},
 adl(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ahB(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahC(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahD(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahE(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahF(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahG(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahH(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahJ(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o=this,n=null,m=t.w,l=A.b(a,n,m).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ahB(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahC(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahD(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahE(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahF(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahG(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahH(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ahJ(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o=this,n=null,m=t.w,l=A.b(a,n,m).w.a.a>=700?B.ai:B.aP
 if(A.b(a,n,m).w.a.a>=700)s=A.o(new A.cf("CourseFinalnewstudyabroad",n),80,n)
 else{A.b(a,n,m).toString
 if(A.b(a,n,m).w.a.a>=700){s=A.p(30)
-r=A.b(a,n,m).w.a.a>=700?A.bl(n,n,B.aN,n,new A.ai6(a),n,n,n,n):B.O
+r=A.b(a,n,m).w.a.a>=700?A.bl(n,n,B.aO,n,new A.ai6(a),n,n,n,n):B.O
 s=A.r(n,r,B.h,n,n,new A.P(B.aL,n,n,s,n,n,B.q),n,n,n,n,n,n,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,n),A.ah(new A.bJ(B.S,n,n,A.b(a,n,m).w.a.a>=700?n:A.c("eG Study Abroad",n,n,n,n,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),n,n,n),n),1)],t.p),B.i,B.c,B.b,n)}r=!(A.b(a,n,m).w.a.a>=700)?new A.bD(new A.ai7(),n):n
 q=!(A.b(a,n,m).w.a.a>=700)?A.ds(n,n,n,B.bp,new A.ai8(),new A.ai9(a),n,n,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,n,0,new A.f(B.u,s,n),r,n)
+r=A.co(A.a([q],p),!1,B.aQ,n,0,new A.f(B.u,s,n),r,n)
 m=!(A.b(a,n,m).w.a.a>=700)?o.adl(a):n
 s=o.d
 s===$&&A.e()
@@ -57383,7 +57389,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.ai7.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.ai0(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.ai0(a),s,s,s,s),s)},
 $S:9}
 A.ai0.prototype={
 $0(){A.d_(this.a).cm()},
@@ -57395,27 +57401,27 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.ai8.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.zR.prototype={
 ae4(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ajO(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajP(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajQ(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajR(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajS(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajT(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajU(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajV(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o,n,m=this,l=null,k=t.w,j=A.b(a,l,k).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ajO(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajP(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajQ(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajR(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajS(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajT(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajU(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ajV(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o,n,m=this,l=null,k=t.w,j=A.b(a,l,k).w.a.a>=700?B.ai:B.aP
 if(A.b(a,l,k).w.a.a>=700)s=A.o(new A.cf("egAcademy",l),80,l)
 else{A.b(a,l,k).toString
 if(A.b(a,l,k).w.a.a>=700){s=A.p(30)
-r=A.b(a,l,k).w.a.a>=700?A.bl(l,l,B.aN,l,new A.ajX(a),l,l,l,l):B.O
+r=A.b(a,l,k).w.a.a>=700?A.bl(l,l,B.aO,l,new A.ajX(a),l,l,l,l):B.O
 s=A.r(l,r,B.h,l,l,new A.P(B.aL,l,l,s,l,l,B.q),l,l,l,l,l,l,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,l),A.ah(new A.bJ(B.S,l,l,A.b(a,l,k).w.a.a>=700?l:A.c("eG Data Protection Policy",l,l,l,l,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),l,l,l),l),1)],t.p),B.i,B.c,B.b,l)}r=!(A.b(a,l,k).w.a.a>=700)?new A.bD(new A.ajY(),l):l
 q=!(A.b(a,l,k).w.a.a>=700)?A.ds(l,l,l,B.bp,new A.ajZ(),new A.ak_(a),l,l,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,l,0,new A.f(B.u,s,l),r,l)
+r=A.co(A.a([q],p),!1,B.aQ,l,0,new A.f(B.u,s,l),r,l)
 s=!(A.b(a,l,k).w.a.a>=700)?m.ae4(a):l
 q=A.w(B.e.K(127.5),206,203,203)
 o=A.p(12)
 n=A.c("Data Protection Policy\n",l,l,l,l,A.d().$4$color$fontSize$fontWeight$height(B.o,A.b(a,l,k).w.a.a>=700?24:14,B.k,1),l,l,l)
 q=A.bA(new A.f(B.dO,A.j(A.a([new A.f(B.hJ,A.j(A.a([n,B.im,A.c("Discover how eG safeguards your personal data and ensures compliance with data protection laws through our Data Protection Policy.\n",l,l,l,l,A.d().$3$fontSize$fontWeight$height(A.b(a,l,k).w.a.a>=700?16:12,B.I,1.5),l,l,l)],p),B.f,B.c,B.b,l),l),m.iZ("Introduction\n","Like other educational institutions, eduGuardian FZE LLC collects and processes information about employees, applicants, learners, non-resident members, and other individuals for various purposes. These purposes include administering admissions, providing academic and welfare services, recording academic progress, managing payroll, and facilitating communication (including references and certificates). The collection, use, and storage of this data must be fair, secure, and kept confidential from unauthorized persons. This document outlines how eduGuardian FZE LLC ensures the confidentiality of personal data across all its operations.\n\n",a),m.iZ("Scope\n","This policy covers all records held and processed by eduGuardian FZE LLC, which is responsible for its own records. For this document, the following definitions apply:\n\nPersonal Data: Information about living, identifiable individuals that is subject to 'processing.' This can be in an automated format (e.g., on a computer system) or a structured manual filing system. Personal data includes statements of fact, opinions, photographs, videos (e.g., CCTV), or sound recordings related to individuals.\n\nData Controller: The person or persons responsible for determining how and why personal data is processed. A data controller must comply with the eight Data Protection Principles.\n\n",a),m.iZ("Data Protection Principles\n","\u2713 Processing data fairly and lawfully.\n\u2713 Collecting personal data for specific and lawful purposes.\n\u2713 Ensuring personal data is relevant and not excessive.\n\u2713 Maintaining data accuracy and keeping it up to date.\n\u2713 Retaining data only as long as necessary.\n\u2713 Respecting the rights of individuals whose data is held.\n\u2713 Protecting personal data with appropriate security measures.\n\u2713 Preventing unauthorized or unlawful processing, loss, destruction, or damage to personal data.\n\n",a),m.iZ("Aims\n","The correct treatment of personal information is essential to maintaining trust within the eduGuardian FZE LLC community and beyond. To achieve this, eduGuardian FZE LLC will:\n\n\u2713 Ensure the fair collection and use of personal data.\n\u2713 Comply with legal obligations regarding the purposes for which data is used.\n\u2713 Collect and process only necessary information for operational or legal requirements.\n\u2713 Maintain the accuracy and quality of information used.\n\u2713 Restrict the retention of data to appropriate timeframes.\n\u2713 Uphold individuals' rights, including the right to be informed about data processing, access personal information, and correct or erase inaccurate data.\n\u2713 Apply technical and organizational security measures to safeguard personal information.\n\n",a),m.iZ("Data Processing\n","The term 'processing' refers to a wide range of operations on personal data, including obtaining, recording, storing, retrieving, consulting, using, transmitting, or erasing information. The eduGuardian FZE LLC's Data Protection Officer (DPO) is responsible for overseeing all processing activities.\n\n",a),m.iZ("Responsibilities of Data Users\n","All members of the eduGuardian FZE LLC community who handle personal data must comply with the Data Protection Principles and eduGuardian FZE LLC's policies. Unauthorized use or misuse of personal data may result in disciplinary action. In particular, written authorization from the DPO is required for:\n\n\u2713 Developing new systems for processing personal data.\n\u2713 Using existing data for new purposes.\n\u2713 Creating or using manual or electronic filing systems for new purposes.\n\n",a),m.iZ("Data Areas\n","The eduGuardian FZE LLC has designated various 'Data Areas,' each with a specific Data Area Contact responsible for managing personal data within that area. These include tutorial files, admissions files, financial records, disciplinary records, medical records, personnel files, wages files, and others. Access to data is restricted to authorized personnel, and all requests for access must be approved by the relevant Data Area Contact.\n\n",a),m.iZ("Sensitive Personal Data\n","eduGuardian FZE LLC may process 'sensitive personal data,' such as information regarding an individual's racial or ethnic origin, political or religious beliefs, health, sexual orientation, or criminal record. This data is processed only with the individual's consent, except in cases where processing is required by law.\n\n",a),m.iZ("Data Security and Disclosure\n","All personal data must be stored securely, whether in physical or electronic form. Unauthorized disclosure of personal data is a serious disciplinary matter. Data users must ensure that:\n\n\u2713 Personal data is securely stored (e.g., locked cabinets, password-protected files).\n\u2713 Personal data is not disclosed to unauthorized individuals.\n\n",a),m.iZ("Data Subject Consent\n","Whenever practical, eduGuardian FZE LLC seeks explicit consent from individuals regarding how their personal data will be used and processed. Prospective and current staff, learners, and applicants will be asked to sign a consent form for specific data uses. Objections to data processing will be considered, but eduGuardian FZE LLC reserves the right to process data in order to fulfill its legal obligations and operational needs.\n\n",a),m.iZ("Data Protection Officer\n","The Data Protection Officer (DPO) oversees compliance with this policy and addresses any queries regarding data protection. The DPO is also responsible for handling data access requests and ensuring the security of personal data.\n\n",a),m.iZ("Policy Updates\n","This policy may be updated periodically to reflect changes in legislation or operational requirements. All members of the eduGuardian FZE LLC community will be informed of significant changes to the policy.\n\n",a),m.iZ("Contact Us\n","If you believe we are not adhering to this privacy policy, or if you have any concerns, please contact us immediately via:\n\nPhone: +971 65515642\nEmail: info@myeduguardian.com\n\nWe are here to address any concerns or questions you may have regarding our privacy practices.\n\n",a)],p),B.f,B.c,B.b,l),l),l,10,l,q,new A.ac(o,B.w))
-return A.ay(new A.cj(r,j,l),l,A.bX(A.j(A.a([new A.f(B.fB,q,l),A.o(B.bg,A.b(a,l,k).w.a.a>=700?300:630,1/0)],p),B.i,B.c,B.b,l),l,B.G,l,l,l,B.R),s,l)},
+return A.ay(new A.cj(r,j,l),l,A.bX(A.j(A.a([new A.f(B.fB,q,l),A.o(B.aN,A.b(a,l,k).w.a.a>=700?300:630,1/0)],p),B.i,B.c,B.b,l),l,B.G,l,l,l,B.R),s,l)},
 iZ(a,b,c){var s=null,r=t.w,q=A.c(a,s,s,s,s,A.d().$3$fontSize$fontWeight$height(A.b(c,s,r).w.a.a>=700?18:14,B.k,1),s,s,s)
 return new A.f(B.hJ,A.j(A.a([q,B.im,A.c(b,s,s,s,s,A.d().$3$fontSize$fontWeight$height(A.b(c,s,r).w.a.a>=700?16:12,B.I,1.5),s,s,s)],t.p),B.f,B.c,B.b,s),s)}}
 A.ajO.prototype={
@@ -57461,7 +57467,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.ajY.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.ajW(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.ajW(a),s,s,s,s),s)},
 $S:9}
 A.ajW.prototype={
 $0(){A.d_(this.a).cm()},
@@ -57473,27 +57479,27 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.ajZ.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.BF.prototype={
 aop(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aDw(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDx(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDy(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDz(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDA(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDB(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDC(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDD(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o,n,m=this,l=null,k=t.w,j=A.b(a,l,k).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aDw(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDx(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDy(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDz(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDA(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDB(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDC(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aDD(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o,n,m=this,l=null,k=t.w,j=A.b(a,l,k).w.a.a>=700?B.ai:B.aP
 if(A.b(a,l,k).w.a.a>=700)s=A.o(new A.cf("egAcademy",l),80,l)
 else{A.b(a,l,k).toString
 if(A.b(a,l,k).w.a.a>=700){s=A.p(30)
-r=A.b(a,l,k).w.a.a>=700?A.bl(l,l,B.aN,l,new A.aDF(a),l,l,l,l):B.O
+r=A.b(a,l,k).w.a.a>=700?A.bl(l,l,B.aO,l,new A.aDF(a),l,l,l,l):B.O
 s=A.r(l,r,B.h,l,l,new A.P(B.aL,l,l,s,l,l,B.q),l,l,l,l,l,l,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,l),A.ah(new A.bJ(B.S,l,l,A.b(a,l,k).w.a.a>=700?l:A.c("eG Privacy Policy",l,l,l,l,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),l,l,l),l),1)],t.p),B.i,B.c,B.b,l)}r=!(A.b(a,l,k).w.a.a>=700)?new A.bD(new A.aDG(),l):l
 q=!(A.b(a,l,k).w.a.a>=700)?A.ds(l,l,l,B.bp,new A.aDH(),new A.aDI(a),l,l,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,l,0,new A.f(B.u,s,l),r,l)
+r=A.co(A.a([q],p),!1,B.aQ,l,0,new A.f(B.u,s,l),r,l)
 s=!(A.b(a,l,k).w.a.a>=700)?m.aop(a):l
 q=A.w(B.e.K(127.5),206,203,203)
 o=A.p(12)
 n=A.c("eG Privacy Policy\n",l,l,l,l,A.d().$4$color$fontSize$fontWeight$height(B.o,A.b(a,l,k).w.a.a>=700?24:14,B.k,1),l,l,l)
 q=A.bA(new A.f(B.dO,A.j(A.a([new A.f(B.hJ,A.j(A.a([n,B.im,A.c(u.ab,l,l,l,l,A.d().$3$fontSize$fontWeight$height(A.b(a,l,k).w.a.a>=700?16:12,B.I,1.5),l,l,l)],p),B.f,B.c,B.b,l),l),m.fe("Privacy Statement\n","Welcome to the website https://www.myeduguardian.com of eduGuardian FZE LLC. Please carefully review these Terms and Conditions of Use (\u201cTerms\u201d) before using the Site, as they govern your relationship with eduGuardian FZE LLC and your use of this Site. This website provides general information about the institution and its services. eduGuardian FZE LLC advises that you do not assume the information on specific topics is complete or up-to-date.\n\n",a),m.fe("Permission to Use the Site\n","eduGuardian FZE LLC grants you limited, personal permission to use the Website, but there are restrictions. You may only download or print content from this Site for non-commercial purposes. Any commercial use, such as selling content, creating course packs, or posting information on another website, is strictly prohibited.\n\n",a),m.fe("You are not permitted to:\n","\u2713 Frame all or part of the Website.\n\u2713 Alter or remove proprietary notices from downloaded or printed materials.\n\u2713 Systematically download or print materials from the Website.\n\u2713 Transmit or share Website data with third parties.\n\u2713 Use the Website in violation of any applicable laws.\n\n",a),m.fe("Termination of Permission\n","Your permission to use the Site terminates immediately if you breach these Terms. You may not transfer or assign this permission to any other party. eduGuardian FZE LLC holds ownership or licensing rights over all Website content, software, and services. You are not granted any rights beyond those expressly outlined in this Agreement.\n\n",a),m.fe("Trademarks\n",'The "eduGuardian FZE LLC" name, logos, and other proprietary marks are trademarks of eduGuardian FZE LLC or its licensors. No rights to these trademarks are granted under this Agreement.\n\n',a),m.fe("Disclaimer\n",'The Site and its services are provided "As Is." eduGuardian FZE LLC disclaims all warranties, whether express or implied, including but not limited to warranties of title, non-infringement, merchantability, or fitness for a particular purpose. eduGuardian FZE LLC also does not guarantee that the Site will be available at all times or that it will be free of errors or interruptions.\n\n',a),m.fe("User Responsibility\n","You are solely responsible for how you use the Website. eduGuardian FZE LLC, along with its officers, directors, employees, agents, and information providers, shall not be held liable for any damages arising from your use of the Site. This applies to any direct, indirect, incidental, special, or punitive damages, regardless of the legal basis of your claim, including breach of warranty, negligence, or any other legal theory.\n\n",a),m.fe("Sharing of Student Data\n","Basic student data and academic information will be shared with partnered universities where the student is enrolled. You agree to indemnify eduGuardian FZE LLC against any claims, losses, or damages (including attorney fees) arising from your breach of these Terms or your use of the Website.\n\n",a),m.fe("Links to Other Sites\n","This Website may include links to external sites, but eduGuardian FZE LLC is not responsible for the content, services, or data privacy practices of these third-party sites. The inclusion of any link should not be considered an endorsement by eduGuardian FZE LLC, unless explicitly stated.\n\n",a),m.fe("Privacy Policy\n","eduGuardian FZE LLC is committed to protecting the privacy of visitors to its Site. We do not collect personal information unless voluntarily provided by you. We do not sell, share, rent, or transfer personal information to third parties. However, we may collect non-personal data based on information you provide during your visit to the Site.\n\n",a),m.fe("Non-Personal Information Collection\n",'During your visit, our web server records information such as:\n\u2713 Your browser type (e.g., "Netscape version X" or "Internet Explorer version X")\n\u2713 The date, time, and pages visited on our Site\n\nThis data is used for statistical analysis and does not record individual user information.\n\n',a),m.fe("Cookies\n",'Some pages on eduGuardian FZE LLC website use "cookies" to enhance your interaction with the Site. A cookie is a small file stored on your computer to help navigate the Site\'s features. Cookies on our site do not collect personal data but only track your session. You can disable cookies in your browser settings if you are concerned about their use.\n\n',a),m.fe("Emails\n","If you choose to contact us via email, your return email address and any personal information included will be used only to address your request. Please be mindful that email communication may not be fully secure, so limit the personal details you share.\n\n",a),m.fe("Interactive Forms\n","Our Site offers interactive forms that may request personal data (such as email address, name, or organization) for specific purposes like registering for workshops or seminars. We do not share this information with third parties without your consent.\n\n",a),m.fe("Third-Party Links\n","Our privacy policy does not apply to third-party websites that may be linked from our Site. These sites may collect their own data or create cookies, and we advise you to review their privacy policies before sharing any personal information.\n\n",a),m.fe("Security\n","We implement strict security measures to protect the information in our data repository from loss, misuse, or alteration.\n\n",a),m.fe("Changes to the Privacy Policy\n","Please note that this Privacy Policy may be updated from time to time. Any changes affecting your rights will be posted on the Site.\n\n",a),m.fe("Effective Date\n","This privacy policy is effective from November 1, 2024, and supersedes all prior policies.\n\n",a),m.fe("Applicability\n","This policy applies to all personal data collected electronically by eduGuardian FZE LLC.\n\n",a),m.fe("Contact Us\n","If you believe we are not adhering to this privacy policy, or if you have any concerns, please contact us immediately via:\nPhone: +971 65515642\nEmail: info@myeduguardian.com\n\nWe are here to address any concerns or questions you may have regarding our privacy practices.\n",a)],p),B.f,B.c,B.b,l),l),l,10,l,q,new A.ac(o,B.w))
-return A.ay(new A.cj(r,j,l),l,A.bX(A.j(A.a([new A.f(B.fB,q,l),A.o(B.bg,A.b(a,l,k).w.a.a>=700?300:630,1/0)],p),B.i,B.c,B.b,l),l,B.G,l,l,l,B.R),s,l)},
+return A.ay(new A.cj(r,j,l),l,A.bX(A.j(A.a([new A.f(B.fB,q,l),A.o(B.aN,A.b(a,l,k).w.a.a>=700?300:630,1/0)],p),B.i,B.c,B.b,l),l,B.G,l,l,l,B.R),s,l)},
 fe(a,b,c){var s=null,r=t.w,q=A.c(a,s,s,s,s,A.d().$3$fontSize$fontWeight$height(A.b(c,s,r).w.a.a>=700?18:14,B.k,1),s,s,s)
 return new A.f(B.hJ,A.j(A.a([q,B.im,A.c(b,s,s,s,s,A.d().$3$fontSize$fontWeight$height(A.b(c,s,r).w.a.a>=700?16:12,B.I,1.5),s,s,s)],t.p),B.f,B.c,B.b,s),s)}}
 A.aDw.prototype={
@@ -57539,7 +57545,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aDG.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aDE(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aDE(a),s,s,s,s),s)},
 $S:9}
 A.aDE.prototype={
 $0(){A.d_(this.a).cm()},
@@ -57551,27 +57557,27 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aDH.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.BQ.prototype={
 aoJ(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aEm(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEn(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEo(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEp(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEq(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEr(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEs(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEt(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o,n,m=this,l=null,k=t.w,j=A.b(a,l,k).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aEm(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEn(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEo(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEp(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEq(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEr(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEs(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aEt(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o,n,m=this,l=null,k=t.w,j=A.b(a,l,k).w.a.a>=700?B.ai:B.aP
 if(A.b(a,l,k).w.a.a>=700)s=A.o(new A.cf("egAcademy",l),80,l)
 else{A.b(a,l,k).toString
 if(A.b(a,l,k).w.a.a>=700){s=A.p(30)
-r=A.b(a,l,k).w.a.a>=700?A.bl(l,l,B.aN,l,new A.aEv(a),l,l,l,l):B.O
+r=A.b(a,l,k).w.a.a>=700?A.bl(l,l,B.aO,l,new A.aEv(a),l,l,l,l):B.O
 s=A.r(l,r,B.h,l,l,new A.P(B.aL,l,l,s,l,l,B.q),l,l,l,l,l,l,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,l),A.ah(new A.bJ(B.S,l,l,A.b(a,l,k).w.a.a>=700?l:A.c("eG Refund Policy",l,l,l,l,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),l,l,l),l),1)],t.p),B.i,B.c,B.b,l)}r=!(A.b(a,l,k).w.a.a>=700)?new A.bD(new A.aEw(),l):l
 q=!(A.b(a,l,k).w.a.a>=700)?A.ds(l,l,l,B.bp,new A.aEx(),new A.aEy(a),l,l,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,l,0,new A.f(B.u,s,l),r,l)
+r=A.co(A.a([q],p),!1,B.aQ,l,0,new A.f(B.u,s,l),r,l)
 s=!(A.b(a,l,k).w.a.a>=700)?m.aoJ(a):l
 q=A.w(B.e.K(127.5),206,203,203)
 o=A.p(12)
 n=A.c("eG Refund Policy\n",l,l,l,l,A.d().$4$color$fontSize$fontWeight$height(B.o,A.b(a,l,k).w.a.a>=700?18:14,B.k,1),l,l,l)
 q=A.bA(A.bX(new A.f(B.dO,A.j(A.a([new A.f(B.hJ,A.j(A.a([n,B.im,A.c(u.ab,l,l,l,l,A.d().$3$fontSize$fontWeight$height(A.b(a,l,k).w.a.a>=700?16:12,B.I,1.5),l,l,l)],p),B.f,B.c,B.b,l),l),m.w2("Thank you for choosing eduGuardian","Thank you for choosing eduGuardian for your continued education. We are committed to ensuring a positive experience for our students as they explore, evaluate, and enroll in our programs. By enrolling in a program at eduGuardian, you agree to adhere to our terms of service and refund policy.",a),m.w2("Cancellation or Change of Enrollment Policy","When you enroll in a course at eduGuardian, you are entering a legal agreement under common law. This agreement requires you to comply with the conditions of enrollment, including meeting payment requirements, in exchange for the delivery of the course. Please note that eduGuardian cannot assume responsibility for any changes in your personal circumstances, nor can we be held liable for such changes. This refund policy applies to all students enrolling in a course with eduGuardian.",a),m.w2("Refund Eligibility","\ud83d\udc49  Withdrawal Within 10 Days of Registration: \nIf a student withdraws within 10 days of registration, they are eligible for an 80% refund of the total amount paid at registration. The remaining 20% will be retained as a processing charge or non-refundable deposit.\n\n\n\ud83d\udc49  Withdrawal Between 11 and 20 Days After Registration: \nIf a student withdraws after 10 days but before the 20th day from the date of registration, they will receive a 50% refund.\n\n\n\ud83d\udc49  Withdrawal Between 21 and 30 Days After Registration: \nIf a student withdraws after 20 days but before the 30th day, they will be eligible for a 25% refund.\n\n\n\ud83d\udc49  No Refund After Classes Commence: \nIf a student withdraws on the day classes commence or after, they will not be eligible for any refund.",a),m.w2("Refund Process","To initiate a withdrawal, students must notify their Course Administrator or Course Advisor via email, providing the reasons for their withdrawal along with any supporting documentation, if applicable. Refunds will be processed in accordance with the refund policy outlined above. We encourage students to carefully consider their options before enrolling and to reach out to our support team with any questions or concerns regarding this policy. Each refund request will be carefully reviewed on an individual basis, taking into account the specific circumstances and compliance with the outlined policies. eduGuardian reserves the right to approve or deny refund applications at its sole discretion. Once approved, refunds will be issued via bank transfer or cash and will be processed within 30 days from the date of approval.",a),m.w2("Note","eduGuardian is a transnational education partner, offering international degree programs in collaboration with its partner universities via distance learning. Students receive degrees and certificates from the partner university they are enrolled with through eduGuardian, which is accredited in the country of origin of the respective institution. Please note, eduGuardian does not guarantee the equivalence of qualifications in any country, as recognition standards vary between nations. Students are strongly encouraged to verify this information and conduct thorough research before enrolling in any program.",a)],p),B.f,B.c,B.b,l),l),l,B.G,l,l,l,B.R),l,10,l,q,new A.ac(o,B.w))
-return A.ay(new A.cj(r,j,l),l,A.bX(A.j(A.a([new A.f(B.fB,q,l),A.o(B.bg,A.b(a,l,k).w.a.a>=700?300:630,1/0)],p),B.i,B.c,B.b,l),l,B.G,l,l,l,B.R),s,l)},
+return A.ay(new A.cj(r,j,l),l,A.bX(A.j(A.a([new A.f(B.fB,q,l),A.o(B.aN,A.b(a,l,k).w.a.a>=700?300:630,1/0)],p),B.i,B.c,B.b,l),l,B.G,l,l,l,B.R),s,l)},
 w2(a,b,c){var s=null,r=t.w,q=A.c(a,s,s,s,s,A.d().$3$fontSize$fontWeight$height(A.b(c,s,r).w.a.a>=700?18:14,B.k,1),s,s,s)
 return new A.f(B.hJ,A.j(A.a([q,B.P,A.c(b,s,s,s,s,A.d().$3$fontSize$fontWeight$height(A.b(c,s,r).w.a.a>=700?16:12,B.I,1.5),s,s,s),B.ad6],t.p),B.f,B.c,B.b,s),s)}}
 A.aEm.prototype={
@@ -57617,7 +57623,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aEw.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aEu(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aEu(a),s,s,s,s),s)},
 $S:9}
 A.aEu.prototype={
 $0(){A.d_(this.a).cm()},
@@ -57629,23 +57635,23 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aEx.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.vh.prototype={
 S(){return new A.a4F(new A.aM(null,t.o))}}
 A.a4F.prototype={
 a6(){this.aj()
 A.b3V().bg(new A.aRc(this),t.P)},
-q(c7){var s,r,q,p,o,n,m,l=this,k=null,j="Commitment to Excellence",i="assets/images/enrollementprocess.png",h="Enrollment Process",g="Follow these steps to complete your enrollment with ease and get started with your studies at eG Academy. Each step is designed to ensure that your application is processed smoothly and efficiently, leading to a successful admission and commencement of your academic journey.",f="Application Submission",e="Submit your application online with all required documents.",d="Registration Fee",c="If selected, pay the registration fee.",b="Conditional Offer Letter",a="Receive a conditional offer letter upon payment confirmation.",a0="Tuition Fee Payment",a1="Pay the tuition fee as outlined in the conditional offer letter.",a2="Complete Offer Letter",a3="Receive a complete offer letter once the tuition fee is paid.",a4="Orientation",a5="Attend the orientation session to get familiar with the course and academy resources.",a6="Start Classes",a7="Begin your classes as per the schedule provided.",a8="assets/images/faculties.png",a9="Leading Minds of eG Academy",b0="Discover the unparalleled expertise and commitment of our faculty members. Each point highlights the unique strengths and qualities that make our educators exceptional.",b1="Highly Qualified Professionals",b2="Our faculty members are experts in their respective fields, holding advanced degrees and professional certifications from prestigious institutions.",b3="Diverse Academic Backgrounds",b4="We boast a diverse team of educators with extensive experience across various academic disciplines and industries, bringing a wealth of knowledge and real-world expertise to the classroom.",b5="Experienced Industry Leaders",b6="Many of our instructors have significant industry experience, having worked with leading organizations and contributing to groundbreaking projects, ensuring that students gain practical insights.",b7="Our faculty is dedicated to maintaining high teaching standards and continually updating their knowledge to provide students with the latest advancements and trends in their fields.",b8="Personalized Mentorship",b9="We offer personalized mentorship and guidance to students, helping them achieve their academic and career goals through one-on-one interactions and tailored support.",c0="Innovative Teaching Methods",c1="Our educators employ innovative teaching methods and cutting-edge technology to enhance the learning experience and make complex concepts more accessible and engaging.",c2="Research and Publications",c3="Many of our faculty members are active researchers and have published their work in renowned journals, contributing to the academic community and keeping their teaching aligned with current research.",c4=t.w,c5=A.b(c7,k,c4).w,c6=A.b(c7,k,c4).w.a.a>=700?B.ai:B.aO
+q(c7){var s,r,q,p,o,n,m,l=this,k=null,j="Commitment to Excellence",i="assets/images/enrollementprocess.png",h="Enrollment Process",g="Follow these steps to complete your enrollment with ease and get started with your studies at eG Academy. Each step is designed to ensure that your application is processed smoothly and efficiently, leading to a successful admission and commencement of your academic journey.",f="Application Submission",e="Submit your application online with all required documents.",d="Registration Fee",c="If selected, pay the registration fee.",b="Conditional Offer Letter",a="Receive a conditional offer letter upon payment confirmation.",a0="Tuition Fee Payment",a1="Pay the tuition fee as outlined in the conditional offer letter.",a2="Complete Offer Letter",a3="Receive a complete offer letter once the tuition fee is paid.",a4="Orientation",a5="Attend the orientation session to get familiar with the course and academy resources.",a6="Start Classes",a7="Begin your classes as per the schedule provided.",a8="assets/images/faculties.png",a9="Leading Minds of eG Academy",b0="Discover the unparalleled expertise and commitment of our faculty members. Each point highlights the unique strengths and qualities that make our educators exceptional.",b1="Highly Qualified Professionals",b2="Our faculty members are experts in their respective fields, holding advanced degrees and professional certifications from prestigious institutions.",b3="Diverse Academic Backgrounds",b4="We boast a diverse team of educators with extensive experience across various academic disciplines and industries, bringing a wealth of knowledge and real-world expertise to the classroom.",b5="Experienced Industry Leaders",b6="Many of our instructors have significant industry experience, having worked with leading organizations and contributing to groundbreaking projects, ensuring that students gain practical insights.",b7="Our faculty is dedicated to maintaining high teaching standards and continually updating their knowledge to provide students with the latest advancements and trends in their fields.",b8="Personalized Mentorship",b9="We offer personalized mentorship and guidance to students, helping them achieve their academic and career goals through one-on-one interactions and tailored support.",c0="Innovative Teaching Methods",c1="Our educators employ innovative teaching methods and cutting-edge technology to enhance the learning experience and make complex concepts more accessible and engaging.",c2="Research and Publications",c3="Many of our faculty members are active researchers and have published their work in renowned journals, contributing to the academic community and keeping their teaching aligned with current research.",c4=t.w,c5=A.b(c7,k,c4).w,c6=A.b(c7,k,c4).w.a.a>=700?B.ai:B.aP
 if(A.b(c7,k,c4).w.a.a>=700)s=A.o(new A.cf("egAcademy",k),80,k)
 else{A.b(c7,k,c4).toString
 if(A.b(c7,k,c4).w.a.a>=700){s=A.p(30)
-r=A.b(c7,k,c4).w.a.a>=700?A.bl(k,k,B.aN,k,new A.aR7(c7),k,k,k,k):B.O
+r=A.b(c7,k,c4).w.a.a>=700?A.bl(k,k,B.aO,k,new A.aR7(c7),k,k,k,k):B.O
 s=A.r(k,r,B.h,k,k,new A.P(B.aL,k,k,s,k,k,B.q),k,k,k,k,k,k,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,k),A.ah(new A.bJ(B.S,k,k,A.b(c7,k,c4).w.a.a>=700?k:A.c("eG Academy",k,k,k,k,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),k,k,k),k),1)],t.p),B.i,B.c,B.b,k)}r=!(A.b(c7,k,c4).w.a.a>=700)?new A.bD(new A.aR8(),k):k
 q=!(A.b(c7,k,c4).w.a.a>=700)?A.ds(k,k,k,B.bp,new A.aR9(),new A.aRa(c7),k,k,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,k,0,new A.f(B.u,s,k),r,k)
+r=A.co(A.a([q],p),!1,B.aQ,k,0,new A.f(B.u,s,k),r,k)
 s=!(A.b(c7,k,c4).w.a.a>=700)?l.af8(c7):k
 c5=c5.a.a>600?B.dz:B.hu
 if(A.b(c7,k,c4).w.a.a>=700)q=600
@@ -57654,13 +57660,13 @@ q=420}q=A.a([A.o(B.Yg,q,1/0)],p)
 if(A.b(c7,k,c4).w.a.a>=700)q.push(A.o(B.d7,A.b(c7,k,c4).w.a.a>=700?300:1230,1/0))
 o=A.b(c7,k,c4).w.a.a>=700?640:1920
 n=t.s
-q.push(A.r(k,A.o(new A.UY(A.a([new A.oF("assets/images/eAC1.png","Student Satisfaction and Security",A.a(["eG Academy prides itself on being the place where students feel most satisfied and secure in pursuing their studies abroad."],n)),new A.oF("assets/images/eAC2.png","Experienced and Caring Staff",A.a(["This is because of our highly experienced staff, who ensure that every student who subscribes to our services is treated with the utmost care and respect."],n)),new A.oF("assets/images/eAC3.png",j,A.a(["We constantly identify areas for improvement and work on them rigorously to uphold the immense responsibility of being employed in one of the premier study-abroad consultancies in the Emirates."],n)),new A.oF("assets/images/eAC4.png","Continuous Improvement",A.a(["Our commitment to continuous improvement ensures that our services evolve to meet the changing needs of our students, providing them with the best possible experience."],n))],t.P2),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(new A.UY(A.a([new A.oF("assets/images/eAC1.png","Student Satisfaction and Security",A.a(["eG Academy prides itself on being the place where students feel most satisfied and secure in pursuing their studies abroad."],n)),new A.oF("assets/images/eAC2.png","Experienced and Caring Staff",A.a(["This is because of our highly experienced staff, who ensure that every student who subscribes to our services is treated with the utmost care and respect."],n)),new A.oF("assets/images/eAC3.png",j,A.a(["We constantly identify areas for improvement and work on them rigorously to uphold the immense responsibility of being employed in one of the premier study-abroad consultancies in the Emirates."],n)),new A.oF("assets/images/eAC4.png","Continuous Improvement",A.a(["Our commitment to continuous improvement ensures that our services evolve to meet the changing needs of our students, providing them with the best possible experience."],n))],t.P2),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 o=A.b(c7,k,c4).w.a.a>=700?640:1800
-q.push(A.r(k,A.o(new A.V8(k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(new A.V8(k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 o=A.b(c7,k,c4).w.a.a>=700?640:1900
-q.push(A.r(k,A.o(new A.UZ(A.a([new A.oH("assets/images/classroom1.png","Classroom Experience",A.a(["Engage in face-to-face interactions with instructors."],n)),new A.oH("assets/images/classroom2.png","Practical Training",A.a(["Access state-of-the-art facilities for hands-on practice."],n)),new A.oH("assets/images/classroom3.png","Networking Opportunities",A.a(["Collaborate with peers and industry experts."],n)),new A.oH("assets/images/classroom4.png","Dedicated Support",A.a(["Get personalized guidance from mentors during classes."],n))],t.wc),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(new A.UZ(A.a([new A.oH("assets/images/classroom1.png","Classroom Experience",A.a(["Engage in face-to-face interactions with instructors."],n)),new A.oH("assets/images/classroom2.png","Practical Training",A.a(["Access state-of-the-art facilities for hands-on practice."],n)),new A.oH("assets/images/classroom3.png","Networking Opportunities",A.a(["Collaborate with peers and industry experts."],n)),new A.oH("assets/images/classroom4.png","Dedicated Support",A.a(["Get personalized guidance from mentors during classes."],n))],t.wc),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 o=A.b(c7,k,c4).w.a.a>=700?640:1920
-q.push(A.r(k,A.o(new A.V_(A.a([new A.oI("assets/images/online1.png","Flexible Scheduling",A.a(["Learn at your own pace with 24/7 access to course materials."],n)),new A.oI("assets/images/online2.png","Global Access",A.a(["Join from any part of the world with just an internet connection."],n)),new A.oI("assets/images/online3.png","Interactive Sessions",A.a(["Participate in live classes, Q&A sessions, and discussions."],n)),new A.oI("assets/images/online4.png","Expert Instructors",A.a(["Gain insights from highly qualified and experienced educators."],n))],t.s2),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(new A.V_(A.a([new A.oI("assets/images/online1.png","Flexible Scheduling",A.a(["Learn at your own pace with 24/7 access to course materials."],n)),new A.oI("assets/images/online2.png","Global Access",A.a(["Join from any part of the world with just an internet connection."],n)),new A.oI("assets/images/online3.png","Interactive Sessions",A.a(["Participate in live classes, Q&A sessions, and discussions."],n)),new A.oI("assets/images/online4.png","Expert Instructors",A.a(["Gain insights from highly qualified and experienced educators."],n))],t.s2),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 if(A.b(c7,k,c4).w.a.a>=700){o=A.aF(B.ab,A.am(i,k,B.D,550,k,k,A.b(c7,k,c4).w.a.a/2.2),B.F)
 m=A.b(c7,k,c4).w
 m=A.B(A.a([new A.f(B.du,o,k),new A.f(B.j5,A.aF(B.ab,A.r(k,new A.f(B.V,A.j(A.a([A.c(h,k,k,k,k,A.d().$3$color$fontSize$fontWeight(B.o,22,B.k),k,k,k),B.t,A.c(g,k,k,k,k,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),14,B.I),k,k,k),B.r,A.ah(A.bH(A.a([l.aC(f,e),l.aC(d,c),l.aC(b,a),l.aC(a0,a1),l.aC(a2,a3),l.aC(a4,a5),l.aC(a6,a7)],p),k,k,!1),1)],p),B.f,B.c,B.b,k),k),B.h,k,k,B.bi,k,600,k,k,k,k,m.a.a/2.3),B.F),k)],p),B.i,B.c,B.b,k)
@@ -57669,9 +57675,9 @@ m=A.b(c7,k,c4).w
 m=A.j(A.a([new A.f(B.hM,o,k),new A.f(B.eQ,A.aF(B.ab,A.r(k,new A.f(B.V,A.j(A.a([A.c(h,k,k,k,k,A.d().$3$color$fontSize$fontWeight(B.o,16,B.k),k,k,k),B.t,A.c(g,k,k,k,k,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),12,B.I),k,k,k),B.r,A.ah(A.bH(A.a([l.aC(f,e),l.aC(d,c),l.aC(b,a),l.aC(a0,a1),l.aC(a2,a3),l.aC(a4,a5),l.aC(a6,a7)],p),k,k,!1),1)],p),B.f,B.c,B.b,k),k),B.h,k,k,B.bi,k,600,k,k,k,k,m.a.a),B.F),k)],p),B.i,B.c,B.b,k)
 o=m}q.push(A.r(k,o,B.h,B.c7,k,k,k,k,k,k,k,k,k))
 o=A.b(c7,k,c4).w.a.a>=700?640:1800
-q.push(A.r(k,A.o(new A.Va(k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(new A.Va(k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 o=A.b(c7,k,c4).w.a.a>=700?620:1900
-q.push(A.r(k,A.o(new A.UX(A.a([new A.oJ("assets/images/eG1.png","Comprehensive Learning Opportunities",A.a(["Experience personal, academic, and professional growth beyond the classroom."],n)),new A.oJ("assets/images/eG2.png","Global Networking",A.a(["Engage with international professionals and alumni through our extensive network and regular events."],n)),new A.oJ("assets/images/eG3.png","Industry-Relevant Curriculum",A.a(["Benefit from diverse courses taught by expert faculty with real-world insights."],n)),new A.oJ("assets/images/eG4.png","Flexible Learning Options",A.a(["Tailor your education with online, blended, and on-campus classes to fit your schedule."],n))],t.eZ),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(new A.UX(A.a([new A.oJ("assets/images/eG1.png","Comprehensive Learning Opportunities",A.a(["Experience personal, academic, and professional growth beyond the classroom."],n)),new A.oJ("assets/images/eG2.png","Global Networking",A.a(["Engage with international professionals and alumni through our extensive network and regular events."],n)),new A.oJ("assets/images/eG3.png","Industry-Relevant Curriculum",A.a(["Benefit from diverse courses taught by expert faculty with real-world insights."],n)),new A.oJ("assets/images/eG4.png","Flexible Learning Options",A.a(["Tailor your education with online, blended, and on-campus classes to fit your schedule."],n))],t.eZ),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 q.push(A.o(B.a8W,A.b(c7,k,c4).w.a.a>=700?680:1850,k))
 if(A.b(c7,k,c4).w.a.a>=700){o=A.aF(B.ab,A.am(a8,k,B.D,550,k,k,A.b(c7,k,c4).w.a.a/2.2),B.F)
 m=A.b(c7,k,c4).w
@@ -57681,13 +57687,13 @@ m=A.b(c7,k,c4).w
 m=A.j(A.a([new A.f(B.nW,o,k),new A.f(B.nU,A.aF(B.ab,A.r(k,new A.f(B.hN,A.j(A.a([A.c(a9,k,k,k,k,A.d().$3$color$fontSize$fontWeight(B.o,16,B.k),k,k,k),B.t,A.c(b0,k,k,k,k,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),14,B.I),k,k,k),B.r,A.ah(A.bH(A.a([l.aC(b1,b2),l.aC(b3,b4),l.aC(b5,b6),l.aC(j,b7),l.aC(b8,b9),l.aC(c0,c1),l.aC(c2,c3)],p),k,k,!1),1)],p),B.f,B.c,B.b,k),k),B.h,k,k,B.bi,k,720,k,k,k,k,m.a.a),B.F),k)],p),B.i,B.c,B.b,k)
 o=m}q.push(A.r(k,new A.f(B.nN,o,k),B.h,B.c7,k,k,k,k,k,k,k,k,k))
 o=A.b(c7,k,c4).w.a.a>=700?620:1900
-q.push(A.r(k,A.o(new A.V7(A.a([new A.oK("assets/images/eACA1.png","Supportive Community",A.a(["Connect with a network of peers, mentors, and professionals for guidance, networking, and collaborative learning."],n)),new A.oK("assets/images/eACA2.png","Recognized Certifications",A.a(["Earn industry-standard credentials that boost your career prospects."],n)),new A.oK("assets/images/eACA3.png","Expert Guidance",A.a(["Benefit from instruction by seasoned professionals and access to valuable resources."],n)),new A.oK("assets/images/eACA4.png","Expert Instructors and Resources",A.a(["Learn from experienced educators and industry professionals with access to cutting-edge tools and resources."],n))],t.S0),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(new A.V7(A.a([new A.oK("assets/images/eACA1.png","Supportive Community",A.a(["Connect with a network of peers, mentors, and professionals for guidance, networking, and collaborative learning."],n)),new A.oK("assets/images/eACA2.png","Recognized Certifications",A.a(["Earn industry-standard credentials that boost your career prospects."],n)),new A.oK("assets/images/eACA3.png","Expert Guidance",A.a(["Benefit from instruction by seasoned professionals and access to valuable resources."],n)),new A.oK("assets/images/eACA4.png","Expert Instructors and Resources",A.a(["Learn from experienced educators and industry professionals with access to cutting-edge tools and resources."],n))],t.S0),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 o=A.b(c7,k,c4).w.a.a>=700?620:720
-q.push(A.r(k,A.o(new A.V9(new A.aM(k,t.o),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
-q.push(A.o(B.bg,A.b(c7,k,c4).w.a.a>=700?300:630,1/0))
+q.push(A.r(k,A.o(new A.V9(new A.aM(k,t.o),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
+q.push(A.o(B.aN,A.b(c7,k,c4).w.a.a>=700?300:630,1/0))
 return A.ay(new A.cj(r,c6,k),B.m,A.bX(A.j(A.a([c5,A.j(q,B.f,B.c,B.b,k)],p),B.f,B.c,B.b,k),k,B.G,k,k,k,B.R),s,k)},
 af8(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aQZ(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR_(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR0(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR1(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR2(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR3(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR4(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR5(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aQZ(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR_(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR0(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR1(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR2(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR3(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR4(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aR5(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 aC(a,b){var s,r,q,p=null,o=A.hj(p,p,B.C,p,p,B.C,p),n=this.c
 n.toString
 s=t.w
@@ -57707,7 +57713,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aR8.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aR6(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aR6(a),s,s,s,s),s)},
 $S:9}
 A.aR6.prototype={
 $0(){A.d_(this.a).cm()},
@@ -57719,7 +57725,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aR9.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.aQZ.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -57760,16 +57766,16 @@ A.Z(s,!1).L(null)
 A.l(s).n(0,"/egstudios",null)},
 $S:0}
 A.A9.prototype={
-q(b1){var s,r,q,p,o,n,m,l,k=this,j=null,i="assets/images/careersjobs.png",h="Steps for a Successful Job Application",g="Follow these seven essential steps to navigate the job application process with confidence. From exploring opportunities to receiving your job offer, we guide you through each stage, ensuring you present your best self and land the right role at eG Careers.",f="Explore Opportunities",e="Browse through our available positions to find the job that matches your skills and interests.",d="Prepare Your Application",c="Tailor your resume and cover letter to highlight your relevant experience and qualifications.",b="Submit Your Application",a="Apply through our online portal by filling out the application form and uploading your documents.",a0="Application Review",a1="Our team carefully reviews your application to assess your fit for the role.",a2="Initial Interview",a3="If selected, you\u2019ll be invited to an initial interview to discuss your qualifications and career aspirations.",a4="Final Interview",a5="Successful candidates will proceed to a final interview with key team members to further assess alignment with the role.",a6="Receive Offer",a7="If you\u2019re the right fit, we\u2019ll extend a job offer and welcome you to the eG Careers team.",a8=t.w,a9=A.b(b1,j,a8).w,b0=A.b(b1,j,a8).w.a.a>=700?B.ai:B.aO
+q(b1){var s,r,q,p,o,n,m,l,k=this,j=null,i="assets/images/careersjobs.png",h="Steps for a Successful Job Application",g="Follow these seven essential steps to navigate the job application process with confidence. From exploring opportunities to receiving your job offer, we guide you through each stage, ensuring you present your best self and land the right role at eG Careers.",f="Explore Opportunities",e="Browse through our available positions to find the job that matches your skills and interests.",d="Prepare Your Application",c="Tailor your resume and cover letter to highlight your relevant experience and qualifications.",b="Submit Your Application",a="Apply through our online portal by filling out the application form and uploading your documents.",a0="Application Review",a1="Our team carefully reviews your application to assess your fit for the role.",a2="Initial Interview",a3="If selected, you\u2019ll be invited to an initial interview to discuss your qualifications and career aspirations.",a4="Final Interview",a5="Successful candidates will proceed to a final interview with key team members to further assess alignment with the role.",a6="Receive Offer",a7="If you\u2019re the right fit, we\u2019ll extend a job offer and welcome you to the eG Careers team.",a8=t.w,a9=A.b(b1,j,a8).w,b0=A.b(b1,j,a8).w.a.a>=700?B.ai:B.aP
 if(A.b(b1,j,a8).w.a.a>=700)s=A.o(new A.cf("egAcademy",j),80,j)
 else{A.b(b1,j,a8).toString
 if(A.b(b1,j,a8).w.a.a>=700){s=A.p(30)
-r=A.b(b1,j,a8).w.a.a>=700?A.bl(j,j,B.aN,j,new A.amt(b1),j,j,j,j):B.O
+r=A.b(b1,j,a8).w.a.a>=700?A.bl(j,j,B.aO,j,new A.amt(b1),j,j,j,j):B.O
 s=A.r(j,r,B.h,j,j,new A.P(B.aL,j,j,s,j,j,B.q),j,j,j,j,j,j,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,j),B.bw,A.ah(new A.bJ(B.S,j,j,A.b(b1,j,a8).w.a.a>=700?j:A.c("eG Careers",j,j,j,j,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),j,j,j),j),1)],t.p),B.i,B.c,B.b,j)}r=!(A.b(b1,j,a8).w.a.a>=700)?new A.bD(new A.amu(),j):j
 q=!(A.b(b1,j,a8).w.a.a>=700)?A.ds(j,j,j,B.po,new A.amv(),new A.amw(b1),j,j,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,j,0,new A.f(B.u,s,j),r,j)
+r=A.co(A.a([q],p),!1,B.aQ,j,0,new A.f(B.u,s,j),r,j)
 s=!(A.b(b1,j,a8).w.a.a>=700)?k.af9(b1):j
 a9=a9.a.a>600?B.dz:B.hu
 if(A.b(b1,j,a8).w.a.a>=700)q=600
@@ -57778,7 +57784,7 @@ q=360}q=A.a([A.o(B.Yi,q,1/0)],p)
 if(A.b(b1,j,a8).w.a.a>=700)q.push(A.o(B.d7,A.b(b1,j,a8).w.a.a>=700?300:1230,1/0))
 o=A.b(b1,j,a8).w.a.a>=700?640:2600
 n=t.s
-q.push(A.r(j,A.o(new A.V2(A.a([new A.lM("assets/images/cities.png","12K+",A.a(["Cities"],n)),new A.lM("assets/images/employees.png","4K+",A.a(["Employees"],n)),new A.lM("assets/images/educators.png","50K+",A.a(["Educators"],n)),new A.lM("assets/images/liveclass.png","150K+",A.a(["Live Classes"],n)),new A.lM("assets/images/activeusers.png","5M+",A.a(["Active Users"],n)),new A.lM("assets/images/learners.png","49M+",A.a(["Learners"],n))],t.FM),j),o,j),B.h,B.aS,j,j,j,j,j,B.u,j,j,j))
+q.push(A.r(j,A.o(new A.V2(A.a([new A.lM("assets/images/cities.png","12K+",A.a(["Cities"],n)),new A.lM("assets/images/employees.png","4K+",A.a(["Employees"],n)),new A.lM("assets/images/educators.png","50K+",A.a(["Educators"],n)),new A.lM("assets/images/liveclass.png","150K+",A.a(["Live Classes"],n)),new A.lM("assets/images/activeusers.png","5M+",A.a(["Active Users"],n)),new A.lM("assets/images/learners.png","49M+",A.a(["Learners"],n))],t.FM),j),o,j),B.h,B.aT,j,j,j,j,j,B.u,j,j,j))
 o=A.b(b1,j,a8).w.a.a>=700?620:900
 m=t.o
 q.push(A.r(j,A.o(new A.a1I(new A.aM(j,m),j),o,j),B.h,B.bX,j,j,j,j,j,B.u,j,j,j))
@@ -57798,11 +57804,11 @@ o=l}q.push(A.r(j,A.bQ(B.a6,A.a([o],p),B.B,B.a7,j),B.h,B.c7,j,j,j,j,j,j,j,j,j))
 o=A.b(b1,j,a8).w.a.a>=700?680:2000
 q.push(A.r(j,A.o(new A.T7(A.a([new A.op("assets/images/ejB1.png","Volunteer Programs",A.a(["Engage in community service initiatives that allow team members to give back and make a positive impact."],n)),new A.op("assets/images/ejB2.png","Professional Development Workshops",A.a(["Participate in skill-building workshops and training sessions designed to enhance personal and professional growth."],n)),new A.op("assets/images/ejB3.png","Sports and Fitness Clubs",A.a(["Join various sports teams or fitness classes to promote a healthy lifestyle and build camaraderie among colleagues."],n)),new A.op("assets/images/ejB4.png","Cultural and Diversity Events",A.a([" Celebrate the richness of our diverse workforce through events that promote cultural awareness and inclusivity."],n))],t.qX),j),o,j),B.h,B.bX,j,j,j,j,j,B.u,j,j,j))
 o=A.b(b1,j,a8).w.a.a>=700?640:720
-q.push(A.r(j,A.o(new A.V1(new A.aM(j,m),j),o,j),B.h,B.aS,j,j,j,j,j,B.u,j,j,j))
-q.push(A.o(B.bg,A.b(b1,j,a8).w.a.a>=700?300:630,1/0))
+q.push(A.r(j,A.o(new A.V1(new A.aM(j,m),j),o,j),B.h,B.aT,j,j,j,j,j,B.u,j,j,j))
+q.push(A.o(B.aN,A.b(b1,j,a8).w.a.a>=700?300:630,1/0))
 return A.ay(new A.cj(r,b0,j),B.m,A.bX(A.j(A.a([a9,A.j(q,B.f,B.c,B.b,j)],p),B.f,B.c,B.b,j),j,B.G,j,j,j,B.R),s,j)},
 af9(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.amk(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aml(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amm(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amn(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amo(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amp(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amq(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amr(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.amk(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aml(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amm(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amn(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amo(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amp(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amq(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amr(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 av(a,b,c){var s=null,r=A.hj(s,s,B.C,s,s,B.C,s),q=t.w,p=A.c(a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.l,A.b(c,s,q).w.a.a>=700?16:12,B.x),s,s,s),o=A.w(B.e.K(178.5),0,0,0)
 return new A.hN(r,A.cW(B.C,A.a([new A.f(B.V,A.c(b,s,s,s,s,A.d().$3$color$fontSize$fontWeight(o,A.b(c,s,q).w.a.a>=700?14:12,B.I),s,s,s),s)],t.p),B.C,B.u,p,s),s)}}
 A.amt.prototype={
@@ -57810,7 +57816,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.amu.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.ams(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.ams(a),s,s,s,s),s)},
 $S:9}
 A.ams.prototype={
 $0(){A.d_(this.a).cm()},
@@ -57822,7 +57828,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.amv.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.amk.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -57863,16 +57869,16 @@ A.Z(s,!1).L(null)
 A.l(s).n(0,"/egstudios",null)},
 $S:0}
 A.Aa.prototype={
-q(c7){var s,r,q,p,o,n,m,l=this,k=null,j="assets/images/jobapplyprocess.png",i="eG Jobs Application Steps",h="Navigate your job search with ease using our streamlined application process. From creating a profile to receiving job offers, eG Jobs provides step-by-step guidance and resources to help you connect with the right employers and advance your career.",g="Create Your Profile",f="Begin by signing up and creating a detailed profile that highlights your skills, experience, and career goals.",e="Explore Opportunities",d="Browse through a wide range of job listings tailored to your expertise and interests.",c="Tailor Your Resume",b="Customize your resume for each job application to showcase your relevant skills and achievements.",a="Submit Applications",a0="Apply for jobs directly through the platform, ensuring each application is complete and compelling.",a1="Prepare for Interviews",a2="Utilize our resources and tips to prepare for interviews and make a lasting impression on potential employers.",a3="Attend Interviews",a4=u.aj,a5="Receive Job Offers",a6=u.cT,a7="assets/images/globaljobs.png",a8="eG Jobs Global Connections",a9="Join our extensive network of professionals and employers worldwide. With eG Jobs Global Connections, you can expand your career horizons, access diverse job opportunities, and connect with industry leaders to advance your career.",b0="Career Connections",b1="Unlock your potential by connecting with professionals and employers globally. Our platform facilitates meaningful career connections to help you advance in your field.",b2="Professional Network",b3="Join a thriving community of industry experts and peers. Build valuable relationships, exchange insights, and grow your professional network with eG Jobs.",b4="Employment Pathways",b5="Navigate your career journey with our tailored employment pathways. Explore opportunities that align with your skills and aspirations to achieve your career goals.",b6="Talent Hub",b7="Discover a central hub for talent and opportunities. Whether you are a job seeker or an employer, eG Jobs Talent Hub offers the tools you need to succeed.",b8="Career Community",b9="Be part of a supportive career community that fosters growth and learning. Collaborate with like-minded individuals to share experiences and build your career.",c0="Opportunity Network",c1="Access a wide range of job opportunities through our network. Connect with companies looking for talent like yours and take the next step in your career.",c2="Success Hub",c3="Achieve your career ambitions with guidance and resources from our Success Hub. We provide the support you need to reach your full potential.",c4=t.w,c5=A.b(c7,k,c4).w,c6=A.b(c7,k,c4).w.a.a>=700?B.ai:B.aO
+q(c7){var s,r,q,p,o,n,m,l=this,k=null,j="assets/images/jobapplyprocess.png",i="eG Jobs Application Steps",h="Navigate your job search with ease using our streamlined application process. From creating a profile to receiving job offers, eG Jobs provides step-by-step guidance and resources to help you connect with the right employers and advance your career.",g="Create Your Profile",f="Begin by signing up and creating a detailed profile that highlights your skills, experience, and career goals.",e="Explore Opportunities",d="Browse through a wide range of job listings tailored to your expertise and interests.",c="Tailor Your Resume",b="Customize your resume for each job application to showcase your relevant skills and achievements.",a="Submit Applications",a0="Apply for jobs directly through the platform, ensuring each application is complete and compelling.",a1="Prepare for Interviews",a2="Utilize our resources and tips to prepare for interviews and make a lasting impression on potential employers.",a3="Attend Interviews",a4=u.aj,a5="Receive Job Offers",a6=u.cT,a7="assets/images/globaljobs.png",a8="eG Jobs Global Connections",a9="Join our extensive network of professionals and employers worldwide. With eG Jobs Global Connections, you can expand your career horizons, access diverse job opportunities, and connect with industry leaders to advance your career.",b0="Career Connections",b1="Unlock your potential by connecting with professionals and employers globally. Our platform facilitates meaningful career connections to help you advance in your field.",b2="Professional Network",b3="Join a thriving community of industry experts and peers. Build valuable relationships, exchange insights, and grow your professional network with eG Jobs.",b4="Employment Pathways",b5="Navigate your career journey with our tailored employment pathways. Explore opportunities that align with your skills and aspirations to achieve your career goals.",b6="Talent Hub",b7="Discover a central hub for talent and opportunities. Whether you are a job seeker or an employer, eG Jobs Talent Hub offers the tools you need to succeed.",b8="Career Community",b9="Be part of a supportive career community that fosters growth and learning. Collaborate with like-minded individuals to share experiences and build your career.",c0="Opportunity Network",c1="Access a wide range of job opportunities through our network. Connect with companies looking for talent like yours and take the next step in your career.",c2="Success Hub",c3="Achieve your career ambitions with guidance and resources from our Success Hub. We provide the support you need to reach your full potential.",c4=t.w,c5=A.b(c7,k,c4).w,c6=A.b(c7,k,c4).w.a.a>=700?B.ai:B.aP
 if(A.b(c7,k,c4).w.a.a>=700)s=A.o(new A.cf("egAcademy",k),80,k)
 else{A.b(c7,k,c4).toString
 if(A.b(c7,k,c4).w.a.a>=700){s=A.p(30)
-r=A.b(c7,k,c4).w.a.a>=700?A.bl(k,k,B.aN,k,new A.amN(c7),k,k,k,k):B.O
+r=A.b(c7,k,c4).w.a.a>=700?A.bl(k,k,B.aO,k,new A.amN(c7),k,k,k,k):B.O
 s=A.r(k,r,B.h,k,k,new A.P(B.aL,k,k,s,k,k,B.q),k,k,k,k,k,k,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,k),B.bw,A.ah(new A.bJ(B.S,k,k,A.b(c7,k,c4).w.a.a>=700?k:A.c("eG Jobs",k,k,k,k,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),k,k,k),k),1)],t.p),B.i,B.c,B.b,k)}r=!(A.b(c7,k,c4).w.a.a>=700)?new A.bD(new A.amO(),k):k
 q=!(A.b(c7,k,c4).w.a.a>=700)?A.ds(k,k,k,B.bp,new A.amP(),new A.amQ(c7),k,k,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,k,0,new A.f(B.u,s,k),r,k)
+r=A.co(A.a([q],p),!1,B.aQ,k,0,new A.f(B.u,s,k),r,k)
 s=!(A.b(c7,k,c4).w.a.a>=700)?l.afa(c7):k
 c5=c5.a.a>600?B.dz:B.hu
 if(A.b(c7,k,c4).w.a.a>=700)q=600
@@ -57906,11 +57912,11 @@ o=m}q.push(A.r(k,o,B.h,B.c7,k,k,k,k,k,k,k,k,k))
 o=A.b(c7,k,c4).w.a.a>=700?620:1860
 q.push(A.r(k,A.o(new A.V3(A.a([new A.oB("assets/images/eGJ1.png","Diverse Job Database",A.a(["Access a wide range of job opportunities across various industries."],n)),new A.oB("assets/images/eGJ2.png","Personalized Career Guidance",A.a(["Receive customized career advice and resources to support your job search."],n)),new A.oB("assets/images/eGJ3.png","Customized Job Alerts",A.a(["Stay updated with job openings that match your preferences."],n)),new A.oB("assets/images/eGJ4.png","Internship and Placement Support",A.a(["Get assistance with securing internships and job placements."],n))],t.fP),k),o,k),B.h,B.bX,k,k,k,k,k,B.u,k,k,k))
 o=A.b(c7,k,c4).w.a.a>=700?640:720
-q.push(A.r(k,A.o(new A.X0(new A.aM(k,t.o),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
-q.push(A.o(B.bg,A.b(c7,k,c4).w.a.a>=700?300:630,1/0))
+q.push(A.r(k,A.o(new A.X0(new A.aM(k,t.o),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
+q.push(A.o(B.aN,A.b(c7,k,c4).w.a.a>=700?300:630,1/0))
 return A.ay(new A.cj(r,c6,k),B.m,A.bX(A.j(A.a([c5,A.j(q,B.f,B.c,B.b,k)],p),B.f,B.c,B.b,k),k,B.G,k,k,k,B.R),s,k)},
 afa(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.amE(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amF(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amG(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amH(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amI(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amJ(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amK(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amL(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.amE(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amF(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amG(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amH(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amI(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amJ(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amK(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amL(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 aC(a,b){var s=null,r=A.hj(s,s,B.C,s,s,B.C,s),q=A.c(a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.l,12,B.x),s,s,s)
 return new A.hN(r,A.cW(B.C,A.a([new A.f(B.V,A.c(b,s,s,s,s,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),12,B.I),s,s,s),s)],t.p),B.C,B.u,q,s),s)}}
 A.amN.prototype={
@@ -57918,7 +57924,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.amO.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.amM(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.amM(a),s,s,s,s),s)},
 $S:9}
 A.amM.prototype={
 $0(){A.d_(this.a).cm()},
@@ -57930,7 +57936,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.amP.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.amE.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -57971,16 +57977,16 @@ A.Z(s,!1).L(null)
 A.l(s).n(0,"/egstudios",null)},
 $S:0}
 A.Cs.prototype={
-q(a){var s,r,q,p,o,n=this,m=null,l="assets/images/socialmedia_",k=t.w,j=A.b(a,m,k).w.a.a>=700?B.ai:B.aO
+q(a){var s,r,q,p,o,n=this,m=null,l="assets/images/socialmedia_",k=t.w,j=A.b(a,m,k).w.a.a>=700?B.ai:B.aP
 if(A.b(a,m,k).w.a.a>=700)s=A.o(new A.cf("CourseFinal",m),80,m)
 else{A.b(a,m,k).toString
 if(A.b(a,m,k).w.a.a>=700){s=A.p(30)
-r=A.b(a,m,k).w.a.a>=700?A.bl(m,m,B.aN,m,new A.aIv(a),m,m,m,m):B.O
+r=A.b(a,m,k).w.a.a>=700?A.bl(m,m,B.aO,m,new A.aIv(a),m,m,m,m):B.O
 s=A.r(m,r,B.h,m,m,new A.P(B.aL,m,m,s,m,m,B.q),m,m,m,m,m,m,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,m),A.ah(new A.bJ(B.S,m,m,A.b(a,m,k).w.a.a>=700?m:A.c("eG Newsletter",m,m,m,m,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),m,m,m),m),1)],t.p),B.i,B.c,B.b,m)}r=!(A.b(a,m,k).w.a.a>=700)?new A.bD(new A.aIw(),m):m
 q=!(A.b(a,m,k).w.a.a>=700)?A.ds(m,m,m,B.bp,new A.aIx(),new A.aIy(a),m,m,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,m,0,new A.f(B.u,s,m),r,m)
+r=A.co(A.a([q],p),!1,B.aQ,m,0,new A.f(B.u,s,m),r,m)
 s=!(A.b(a,m,k).w.a.a>=700)?n.afc(a):m
 if(A.b(a,m,k).w.a.a>=700)q=600
 else q=A.bW(a)?390:370
@@ -57993,10 +57999,10 @@ q.push(A.o(m,A.b(a,m,k).w.a.a>=700?70:0,m))
 q.push(n.HO(a,B.eW,"Catch up with our Facebook community! From trending discussions to helpful tips and live event recaps, this feed keeps you connected with our ongoing conversations and updates.",B.X_,"assets/images/socialmediafb_",n.d,"Facebook Feeds"))
 q.push(A.o(m,A.b(a,m,k).w.a.a>=700?70:0,m))
 q.push(n.HO(a,B.a70,"Explore professional insights and career highlights from our network on LinkedIn. We\u2019re sharing industry news, success stories, and thoughtful articles to keep you informed and inspired.",B.WM,l,n.e,"LinkedIn Feeds"))
-q.push(A.o(B.bg,A.b(a,m,k).w.a.a>=700?300:630,1/0))
+q.push(A.o(B.aN,A.b(a,m,k).w.a.a>=700?300:630,1/0))
 return A.ay(new A.cj(r,j,m),m,A.bH(q,B.u,m,!1),s,m)},
 afc(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aIh(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIi(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIj(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIk(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIl(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIm(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIn(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIo(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aIh(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIi(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIj(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIk(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIl(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIm(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIn(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aIo(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 HO(a,b,c,d,e,f,g){var s,r,q,p,o,n=null,m=t.w,l=A.fN(d,b,n,A.b(a,n,m).w.a.a>=700?30:14),k=t.p
 l=A.B(A.a([l,B.cZ,A.c(g,n,n,n,n,A.d().$3$fontSize$fontWeight$letterSpacing(A.b(a,n,m).w.a.a>=700?22:14,B.k,1.2),n,n,n)],k),B.i,B.c,B.b,n)
 s=A.c(c,n,n,n,n,A.d().$2$color$fontSize(B.am,A.b(a,n,m).w.a.a>=700?16:12),n,n,n)
@@ -58029,7 +58035,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aIw.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aIu(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aIu(a),s,s,s,s),s)},
 $S:9}
 A.aIu.prototype={
 $0(){A.d_(this.a).cm()},
@@ -58041,7 +58047,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aIx.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.aIh.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -58108,16 +58114,16 @@ s.toString
 return this.a.rp(s)},
 $S:0}
 A.Ac.prototype={
-q(c7){var s,r,q,p,o,n,m,l=this,k=null,j="assets/images/pathwayhighlights.png",i="eG Pathways Partnership Highlights",h="Explore the exceptional benefits of our global partnerships with renowned universities and industry leaders.",g="Global Collaborations",f="Partnering with prestigious universities and institutions worldwide to offer diverse and high-quality educational programs.",e="Industry Leaders",d="Collaborating with leading companies and organizations to provide students with real-world insights and practical experience.",c="Exchange Programs",b="Offering exchange opportunities that allow students to study abroad and gain international exposure and cultural understanding.",a="Innovative Research Opportunities",a0="Engaging in cutting-edge research initiatives with partner institutions to drive innovation and discovery.",a1="Dual Degree Programs",a2="Providing dual degree options that enable students to earn qualifications from multiple renowned institutions.",a3="Customized Training Solutions",a4="Developing tailored training programs with industry partners to meet specific workforce needs and enhance employability.",a5="Networking Events",a6="Hosting events and seminars that connect students with industry experts, alumni, and potential employers for valuable networking opportunities.",a7="assets/images/Pathwaysenroll.png",a8="Enroll in eG Pathways",a9="Embark on your journey with eG Pathways by following our streamlined enrollment process. Start by exploring our diverse range of programs and selecting the one that aligns with your career goals. ",b0="Program Selection",b1="Review our comprehensive list of courses and pathways to choose the program that best matches your career objectives.",b2="Initial Consultation",b3="Engage with our advisors to discuss your interests and receive expert recommendations tailored to your goals.",b4="Application Submission",b5="Fill out and submit your application through our user-friendly online portal, including all required personal and academic details.",b6="Document Upload",b7="Provide necessary documentation such as academic transcripts, identification, and proof of qualifications to complete your application.",b8="Application Review",b9="Our team will carefully assess your submitted application to ensure it meets the program requirements.",c0="Offer Notification",c1="If approved, you will receive a formal offer letter with enrollment details and any specific conditions.",c2="Enrollment Confirmation",c3="Finalize your enrollment by accepting the offer and completing any required payments to secure your place in the program.",c4=t.w,c5=A.b(c7,k,c4).w,c6=A.b(c7,k,c4).w.a.a>=700?B.ai:B.aO
+q(c7){var s,r,q,p,o,n,m,l=this,k=null,j="assets/images/pathwayhighlights.png",i="eG Pathways Partnership Highlights",h="Explore the exceptional benefits of our global partnerships with renowned universities and industry leaders.",g="Global Collaborations",f="Partnering with prestigious universities and institutions worldwide to offer diverse and high-quality educational programs.",e="Industry Leaders",d="Collaborating with leading companies and organizations to provide students with real-world insights and practical experience.",c="Exchange Programs",b="Offering exchange opportunities that allow students to study abroad and gain international exposure and cultural understanding.",a="Innovative Research Opportunities",a0="Engaging in cutting-edge research initiatives with partner institutions to drive innovation and discovery.",a1="Dual Degree Programs",a2="Providing dual degree options that enable students to earn qualifications from multiple renowned institutions.",a3="Customized Training Solutions",a4="Developing tailored training programs with industry partners to meet specific workforce needs and enhance employability.",a5="Networking Events",a6="Hosting events and seminars that connect students with industry experts, alumni, and potential employers for valuable networking opportunities.",a7="assets/images/Pathwaysenroll.png",a8="Enroll in eG Pathways",a9="Embark on your journey with eG Pathways by following our streamlined enrollment process. Start by exploring our diverse range of programs and selecting the one that aligns with your career goals. ",b0="Program Selection",b1="Review our comprehensive list of courses and pathways to choose the program that best matches your career objectives.",b2="Initial Consultation",b3="Engage with our advisors to discuss your interests and receive expert recommendations tailored to your goals.",b4="Application Submission",b5="Fill out and submit your application through our user-friendly online portal, including all required personal and academic details.",b6="Document Upload",b7="Provide necessary documentation such as academic transcripts, identification, and proof of qualifications to complete your application.",b8="Application Review",b9="Our team will carefully assess your submitted application to ensure it meets the program requirements.",c0="Offer Notification",c1="If approved, you will receive a formal offer letter with enrollment details and any specific conditions.",c2="Enrollment Confirmation",c3="Finalize your enrollment by accepting the offer and completing any required payments to secure your place in the program.",c4=t.w,c5=A.b(c7,k,c4).w,c6=A.b(c7,k,c4).w.a.a>=700?B.ai:B.aP
 if(A.b(c7,k,c4).w.a.a>=700)s=A.o(new A.cf("egAcademy",k),80,k)
 else{A.b(c7,k,c4).toString
 if(A.b(c7,k,c4).w.a.a>=700){s=A.p(30)
-r=A.b(c7,k,c4).w.a.a>=700?A.bl(k,k,B.aN,k,new A.anI(c7),k,k,k,k):B.O
+r=A.b(c7,k,c4).w.a.a>=700?A.bl(k,k,B.aO,k,new A.anI(c7),k,k,k,k):B.O
 s=A.r(k,r,B.h,k,k,new A.P(B.aL,k,k,s,k,k,B.q),k,k,k,k,k,k,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,k),B.bw,A.ah(new A.bJ(B.S,k,k,A.b(c7,k,c4).w.a.a>=700?k:A.c("eG Pathways",k,k,k,k,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),k,k,k),k),1)],t.p),B.i,B.c,B.b,k)}r=!(A.b(c7,k,c4).w.a.a>=700)?new A.bD(new A.anJ(),k):k
 q=!(A.b(c7,k,c4).w.a.a>=700)?A.ds(k,k,k,B.po,new A.anK(),new A.anL(c7),k,k,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,k,0,new A.f(B.u,s,k),r,k)
+r=A.co(A.a([q],p),!1,B.aQ,k,0,new A.f(B.u,s,k),r,k)
 s=!(A.b(c7,k,c4).w.a.a>=700)?l.afd(c7):k
 c5=c5.a.a>600?B.dz:B.hu
 if(A.b(c7,k,c4).w.a.a>=700)q=600
@@ -58127,7 +58133,7 @@ if(A.b(c7,k,c4).w.a.a>=700)q.push(A.o(B.d7,A.b(c7,k,c4).w.a.a>=700?300:1230,1/0)
 o=A.b(c7,k,c4).w.a.a>=700?620:2000
 n=t.s
 q.push(A.r(k,A.o(new A.Vd(A.a([new A.oq("assets/images/ePH1.png","Tailored Educational Journeys",A.a(["eG Pathways offers tailored educational journeys to help students achieve their academic and career goals."],n)),new A.oq("assets/images/ePH2.png","Comprehensive Programs",A.a(["Our comprehensive programs are designed to provide a seamless transition from high school to higher education and beyond."],n)),new A.oq("assets/images/ePH3.png","Collaboration with Top Institutions",A.a(["We collaborate with top universities and institutions to ensure our students receive the best possible guidance and support."],n)),new A.oq("assets/images/ePH4.png","Personalized Learning Plans",A.a(["At eG Pathways, we believe in personalized learning plans that cater to the unique needs and aspirations of each student."],n))],t.KU),k),o,k),B.h,B.bX,k,k,k,k,k,B.u,k,k,k))
-q.push(A.r(k,A.o(B.a9b,A.b(c7,k,c4).w.a.a>=700?640:1800,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(B.a9b,A.b(c7,k,c4).w.a.a>=700?640:1800,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 if(A.b(c7,k,c4).w.a.a>=700){o=A.aF(B.ab,A.am(j,k,B.D,550,k,k,A.b(c7,k,c4).w.a.a/2.2),B.F)
 m=A.b(c7,k,c4).w
 m=A.B(A.a([new A.f(B.o5,o,k),new A.f(B.o7,A.aF(B.ab,A.r(k,new A.f(B.hN,A.j(A.a([A.c(i,k,k,k,k,A.d().$3$color$fontSize$fontWeight(B.o,22,B.k),k,k,k),B.t,A.c(h,k,k,k,k,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),14,B.I),k,k,k),B.r,A.ah(A.bH(A.a([l.av(g,f,c7),l.av(e,d,c7),l.av(c,b,c7),l.av(a,a0,c7),l.av(a1,a2,c7),l.av(a3,a4,c7),l.av(a5,a6,c7)],p),k,k,!1),1)],p),B.f,B.c,B.b,k),k),B.h,k,k,B.bi,k,650,k,k,k,k,m.a.a/2.3),B.F),k)],p),B.i,B.c,B.b,k)
@@ -58137,7 +58143,7 @@ m=A.j(A.a([new A.f(B.nW,o,k),new A.f(B.nU,A.aF(B.ab,A.r(k,new A.f(B.hN,A.j(A.a([
 o=m}q.push(A.r(k,new A.f(B.nN,o,k),B.h,B.c7,k,k,k,k,k,k,k,k,k))
 o=A.b(c7,k,c4).w.a.a>=700?620:1980
 q.push(A.r(k,A.o(new A.Vb(A.a([new A.or("assets/images/eGP1.png","Comprehensive Educational Pathways",A.a(["eG Pathways expands global horizons through transformative study abroad programs."],n)),new A.or("assets/images/eGP2.png","Renowned Collaborations",A.a(["eG Pathways offers diverse study abroad programs aligned with students goals and passion."],n)),new A.or("assets/images/eGP3.png","Immersive Learning Environments",A.a(["Participants gain global exposure through immersive learning and cultural exchange and go ahead."],n)),new A.or("assets/images/eGP4.png","Cultivating Essential Skills",A.a(["Study abroad opportunities deepen academic knowledge, cultivate cross-cultural understanding, and develop leadership skills."],n))],t.kW),k),o,k),B.h,B.bX,k,k,k,k,k,B.u,k,k,k))
-q.push(A.r(k,A.o(B.a9a,A.b(c7,k,c4).w.a.a>=700?640:1800,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(B.a9a,A.b(c7,k,c4).w.a.a>=700?640:1800,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 if(A.b(c7,k,c4).w.a.a>=700){o=A.aF(B.ab,A.am(a7,k,B.D,550,k,k,A.b(c7,k,c4).w.a.a/2.2),B.F)
 m=A.b(c7,k,c4).w
 m=A.B(A.a([new A.f(B.o5,o,k),new A.f(B.o7,A.aF(B.ab,A.r(k,new A.f(B.hN,A.j(A.a([A.c(a8,k,k,k,k,A.d().$3$color$fontSize$fontWeight(B.o,22,B.k),k,k,k),B.t,A.c(a9,k,k,k,k,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),14,B.I),k,k,k),B.r,A.ah(A.bH(A.a([l.av(b0,b1,c7),l.av(b2,b3,c7),l.av(b4,b5,c7),l.av(b6,b7,c7),l.av(b8,b9,c7),l.av(c0,c1,c7),l.av(c2,c3,c7)],p),k,k,!1),1)],p),B.f,B.c,B.b,k),k),B.h,k,k,B.bi,k,650,k,k,k,k,m.a.a/2.3),B.F),k)],p),B.i,B.c,B.b,k)
@@ -58149,11 +58155,11 @@ q.push(A.o(B.a91,A.b(c7,k,c4).w.a.a>=700?680:1820,k))
 o=A.b(c7,k,c4).w.a.a>=700?620:1950
 q.push(A.r(k,A.o(new A.Vc(A.a([new A.os("assets/images/ePHS1.png","Comprehensive Educational Planning",A.a(["Develop a detailed educational plan that aligns with your academic and career goals, ensuring a clear pathway to success."],n)),new A.os("assets/images/ePHS2.png","Personalized Counseling",A.a(["Receive one-on-one guidance from experienced counselors who understand your unique needs and aspirations."],n)),new A.os("assets/images/ePHS3.png","Study Destination Selection",A.a(["Explore and choose the ideal study destinations that fit your preferences and career objectives."],n)),new A.os("assets/images/ePHS4.png","Program Selection Assistance",A.a(["Get expert advice in selecting the right programs and courses that match your interests and academic background."],n))],t.hM),k),o,k),B.h,B.bX,k,k,k,k,k,B.u,k,k,k))
 o=A.b(c7,k,c4).w.a.a>=700?640:720
-q.push(A.r(k,A.o(new A.YE(new A.aM(k,t.o),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
-q.push(A.o(B.bg,A.b(c7,k,c4).w.a.a>=700?300:630,1/0))
+q.push(A.r(k,A.o(new A.YE(new A.aM(k,t.o),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
+q.push(A.o(B.aN,A.b(c7,k,c4).w.a.a>=700?300:630,1/0))
 return A.ay(new A.cj(r,c6,k),B.m,A.bX(A.j(A.a([c5,A.j(q,B.f,B.c,B.b,k)],p),B.f,B.c,B.b,k),k,B.G,k,k,k,B.R),s,k)},
 afd(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.anz(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anA(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anB(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anC(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anD(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anE(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anF(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anG(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.anz(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anA(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anB(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anC(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anD(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anE(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anF(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anG(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 av(a,b,c){var s=null,r=A.hj(s,s,B.C,s,s,B.C,s),q=t.w,p=A.c(a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.l,A.b(c,s,q).w.a.a>=700?16:12,B.x),s,s,s),o=A.w(B.e.K(178.5),0,0,0)
 A.b(c,s,q).toString
 return new A.hN(r,A.cW(B.C,A.a([new A.f(B.V,A.c(b,s,s,s,s,A.d().$3$color$fontSize$fontWeight(o,14,B.I),s,s,s),s)],t.p),B.C,B.u,p,s),s)}}
@@ -58162,7 +58168,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.anJ.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.anH(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.anH(a),s,s,s,s),s)},
 $S:9}
 A.anH.prototype={
 $0(){A.d_(this.a).cm()},
@@ -58174,7 +58180,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.anK.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.anz.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -58215,11 +58221,11 @@ A.Z(s,!1).L(null)
 A.l(s).n(0,"/egstudios",null)},
 $S:0}
 A.Ad.prototype={
-q(c7){var s,r,q,p,o,n,m=this,l=null,k="assets/images/scholarshipapplyprocess.png",j="eG Scholarship Application Journey",i="Embark on your path to securing financial support with our streamlined scholarship application journey. From discovering opportunities to receiving your award, we guide you through each step with clear instructions and support to maximize your chances of success.",h="Discover Scholarship Opportunities",g="Browse our platform to find scholarships that match your academic achievements and personal goals.",f="Assemble Your Documents",e="Collect all necessary documents, including academic records and letters of recommendation.",d="Fill Out Your Application",c="Carefully complete the scholarship application form, ensuring accuracy and completeness.",b="Submit Your Application Package",a="Send your completed application and documents for consideration before the deadline.",a0="Evaluation Process",a1="Our committee evaluates applications based on eligibility and scholarship criteria.",a2="Participate in an Interview",a3="Engage in an interview, if required, to further demonstrate your suitability for the scholarship.",a4="Receive Your Scholarship Offer",a5="Get notified of your successful application and learn about the next steps to accept your award.",a6="assets/images/scholarshipsapplyprocess.png",a7="eG Scholarships Impact & Benefits",a8="Discover how eG Scholarships have made a difference in the lives of students. Learn about the long-term benefits and positive outcomes of receiving our scholarships, and see how they can help you achieve your educational and career goals.",a9="Financial Relief",b0="eG Scholarships help reduce the financial burden of education, covering tuition fees, books, and other essential expenses.",b1="Access to Education",b2="By providing financial support, these scholarships make higher education more accessible to students from diverse backgrounds.",b3="Enhanced Academic Opportunities",b4="Recipients gain the chance to pursue advanced studies and specialized programs that might otherwise be unaffordable.",b5="Career Advancement",b6="Scholarships often open doors to internships, networking opportunities, and career resources, giving students a competitive edge in the job market.",b7="Personal Growth",b8="The support and recognition from receiving a scholarship can boost confidence and motivate students to excel academically and personally.",b9="Attend Interviews",c0=u.aj,c1="Receive Job Offers",c2=u.cT,c3=t.w,c4=A.b(c7,l,c3).w,c5=A.b(c7,l,c3).w.a.a>=700?B.ai:B.aO,c6=A.w(255,241,236,236)
+q(c7){var s,r,q,p,o,n,m=this,l=null,k="assets/images/scholarshipapplyprocess.png",j="eG Scholarship Application Journey",i="Embark on your path to securing financial support with our streamlined scholarship application journey. From discovering opportunities to receiving your award, we guide you through each step with clear instructions and support to maximize your chances of success.",h="Discover Scholarship Opportunities",g="Browse our platform to find scholarships that match your academic achievements and personal goals.",f="Assemble Your Documents",e="Collect all necessary documents, including academic records and letters of recommendation.",d="Fill Out Your Application",c="Carefully complete the scholarship application form, ensuring accuracy and completeness.",b="Submit Your Application Package",a="Send your completed application and documents for consideration before the deadline.",a0="Evaluation Process",a1="Our committee evaluates applications based on eligibility and scholarship criteria.",a2="Participate in an Interview",a3="Engage in an interview, if required, to further demonstrate your suitability for the scholarship.",a4="Receive Your Scholarship Offer",a5="Get notified of your successful application and learn about the next steps to accept your award.",a6="assets/images/scholarshipsapplyprocess.png",a7="eG Scholarships Impact & Benefits",a8="Discover how eG Scholarships have made a difference in the lives of students. Learn about the long-term benefits and positive outcomes of receiving our scholarships, and see how they can help you achieve your educational and career goals.",a9="Financial Relief",b0="eG Scholarships help reduce the financial burden of education, covering tuition fees, books, and other essential expenses.",b1="Access to Education",b2="By providing financial support, these scholarships make higher education more accessible to students from diverse backgrounds.",b3="Enhanced Academic Opportunities",b4="Recipients gain the chance to pursue advanced studies and specialized programs that might otherwise be unaffordable.",b5="Career Advancement",b6="Scholarships often open doors to internships, networking opportunities, and career resources, giving students a competitive edge in the job market.",b7="Personal Growth",b8="The support and recognition from receiving a scholarship can boost confidence and motivate students to excel academically and personally.",b9="Attend Interviews",c0=u.aj,c1="Receive Job Offers",c2=u.cT,c3=t.w,c4=A.b(c7,l,c3).w,c5=A.b(c7,l,c3).w.a.a>=700?B.ai:B.aP,c6=A.w(255,241,236,236)
 if(A.b(c7,l,c3).w.a.a>=700)s=A.o(new A.cf("egAcademy",l),80,l)
 else{A.b(c7,l,c3).toString
 if(A.b(c7,l,c3).w.a.a>=700){s=A.p(30)
-r=A.b(c7,l,c3).w.a.a>=700?A.bl(l,l,B.aN,l,new A.anV(c7),l,l,l,l):B.O
+r=A.b(c7,l,c3).w.a.a>=700?A.bl(l,l,B.aO,l,new A.anV(c7),l,l,l,l):B.O
 s=A.r(l,r,B.h,l,l,new A.P(B.aL,l,l,s,l,l,B.q),l,l,l,l,l,l,40)}else s=A.o(l,l,l)
 s=A.B(A.a([new A.f(B.u,s,l),B.bw,A.ah(new A.bJ(B.S,l,l,A.b(c7,l,c3).w.a.a>=700?l:A.c("eG Scholarships",l,l,l,l,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),l,l,l),l),1)],t.p),B.i,B.c,B.b,l)}r=!(A.b(c7,l,c3).w.a.a>=700)?new A.bD(new A.anW(),l):l
 q=!(A.b(c7,l,c3).w.a.a>=700)?A.ds(l,l,l,B.po,new A.anX(),new A.anY(c7),l,l,t.N):B.O
@@ -58244,7 +58250,7 @@ q=n}s.push(A.r(l,q,B.h,B.c7,l,l,l,l,l,l,l,l,l))
 q=A.w(255,243,239,239)
 n=A.b(c7,l,c3).w.a.a>=700?620:1950
 s.push(A.r(l,A.o(new A.Vg(A.a([new A.ou("assets/images/eGSC1.png","eduGuardian Scholarships",A.a(["eduGuardian Scholarships are prestigious awards offered by the organization aimed at supporting students in their academic pursuits and personal development."],o)),new A.ou("assets/images/eGSC2.png","Financial Assistance",A.a(["These scholarships provide financial aid and development opportunities, helping students achieve their educational goals."],o)),new A.ou("assets/images/eGSC3.png","Merit-Based Awards",A.a(["eG scholarships reward merit, academic excellence, leadership, and community involvement to foster well-rounded future leaders."],o)),new A.ou("assets/images/eGSC4.png","Empowering Student Potential",A.a(["eduGuardian scholarships aim to empower students to reach their full potential academically, professionally, and personally."],o))],t.ts),l),n,l),B.h,q,l,l,l,l,l,B.u,l,l,l))
-s.push(A.r(l,A.o(B.VC,A.b(c7,l,c3).w.a.a>=700?640:1800,l),B.h,B.aS,l,l,l,l,l,B.u,l,l,l))
+s.push(A.r(l,A.o(B.VC,A.b(c7,l,c3).w.a.a>=700?640:1800,l),B.h,B.aT,l,l,l,l,l,B.u,l,l,l))
 q=A.b(c7,l,c3).w.a.a>=700?620:1850
 s.push(A.r(l,A.o(new A.Vl(A.a([new A.ov("assets/images/eSPG1.png","Undergraduate Scholarship Programs",A.a(["Our Undergraduate Scholarship Programs offer financial assistance and resources to help students pursuing bachelors degrees."],o)),new A.ov("assets/images/eSPG2.png","Postgraduate Scholarship Programs",A.a(["The Postgraduate Scholarship Programs provide funding and support for students undertaking masters or doctoral studies."],o)),new A.ov("assets/images/eSPG3.png","International Exchange Scholarships",A.a(["International Exchange Scholarships facilitate cross-cultural learning experiences by supporting students who wish to study abroad. "],o)),new A.ov("assets/images/eSPG4.png","Online Learning Scholarships",A.a(["Our Online Learning Scholarships empower students to pursue education from anywhere in the world."],o))],t.zN),l),q,l),B.h,B.bX,l,l,l,l,l,B.u,l,l,l))
 if(A.b(c7,l,c3).w.a.a>=700){q=A.aF(B.ab,A.am(a6,l,B.D,550,l,l,A.b(c7,l,c3).w.a.a/2.2),B.F)
@@ -58256,15 +58262,15 @@ n=A.j(A.a([new A.f(B.hM,q,l),new A.f(B.eQ,A.aF(B.ab,A.r(l,new A.f(B.V,A.j(A.a([A
 q=n}s.push(A.r(l,q,B.h,B.c7,l,l,l,l,l,l,l,l,l))
 q=A.b(c7,l,c3).w.a.a>=700?620:1880
 s.push(A.r(l,A.o(new A.Ve(A.a([new A.ox("assets/images/eST1.png","Merit-Based Scholarships",A.a(["Awarded to students who have demonstrated outstanding academic achievements and excellence in their studies."],o)),new A.ox("assets/images/eST2.png","Need-Based Scholarships",A.a(["Designed to support students who face financial challenges in pursuing their education."],o)),new A.ox("assets/images/eST3.png","Extracurricular Achievement Scholarships",A.a(["Awarded to students who have excelled in extracurricular activities such as sports, arts, music, or community service."],o)),new A.ox("assets/images/eST4.png","Diversity and Inclusion Scholarships",A.a(["Supporting students from underrepresented backgrounds, these scholarships promote diversity and inclusion in education."],o))],t.lH),l),q,l),B.h,B.bX,l,l,l,l,l,B.u,l,l,l))
-s.push(A.r(l,A.o(B.VD,A.b(c7,l,c3).w.a.a>=700?640:1800,l),B.h,B.aS,l,l,l,l,l,B.u,l,l,l))
+s.push(A.r(l,A.o(B.VD,A.b(c7,l,c3).w.a.a>=700?640:1800,l),B.h,B.aT,l,l,l,l,l,B.u,l,l,l))
 q=A.b(c7,l,c3).w.a.a>=700?620:1870
 s.push(A.r(l,A.o(new A.Vh(A.a([new A.oy("assets/images/eSS1.png","Financial Support for Tuition",A.a(["Receive assistance with tuition fees to alleviate financial burdens and enable you to focus on your studies."],o)),new A.oy("assets/images/eSS2.png","Access to Exclusive Workshops",A.a(["Participate in specialized workshops and seminars designed to enhance your academic and professional skills."],o)),new A.oy("assets/images/eSS3.png","Networking with Industry Professionals",A.a(["Connect with experts and leaders in your field through networking events and mentorship programs."],o)),new A.oy("assets/images/eSS4.png","Career Development Resources",A.a(["Benefit from career guidance, resume building, and interview preparation to help you achieve your career goals."],o))],t.Qc),l),q,l),B.h,B.bX,l,l,l,l,l,B.u,l,l,l))
 q=A.b(c7,l,c3).w.a.a>=700?640:720
-s.push(A.r(l,A.o(new A.Vi(new A.aM(l,t.o),l),q,l),B.h,B.aS,l,l,l,l,l,B.u,l,l,l))
-s.push(A.o(B.bg,A.b(c7,l,c3).w.a.a>=700?300:630,1/0))
+s.push(A.r(l,A.o(new A.Vi(new A.aM(l,t.o),l),q,l),B.h,B.aT,l,l,l,l,l,B.u,l,l,l))
+s.push(A.o(B.aN,A.b(c7,l,c3).w.a.a>=700?300:630,1/0))
 return A.ay(new A.cj(r,c5,l),B.m,A.bX(A.j(A.a([c4,A.j(s,B.f,B.c,B.b,l)],p),B.f,B.c,B.b,l),l,B.G,l,l,l,B.R),c6,l)},
 afe(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.anM(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anN(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anO(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anP(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anQ(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anR(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anS(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anT(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.anM(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anN(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anO(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anP(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anQ(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anR(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anS(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.anT(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 av(a,b,c){var s=null,r=A.hj(s,s,B.C,s,s,B.C,s),q=t.w,p=A.c(a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.l,A.b(c,s,q).w.a.a>=700?16:12,B.x),s,s,s),o=A.w(B.e.K(178.5),0,0,0)
 return new A.hN(r,A.cW(B.C,A.a([new A.f(B.V,A.c(b,s,s,s,s,A.d().$3$color$fontSize$fontWeight(o,A.b(c,s,q).w.a.a>=700?14:12,B.I),s,s,s),s)],t.p),B.C,B.u,p,s),s)}}
 A.anV.prototype={
@@ -58272,7 +58278,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.anW.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.anU(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.anU(a),s,s,s,s),s)},
 $S:9}
 A.anU.prototype={
 $0(){A.d_(this.a).cm()},
@@ -58284,7 +58290,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.anX.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.anM.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -58325,16 +58331,16 @@ A.Z(s,!1).L(null)
 A.l(s).n(0,"/egstudios",null)},
 $S:0}
 A.Ae.prototype={
-q(a){var s,r,q,p,o,n=this,m=null,l=t.w,k=A.b(a,m,l).w.a.a>=700?B.ai:B.aO
+q(a){var s,r,q,p,o,n=this,m=null,l=t.w,k=A.b(a,m,l).w.a.a>=700?B.ai:B.aP
 if(A.b(a,m,l).w.a.a>=700)s=A.o(new A.cf("CourseFinal",m),80,m)
 else{A.b(a,m,l).toString
 if(A.b(a,m,l).w.a.a>=700){s=A.p(30)
-r=A.b(a,m,l).w.a.a>=700?A.bl(m,m,B.aN,m,new A.aoD(a),m,m,m,m):B.O
+r=A.b(a,m,l).w.a.a>=700?A.bl(m,m,B.aO,m,new A.aoD(a),m,m,m,m):B.O
 s=A.r(m,r,B.h,m,m,new A.P(B.aL,m,m,s,m,m,B.q),m,m,m,m,m,m,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,m),A.ah(new A.bJ(B.S,m,m,A.b(a,m,l).w.a.a>=700?m:A.c("eG Studios",m,m,m,m,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),m,m,m),m),1)],t.p),B.i,B.c,B.b,m)}r=!(A.b(a,m,l).w.a.a>=700)?new A.bD(new A.aoE(),m):m
 q=!(A.b(a,m,l).w.a.a>=700)?A.ds(m,m,m,B.bp,new A.aoF(),new A.aoG(a),m,m,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,m,0,new A.f(B.u,s,m),r,m)
+r=A.co(A.a([q],p),!1,B.aQ,m,0,new A.f(B.u,s,m),r,m)
 s=!(A.b(a,m,l).w.a.a>=700)?n.aff(a):m
 if(A.b(a,m,l).w.a.a>=700)q=600
 else q=A.bW(a)?390:370
@@ -58347,11 +58353,11 @@ q.push(B.y)
 q.push(n.QW(a,B.eW,"We offer a variety of projects, including academic programs, certifications, skill training, and career resources\u2014each tailored to support learning and professional growth.","assets/images/projects_",n.d,"Types of Projects Supported"))
 q.push(B.cq)
 p=A.b(a,m,l).w.a.a>=700?620:720
-q.push(A.r(m,A.o(new A.Vm(new A.aM(m,t.o),m),p,m),B.h,B.aS,m,m,m,m,m,B.u,m,m,m))
-q.push(A.o(B.bg,A.b(a,m,l).w.a.a>=700?300:630,1/0))
+q.push(A.r(m,A.o(new A.Vm(new A.aM(m,t.o),m),p,m),B.h,B.aT,m,m,m,m,m,B.u,m,m,m))
+q.push(A.o(B.aN,A.b(a,m,l).w.a.a>=700?300:630,1/0))
 return A.ay(new A.cj(r,k,m),m,A.bH(q,B.u,m,!1),s,m)},
 aff(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aot(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aou(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aov(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aow(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aox(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aoy(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aoz(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aoA(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aot(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aou(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aov(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aow(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aox(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aoy(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aoz(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aoA(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 QW(a,b,c,d,e,f){var s=null,r=t.w,q=t.p,p=A.B(A.a([A.c(f,s,s,s,s,A.d().$3$fontSize$fontWeight$letterSpacing(A.b(a,s,r).w.a.a>=700?22:14,B.k,1.2),s,s,s)],q),B.i,B.c,B.b,s),o=A.c(c,s,s,s,s,A.d().$2$color$fontSize(B.am,A.b(a,s,r).w.a.a>=700?16:12),s,s,s)
 r=A.b(a,s,r).w.a.a>=700?B.adf:B.adg
 return new A.f(B.fB,A.j(A.a([p,B.h5,o,B.Hz,A.rh(s,B.G,r,new A.aoB(this,e,d),4,s,B.fX,!0),B.r],q),B.f,B.c,B.b,s),s)}}
@@ -58360,7 +58366,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aoE.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aoC(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aoC(a),s,s,s,s),s)},
 $S:9}
 A.aoC.prototype={
 $0(){A.d_(this.a).cm()},
@@ -58372,7 +58378,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aoF.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.aot.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -58425,16 +58431,16 @@ S(){return new A.a4G(new A.aM(null,t.o))}}
 A.a4G.prototype={
 a6(){this.aj()
 A.adq().bg(new A.aRr(this),t.P)},
-q(d2){var s,r,q,p,o,n,m,l=this,k=null,j="United Kingdom",i="Australia",h="Netherlands",g="New Zealand",f="Singapore",e="assets/images/applyprocess.png",d="eG Study Abroad Application Steps",c="Follow these essential steps to apply for your study abroad program with eG Study Abroad, from choosing the right program to preparing for your international journey.",b="Research and Choose Programs",a="Explore various study abroad options and select the programs that align with your academic and career goals.",a0="Prepare Required Documents",a1="Gather necessary documents such as transcripts, letters of recommendation, a personal statement, and proof of language proficiency.",a2="Submit Your Application",a3="Complete and submit the application forms through the eG Study Abroad portal, ensuring all required fields are filled accurately.",a4="Attend an Interview (if required)",a5="Some programs may require an interview to assess your suitability and motivations for studying abroad.",a6="Receive an Offer",a7="Once your application is reviewed, you will receive an offer of admission if you meet the programs criteria.",a8="Secure Your Spot",a9="Accept the offer and follow any additional steps to secure your enrollment, such as paying a deposit or confirming accommodation.",b0="Prepare for Departure",b1="Obtain your visa, arrange travel and accommodations, and attend pre-departure orientations to ensure a smooth transition.",b2="assets/images/alumni.png",b3="eG Study Abroad Alumni Network",b4="Connect with a global community of former students to expand your professional network and enhance your career prospects.",b5="Connect with Fellow Alumni",b6="Join a vibrant community of former students who have completed their study abroad experiences and share common interests and goals.",b7="Networking Opportunities",b8="Access exclusive events, workshops, and webinars to connect with professionals and industry leaders worldwide.",b9="Career Support",c0="Receive guidance and resources for career development, including job listings, mentorship programs, and professional advice.",c1="Continued Learning",c2="Stay informed about ongoing educational opportunities, including advanced courses, certifications, and seminars.",c3="Share Your Experience",c4="Contribute to the community by sharing your own study abroad journey, offering advice, and helping current students prepare for their international experiences.",c5="Global Reach",c6="Leverage connections with alumni from diverse backgrounds and industries across the globe to broaden your international perspective.",c7="Leadership Opportunities",c8="Participate in leadership roles within the alumni community, organizing events, and initiatives that foster growth and collaboration.",c9=t.w,d0=A.b(d2,k,c9).w,d1=A.b(d2,k,c9).w.a.a>=700?B.ai:B.aO
+q(d2){var s,r,q,p,o,n,m,l=this,k=null,j="United Kingdom",i="Australia",h="Netherlands",g="New Zealand",f="Singapore",e="assets/images/applyprocess.png",d="eG Study Abroad Application Steps",c="Follow these essential steps to apply for your study abroad program with eG Study Abroad, from choosing the right program to preparing for your international journey.",b="Research and Choose Programs",a="Explore various study abroad options and select the programs that align with your academic and career goals.",a0="Prepare Required Documents",a1="Gather necessary documents such as transcripts, letters of recommendation, a personal statement, and proof of language proficiency.",a2="Submit Your Application",a3="Complete and submit the application forms through the eG Study Abroad portal, ensuring all required fields are filled accurately.",a4="Attend an Interview (if required)",a5="Some programs may require an interview to assess your suitability and motivations for studying abroad.",a6="Receive an Offer",a7="Once your application is reviewed, you will receive an offer of admission if you meet the programs criteria.",a8="Secure Your Spot",a9="Accept the offer and follow any additional steps to secure your enrollment, such as paying a deposit or confirming accommodation.",b0="Prepare for Departure",b1="Obtain your visa, arrange travel and accommodations, and attend pre-departure orientations to ensure a smooth transition.",b2="assets/images/alumni.png",b3="eG Study Abroad Alumni Network",b4="Connect with a global community of former students to expand your professional network and enhance your career prospects.",b5="Connect with Fellow Alumni",b6="Join a vibrant community of former students who have completed their study abroad experiences and share common interests and goals.",b7="Networking Opportunities",b8="Access exclusive events, workshops, and webinars to connect with professionals and industry leaders worldwide.",b9="Career Support",c0="Receive guidance and resources for career development, including job listings, mentorship programs, and professional advice.",c1="Continued Learning",c2="Stay informed about ongoing educational opportunities, including advanced courses, certifications, and seminars.",c3="Share Your Experience",c4="Contribute to the community by sharing your own study abroad journey, offering advice, and helping current students prepare for their international experiences.",c5="Global Reach",c6="Leverage connections with alumni from diverse backgrounds and industries across the globe to broaden your international perspective.",c7="Leadership Opportunities",c8="Participate in leadership roles within the alumni community, organizing events, and initiatives that foster growth and collaboration.",c9=t.w,d0=A.b(d2,k,c9).w,d1=A.b(d2,k,c9).w.a.a>=700?B.ai:B.aP
 if(A.b(d2,k,c9).w.a.a>=700)s=A.o(new A.cf("egAcademy",k),80,k)
 else{A.b(d2,k,c9).toString
 if(A.b(d2,k,c9).w.a.a>=700){s=A.p(30)
-r=A.b(d2,k,c9).w.a.a>=700?A.bl(k,k,B.aN,k,new A.aRm(d2),k,k,k,k):B.O
+r=A.b(d2,k,c9).w.a.a>=700?A.bl(k,k,B.aO,k,new A.aRm(d2),k,k,k,k):B.O
 s=A.r(k,r,B.h,k,k,new A.P(B.aL,k,k,s,k,k,B.q),k,k,k,k,k,k,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,k),B.bw,A.ah(new A.bJ(B.S,k,k,A.b(d2,k,c9).w.a.a>=700?k:A.c("eG Study Abroad",k,k,k,k,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),k,k,k),k),1)],t.p),B.i,B.c,B.b,k)}r=!(A.b(d2,k,c9).w.a.a>=700)?new A.bD(new A.aRn(),k):k
 q=!(A.b(d2,k,c9).w.a.a>=700)?A.ds(k,k,k,B.bp,new A.aRo(),new A.aRp(d2),k,k,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,k,0,new A.f(B.u,s,k),r,k)
+r=A.co(A.a([q],p),!1,B.aQ,k,0,new A.f(B.u,s,k),r,k)
 s=!(A.b(d2,k,c9).w.a.a>=700)?l.afg(d2):k
 d0=d0.a.a>600?B.dz:B.hu
 if(A.b(d2,k,c9).w.a.a>=700)q=600
@@ -58445,10 +58451,10 @@ if(A.b(d2,k,c9).w.a.a>=700)q.push(A.o(B.Td,A.b(d2,k,c9).w.a.a>=700?580:1230,1/0)
 o=A.b(d2,k,c9).w.a.a>=700?1950:6590
 n=t.s
 q.push(A.o(new A.Us(A.a([new A.hA("assets/images/USA.png","United States",A.a(["Home to Ivy League universities and a diverse academic landscape, the U.S. is a top choice for students seeking cutting-edge research opportunities and a multicultural environment."],n),"USA"),new A.hA("assets/images/UK.png",j,A.a(["With historic institutions like Oxford and Cambridge, the UK offers a rich academic tradition and vibrant student cities like London and Edinburgh."],n),j),new A.hA("assets/images/Canada.png","Canada",A.a(["Known for its welcoming environment and high-quality education, Canada is a favorite for students looking for a blend of academic excellence and outdoor adventures."],n),"Canada"),new A.hA("assets/images/Australia.png",i,A.a(["With its world-class universities and relaxed lifestyle, Australia is ideal for students who want to study in a dynamic, multicultural setting."],n),i),new A.hA("assets/images/UAE.png","UAE",A.a(["Known for its world-class universities and multicultural environment, the UAE offers diverse academic programs and vibrant student life, particularly in cities like Dubai and Abu Dhabi."],n),"United Arab Emirates"),new A.hA("assets/images/Germany.png","Germany",A.a(["Offering free or low-cost education at renowned institutions, Germany is perfect for students interested in engineering, science, and the arts."],n),"Germany"),new A.hA("assets/images/France.png","France",A.a(["Known for its rich culture, fashion, and culinary arts, France also boasts prestigious universities and a high standard of education."],n),"France"),new A.hA("assets/images/Netherlands.png",h,A.a(["With a strong emphasis on research and innovation, the Netherlands offers a diverse range of English-taught programs in a welcoming and progressive society."],n),h),new A.hA("assets/images/NewZealand.png",g,A.a(["Offering stunning landscapes and a friendly atmosphere, New Zealand is great for students who value a balanced lifestyle and quality education."],n),g),new A.hA("assets/images/Japan.png","Japan",A.a(["Blending ancient traditions with cutting-edge technology, Japan is an excellent destination for students interested in technology, business, and cultural studies."],n),"Japan"),new A.hA("assets/images/Singapore.png",f,A.a(["A global hub for business and technology, Singapore offers top-notch education with a unique blend of Eastern and Western cultures."],n),f),new A.hA("assets/images/Sweden.png","Sweden",A.a(["Known for its innovation and sustainability, Sweden provides high-quality education in a socially progressive and environmentally conscious society."],n),"Sweden")],t.hW),k),o,1/0))
-q.push(A.r(k,A.o(B.Te,A.b(d2,k,c9).w.a.a>=700?690:1850,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(B.Te,A.b(d2,k,c9).w.a.a>=700?690:1850,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 o=A.b(d2,k,c9).w.a.a>=700?640:2000
 q.push(A.r(k,A.o(new A.Vo(A.a([new A.oC("assets/images/eSAB1.png","Internship Placements",A.a(["Our internship placements offer students invaluable hands-on experience in their chosen fields, allowing them to apply theoretical knowledge in real-world settings."],n)),new A.oC("assets/images/eSAB2.png","Networking and Professional Development",A.a(["eG Study Abroad prioritizes networking and professional development, recognizing the importance of building connections in todays competitive job market. "],n)),new A.oC("assets/images/eSAB3.png","Dual Degree Programs",A.a(["Our dual degree programs offer students the unique opportunity to earn two degrees from different institutions, broadening their academic qualifications and enhancing their global perspective. "],n)),new A.oC("assets/images/eSAB4.png","Research and Academic Collaborations",A.a(["eG Study Abroad fosters research and academic collaborations, enabling students to engage in cutting-edge research projects and contribute to scholarly work."],n))],t.J9),k),o,k),B.h,B.bX,k,k,k,k,k,B.u,k,k,k))
-q.push(A.r(k,A.o(B.adR,A.b(d2,k,c9).w.a.a>=700?680:1800,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(B.adR,A.b(d2,k,c9).w.a.a>=700?680:1800,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 if(A.b(d2,k,c9).w.a.a>=700)q.push(A.r(k,A.o(new A.Vn(A.a([new A.oD("assets/images/eGs1.png","Life-Changing Experience",A.a(["Studying abroad offers unparalleled opportunities for personal, academic, and professional growth."],n)),new A.oD("assets/images/eGs2.png","Explore Global Destinations",A.a(["Discover the rich history of Europe, vibrant culture of Asia, and dynamic landscapes of the Americas."],n)),new A.oD("assets/images/eGs3.png","Comprehensive Guide",A.a(["Navigate through possibilities with insights to make your study abroad journey fulfilling and unforgettable."],n)),new A.oD("assets/images/eGs4.png","Self-Discovery and Cultural Immersion",A.a(["Embrace the journey of self-discovery, cultural immersion, and personal growth beyond academic credits."],n))],t.rT),k),620,k),B.h,B.bX,k,k,k,k,k,B.u,k,k,k))
 if(A.b(d2,k,c9).w.a.a>=700){o=A.aF(B.ab,A.am(e,k,B.D,550,k,k,A.b(d2,k,c9).w.a.a/2.2),B.F)
 m=A.b(d2,k,c9).w
@@ -58466,13 +58472,13 @@ o=n}else{o=A.aF(B.ab,A.am(b2,k,B.D,350,k,k,A.b(d2,k,c9).w.a.a),B.F)
 n=A.b(d2,k,c9).w
 n=A.j(A.a([new A.f(B.UE,o,k),new A.f(B.UG,A.aF(B.ab,A.r(k,new A.f(B.V,A.j(A.a([A.c(b3,k,k,k,k,A.d().$3$color$fontSize$fontWeight(B.o,16,B.k),k,k,k),B.t,A.c(b4,k,k,k,k,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),14,B.I),k,k,k),B.r,A.ah(A.bH(A.a([l.aC(b5,b6),l.aC(b7,b8),l.aC(b9,c0),l.aC(c1,c2),l.aC(c3,c4),l.aC(c5,c6),l.aC(c7,c8)],p),k,k,!1),1)],p),B.f,B.c,B.b,k),k),B.h,k,k,B.bi,k,600,k,k,k,k,n.a.a),B.F),k)],p),B.i,B.c,B.b,k)
 o=n}q.push(A.r(k,o,B.h,B.c7,k,k,k,k,k,k,k,k,k))
-q.push(A.r(k,A.o(B.adQ,A.b(d2,k,c9).w.a.a>=700?680:1850,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(B.adQ,A.b(d2,k,c9).w.a.a>=700?680:1850,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 o=A.b(d2,k,c9).w.a.a>=700?640:720
-q.push(A.r(k,A.o(new A.a0H(new A.aM(k,t.o),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
-q.push(A.o(B.bg,A.b(d2,k,c9).w.a.a>=700?300:630,1/0))
+q.push(A.r(k,A.o(new A.a0H(new A.aM(k,t.o),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
+q.push(A.o(B.aN,A.b(d2,k,c9).w.a.a>=700?300:630,1/0))
 return A.ay(new A.cj(r,d1,k),B.m,A.bX(A.j(A.a([d0,A.j(q,B.f,B.c,B.b,k)],p),B.f,B.c,B.b,k),k,B.G,k,k,k,B.R),s,k)},
 afg(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aRd(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRe(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRf(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRg(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRh(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRi(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRj(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRk(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.aRd(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRe(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRf(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRg(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRh(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRi(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRj(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aRk(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 aC(a,b){var s,r=null,q=A.hj(r,r,B.C,r,r,B.C,r),p=this.c
 p.toString
 s=A.c(a,r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.l,A.b(p,r,t.w).w.a.a>=700?16:12,B.x),r,r,r)
@@ -58488,7 +58494,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aRn.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aRl(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aRl(a),s,s,s,s),s)},
 $S:9}
 A.aRl.prototype={
 $0(){A.d_(this.a).cm()},
@@ -58500,7 +58506,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aRo.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.aRd.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -58547,10 +58553,10 @@ return A.ay(s,B.m,new A.f(B.H,A.j(A.a([new A.f(B.vv,q,s),new A.f(B.vv,p,s),A.ah(
 A.afy.prototype={
 $2(a,b){var s,r,q=null,p=t.w,o=A.b(a,q,p).w.a.a>=700?B.eo:B.kE,n=A.p(16),m=A.c3(B.eK,1),l=A.p(16),k=this.a,j=k.c[b].i(0,"title")
 j.toString
-j=A.ah(A.r(q,A.b5(new A.f(B.ba,A.c(j,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.Oa,A.b(a,q,p).w.a.a>=700?16:12,B.x),B.J,q,q),q),q,q),B.h,q,q,B.Lg,q,q,q,q,q,q,q),1)
+j=A.ah(A.r(q,A.b5(new A.f(B.bb,A.c(j,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.Oa,A.b(a,q,p).w.a.a>=700?16:12,B.x),B.J,q,q),q),q,q),B.h,q,q,B.Lg,q,q,q,q,q,q,q),1)
 s=A.a([A.w(204,152,55,255),A.w(255,152,55,255)],t.W)
 r=A.b_(q,q,B.C,q,q,q,6,q,q,q,q,q,q,B.at,new A.ac(A.p(8),B.w),q,q,q,q)
-return new A.f(o,A.bA(A.r(q,A.j(A.a([j,A.r(q,A.aR(A.c("Download",q,q,q,q,A.d().$1$color(B.m),q,q,q),new A.afx(k,b),r),B.h,q,q,new A.P(q,q,q,B.KD,q,new A.em(B.cw,B.cR,B.aU,s,q,q),B.q),q,q,q,B.dN,q,q,q)],t.p),B.i,B.c,B.b,q),B.h,q,q,new A.P(q,q,m,l,q,q,B.q),q,q,q,q,q,q,q),q,6,q,q,new A.ac(n,B.w)),q)},
+return new A.f(o,A.bA(A.r(q,A.j(A.a([j,A.r(q,A.aR(A.c("Download",q,q,q,q,A.d().$1$color(B.m),q,q,q),new A.afx(k,b),r),B.h,q,q,new A.P(q,q,q,B.KD,q,new A.em(B.cw,B.cR,B.aV,s,q,q),B.q),q,q,q,B.dN,q,q,q)],t.p),B.i,B.c,B.b,q),B.h,q,q,new A.P(q,q,m,l,q,q,B.q),q,q,q,q,q,q,q),q,6,q,q,new A.ac(n,B.w)),q)},
 $S:89}
 A.afx.prototype={
 $0(){var s=this.a.c[this.b].i(0,"url")
@@ -58559,16 +58565,16 @@ A.eA("Downloading from "+s)
 return null},
 $S:0}
 A.Ab.prototype={
-q(a){var s,r,q,p,o,n,m,l=null,k="http://example.com/the_lean_startup.pdf",j="http://example.com/sapiens.pdf",i="http://example.com/educated.pdf",h="http://example.com/the_subtle_art.pdf",g=t.w,f=A.b(a,l,g).w,e=A.b(a,l,g).w.a.a>=700?B.ai:B.aO
+q(a){var s,r,q,p,o,n,m,l=null,k="http://example.com/the_lean_startup.pdf",j="http://example.com/sapiens.pdf",i="http://example.com/educated.pdf",h="http://example.com/the_subtle_art.pdf",g=t.w,f=A.b(a,l,g).w,e=A.b(a,l,g).w.a.a>=700?B.ai:B.aP
 if(A.b(a,l,g).w.a.a>=700)s=A.o(new A.cf("CourseFinal",l),80,l)
 else{A.b(a,l,g).toString
 if(A.b(a,l,g).w.a.a>=700){s=A.p(30)
-r=A.b(a,l,g).w.a.a>=700?A.bl(l,l,B.aN,l,new A.an2(a),l,l,l,l):B.O
+r=A.b(a,l,g).w.a.a>=700?A.bl(l,l,B.aO,l,new A.an2(a),l,l,l,l):B.O
 s=A.r(l,r,B.h,l,l,new A.P(B.aL,l,l,s,l,l,B.q),l,l,l,l,l,l,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,l),A.ah(new A.bJ(B.S,l,l,A.b(a,l,g).w.a.a>=700?l:A.c("eG Library",l,l,l,l,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),l,l,l),l),1)],t.p),B.i,B.c,B.b,l)}r=!(A.b(a,l,g).w.a.a>=700)?new A.bD(new A.an3(),l):l
 q=!(A.b(a,l,g).w.a.a>=700)?A.ds(l,l,l,B.bp,new A.an4(),new A.an5(a),l,l,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,l,0,new A.f(B.u,s,l),r,l)
+r=A.co(A.a([q],p),!1,B.aQ,l,0,new A.f(B.u,s,l),r,l)
 s=!(A.b(a,l,g).w.a.a>=700)?this.afb(a):l
 f=f.a.a>600?B.dz:A.qW(l,B.F,new A.SP(l))
 if(A.b(a,l,g).w.a.a>=700)q=600
@@ -58577,24 +58583,24 @@ q=A.a([A.o(B.Yl,q,1/0)],p)
 if(A.b(a,l,g).w.a.a>=700)q.push(A.o(B.d7,A.b(a,l,g).w.a.a>=700?300:1230,1/0))
 o=A.b(a,l,g).w.a.a>=700?640:2100
 n=t.s
-q.push(A.r(l,A.o(new A.V5(A.a([new A.oL("assets/images/lb1.png","24/7 Accessibility",A.a(["With an eLibrary, users can access a vast array of resources at any time and from any location."],n)),new A.oL("assets/images/lb2.png","Extensive Resource Variety",A.a(["Diverse materials, including textbooks, research articles, journals, multimedia, and more. "],n)),new A.oL("assets/images/lb3.png","Cost-Effective",A.a(["Many eLibraries offer free or low-cost access, saving money on textbooks and subscriptions."],n)),new A.oL("assets/images/lb4.png","Instant Updates",A.a(["eLibraries provide instant access to the latest editions and research, keeping information up-to-date."],n))],t.dH),l),o,l),B.h,B.aS,l,l,l,l,l,B.u,l,l,l))
+q.push(A.r(l,A.o(new A.V5(A.a([new A.oL("assets/images/lb1.png","24/7 Accessibility",A.a(["With an eLibrary, users can access a vast array of resources at any time and from any location."],n)),new A.oL("assets/images/lb2.png","Extensive Resource Variety",A.a(["Diverse materials, including textbooks, research articles, journals, multimedia, and more. "],n)),new A.oL("assets/images/lb3.png","Cost-Effective",A.a(["Many eLibraries offer free or low-cost access, saving money on textbooks and subscriptions."],n)),new A.oL("assets/images/lb4.png","Instant Updates",A.a(["eLibraries provide instant access to the latest editions and research, keeping information up-to-date."],n))],t.dH),l),o,l),B.h,B.aT,l,l,l,l,l,B.u,l,l,l))
 if(A.b(a,l,g).w.a.a>=700)o=1200
 else if(A.bW(a))o=4500
 else o=A.b(a,l,g).w.a.a<=380?3800:4100
 m=t.N
-q.push(A.r(l,A.o(new A.SJ(A.a([A.C(["title","The Lean Startup: How Todays Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses","url",k],m,m),A.C(["title","Sapiens: A Brief History of Humankind - A Thought-Provoking Exploration of Our Species","url",j],m,m),A.C(["title","Educated: A Memoir by Tara Westover - The Journey from Isolation to Education","url",i],m,m),A.C(["title","The Subtle Art of Not Giving a Bock: A Counterintuitive Approach to Living a Good Life","url",h],m,m),A.C(["title","Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones","url","http://example.com/atomic_habits.pdf"],m,m),A.C(["title","Becoming: An Intimate Memoir by Michelle Obama - A Journey of Personal Transformation","url","http://example.com/becoming.pdf"],m,m),A.C(["title","Where the Crawdads Sing: A Novel of Mystery, Nature, and Coming of Age","url","http://example.com/where_the_crawdads_sing.pdf"],m,m),A.C(["title","The Midnight Library: A Novel Exploring Life Choices and the Possibilities of Regret","url","http://example.com/the_midnight_library.pdf"],m,m),A.C(["title","The Lean Startup: How to Innovate and Build a Successful Business in Today\u2019s World","url",k],m,m),A.C(["title","Sapiens: A Brief History of Humankind - Uncovering the Secrets of Our Past","url",j],m,m),A.C(["title","Educated: The Transformative Power of Education in the Life of Tara Westover","url",i],m,m),A.C(["title","The Subtle Art of Not Giving a Bock: How to Prioritize What Matters in Life","url",h],m,m)],t.SN),l),o,l),B.h,B.aS,l,l,l,l,l,B.u,l,l,l))
+q.push(A.r(l,A.o(new A.SJ(A.a([A.C(["title","The Lean Startup: How Todays Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses","url",k],m,m),A.C(["title","Sapiens: A Brief History of Humankind - A Thought-Provoking Exploration of Our Species","url",j],m,m),A.C(["title","Educated: A Memoir by Tara Westover - The Journey from Isolation to Education","url",i],m,m),A.C(["title","The Subtle Art of Not Giving a Bock: A Counterintuitive Approach to Living a Good Life","url",h],m,m),A.C(["title","Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones","url","http://example.com/atomic_habits.pdf"],m,m),A.C(["title","Becoming: An Intimate Memoir by Michelle Obama - A Journey of Personal Transformation","url","http://example.com/becoming.pdf"],m,m),A.C(["title","Where the Crawdads Sing: A Novel of Mystery, Nature, and Coming of Age","url","http://example.com/where_the_crawdads_sing.pdf"],m,m),A.C(["title","The Midnight Library: A Novel Exploring Life Choices and the Possibilities of Regret","url","http://example.com/the_midnight_library.pdf"],m,m),A.C(["title","The Lean Startup: How to Innovate and Build a Successful Business in Today\u2019s World","url",k],m,m),A.C(["title","Sapiens: A Brief History of Humankind - Uncovering the Secrets of Our Past","url",j],m,m),A.C(["title","Educated: The Transformative Power of Education in the Life of Tara Westover","url",i],m,m),A.C(["title","The Subtle Art of Not Giving a Bock: How to Prioritize What Matters in Life","url",h],m,m)],t.SN),l),o,l),B.h,B.aT,l,l,l,l,l,B.u,l,l,l))
 o=A.b(a,l,g).w.a.a>=700?640:2000
-q.push(A.r(l,A.o(new A.V6(A.a([new A.oM("assets/images/lbr1.png","Digital Resources Collection",A.a(["Offer eBooks, research papers, academic journals, and multimedia resources across various fields."],n)),new A.oM("assets/images/lbr2.png","User Guide or Tutorials",A.a(["Offer guides or video tutorials for easy access and navigation for new users."],n)),new A.oM("assets/images/lbr3.png","Interactive Study Tools",A.a(["Include note-taking, highlighting, and bookmarking tools for better study support."],n)),new A.oM("assets/images/lbr4.png","Community and Discussion Forum",A.a(["Create a space for users to discuss and share resources."],n))],t.B1),l),o,l),B.h,B.aS,l,l,l,l,l,B.u,l,l,l))
-q.push(A.o(B.bg,A.b(a,l,g).w.a.a>=700?300:630,1/0))
+q.push(A.r(l,A.o(new A.V6(A.a([new A.oM("assets/images/lbr1.png","Digital Resources Collection",A.a(["Offer eBooks, research papers, academic journals, and multimedia resources across various fields."],n)),new A.oM("assets/images/lbr2.png","User Guide or Tutorials",A.a(["Offer guides or video tutorials for easy access and navigation for new users."],n)),new A.oM("assets/images/lbr3.png","Interactive Study Tools",A.a(["Include note-taking, highlighting, and bookmarking tools for better study support."],n)),new A.oM("assets/images/lbr4.png","Community and Discussion Forum",A.a(["Create a space for users to discuss and share resources."],n))],t.B1),l),o,l),B.h,B.aT,l,l,l,l,l,B.u,l,l,l))
+q.push(A.o(B.aN,A.b(a,l,g).w.a.a>=700?300:630,1/0))
 return A.ay(new A.cj(r,e,l),l,A.bX(A.j(A.a([f,A.j(q,B.f,B.c,B.b,l)],p),B.f,B.c,B.b,l),l,B.G,l,l,l,B.R),s,l)},
 afb(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.amU(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amV(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amW(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amX(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amY(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amZ(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.an_(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.an0(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))}}
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.amU(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amV(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amW(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amX(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amY(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.amZ(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.an_(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.an0(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))}}
 A.an2.prototype={
 $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.an3.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.an1(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.an1(a),s,s,s,s),s)},
 $S:9}
 A.an1.prototype={
 $0(){A.d_(this.a).cm()},
@@ -58606,7 +58612,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.an4.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.amU.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -58658,27 +58664,27 @@ q.aS(0)
 return q},
 m9(a){return!1}}
 A.V5.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.a9:B.bu,p=A.c("Key Advantages of eG Library",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),o=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,n=this.c,m=A.a6(n).h("F<1,vR>")
-return A.ay(s,s,new A.f(B.aT,A.j(A.a([new A.f(q,p,s),B.P,new A.f(o,A.c("eG Libraries are transforming the way we access knowledge by providing a range of benefits that cater to modern learning needs",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(n,new A.amT(),m),!0,m.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.a9:B.bu,p=A.c("Key Advantages of eG Library",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),o=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,n=this.c,m=A.a6(n).h("F<1,vR>")
+return A.ay(s,s,new A.f(B.aU,A.j(A.a([new A.f(q,p,s),B.P,new A.f(o,A.c("eG Libraries are transforming the way we access knowledge by providing a range of benefits that cater to modern learning needs",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(n,new A.amT(),m),!0,m.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.amT.prototype={
 $1(a){return new A.vR(a,null)},
 $S:808}
 A.oL.prototype={}
 A.vR.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.b9:B.H,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),260,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.ba:B.H,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),260,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([l,new A.f(B.ap,A.c(m.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(k,new A.aqr(a),j),!0,j.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,p,n,new A.ac(o,B.w)),470,q)}}
 A.aqr.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.V6.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.a9:B.bu,p=A.c("Essential Features to Enhance eG Library",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),o=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,n=this.c,m=A.a6(n).h("F<1,vQ>")
-return A.ay(s,s,new A.f(B.aT,A.j(A.a([new A.f(q,p,s),B.P,new A.f(o,A.c("To maximize the value of eG Library, consider features like a comprehensive digital collection, advanced search and filter options, personalized recommendations, and interactive study tools. ",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(n,new A.an6(),m),!0,m.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.a9:B.bu,p=A.c("Essential Features to Enhance eG Library",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),o=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,n=this.c,m=A.a6(n).h("F<1,vQ>")
+return A.ay(s,s,new A.f(B.aU,A.j(A.a([new A.f(q,p,s),B.P,new A.f(o,A.c("To maximize the value of eG Library, consider features like a comprehensive digital collection, advanced search and filter options, personalized recommendations, and interactive study tools. ",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(n,new A.an6(),m),!0,m.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.an6.prototype={
 $1(a){return new A.vQ(a,null)},
 $S:817}
 A.oM.prototype={}
 A.vQ.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?470:430,o=A.b(a,s,r).w.a.a>=700?B.b9:B.H,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),240,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?470:430,o=A.b(a,s,r).w.a.a>=700?B.ba:B.H,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),240,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aqq(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aqq.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
@@ -58703,151 +58709,151 @@ A.agD.prototype={
 $0(){A.l(this.a).n(0,"/signup",null)},
 $S:10}
 A.Vf.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Why Choose eG Scholarships",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vC>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Why Choose eG Scholarships",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vC>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("eG Scholarships provide students with the financial support needed to pursue their educational dreams without financial burdens. Our scholarships are designed to reward academic excellence, leadership, and community involvement, offering opportunities for students from all backgrounds.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.ao_(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.ao_.prototype={
 $1(a){return new A.vC(a,null)},
 $S:820}
 A.ot.prototype={}
 A.vC.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?435:430,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?435:430,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:14,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aqa(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aqa.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.V4.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Opportunities at eG Jobs",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vE>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Opportunities at eG Jobs",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vE>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("eG Jobs offers a wide array of career opportunities designed to help you reach your professional goals.Whether you are a recent graduate or an experienced professional, our platform connects you with top employers across various industries.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.amS(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.amS.prototype={
 $1(a){return new A.vE(a,null)},
 $S:835}
 A.oA.prototype={}
 A.vE.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aqc(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aqc.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.UX.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.Us,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("eG Academy Standouts",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.eo,m=this.c,l=A.a6(m).h("F<1,vM>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.Us,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("eG Academy Standouts",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.eo,m=this.c,l=A.a6(m).h("F<1,vM>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("eG Academy stands out for its exceptional commitment to providing top-tier education and unparalleled learning experiences. Our focus on innovation and real-world relevance ensures that students are well-prepared to excel in their careers.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.amg(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.amg.prototype={
 $1(a){return new A.vM(a,null)},
 $S:836}
 A.oJ.prototype={}
 A.vM.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?435:400,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?435:400,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aql(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aql.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.UY.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Why Choose eG Academy",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.kE,m=this.c,l=A.a6(m).h("F<1,vP>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Why Choose eG Academy",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.kE,m=this.c,l=A.a6(m).h("F<1,vP>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c(u.f,s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.amf(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.amf.prototype={
 $1(a){return new A.vP(a,null)},
 $S:839}
 A.oF.prototype={}
 A.vP.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:14,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aqo(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aqo.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:11),a+"\n\n")},
 $S:11}
 A.V0.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("eG Careers Standouts",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vr>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("eG Careers Standouts",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vr>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("Highlighting top career opportunities and success stories to inspire and guide your professional journey.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.amj(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.amj.prototype={
 $1(a){return new A.vr(a,null)},
 $S:854}
 A.oo.prototype={}
 A.vr.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?435:410,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?435:410,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aq_(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aq_.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.V3.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("eG Jobs Standouts",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vD>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("eG Jobs Standouts",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vD>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("eG Jobs stands out for its unparalleled commitment to connecting job seekers with top employment opportunities and providing comprehensive career support. Our platform is designed to help you achieve your professional aspirations and succeed in a competitive job market.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.amR(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.amR.prototype={
 $1(a){return new A.vD(a,null)},
 $S:855}
 A.oB.prototype={}
 A.vD.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?435:400,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?435:400,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aqb(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aqb.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.Vb.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("eG Pathways Standouts",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vv>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("eG Pathways Standouts",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vv>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("eG Pathways Standouts highlight exceptional programs and opportunities that distinguish our educational offerings, showcasing unique benefits and standout features that set them apart from the rest.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.any(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.any.prototype={
 $1(a){return new A.vv(a,null)},
 $S:862}
 A.or.prototype={}
 A.vv.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),200,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),200,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([l,new A.f(B.ap,A.c(m.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(k,new A.aq3(a),j),!0,j.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,p,n,new A.ac(o,B.w)),435,q)}}
 A.aq3.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.Vc.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Specialties of eG Pathways",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vu>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Specialties of eG Pathways",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vu>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("eG Pathways specializes in providing customized educational pathways that align with students unique goals and interests.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.anw(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.anw.prototype={
 $1(a){return new A.vu(a,null)},
 $S:863}
 A.os.prototype={}
 A.vu.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),200,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),200,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([l,new A.f(B.ap,A.c(m.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(k,new A.aq2(a),j),!0,j.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,p,n,new A.ac(o,B.w)),435,q)}}
 A.aq2.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.Vd.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Why Choose eG Pathways",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vw>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Why Choose eG Pathways",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vw>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("eG Pathways offers customized educational pathways that empower students to reach their academic and career goals. Our programs are designed to provide flexible learning options, allowing students to tailor their education to fit their interests and aspirations.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.anx(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.anx.prototype={
 $1(a){return new A.vw(a,null)},
 $S:864}
 A.oq.prototype={}
 A.vw.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),200,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),200,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([l,new A.f(B.ap,A.c(m.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(k,new A.aq4(a),j),!0,j.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,p,n,new A.ac(o,B.w)),435,q)}}
 A.aq4.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.Ve.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Types of Scholarships",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vy>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Types of Scholarships",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vy>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("Discover the wide range of scholarships we offer to support your educational journey. Whether you excel in academics, face financial challenges, or have made significant contributions through extracurricular activities, there is a scholarship designed for you.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.anZ(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.anZ.prototype={
 $1(a){return new A.vy(a,null)},
 $S:867}
 A.ox.prototype={}
 A.vy.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aq6(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aq6.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.Vg.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("eG Scholarships Standouts",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vB>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("eG Scholarships Standouts",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vB>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("eG Scholarships stands out for its robust support in providing financial aid and merit-based awards to deserving students, empowering them to pursue their academic dreams without financial constraints.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.ao0(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.ao0.prototype={
 $1(a){return new A.vB(a,null)},
 $S:869}
 A.ou.prototype={}
 A.vB.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),200,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,o=A.p(16),n=A.w(B.e.K(178.5),0,0,0),m=this.c,l=A.o(A.aF(B.aD,A.am(m.a,s,B.D,s,s,s,s),B.F),200,1/0),k=m.c,j=A.a6(k).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([l,new A.f(B.ap,A.c(m.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(k,new A.aq9(a),j),!0,j.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,p,n,new A.ac(o,B.w)),435,q)}}
 A.aq9.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.Vn.prototype={
 q(a){var s=null,r=this.c,q=A.a6(r).h("F<1,vH>")
-return A.ay(s,s,new A.f(B.aT,A.j(A.a([new A.f(B.V9,A.c("eG Study Abroad Standouts",s,s,s,s,A.d().$2$fontSize$fontWeight(22,B.x),s,s,s),s),B.P,new A.f(B.Va,A.c("eG Study Abroad stands out for its exceptional dedication to providing comprehensive and enriching international education opportunities. Our programs are designed to broaden horizons and equip students with the skills and experiences needed to thrive in a global environment.",s,s,s,s,A.d().$2$color$fontSize(B.ah,14),s,s,s),s),A.ah(A.dt(A.a_(new A.F(r,new A.aoH(),q),!0,q.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
+return A.ay(s,s,new A.f(B.aU,A.j(A.a([new A.f(B.V9,A.c("eG Study Abroad Standouts",s,s,s,s,A.d().$2$fontSize$fontWeight(22,B.x),s,s,s),s),B.P,new A.f(B.Va,A.c("eG Study Abroad stands out for its exceptional dedication to providing comprehensive and enriching international education opportunities. Our programs are designed to broaden horizons and equip students with the skills and experiences needed to thrive in a global environment.",s,s,s,s,A.d().$2$color$fontSize(B.ah,14),s,s,s),s),A.ah(A.dt(A.a_(new A.F(r,new A.aoH(),q),!0,q.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.aoH.prototype={
 $1(a){return new A.vH(a,null)},
 $S:870}
@@ -58859,21 +58865,21 @@ A.aqf.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,13),a+"\n\n")},
 $S:11}
 A.Vo.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Opportunities at eG Study Abroad",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vI>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Opportunities at eG Study Abroad",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vI>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("eG Study Abroad opens doors to a world of diverse educational opportunities, allowing students to explore and expand their academic horizons. With a vast network of partner universities and institutions across the globe, we offer a wide range of programs tailored to meet the unique interests and goals of each student. ",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.aoI(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.aoI.prototype={
 $1(a){return new A.vI(a,null)},
 $S:281}
 A.oC.prototype={}
 A.vI.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:426,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:426,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aqg(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aqg.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.a1I.prototype={
 av(a,b,c){var s=null,r=A.hj(s,s,B.C,s,s,B.C,s),q=A.p(12),p=A.a([new A.aE(2,B.L,A.w(B.e.K(25.5),0,0,0),new A.v(2,4),8)],t.V),o=A.p(12),n=A.c(a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.m,A.b(c,s,t.w).w.a.a>=700?18:14,B.k),s,s,s),m=A.fN(B.wc,B.m,s,s),l=A.p(12)
-return new A.hN(r,A.r(s,A.aF(o,A.cW(B.C,A.a([new A.f(B.aX,A.r(s,A.c(b,s,s,s,s,A.d().$3$color$fontSize$fontWeight(A.w(217,255,255,255),14,B.I),s,s,s),B.h,s,s,new A.P(s,s,s,l,s,s,B.q),s,s,s,B.V,s,s,s),s)],t.p),B.C,new A.K(16,0,16,0),n,m),B.F),B.h,s,s,new A.P(s,s,s,q,p,B.YF,B.q),s,s,B.fx,s,s,s,s),s)},
+return new A.hN(r,A.r(s,A.aF(o,A.cW(B.C,A.a([new A.f(B.aY,A.r(s,A.c(b,s,s,s,s,A.d().$3$color$fontSize$fontWeight(A.w(217,255,255,255),14,B.I),s,s,s),B.h,s,s,new A.P(s,s,s,l,s,s,B.q),s,s,s,B.V,s,s,s),s)],t.p),B.C,new A.K(16,0,16,0),n,m),B.F),B.h,s,s,new A.P(s,s,s,q,p,B.YF,B.q),s,s,B.fx,s,s,s,s),s)},
 q(a){var s,r=null,q="assets/images/ourteam.png",p="Join Our Team",o="\u27a2 Grow with Us\nJoin a team that values your talent and nurtures your growth. At our company, you\u2019ll find opportunities to expand your skills, collaborate with brilliant minds, and make a lasting impact.\n\n\u27a2 Your Next Career Move\nDiscover a place where passion meets purpose. We\u2019re looking for individuals ready to take their careers to the next level while contributing to a team that thrives on creativity and progress.\n\n\u27a2 Shape the Future Together\nBecome part of a team that's changing the game in our industry. We\u2019re seeking innovative thinkers and passionate professionals to help drive our vision forward.",n="Current Openings",m="At the moment, all positions are filled. Please check back later for future opportunities.",l=t.p,k=A.a([],l),j=t.w
 if(A.b(a,r,j).w.a.a>=700)k.push(new A.f(B.dv,A.B(A.a([A.am(q,r,B.D,r,r,r,A.b(a,r,j).w.a.a>=700?650:A.b(a,r,j).w.a.a*0.9),B.lX,A.r(r,A.j(A.a([A.c(p,r,r,r,r,A.d().$1$textStyle(B.If),r,r,r),B.r,A.c(o,r,r,r,r,A.d().$1$textStyle(B.Ig),r,r,r),B.y,this.av(n,m,a)],l),B.f,B.K,B.b,r),B.h,r,r,r,r,r,r,r,r,r,700)],l),B.i,B.K,B.b,r),r))
 if(!(A.b(a,r,j).w.a.a>=700)){s=A.b(a,r,j).w
@@ -58881,16 +58887,16 @@ k.push(A.r(r,new A.f(B.vq,A.j(A.a([B.y,A.am(q,r,B.D,r,r,r,A.b(a,r,j).w.a.a>=700?
 A.AC.prototype={
 av(a,b,c){var s=null,r=A.hj(s,s,B.C,s,s,B.C,s),q=t.w,p=A.c(a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.l,A.b(c,s,q).w.a.a>=700?16:12,B.x),s,s,s),o=A.w(B.e.K(178.5),0,0,0)
 return new A.hN(r,A.cW(B.C,A.a([new A.f(B.V,A.c(b,s,s,s,s,A.d().$3$color$fontSize$fontWeight(o,A.b(c,s,q).w.a.a>=700?14:12,B.I),s,s,s),s)],t.p),B.C,B.u,p,s),s)},
-q(b0){var s,r,q,p,o,n,m,l=this,k=null,j="assets/images/ideastationproject.png",i="eG Idea Station Enrollment",h='eG Idea Station Enrollment is your gateway to transforming innovative ideas into thriving startups. By enrolling, you gain access to a wealth of resources, including expert mentorship, funding opportunities, and hands-on workshops.\n\nTo submit your application form, please use the "Submit your Project Ideas" button above.',g="Eligibility",f="Open to students and aspiring entrepreneurs who have innovative ideas ready for development.",e="Application Process",d="Simple and straightforward online application to submit your project proposal.",c="Mentorship Matching",b="Pairing participants with experienced mentors who provide personalized guidance and support.",a="Funding Opportunities",a0=" Access to financial resources to help bring your idea to fruition",a1="Workshops and Training",a2="Engaging sessions designed to enhance entrepreneurial skills and business acumen.",a3="Collaborative Network",a4="Join a community of like-minded innovators to share ideas, insights, and resources.",a5="Pitching Platform",a6=" Opportunities to present your project to investors and industry leaders for potential funding and partnerships.",a7=t.w,a8=A.b(b0,k,a7).w,a9=A.b(b0,k,a7).w.a.a>=700?B.ai:B.aO
+q(b0){var s,r,q,p,o,n,m,l=this,k=null,j="assets/images/ideastationproject.png",i="eG Idea Station Enrollment",h='eG Idea Station Enrollment is your gateway to transforming innovative ideas into thriving startups. By enrolling, you gain access to a wealth of resources, including expert mentorship, funding opportunities, and hands-on workshops.\n\nTo submit your application form, please use the "Submit your Project Ideas" button above.',g="Eligibility",f="Open to students and aspiring entrepreneurs who have innovative ideas ready for development.",e="Application Process",d="Simple and straightforward online application to submit your project proposal.",c="Mentorship Matching",b="Pairing participants with experienced mentors who provide personalized guidance and support.",a="Funding Opportunities",a0=" Access to financial resources to help bring your idea to fruition",a1="Workshops and Training",a2="Engaging sessions designed to enhance entrepreneurial skills and business acumen.",a3="Collaborative Network",a4="Join a community of like-minded innovators to share ideas, insights, and resources.",a5="Pitching Platform",a6=" Opportunities to present your project to investors and industry leaders for potential funding and partnerships.",a7=t.w,a8=A.b(b0,k,a7).w,a9=A.b(b0,k,a7).w.a.a>=700?B.ai:B.aP
 if(A.b(b0,k,a7).w.a.a>=700)s=A.o(new A.cf("CourseFinal",k),80,k)
 else{A.b(b0,k,a7).toString
 if(A.b(b0,k,a7).w.a.a>=700){s=A.p(30)
-r=A.b(b0,k,a7).w.a.a>=700?A.bl(k,k,B.aN,k,new A.avB(b0),k,k,k,k):B.O
+r=A.b(b0,k,a7).w.a.a>=700?A.bl(k,k,B.aO,k,new A.avB(b0),k,k,k,k):B.O
 s=A.r(k,r,B.h,k,k,new A.P(B.aL,k,k,s,k,k,B.q),k,k,k,k,k,k,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,k),A.ah(new A.bJ(B.S,k,k,A.b(b0,k,a7).w.a.a>=700?k:A.c("eG Idea Station",k,k,k,k,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),k,k,k),k),1)],t.p),B.i,B.c,B.b,k)}r=!(A.b(b0,k,a7).w.a.a>=700)?new A.bD(new A.avC(),k):k
 q=!(A.b(b0,k,a7).w.a.a>=700)?A.ds(k,k,k,B.bp,new A.avD(),new A.avE(b0),k,k,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,k,0,new A.f(B.u,s,k),r,k)
+r=A.co(A.a([q],p),!1,B.aQ,k,0,new A.f(B.u,s,k),r,k)
 s=!(A.b(b0,k,a7).w.a.a>=700)?l.afk(b0):k
 a8=a8.a.a>600?B.dz:A.qW(k,B.F,new A.SQ(k))
 if(A.b(b0,k,a7).w.a.a>=700)q=600
@@ -58900,7 +58906,7 @@ if(A.b(b0,k,a7).w.a.a>=700)q.push(A.o(B.d7,A.b(b0,k,a7).w.a.a>=700?300:1230,1/0)
 if(A.b(b0,k,a7).w.a.a>=700)q.push(B.ada)
 o=A.b(b0,k,a7).w.a.a>=700?640:2110
 n=t.s
-q.push(A.r(k,A.o(new A.WE(A.a([new A.oN("assets/images/STP1.png","Startup Funding",A.a(["Providing financial support to transform innovative ideas into successful businesses."],n)),new A.oN("assets/images/STP2.png","Mentorship",A.a(["Connecting participants with industry experts to guide and refine their projects."],n)),new A.oN("assets/images/STP3.png","Real-World Experience",A.a(["Allowing students to gain hands-on experience in entrepreneurship and business development."],n)),new A.oN("assets/images/STP4.png","Tailored Resources ",A.a(["Offering access to tools, resources, and knowledge to accelerate project development."],n))],t.tr),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
+q.push(A.r(k,A.o(new A.WE(A.a([new A.oN("assets/images/STP1.png","Startup Funding",A.a(["Providing financial support to transform innovative ideas into successful businesses."],n)),new A.oN("assets/images/STP2.png","Mentorship",A.a(["Connecting participants with industry experts to guide and refine their projects."],n)),new A.oN("assets/images/STP3.png","Real-World Experience",A.a(["Allowing students to gain hands-on experience in entrepreneurship and business development."],n)),new A.oN("assets/images/STP4.png","Tailored Resources ",A.a(["Offering access to tools, resources, and knowledge to accelerate project development."],n))],t.tr),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
 if(A.b(b0,k,a7).w.a.a>=700){o=A.aF(B.ab,A.am(j,k,B.D,550,k,k,A.b(b0,k,a7).w.a.a/2.2),B.F)
 m=A.b(b0,k,a7).w
 m=A.B(A.a([new A.f(B.du,o,k),new A.f(B.j4,A.aF(B.ab,A.r(k,new A.f(B.V,A.j(A.a([A.c(i,k,k,k,k,A.d().$3$color$fontSize$fontWeight(B.o,22,B.k),k,k,k),B.t,A.c(h,k,k,k,k,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),14,B.I),k,k,k),B.r,A.ah(A.bH(A.a([l.av(g,f,b0),l.av(e,d,b0),l.av(c,b,b0),l.av(a,a0,b0),l.av(a1,a2,b0),l.av(a3,a4,b0),l.av(a5,a6,b0)],p),k,k,!1),1)],p),B.f,B.c,B.b,k),k),B.h,k,k,B.bi,k,690,k,k,k,k,m.a.a/2.3),B.F),k)],p),B.i,B.c,B.b,k)
@@ -58909,17 +58915,17 @@ m=A.b(b0,k,a7).w
 m=A.j(A.a([new A.f(B.hM,o,k),new A.f(B.eQ,A.aF(B.ab,A.r(k,new A.f(B.V,A.j(A.a([A.c(i,k,k,k,k,A.d().$3$color$fontSize$fontWeight(B.o,16,B.k),k,k,k),B.t,A.c(h,k,k,k,k,A.d().$3$color$fontSize$fontWeight(A.w(B.e.K(178.5),0,0,0),12,B.I),k,k,k),B.r,A.ah(A.bH(A.a([l.av(g,f,b0),l.av(e,d,b0),l.av(c,b,b0),l.av(a,a0,b0),l.av(a1,a2,b0),l.av(a3,a4,b0),l.av(a5,a6,b0)],p),k,k,!1),1)],p),B.f,B.c,B.b,k),k),B.h,k,k,B.bi,k,620,k,k,k,k,m.a.a),B.F),k)],p),B.i,B.c,B.b,k)
 o=m}q.push(A.r(k,A.bQ(B.a6,A.a([o],p),B.B,B.a7,k),B.h,B.c7,k,k,k,k,k,k,k,k,k))
 o=A.b(b0,k,a7).w.a.a>=700?640:2000
-q.push(A.r(k,A.o(new A.WG(A.a([new A.oO("assets/images/fund1.png","Seed Grants",A.a(["Financial support for early-stage projects to help cover initial development costs and bring your idea to life."],n)),new A.oO("assets/images/fund2.png","Crowdfunding Opportunities",A.a(["Access to platforms where you can pitch your project to a wider audience and raise funds through community support."],n)),new A.oO("assets/images/fund3.png","Investor Matching",A.a(["Connections with potential investors who are interested in supporting innovative startups and ideas."],n)),new A.oO("assets/images/fund4.png","Business Competitions",A.a(["Participation in contests where you can pitch your project for a chance to win funding, resources, and mentorship."],n))],t.MB),k),o,k),B.h,B.aS,k,k,k,k,k,B.u,k,k,k))
-q.push(A.o(B.bg,A.b(b0,k,a7).w.a.a>=700?300:630,1/0))
+q.push(A.r(k,A.o(new A.WG(A.a([new A.oO("assets/images/fund1.png","Seed Grants",A.a(["Financial support for early-stage projects to help cover initial development costs and bring your idea to life."],n)),new A.oO("assets/images/fund2.png","Crowdfunding Opportunities",A.a(["Access to platforms where you can pitch your project to a wider audience and raise funds through community support."],n)),new A.oO("assets/images/fund3.png","Investor Matching",A.a(["Connections with potential investors who are interested in supporting innovative startups and ideas."],n)),new A.oO("assets/images/fund4.png","Business Competitions",A.a(["Participation in contests where you can pitch your project for a chance to win funding, resources, and mentorship."],n))],t.MB),k),o,k),B.h,B.aT,k,k,k,k,k,B.u,k,k,k))
+q.push(A.o(B.aN,A.b(b0,k,a7).w.a.a>=700?300:630,1/0))
 return A.ay(new A.cj(r,a9,k),k,A.bX(A.j(A.a([a8,A.j(q,B.f,B.c,B.b,k)],p),B.f,B.c,B.b,k),k,B.G,k,k,k,B.R),s,k)},
 afk(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.avs(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avt(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avu(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avv(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avw(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avx(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avy(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avz(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))}}
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.avs(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avt(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avu(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avv(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avw(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avx(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avy(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.avz(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))}}
 A.avB.prototype={
 $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.avC.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.avA(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.avA(a),s,s,s,s),s)},
 $S:9}
 A.avA.prototype={
 $0(){A.d_(this.a).cm()},
@@ -58931,7 +58937,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.avD.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.avs.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -58983,27 +58989,27 @@ q.aS(0)
 return q},
 m9(a){return!1}}
 A.WE.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.a9:B.bu,p=A.c("Why Should You Innovate with eG Idea Station?",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),o=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,n=this.c,m=A.a6(n).h("F<1,vT>")
-return A.ay(s,s,new A.f(B.aT,A.j(A.a([new A.f(q,p,s),B.P,new A.f(o,A.c("At eG Idea Station, we provide the platform, resources, and support to turn your visionary ideas into successful ventures. By partnering with us, you will gain access to startup funding, expert mentorship, and a global network of industry leaders. ",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(n,new A.avk(),m),!0,m.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.a9:B.bu,p=A.c("Why Should You Innovate with eG Idea Station?",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),o=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,n=this.c,m=A.a6(n).h("F<1,vT>")
+return A.ay(s,s,new A.f(B.aU,A.j(A.a([new A.f(q,p,s),B.P,new A.f(o,A.c("At eG Idea Station, we provide the platform, resources, and support to turn your visionary ideas into successful ventures. By partnering with us, you will gain access to startup funding, expert mentorship, and a global network of industry leaders. ",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(n,new A.avk(),m),!0,m.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.avk.prototype={
 $1(a){return new A.vT(a,null)},
 $S:282}
 A.oN.prototype={}
 A.vT.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?470:460,o=A.b(a,s,r).w.a.a>=700?B.b9:B.H,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),260,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?470:460,o=A.b(a,s,r).w.a.a>=700?B.ba:B.H,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),260,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aqt(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aqt.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.WG.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.a9:B.bu,p=A.c("Funding Options at eG Idea Station",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),o=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,n=this.c,m=A.a6(n).h("F<1,vS>")
-return A.ay(s,s,new A.f(B.aT,A.j(A.a([new A.f(q,p,s),B.P,new A.f(o,A.c("Explore a variety of funding avenues designed to support your innovative projects. From seed grants that kickstart your journey to investor matching that connects you with potential backers, we provide the resources you need to bring your ideas to life. ",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(n,new A.avr(),m),!0,m.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.a9:B.bu,p=A.c("Funding Options at eG Idea Station",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),o=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,n=this.c,m=A.a6(n).h("F<1,vS>")
+return A.ay(s,s,new A.f(B.aU,A.j(A.a([new A.f(q,p,s),B.P,new A.f(o,A.c("Explore a variety of funding avenues designed to support your innovative projects. From seed grants that kickstart your journey to investor matching that connects you with potential backers, we provide the resources you need to bring your ideas to life. ",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(n,new A.avr(),m),!0,m.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.avr.prototype={
 $1(a){return new A.vS(a,null)},
 $S:283}
 A.oO.prototype={}
 A.vS.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?470:435,o=A.b(a,s,r).w.a.a>=700?B.b9:B.H,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),240,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?470:435,o=A.b(a,s,r).w.a.a>=700?B.ba:B.H,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),240,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aqs(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aqs.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
@@ -59081,14 +59087,14 @@ A.agB.prototype={
 $0(){A.l(this.a).n(0,"/completejob",null)},
 $S:0}
 A.Wz.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("How eG Jobs Works",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vF>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("How eG Jobs Works",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vF>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("Discover how eG Jobs simplifies your job search process. From finding the right job opportunities to applying seamlessly and starting your new role, we guide you every step of the way to ensure a smooth and successful career transition.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.auX(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.auX.prototype={
 $1(a){return new A.vF(a,null)},
 $S:285}
 A.oz.prototype={}
 A.vF.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?435:400,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?435:400,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aqd(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aqd.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
@@ -59139,7 +59145,7 @@ if(a.length<8)return"Password must be at least 8 characters"
 return null},
 $S:8}
 A.V2.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Team Up for Change",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.kE,m=A.c("eduGuardian is dedicated to its mission of transforming education worldwide by providing accessible, high-quality learning experiences for all. We are at the forefront of innovation in the ed-tech space, leveraging cutting-edge technology and expert-led content to empower learners across the globe. Our platform connects students, educators, and institutions, creating a dynamic environment for knowledge sharing and personal growth.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),l=t.p,k=this.c,j=A.a6(k).h("F<1,vt>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Team Up for Change",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.kE,m=A.c("eduGuardian is dedicated to its mission of transforming education worldwide by providing accessible, high-quality learning experiences for all. We are at the forefront of innovation in the ed-tech space, leveraging cutting-edge technology and expert-led content to empower learners across the globe. Our platform connects students, educators, and institutions, creating a dynamic environment for knowledge sharing and personal growth.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),l=t.p,k=this.c,j=A.a6(k).h("F<1,vt>")
 return A.ay(s,B.m,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.j(A.a([m,B.r,A.c("Join our team and be a part of this exciting journey. Together, we can shape the future of education and make a lasting impact on learners around the world.",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?14:12,B.p),s,s,s)],l),B.f,B.c,B.b,s),s),A.ah(A.dt(A.a_(new A.F(k,new A.amD(),j),!0,j.h("ak.E")),16,16),1)],l),B.f,B.c,B.b,s),s),s,s)}}
 A.amD.prototype={
 $1(a){return new A.vt(a,null)},
@@ -59199,7 +59205,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?330:A.b(a,r,q).w.a.a*0.9,o=A.c3(
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,2,B.ae,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.V9.prototype={
 q(a){var s=null,r="assets/images/egaca3.png",q="   Sign Up   ",p=A.w(255,251,250,250),o=t.p,n=A.a([],o),m=t.w
 if(A.b(a,s,m).w.a.a>=700)n.push(new A.f(B.dv,A.B(A.a([A.am(r,s,B.D,s,s,s,A.b(a,s,m).w.a.a>=700?680:A.b(a,s,m).w.a.a*0.9),B.ex,A.j(A.a([A.c("Take the next step toward \nachieving your personal and professional \ngoals with eG Academy.",s,s,s,s,A.d().$1$textStyle(B.h8),s,s,s),B.y,A.c("Join now to receive personalized\nrecommendations from the full eG Academy catalog.",s,s,s,s,A.d().$1$textStyle(B.fb),s,s,s),B.t,A.o(new A.e4(q,B.o,B.m,new A.anl(this,a),s),90,130)],o),B.f,B.K,B.b,s)],o),B.i,B.K,B.b,s),s))
@@ -59246,27 +59252,27 @@ if(a.length<8)return"Password must be at least 8 characters"
 return null},
 $S:8}
 A.V7.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Benefits of eG Academy",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.kE,m=this.c,l=A.a6(m).h("F<1,vK>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Benefits of eG Academy",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.kE,m=this.c,l=A.a6(m).h("F<1,vK>")
 return A.ay(s,B.m,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("eG Academy offers a range of advantages designed to enhance your educational journey. With personalized learning experiences, industry-recognized certifications, and flexible access options, you will gain valuable skills and knowledge at your own pace. ",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.an7(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.an7.prototype={
 $1(a){return new A.vK(a,null)},
 $S:288}
 A.oK.prototype={}
 A.vK.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?435:400,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?435:400,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aqk(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aqk.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
 $S:11}
 A.V_.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Learn from Anywhere with Our Online Classes",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.eo,m=this.c,l=A.a6(m).h("F<1,vN>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Learn from Anywhere with Our Online Classes",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.eo,m=this.c,l=A.a6(m).h("F<1,vN>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("eG Academy\u2019s online classes offer a dynamic and flexible learning platform, enabling students to access quality education from anywhere in the world. Our interactive courses are tailored to meet diverse learning needs, featuring expert instructors, engaging content, and real-time support. With 24/7 access to resources and live sessions, we ensure every student enjoys a seamless and enriching online learning experience.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.ami(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.ami.prototype={
 $1(a){return new A.vN(a,null)},
 $S:289}
 A.oI.prototype={}
 A.vN.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),230,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),230,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aqm(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aqm.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
@@ -59319,16 +59325,16 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?330:A.b(a,r,q).w.a.a*0.9,o=A.c3(
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,2,B.ae,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.UZ.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.nS,p=A.b(a,s,r).w.a.a>=700?B.a9:B.o_,o=A.c("Hands-On Learning with Our Onsite Classes",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.eo,m=this.c,l=A.a6(m).h("F<1,vO>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.nS,p=A.b(a,s,r).w.a.a>=700?B.a9:B.o_,o=A.c("Hands-On Learning with Our Onsite Classes",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.eo,m=this.c,l=A.a6(m).h("F<1,vO>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c(u.f,s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.amh(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.amh.prototype={
 $1(a){return new A.vO(a,null)},
 $S:280}
 A.oH.prototype={}
 A.vO.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),230,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),230,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aqn(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aqn.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
@@ -59471,7 +59477,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?330:A.b(a,r,q).w.a.a*0.9,o=A.c3(
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,2,B.ae,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.YG.prototype={
 q(a){var s,r,q=null,p=t.w,o=A.b(a,q,p).w.a.a>=700?B.hO:B.cF,n=A.c("eG Pathways Featured Programs",q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a,q,p).w.a.a>=700?18:14,B.k),q,q,q),m=A.c("Begin your education with our featured courses.",q,q,q,q,A.d().$2$fontSize$fontWeight(A.b(a,q,p).w.a.a>=700?20:14,B.x),q,q,q),l=t.p
 m=A.j(A.a([n,B.P,m,B.P,A.c("Explore our featured eG Pathways programs for exceptional educational opportunities.",q,q,q,q,A.d().$1$fontSize(A.b(a,q,p).w.a.a>=700?14:12),q,q,q)],l),B.f,B.c,B.b,q)
@@ -59520,7 +59526,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?330:A.b(a,r,q).w.a.a*0.9,o=A.c3(
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,2,B.ae,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.Vj.prototype={
 q(a){var s,r,q=null,p=t.w,o=A.b(a,q,p).w.a.a>=700?B.hO:B.cF,n=A.c("eG Scholarships Programs",q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a,q,p).w.a.a>=700?18:14,B.k),q,q,q),m=A.c("Embark on Your Scholarship Journey Today",q,q,q,q,A.d().$2$fontSize$fontWeight(A.b(a,q,p).w.a.a>=700?20:14,B.x),q,q,q),l=t.p
 m=A.j(A.a([n,B.P,m,B.P,A.c("Our scholarship opportunities empower you to develop essential skills, gain industry-recognized credentials, and advance in your educational journey before official enrollment.",q,q,q,q,A.d().$1$fontSize(A.b(a,q,p).w.a.a>=700?14:12),q,q,q)],l),B.f,B.c,B.b,q)
@@ -59569,16 +59575,16 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?330:A.b(a,r,q).w.a.a*0.9,o=A.c3(
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,2,B.ae,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.Vl.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("eG Scholarships Options",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vz>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("eG Scholarships Options",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vz>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("Explore a wide range of scholarship programs designed to support students in achieving their academic and career aspirations.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.aoq(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.aoq.prototype={
 $1(a){return new A.vz(a,null)},
 $S:291}
 A.ov.prototype={}
 A.vz.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aq8(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aq8.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
@@ -59631,7 +59637,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?330:A.b(a,r,q).w.a.a*0.9,o=A.c3(
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,2,B.ae,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.Vi.prototype={
 q(a){var s=null,r="assets/images/eSCHP3.png",q="   Sign Up   ",p=A.w(255,251,250,250),o=t.p,n=A.a([],o),m=t.w
 if(A.b(a,s,m).w.a.a>=700)n.push(new A.f(B.dv,A.B(A.a([A.am(r,s,B.D,s,s,s,A.b(a,s,m).w.a.a>=700?680:A.b(a,s,m).w.a.a*0.9),B.ex,A.j(A.a([A.c("Take the next step toward \nachieving your personal and professional \ngoals with eG Scholarships.",s,s,s,s,A.d().$1$textStyle(B.h8),s,s,s),B.y,A.c("Join now to receive personalized\nrecommendations from the full eG Scholarships catalog.",s,s,s,s,A.d().$1$textStyle(B.fb),s,s,s),B.t,A.o(new A.e4(q,B.o,B.m,new A.ao6(this,a),s),90,130)],o),B.f,B.K,B.b,s)],o),B.i,B.K,B.b,s),s))
@@ -59678,14 +59684,14 @@ if(a.length<8)return"Password must be at least 8 characters"
 return null},
 $S:8}
 A.Vh.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aT:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Opportunities at eG Scholarships",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aY:B.bO,m=this.c,l=A.a6(m).h("F<1,vx>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.aU:B.bY,p=A.b(a,s,r).w.a.a>=700?B.a9:B.Z,o=A.c("Opportunities at eG Scholarships",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.aZ:B.bO,m=this.c,l=A.a6(m).h("F<1,vx>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("Unlock a range of benefits designed to support your educational journey, including financial aid, exclusive resources, and professional development.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.ao1(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
 A.ao1.prototype={
 $1(a){return new A.vx(a,null)},
 $S:292}
 A.oy.prototype={}
 A.vx.prototype={
-q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.b9:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
+q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?A.b(a,s,r).w.a.a/4-24:A.b(a,s,r).w.a.a/1-24,p=A.b(a,s,r).w.a.a>=700?455:410,o=A.b(a,s,r).w.a.a>=700?B.ba:B.bA,n=A.p(16),m=A.w(B.e.K(178.5),0,0,0),l=this.c,k=A.o(A.aF(B.aD,A.am(l.a,s,B.D,s,s,s,s),B.F),200,1/0),j=l.c,i=A.a6(j).h("F<1,cH>")
 return A.o(A.bA(A.j(A.a([k,new A.f(B.ap,A.c(l.b,s,s,s,s,A.d().$1$textStyle(A.bf(s,s,s,s,s,s,s,s,s,s,s,A.b(a,s,r).w.a.a>=700?16:12,s,s,B.k,s,s,!0,s,s,s,s,s,s,s,s)),s,s,s),s),new A.f(B.ay,A.cw(s,s,s,B.a_,s,s,!0,s,A.az(A.a_(new A.F(j,new A.aq5(a),i),!0,i.h("ak.E")),s,s),B.T,s,s,B.X,B.W),s)],t.p),B.f,B.c,B.b,s),s,5,o,m,new A.ac(n,B.w)),p,q)}}
 A.aq5.prototype={
 $1(a){return A.az(null,A.d().$2$color$fontSize(B.l,A.b(this.a,null,t.w).w.a.a>=700?13:12),a+"\n\n")},
@@ -59741,10 +59747,10 @@ l=A.j(A.a([m,B.P,l,B.P,A.c("Leading institutions pushing the boundaries of knowl
 m=A.b(a,q,o).w.a.a>=700?new A.f(B.a9,A.B(A.a([A.a7(!1,q,!0,B.uy,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJe(a),q,q,q,q,q),B.N,A.a7(!1,q,!0,B.u7,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJf(a),q,q,q,q,q),B.N,A.a7(!1,q,!0,B.ud,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJg(a),q,q,q,q,q),B.N,A.a7(!1,q,!0,B.ue,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJh(a),q,q,q,q,q),B.N],k),B.i,B.c,B.b,q),q):new A.f(B.bu,A.j(A.a([A.a7(!1,q,!0,B.uy,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJi(a),q,q,q,q,q),B.t,A.a7(!1,q,!0,B.u7,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJj(a),q,q,q,q,q),B.t,A.a7(!1,q,!0,B.ud,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJk(a),q,q,q,q,q),B.t,A.a7(!1,q,!0,B.ue,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJl(a),q,q,q,q,q)],k),B.i,B.c,B.b,q),q)
 if(A.b(a,q,o).w.a.a>=700){o=A.b(a,q,o).w.a.a>=700?B.a9:B.u
 s=A.b_(q,q,B.o,q,q,q,q,q,q,q,q,q,B.j2,q,new A.ac(A.p(10),B.w),q,q,q,q)
-s=A.B(A.a([new A.f(o,A.aR(new A.f(B.aX,A.c(p,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.m,16,B.k),q,q,q),q),new A.aJm(a),s),q)],k),B.i,B.c,B.b,q)
+s=A.B(A.a([new A.f(o,A.aR(new A.f(B.aY,A.c(p,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.m,16,B.k),q,q,q),q),new A.aJm(a),s),q)],k),B.i,B.c,B.b,q)
 o=s}else{s=A.b(a,q,o).w.a.a>=700?B.a9:B.eo
 r=A.b_(q,q,B.o,q,q,q,q,q,q,q,q,q,B.nY,q,new A.ac(A.p(10),B.w),q,q,q,q)
-s=A.j(A.a([new A.f(s,A.aR(new A.f(B.aX,A.c(p,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.m,A.b(a,q,o).w.a.a>=700?16:12,B.k),q,q,q),q),new A.aJn(a),r),q)],k),B.f,B.c,B.b,q)
+s=A.j(A.a([new A.f(s,A.aR(new A.f(B.aY,A.c(p,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.m,A.b(a,q,o).w.a.a>=700?16:12,B.k),q,q,q),q),new A.aJn(a),r),q)],k),B.f,B.c,B.b,q)
 o=s}return A.ay(q,B.m,A.j(A.a([new A.f(n,l,q),B.ac,m,B.y,o,B.r],k),B.f,B.c,B.b,q),q,q)}}
 A.aJe.prototype={
 $0(){var s=A.aw(null,"/completeuniversitydetails",A.C(["index",B.n.j(7)],t.N,t.z)).ga9()
@@ -59789,7 +59795,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?330:A.b(a,r,q).w.a.a*0.9,o=A.c3(
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,r,r,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.a0J.prototype={
 q(a){var s=null,r=t.w,q=A.b(a,s,r).w.a.a>=700?B.cF:B.UF,p=A.b(a,s,r).w.a.a>=700?B.Z:B.Uz,o=A.c("Benefits of Studying at International Universities",s,s,s,s,A.d().$2$fontSize$fontWeight(A.b(a,s,r).w.a.a>=700?22:14,B.x),s,s,s),n=A.b(a,s,r).w.a.a>=700?B.bO:B.UA,m=this.c,l=A.a6(m).h("F<1,vG>")
 return A.ay(s,s,new A.f(q,A.j(A.a([new A.f(p,o,s),B.P,new A.f(n,A.c("Unlock global opportunities with a world-class education, cultural immersion, and enhanced career prospects by studying at universities abroad.",s,s,s,s,A.d().$2$color$fontSize(B.ah,A.b(a,s,r).w.a.a>=700?14:12),s,s,s),s),A.ah(A.dt(A.a_(new A.F(m,new A.aJo(),l),!0,l.h("ak.E")),16,16),1)],t.p),B.f,B.c,B.b,s),s),s,s)}}
@@ -59809,11 +59815,11 @@ l=A.j(A.a([m,B.P,l,B.P,A.c("Discover world-class universities with vibrant, dive
 m=A.b(a,q,o).w.a.a>=700?new A.f(B.a9,A.B(A.a([A.a7(!1,q,!0,B.uu,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJp(a),q,q,q,q,q),B.N,A.a7(!1,q,!0,B.uj,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJq(a),q,q,q,q,q),B.N,A.a7(!1,q,!0,B.u2,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJr(a),q,q,q,q,q),B.N,A.a7(!1,q,!0,B.uf,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJs(a),q,q,q,q,q),B.N],k),B.i,B.c,B.b,q),q):new A.f(B.bu,A.j(A.a([A.a7(!1,q,!0,B.uu,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJt(a),q,q,q,q,q),B.t,A.a7(!1,q,!0,B.uj,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJu(a),q,q,q,q,q),B.t,A.a7(!1,q,!0,B.u2,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJv(a),q,q,q,q,q),B.t,A.a7(!1,q,!0,B.uf,q,!0,q,q,q,q,q,q,q,q,q,q,new A.aJw(a),q,q,q,q,q)],k),B.i,B.c,B.b,q),q)
 if(A.b(a,q,o).w.a.a>=700){o=A.b(a,q,o).w.a.a>=700?B.a9:B.u
 s=A.b_(q,q,B.o,q,q,q,q,q,q,q,q,q,B.j2,q,new A.ac(A.p(10),B.w),q,q,q,q)
-s=A.B(A.a([new A.f(o,A.aR(new A.f(B.aX,A.c(p,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.m,16,B.k),q,q,q),q),new A.aJx(a),s),q)],k),B.i,B.c,B.b,q)
+s=A.B(A.a([new A.f(o,A.aR(new A.f(B.aY,A.c(p,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.m,16,B.k),q,q,q),q),new A.aJx(a),s),q)],k),B.i,B.c,B.b,q)
 o=s}else{s=A.b(a,q,o).w.a.a>=700?B.a9:B.eo
 r=A.b_(q,q,B.o,q,q,q,q,q,q,q,q,q,B.nY,q,new A.ac(A.p(10),B.w),q,q,q,q)
 A.b(a,q,o).toString
-s=A.j(A.a([new A.f(s,A.aR(new A.f(B.aX,A.c(p,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.m,A.b(a,q,o).w.a.a>=700?16:12,B.k),q,q,q),q),new A.aJy(a),r),q)],k),B.f,B.c,B.b,q)
+s=A.j(A.a([new A.f(s,A.aR(new A.f(B.aY,A.c(p,q,q,q,q,A.d().$3$color$fontSize$fontWeight(B.m,A.b(a,q,o).w.a.a>=700?16:12,B.k),q,q,q),q),new A.aJy(a),r),q)],k),B.f,B.c,B.b,q)
 o=s}return A.ay(q,B.m,A.j(A.a([new A.f(n,l,q),B.ac,m,B.y,o,B.r],k),B.f,B.c,B.b,q),q,q)}}
 A.aJp.prototype={
 $0(){var s=A.aw(null,"/completeuniversitydetails",A.C(["index",B.n.j(11)],t.N,t.z)).ga9()
@@ -59858,7 +59864,7 @@ q(a){var s,r=null,q=t.w,p=A.b(a,r,q).w.a.a>=700?330:A.b(a,r,q).w.a.a*0.9,o=A.c3(
 l=A.aF(m,A.am(this.c,r,B.D,200,r,r,l),B.F)
 m=A.c(this.d,r,r,r,r,A.d().$2$fontSize$fontWeight(A.b(a,r,q).w.a.a>=700?16:12,B.x),r,r,r)
 s=t.p
-return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.ba,r,r,p)}}
+return A.r(r,A.j(A.a([l,B.P,m,B.cd,A.B(A.a([A.c("Qualifications",r,r,r,r,A.d().$3$color$fontSize$fontWeight(B.ci,A.b(a,r,q).w.a.a>=700?16:12,B.x),B.J,r,r),B.N,A.c(this.e,r,r,r,r,A.d().$2$color$fontWeight(B.o,B.k),B.J,r,r)],s),B.i,B.c,B.b,r)],s),B.f,B.c,B.b,r),B.h,r,r,new A.P(r,r,o,n,r,r,B.q),r,360,r,B.bb,r,r,p)}}
 A.mP.prototype={
 S(){return new A.TK(new A.aM(null,t.sW))}}
 A.TK.prototype={
@@ -59866,17 +59872,17 @@ a6(){this.aj()
 var s=this.a.c
 this.d=s==null?"":s},
 adq(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ain(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aio(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aip(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiq(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.air(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ais(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ait(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiu(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
-q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aO
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.ain(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aio(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aip(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiq(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.air(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ais(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.ait(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.aiu(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+q(a){var s,r,q,p,o=null,n=t.w,m=A.b(a,o,n).w.a.a>=700?B.ai:B.aP
 if(A.b(a,o,n).w.a.a>=700)s=A.o(new A.cf("CourseFinaluni",o),80,o)
 else{A.b(a,o,n).toString
 if(A.b(a,o,n).w.a.a>=700){s=A.p(30)
-r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aN,o,new A.aiw(a),o,o,o,o):B.O
+r=A.b(a,o,n).w.a.a>=700?A.bl(o,o,B.aO,o,new A.aiw(a),o,o,o,o):B.O
 s=A.r(o,r,B.h,o,o,new A.P(B.aL,o,o,s,o,o,B.q),o,o,o,o,o,o,40)}else s=B.O
 s=A.B(A.a([new A.f(B.u,s,o),A.ah(new A.bJ(B.S,o,o,A.b(a,o,n).w.a.a>=700?o:A.c("Universities",o,o,o,o,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),o,o,o),o),1)],t.p),B.i,B.c,B.b,o)}r=!(A.b(a,o,n).w.a.a>=700)?new A.bD(new A.aix(),o):o
 q=!(A.b(a,o,n).w.a.a>=700)?A.ds(o,o,o,B.bp,new A.aiy(),new A.aiz(a),o,o,t.N):B.O
 p=t.p
-r=A.co(A.a([q],p),!1,B.aP,o,0,new A.f(B.u,s,o),r,o)
+r=A.co(A.a([q],p),!1,B.aQ,o,0,new A.f(B.u,s,o),r,o)
 n=!(A.b(a,o,n).w.a.a>=700)?this.adq(a):o
 s=this.d
 s===$&&A.e()
@@ -59928,7 +59934,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.aix.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.aiv(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.aiv(a),s,s,s,s),s)},
 $S:9}
 A.aiv.prototype={
 $0(){A.d_(this.a).cm()},
@@ -59940,14 +59946,14 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.aiy.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.Wg.prototype={
 q(a){var s,r,q=null,p=A.ci(0,A.r(q,q,B.h,B.ej,q,q,q,q,q,q,q,q,q),q,q,0,0,0,q),o=t.w,n=A.b(a,q,o).w.a.a>=700?0:180,m=A.b(a,q,o).w.a.a>=700?700:150,l=A.b(a,q,o).w.a.a>=700?0.35:0.3,k=A.b(a,q,o).w.a.a>=700?A.b(a,q,o).w.a.a*0.45:A.b(a,q,o).w.a.a*0.65,j=t.p
 l=A.a([A.he(A.am("assets/images/education.png",q,B.D,A.b(a,q,o).w.a.a>=700?500:250,q,q,k),l)],j)
 if(A.b(a,q,o).w.a.a>=700){k=A.b(a,q,o).w
 s=A.w(255,242,240,240).a
-l.push(A.r(q,q,B.h,q,q,new A.P(q,q,q,q,q,new A.em(B.cw,B.cR,B.aU,A.a([A.w(B.e.K(76.5),s>>>16&255,s>>>8&255,s&255),B.C],t.W),q,q),B.q),q,300,q,q,q,q,k.a.a*0.45))}n=A.ci(0,A.bQ(B.a6,l,B.B,B.a7,q),q,q,m,0,n,q)
+l.push(A.r(q,q,B.h,q,q,new A.P(q,q,q,q,q,new A.em(B.cw,B.cR,B.aV,A.a([A.w(B.e.K(76.5),s>>>16&255,s>>>8&255,s&255),B.C],t.W),q,q),B.q),q,300,q,q,q,q,k.a.a*0.45))}n=A.ci(0,A.bQ(B.a6,l,B.B,B.a7,q),q,q,m,0,n,q)
 m=A.o(A.c("eG Universities",2,q,q,q,A.d().$2$fontSize$fontWeight(A.b(a,q,o).w.a.a>=700?26:16,B.k),q,q,q),q,700)
 m=A.a([m,B.ac,A.o(A.c("Elevate your academic journey with eG Universities, where we offer meticulously crafted programs to equip you with industry-ready skills across diverse fields. Whether you are beginning your educational path or looking to advance, our programs are designed to deliver expertise and knowledge in just a few months, regardless of your prior experience.",q,q,q,q,A.d().$2$color$fontSize(B.hx,A.b(a,q,o).w.a.a>=700?16:12),q,q,q),q,850),B.dd],j)
 if(A.b(a,q,o).w.a.a>=700){l=A.b_(q,q,q,q,q,q,q,q,q,q,q,q,B.an,q,new A.ac(A.p(8),B.w),q,q,q,q)
@@ -59962,7 +59968,7 @@ if(A.b(a,q,o).w.a.a>=700)m.push(B.r)
 if(A.b(a,q,o).w.a.a>=700)m.push(A.c("Unlock Your Future with eG Universities",q,q,q,q,A.d().$2$fontSize$fontWeight(18,B.k),q,q,q))
 if(A.b(a,q,o).w.a.a>=700)m.push(B.t)
 if(A.b(a,q,o).w.a.a>=700)m.push(A.o(A.c("Explore our universities designed to equip you with in-depth skills and hands-on knowledge, empowering you with the expertise needed for academic excellence and success in your chosen field.",q,q,q,q,A.d().$2$color$fontSize(B.hx,13),q,q,q),q,800))
-return A.ay(q,B.dH,A.bX(A.o(A.bQ(B.a6,A.a([p,n,new A.f(B.aX,A.j(m,B.f,B.c,B.b,q),q)],j),B.B,B.a7,q),380,1/0),q,B.G,q,q,q,B.R),q,q)}}
+return A.ay(q,B.dH,A.bX(A.o(A.bQ(B.a6,A.a([p,n,new A.f(B.aY,A.j(m,B.f,B.c,B.b,q),q)],j),B.B,B.a7,q),380,1/0),q,B.G,q,q,q,B.R),q,q)}}
 A.asY.prototype={
 $0(){},
 $S:0}
@@ -60077,16 +60083,16 @@ case 1:return A.T(p,r)}})
 return A.V($async$rN,r)},
 q(a){var s,r,q,p,o,n=null,m=t.w
 A.b(a,n,m).toString
-s=A.b(a,n,m).w.a.a>=700?B.ai:B.aO
+s=A.b(a,n,m).w.a.a>=700?B.ai:B.aP
 if(A.b(a,n,m).w.a.a>=700)r=A.o(new A.cf("CourseFinaluni",n),80,n)
 else{A.b(a,n,m).toString
 if(A.b(a,n,m).w.a.a>=700){r=A.p(30)
-q=A.b(a,n,m).w.a.a>=700?A.bl(n,n,B.aN,n,new A.b0t(a),n,n,n,n):B.O
+q=A.b(a,n,m).w.a.a>=700?A.bl(n,n,B.aO,n,new A.b0t(a),n,n,n,n):B.O
 r=A.r(n,q,B.h,n,n,new A.P(B.aL,n,n,r,n,n,B.q),n,n,n,n,n,n,40)}else r=B.O
 r=A.B(A.a([new A.f(B.u,r,n),A.ah(new A.bJ(B.S,n,n,A.b(a,n,m).w.a.a>=700?n:A.c("Universities",n,n,n,n,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,16,B.k,1.5,1.2),n,n,n),n),1)],t.p),B.i,B.c,B.b,n)}q=!(A.b(a,n,m).w.a.a>=700)?new A.bD(new A.b0u(),n):n
 p=!(A.b(a,n,m).w.a.a>=700)?A.ds(n,n,n,B.bp,new A.b0v(),new A.b0w(a),n,n,t.N):B.O
 o=t.p
-q=A.co(A.a([p],o),!1,B.aP,n,0,new A.f(B.u,r,n),q,n)
+q=A.co(A.a([p],o),!1,B.aQ,n,0,new A.f(B.u,r,n),q,n)
 r=!(A.b(a,n,m).w.a.a>=700)?this.arE(a):n
 p=A.lb(B.nq,1,n,2,!0,n,n,new A.cl(B.C,t.rc),B.eA,B.a0a,n)
 if(A.b(a,n,m).w.a.a>=700)m=A.b(a,n,m).w.a.b-150
@@ -60095,10 +60101,10 @@ else if(A.bW(a))m=A.b(a,n,m).w.a.b-140
 else m=A.fB(a)?A.b(a,n,m).w.a.b-180:A.b(a,n,m).w.a.b-320
 return A.ay(new A.cj(q,s,n),B.m,A.r5(A.j(A.a([A.r(n,A.j(A.a([B.r,new A.f(B.Z,p,n),new A.f(B.u,A.o(A.lc(A.a([A.bX(this.yW(a),n,B.G,n,n,n,B.R),A.bX(this.Fr(a),n,B.G,n,n,n,B.R)],o)),m,n),n)],o),B.f,B.c,B.b,n),B.h,n,n,n,n,n,n,n,n,n,n)],o),B.f,B.c,B.b,n),6),r,n)},
 arE(a){var s=null
-return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b4,s,!0,s,s,s,s,s,s,s,s,s,s,new A.b0i(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0j(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0k(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0l(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0m(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0n(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0o(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0p(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
+return A.dA(A.bH(A.a([A.dB(A.a7(!1,s,!0,B.b5,s,!0,s,s,s,s,s,s,s,s,s,s,new A.b0i(a),s,s,s,s,s),B.aK),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0j(a),!1,s,s,s,s,s,A.c("eG Academy",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0k(a),!1,s,s,s,s,s,A.c("eG Study Abroad",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0l(a),!1,s,s,s,s,s,A.c("eG Jobs",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0m(a),!1,s,s,s,s,s,A.c("eG Scholarships",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0n(a),!1,s,s,s,s,s,A.c("eG Pathways",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0o(a),!1,s,s,s,s,s,A.c("eG Idea Station",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s),A.aa(!1,s,s,s,!0,s,!1,s,s,s,new A.b0p(a),!1,s,s,s,s,s,A.c("eG Studios",s,s,s,s,A.a0().$1$fontSize(12),s,s,s),s,s)],t.p),B.u,s,!1))},
 yW(a7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null,d="History and Background",c="Mission and Vision",b=u.h,a="Welcome back to your learning journey!",a0="Discover exciting career opportunities with this university! Start your journey towards a rewarding future today!",a1="Enroll Now",a2="assets/images/elearning.png",a3="Accreditations",a4=t.w,a5=A.b(a7,e,a4).w.a.a>=700?620:920,a6=f.a.c
 a5=A.o(new A.a1A(a6.a,a6.fr,4.7,28303,a6.x,a6.z,a6.Q,e),a5,e)
-a6=A.b(a7,e,a4).w.a.a>=700?B.US:B.aX
+a6=A.b(a7,e,a4).w.a.a>=700?B.US:B.aY
 s=t.V
 r=t.p
 if(A.b(a7,e,a4).w.a.a>=700){q=A.b(a7,e,a4).w
@@ -60109,15 +60115,15 @@ m=A.b(a7,e,a4).w
 l=A.p(10)
 k=B.e.K(127.5)
 j=A.a([new A.aE(2,B.L,A.w(k,158,158,158),B.a3,5)],s)
-m=A.o(A.j(A.a([A.r(e,new A.f(B.ba,A.c(f.a.c.c,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e),B.h,e,e,new A.P(B.m,e,e,l,j,e,B.q),e,e,B.vd,B.aX,e,e,e)],r),B.f,B.c,B.b,e),e,m.a.a*0.3)
+m=A.o(A.j(A.a([A.r(e,new A.f(B.bb,A.c(f.a.c.c,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e),B.h,e,e,new A.P(B.m,e,e,l,j,e,B.q),e,e,B.vd,B.aY,e,e,e)],r),B.f,B.c,B.b,e),e,m.a.a*0.3)
 j=A.b(a7,e,a4).w
 l=A.p(10)
 i=A.a([new A.aE(2,B.L,A.w(k,158,158,158),B.a3,5)],s)
-q=A.r(e,A.j(A.a([p,B.t,o,B.r,n,B.y,A.B(A.a([m,B.dc,A.o(A.j(A.a([A.r(e,new A.f(B.ba,A.c(f.a.c.d,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e),B.h,e,e,new A.P(B.m,e,e,l,i,e,B.q),e,e,B.vd,B.aX,e,e,e)],r),B.f,B.c,B.b,e),e,j.a.a*0.3)],r),B.i,B.c,B.b,e)],r),B.f,B.c,B.b,e),B.h,B.m,e,e,e,e,e,e,e,e,q.a.a*0.64)
+q=A.r(e,A.j(A.a([p,B.t,o,B.r,n,B.y,A.B(A.a([m,B.dc,A.o(A.j(A.a([A.r(e,new A.f(B.bb,A.c(f.a.c.d,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e),B.h,e,e,new A.P(B.m,e,e,l,i,e,B.q),e,e,B.vd,B.aY,e,e,e)],r),B.f,B.c,B.b,e),e,j.a.a*0.3)],r),B.i,B.c,B.b,e)],r),B.f,B.c,B.b,e),B.h,B.m,e,e,e,e,e,e,e,e,q.a.a*0.64)
 j=A.b(a7,e,a4).w
 i=A.p(25)
 k=A.a([new A.aE(3,B.L,A.w(k,158,158,158),B.a3,5)],s)
-j=A.B(A.a([q,B.bw,A.r(e,A.j(A.a([new A.f(B.cu,A.c("Applications for Fall 2025 are now open.\n                                        \nFall 2025 Deadlines:",e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),e,e,e),e),new A.f(B.b8,A.c(b,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e),new A.f(B.b8,A.c("Admissions Information\n                                                  \nContact the eG team at admission@myeduguardian.com if you have any questions.",e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e)],r),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.aW,e,e,i,k,e,B.q),e,e,e,e,e,e,j.a.a*0.27)],r),B.f,B.c,B.b,e)
+j=A.B(A.a([q,B.bw,A.r(e,A.j(A.a([new A.f(B.cu,A.c("Applications for Fall 2025 are now open.\n                                        \nFall 2025 Deadlines:",e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.k,1.8),e,e,e),e),new A.f(B.b9,A.c(b,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e),new A.f(B.b9,A.c("Admissions Information\n                                                  \nContact the eG team at admission@myeduguardian.com if you have any questions.",e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,14,B.p,1.8),e,e,e),e)],r),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.aX,e,e,i,k,e,B.q),e,e,e,e,e,e,j.a.a*0.27)],r),B.f,B.c,B.b,e)
 q=j}else{q=A.b(a7,e,a4).w
 p=A.c(d,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,14,B.k),e,e,e)
 o=A.c(f.a.c.c,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e)
@@ -60127,7 +60133,7 @@ q=A.r(e,A.j(A.a([p,B.t,o,B.r,n,B.y,A.j(A.a([A.o(A.j(A.a([A.c(f.a.c.c,e,e,e,e,A.d
 m=A.b(a7,e,a4).w
 n=A.p(25)
 o=A.a([new A.aE(3,B.L,A.w(B.e.K(127.5),158,158,158),B.a3,5)],s)
-m=A.j(A.a([q,B.y,A.r(e,A.j(A.a([new A.f(B.cu,A.c("Applications for Fall 2025 are now open.\n                \nFall 2025 Deadlines:",e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.k,1.8),e,e,e),e),new A.f(B.b8,A.c(b,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),e),new A.f(B.b8,A.c("Admissions Information\n              \nContact the eG team at admission@myeduguardian.com if you have any questions.",e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),e)],r),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.aW,e,e,n,o,e,B.q),e,e,e,e,e,e,m.a.a*0.95)],r),B.f,B.c,B.b,e)
+m=A.j(A.a([q,B.y,A.r(e,A.j(A.a([new A.f(B.cu,A.c("Applications for Fall 2025 are now open.\n                \nFall 2025 Deadlines:",e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.k,1.8),e,e,e),e),new A.f(B.b9,A.c(b,e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),e),new A.f(B.b9,A.c("Admissions Information\n              \nContact the eG team at admission@myeduguardian.com if you have any questions.",e,e,e,e,A.d().$4$color$fontSize$fontWeight$height(B.z,12,B.p,1.8),e,e,e),e)],r),B.f,B.c,B.b,e),B.h,e,e,new A.P(B.aX,e,e,n,o,e,B.q),e,e,e,e,e,e,m.a.a*0.95)],r),B.f,B.c,B.b,e)
 q=m}p=A.b(a7,e,a4).w
 o=A.p(0)
 if(A.b(a7,e,a4).w.a.a>=700)n=A.B(A.a([A.B(A.a([A.j(A.a([A.c(a,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,26,B.x),e,e,e),B.y,A.c(a0,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,14,B.x),e,e,e),B.y,A.a7(!1,e,!0,A.c(a1,e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.l,14,B.x),e,e,e),e,!0,e,e,e,e,e,e,e,e,e,e,new A.b0F(f),e,e,e,e,e)],r),B.f,B.K,B.b,e),A.o(e,e,A.b(a7,e,a4).w.a.a*0.08),A.j(A.a([new A.f(B.H,A.o(A.am(a2,e,B.D,e,e,e,e),e,500),e)],r),B.i,B.c,B.b,e)],r),B.i,B.c,B.b,e)],r),B.i,B.c,B.b,e)
@@ -60148,7 +60154,7 @@ if(A.b(a7,e,a4).w.a.a>=700){l=A.b(a7,e,a4).w
 m.push(A.o(A.aF(A.p(20),A.am("assets/images/universityaccreditation1.png",e,B.D,500,e,e,A.b(a7,e,a4).w.a.a),B.F),e,l.a.a*0.35))}m=A.B(m,B.i,B.c,B.b,e)}else{m=A.c(a3,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.l,A.b(a7,e,a4).w.a.a>=700?26:14,B.k,1.5,1.2),e,e,e)
 l=f.a.c
 m=new A.f(B.H,A.j(A.a([m,B.t,A.c(l.e,e,e,e,e,A.d().$5$color$fontSize$fontWeight$height$letterSpacing(B.d4,A.b(a7,e,a4).w.a.a>=700?16:12,B.I,2,1),e,e,e)],r),B.f,B.c,B.b,e),e)}o=A.r(e,new A.f(n,m,e),B.h,e,e,new A.P(B.m,e,e,o,e,e,B.q),e,e,e,e,e,e,e)
-n=A.b(a7,e,a4).w.a.a>=700?B.dO:B.aX
+n=A.b(a7,e,a4).w.a.a>=700?B.dO:B.aY
 m=A.b(a7,e,a4).w.a.a>=700?A.b(a7,e,a4).w.a.a*0.74:A.b(a7,e,a4).w.a.a*0.9
 l=A.b(a7,e,a4).w.a.a>=700?230:280
 k=A.p(10)
@@ -60161,18 +60167,18 @@ g=A.b_(e,e,B.p7,e,e,e,3,e,e,e,e,e,B.ap,e,new A.ac(A.p(3),B.w),e,e,e,e)
 h=A.a([A.B(A.a([B.N,h,B.cp,A.aR(A.c("Pay Now",e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.m,A.b(a7,e,a4).w.a.a>=700?18:12,B.k),e,e,e),new A.b0I(f),g),B.N],r),B.i,B.c,B.b,e)],r)
 if(!(A.b(a7,e,a4).w.a.a>=700))h.push(B.y)
 j=A.j(A.a([j,B.P,i,B.ac,A.j(h,B.i,B.c,B.b,e)],r),B.i,B.K,B.b,e)
-s=A.r(e,new A.f(n,A.b5(A.r(e,new A.f(B.H,A.bQ(B.a6,A.a([j,A.ci(0,A.a7(!1,e,!0,A.c("Pay with Tabby",e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a7,e,a4).w.a.a>=700?14:12,B.k),e,e,e),e,!0,e,e,e,e,e,e,e,e,e,e,new A.b0J(f),e,e,e,e,e),e,e,e,10,e,e)],r),B.B,B.a7,e),e),B.h,e,e,new A.P(B.aW,e,e,k,s,e,B.q),e,l,e,e,e,e,m),e,e),e),B.h,B.aW,e,e,e,e,e,e,e,e,e)
-return A.B(A.a([A.ah(A.j(A.a([a5,new A.f(a6,new A.f(B.H,q,e),e),B.t,p,B.r,o,B.y,s,A.o(B.bg,A.b(a7,e,a4).w.a.a>=700?300:630,1/0)],r),B.f,B.c,B.b,e),1)],r),B.f,B.c,B.b,e)},
+s=A.r(e,new A.f(n,A.b5(A.r(e,new A.f(B.H,A.bQ(B.a6,A.a([j,A.ci(0,A.a7(!1,e,!0,A.c("Pay with Tabby",e,e,e,e,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a7,e,a4).w.a.a>=700?14:12,B.k),e,e,e),e,!0,e,e,e,e,e,e,e,e,e,e,new A.b0J(f),e,e,e,e,e),e,e,e,10,e,e)],r),B.B,B.a7,e),e),B.h,e,e,new A.P(B.aX,e,e,k,s,e,B.q),e,l,e,e,e,e,m),e,e),e),B.h,B.aX,e,e,e,e,e,e,e,e,e)
+return A.B(A.a([A.ah(A.j(A.a([a5,new A.f(a6,new A.f(B.H,q,e),e),B.t,p,B.r,o,B.y,s,A.o(B.aN,A.b(a7,e,a4).w.a.a>=700?300:630,1/0)],r),B.f,B.c,B.b,e),1)],r),B.f,B.c,B.b,e)},
 Fr(a){var s,r,q,p,o,n,m,l,k=this,j=null,i=A.p(0),h=t.w,g=A.c("Courses Offered",j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a,j,h).w.a.a>=700?24:14,B.k),j,j,j),f=A.c("University courses offer a diverse range of academic programs designed to provide students with in-depth knowledge and skills in various fields of study. These courses typically encompass undergraduate, graduate, and professional levels, catering to students' educational and career goals.",j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.eg,A.b(a,j,h).w.a.a>=700?14:12,B.p),j,j,j),e=A.p(2),d=A.c("Undergraduate Programms",j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a,j,h).w.a.a>=700?16:12,B.p),j,j,j),c=k.a.c,b=t.p
-e=A.bA(A.cW(j,A.a([new A.f(B.V,A.c(c.r,j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a,j,h).w.a.a>=700?14:12,B.p),j,j,j),j)],b),B.be,j,d,j),j,0,j,j,new A.ac(e,B.bd))
+e=A.bA(A.cW(j,A.a([new A.f(B.V,A.c(c.r,j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a,j,h).w.a.a>=700?14:12,B.p),j,j,j),j)],b),B.bf,j,d,j),j,0,j,j,new A.ac(e,B.be))
 d=A.p(2)
 c=A.c("Graduate Programms",j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a,j,h).w.a.a>=700?16:12,B.p),j,j,j)
 s=k.a.c
-d=A.bA(A.cW(j,A.a([new A.f(B.V,A.c(s.f,j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a,j,h).w.a.a>=700?14:12,B.p),j,j,j),j)],b),B.be,j,c,j),j,0,j,j,new A.ac(d,B.bd))
+d=A.bA(A.cW(j,A.a([new A.f(B.V,A.c(s.f,j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a,j,h).w.a.a>=700?14:12,B.p),j,j,j),j)],b),B.bf,j,c,j),j,0,j,j,new A.ac(d,B.be))
 c=A.p(2)
 s=A.c("Professional Programms",j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a,j,h).w.a.a>=700?16:12,B.p),j,j,j)
 r=k.a.c
-c=A.bA(A.cW(j,A.a([new A.f(B.V,A.c(r.w,j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(a,j,h).w.a.a>=700?14:12,B.p),j,j,j),j)],b),B.be,j,s,j),j,0,j,j,new A.ac(c,B.bd))
+c=A.bA(A.cW(j,A.a([new A.f(B.V,A.c(r.w,j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(a,j,h).w.a.a>=700?14:12,B.p),j,j,j),j)],b),B.bf,j,s,j),j,0,j,j,new A.ac(c,B.be))
 s=A.p(2)
 r=k.a.c
 r=A.c("Major courses offered at the "+r.a+" across different faculties",j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.l,A.b(a,j,h).w.a.a>=700?16:12,B.p),j,j,j)
@@ -60182,8 +60188,8 @@ o=t.V
 n=A.a([new A.aE(2,B.L,A.w(p,158,158,158),B.a3,5)],o)
 m=k.a.c.cy
 l=A.a6(m).h("F<1,eH>")
-i=A.r(j,A.j(A.a([new A.f(B.er,g,j),B.cc,new A.f(B.er,f,j),B.r,A.j(A.a([new A.f(B.bf,e,j),new A.f(B.bf,d,j),new A.f(B.bf,c,j),new A.f(B.bf,A.bA(A.cW(j,A.a([new A.f(B.Vc,A.B(A.a([A.ah(A.r(j,new A.f(B.H,A.j(A.a_(A.a_(new A.F(m,new A.b0L(a),l),!0,l.h("ak.E")),!0,t.F),B.f,B.c,B.b,j),j),B.h,j,j,new A.P(B.m,j,j,q,n,j,B.q),j,j,B.nO,B.V,j,j,j),1)],b),B.f,B.c,B.b,j),j)],b),B.be,j,r,j),j,0,j,j,new A.ac(s,B.bd)),j)],b),B.i,B.c,B.b,j)],b),B.f,B.c,B.b,j),B.h,j,j,new A.P(j,j,j,i,j,j,B.q),j,j,j,B.o2,j,j,j)
-g=A.b(a,j,h).w.a.a>=700?B.dO:B.aX
+i=A.r(j,A.j(A.a([new A.f(B.er,g,j),B.cc,new A.f(B.er,f,j),B.r,A.j(A.a([new A.f(B.bg,e,j),new A.f(B.bg,d,j),new A.f(B.bg,c,j),new A.f(B.bg,A.bA(A.cW(j,A.a([new A.f(B.Vc,A.B(A.a([A.ah(A.r(j,new A.f(B.H,A.j(A.a_(A.a_(new A.F(m,new A.b0L(a),l),!0,l.h("ak.E")),!0,t.F),B.f,B.c,B.b,j),j),B.h,j,j,new A.P(B.m,j,j,q,n,j,B.q),j,j,B.nO,B.V,j,j,j),1)],b),B.f,B.c,B.b,j),j)],b),B.bf,j,r,j),j,0,j,j,new A.ac(s,B.be)),j)],b),B.i,B.c,B.b,j)],b),B.f,B.c,B.b,j),B.h,j,j,new A.P(j,j,j,i,j,j,B.q),j,j,j,B.o2,j,j,j)
+g=A.b(a,j,h).w.a.a>=700?B.dO:B.aY
 f=A.b(a,j,h).w.a.a>=700?A.b(a,j,h).w.a.a*0.74:A.b(a,j,h).w.a.a*0.9
 e=A.b(a,j,h).w.a.a>=700?220:250
 d=A.p(10)
@@ -60196,8 +60202,8 @@ q=A.b_(j,j,B.p7,j,j,j,3,j,j,j,j,j,B.ap,j,new A.ac(A.p(3),B.w),j,j,j,j)
 r=A.a([A.B(A.a([B.N,r,B.cp,A.aR(A.c("Pay Now",j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.m,A.b(a,j,h).w.a.a>=700?18:12,B.k),j,j,j),new A.b0N(k),q),B.N],b),B.i,B.c,B.b,j)],b)
 if(!(A.b(a,j,h).w.a.a>=700))r.push(B.y)
 c=A.j(A.a([c,B.P,s,B.ac,A.j(r,B.i,B.c,B.b,j)],b),B.i,B.K,B.b,j)
-g=A.r(j,new A.f(g,A.b5(A.r(j,new A.f(B.H,A.bQ(B.a6,A.a([c,A.ci(0,A.a7(!1,j,!0,A.c("Pay with Tabby",j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a,j,h).w.a.a>=700?14:12,B.k),j,j,j),j,!0,j,j,j,j,j,j,j,j,j,j,new A.b0O(k),j,j,j,j,j),j,j,j,10,j,j)],b),B.B,B.a7,j),j),B.h,j,j,new A.P(B.aW,j,j,d,o,j,B.q),j,e,j,j,j,j,f),j,j),j),B.h,B.aW,j,j,j,j,j,j,j,j,j)
-return A.B(A.a([A.ah(A.j(A.a([i,B.t,g,A.o(B.bg,A.b(a,j,h).w.a.a>=700?300:630,1/0)],b),B.f,B.c,B.b,j),1)],b),B.f,B.c,B.b,j)}}
+g=A.r(j,new A.f(g,A.b5(A.r(j,new A.f(B.H,A.bQ(B.a6,A.a([c,A.ci(0,A.a7(!1,j,!0,A.c("Pay with Tabby",j,j,j,j,A.d().$3$color$fontSize$fontWeight(B.o,A.b(a,j,h).w.a.a>=700?14:12,B.k),j,j,j),j,!0,j,j,j,j,j,j,j,j,j,j,new A.b0O(k),j,j,j,j,j),j,j,j,10,j,j)],b),B.B,B.a7,j),j),B.h,j,j,new A.P(B.aX,j,j,d,o,j,B.q),j,e,j,j,j,j,f),j,j),j),B.h,B.aX,j,j,j,j,j,j,j,j,j)
+return A.B(A.a([A.ah(A.j(A.a([i,B.t,g,A.o(B.aN,A.b(a,j,h).w.a.a>=700?300:630,1/0)],b),B.f,B.c,B.b,j),1)],b),B.f,B.c,B.b,j)}}
 A.b0q.prototype={
 $0(){A.is(J.aD(this.b.a,"isEnquirySubmitted"))},
 $S:0}
@@ -60272,7 +60278,7 @@ $0(){return A.l(this.a).n(0,"/",null)},
 $S:0}
 A.b0u.prototype={
 $1(a){var s=null
-return new A.f(B.aM,A.bl(s,s,B.aZ,s,new A.b0s(a),s,s,s,s),s)},
+return new A.f(B.aM,A.bl(s,s,B.b_,s,new A.b0s(a),s,s,s,s),s)},
 $S:9}
 A.b0s.prototype={
 $0(){A.d_(this.a).cm()},
@@ -60284,7 +60290,7 @@ case"Join for Free":A.l(this.a).n(0,"/signup",null)
 break}},
 $S:6}
 A.b0v.prototype={
-$1(a){return A.a([B.b1,B.b2],t.O)},
+$1(a){return A.a([B.b2,B.b3],t.O)},
 $S:12}
 A.b0i.prototype={
 $0(){A.l(this.a).n(0,"/",null)},
@@ -60328,11 +60334,11 @@ $0(){this.a.rM()},
 $S:0}
 A.b0L.prototype={
 $1(a){var s=null,r=a.b,q=A.a6(r).h("F<1,f>")
-return A.j(A.a([A.c(a.a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.b7,A.b(this.a,s,t.w).w.a.a>=700?16:12,B.k),s,s,s),B.P,A.j(A.a_(new A.F(r,new A.b0K(),q),!0,q.h("ak.E")),B.f,B.c,B.b,s),B.ac],t.p),B.f,B.c,B.b,s)},
+return A.j(A.a([A.c(a.a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.b8,A.b(this.a,s,t.w).w.a.a>=700?16:12,B.k),s,s,s),B.P,A.j(A.a_(new A.F(r,new A.b0K(),q),!0,q.h("ak.E")),B.f,B.c,B.b,s),B.ac],t.p),B.f,B.c,B.b,s)},
 $S:294}
 A.b0K.prototype={
 $1(a){var s=null
-return new A.f(B.Ul,A.c(a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.b7,14,B.I),s,s,s),s)},
+return new A.f(B.Ul,A.c(a,s,s,s,s,A.d().$3$color$fontSize$fontWeight(B.b8,14,B.I),s,s,s),s)},
 $S:295}
 A.b0M.prototype={
 $0(){var s=A.aw(null,"/studyabroad_application",A.C(["courseName",this.a.a.c.a],t.N,t.z)).ga9()
@@ -61831,7 +61837,7 @@ CJ(a,b,c,d){return B.bC},
 uG(a,b){return B.A}}
 A.abX.prototype={}
 A.U0.prototype={
-q(a){var s=null,r=A.b(a,B.c0,t.w).w.r.b+8,q=this.c.a5(0,new A.v(8,r)),p=A.j(this.d,B.i,B.c,B.az,s),o=$.av().pB(20,20,B.aU)
+q(a){var s=null,r=A.b(a,B.c0,t.w).w.r.b+8,q=this.c.a5(0,new A.v(8,r)),p=A.j(this.d,B.i,B.c,B.az,s),o=$.av().pB(20,20,B.aV)
 return new A.f(new A.K(8,r,8,8),new A.jU(new A.Ur(q),A.r(s,A.z5(A.oc(new A.f(B.Vs,p,s),new A.P(B.T0.df(a),s,A.c3(B.SX.df(a),1),B.iF,s,s,B.q),B.dr),o),B.B,s,s,B.Ll,s,s,s,s,s,s,222),s),s)}}
 A.v3.prototype={
 S(){return new A.MB()}}
@@ -62825,7 +62831,7 @@ aM(a,b){b.sk8(0,this.w)
 b.snS(this.e)
 b.sawd(this.f)},
 cp(a){var s=t.h
-return new A.a3L(A.M(t.TC,s),A.eb(s),this,B.b5)}}
+return new A.a3L(A.M(t.TC,s),A.eb(s),this,B.b6)}}
 A.a3L.prototype={
 ga2(){return t.l0.a(A.bL.prototype.ga2.call(this))},
 Yz(a,b){var s
@@ -63569,15 +63575,15 @@ s[r]=b
 q.b=r+1},
 ne(a){var s=this,r=a.length,q=s.b+r
 if(q>=s.a.length)s.Je(q)
-B.aQ.hL(s.a,s.b,q,a)
+B.aR.hL(s.a,s.b,q,a)
 s.b+=r},
 vf(a,b,c){var s=this,r=c==null?s.e.length:c,q=s.b+(r-b)
 if(q>=s.a.length)s.Je(q)
-B.aQ.hL(s.a,s.b,q,a)
+B.aR.hL(s.a,s.b,q,a)
 s.b=q},
 abk(a){return this.vf(a,0,null)},
 Je(a){var s=this.a,r=s.length,q=a==null?0:a,p=Math.max(q,r*2),o=new Uint8Array(p)
-B.aQ.hL(o,0,r,s)
+B.aR.hL(o,0,r,s)
 this.a=o},
 aoX(){return this.Je(null)},
 aCb(a){var s=$.fe()
@@ -65639,7 +65645,7 @@ if(a3!=null){a3=new A.a2C(a3,b2)
 a4=b3.w
 $label0$0:{r=b2
 if(B.bJ===a4||B.df===a4||B.dA===a4||B.dB===a4){r=!0
-break $label0$0}if(B.b3===a4||B.cP===a4)break $label0$0}a3=A.bN(b2,b2,a3,!1,b2,b2,!1,!1,b2,b2,!0,b2,b2,b2,b2,b2,b2,r,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2)
+break $label0$0}if(B.b4===a4||B.cP===a4)break $label0$0}a3=A.bN(b2,b2,a3,!1,b2,b2,!1,!1,b2,b2,!0,b2,b2,b2,b2,b2,b2,r,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2)
 a.toString
 a3=A.bcC(A.f5(a3,b2,b2,B.ae,!1,a,b2,b2,B.W),1.34)}s=s.f
 if(s!=null&&s.length!==0){s.toString
@@ -66275,7 +66281,7 @@ ba(a){var s=this.C$
 if(s!=null)return Math.max(s.af(B.bE,a,s.gbC()),this.E.b)
 return 0},
 b9(a){var s=this.C$
-if(s!=null)return Math.max(s.af(B.bc,a,s.gbh()),this.E.a)
+if(s!=null)return Math.max(s.af(B.bd,a,s.gbh()),this.E.a)
 return 0},
 b8(a){var s=this.C$
 if(s!=null)return Math.max(s.af(B.bR,a,s.gbQ()),this.E.b)
@@ -66643,7 +66649,7 @@ ba(a){var s=this.C$
 if(s!=null)return Math.max(s.af(B.bE,a,s.gbC()),this.E.b)
 return 0},
 b9(a){var s=this.C$
-if(s!=null)return Math.max(s.af(B.bc,a,s.gbh()),this.E.a)
+if(s!=null)return Math.max(s.af(B.bd,a,s.gbh()),this.E.a)
 return 0},
 b8(a){var s=this.C$
 if(s!=null)return Math.max(s.af(B.bR,a,s.gbQ()),this.E.b)
@@ -68577,7 +68583,7 @@ A.e6(a)
 r=24*s
 q=i.r
 if(q==null){q=h.gfX()
-q.toString}g=f==null&&g!==B.b3
+q.toString}g=f==null&&g!==B.b4
 p=new A.f(new A.K(r,r,r,0),A.f5(A.bN(k,k,l.f,!0,k,k,!1,!1,k,k,k,k,k,k,k,k,k,g,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k),k,k,B.a_,!0,q,B.T,k,B.W),k)
 g=24*s
 s=i.w
@@ -68886,7 +68892,7 @@ case 1:s=B.cQ
 break
 default:s=null}return s},
 aeO(a4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1=this,a2=null,a3=A.ab(a4).w
-$label0$0:{if(B.bJ===a3||B.b3===a3||B.df===a3){s=!1
+$label0$0:{if(B.bJ===a3||B.b4===a3||B.df===a3){s=!1
 break $label0$0}if(B.cP===a3||B.dA===a3||B.dB===a3){s=!0
 break $label0$0}s=a2}r=a1.a
 q=r.x
@@ -69286,7 +69292,7 @@ r=this.a
 if(q){q=r.ax
 switch(s.a){case 1:q=B.ah
 break
-case 0:q=B.aV
+case 0:q=B.aW
 break
 default:q=null}return q}else{q=r.at
 switch(s.a){case 1:q=B.kk
@@ -69610,7 +69616,7 @@ A.d4(q,B.aI,t.v).toString
 s=r.ay?"Collapsed":"Expanded"
 r.T(new A.aRG(r))
 r.a.toString
-if(A.bI()===B.b3){q=r.CW
+if(A.bI()===B.b4){q=r.CW
 if(q!=null)q.aX(0)
 r.CW=A.dy(B.em,new A.aRH(r,s,B.bk))}else A.ns(s,B.bk,B.fd)},
 afA(){this.arh()},
@@ -71717,7 +71723,7 @@ s=this.IE(a,A.bhj(),A.hT())
 switch(b.a){case 0:o=0
 break
 case 1:r=s.a
-q=o.fa(r,B.b_)
+q=o.fa(r,B.b0)
 if(q==null)q=o.af(B.ao,r,o.gc9()).b
 p=o.fa(r,B.a0)
 o=q-(p==null?o.af(B.ao,r,o.gc9()).b:p)
@@ -72710,19 +72716,19 @@ q=p.i(0,B.eE)
 q=q==null?0:q.af(B.bD,a,q.gbD())
 q=Math.max(s,q)
 p=p.i(0,B.hi)
-p=p==null?0:p.af(B.bc,a,p.gbh())
+p=p==null?0:p.af(B.bd,a,p.gbh())
 return r+q+p},
 b9(a){var s,r,q,p=this.dO$
 if(p.i(0,B.eD)!=null){s=p.i(0,B.eD)
-r=Math.max(s.af(B.bc,a,s.gbh()),this.bF)+this.gAx()}else r=0
+r=Math.max(s.af(B.bd,a,s.gbh()),this.bF)+this.gAx()}else r=0
 s=p.i(0,B.dk)
 s.toString
-s=s.af(B.bc,a,s.gbh())
+s=s.af(B.bd,a,s.gbh())
 q=p.i(0,B.eE)
-q=q==null?0:q.af(B.bc,a,q.gbh())
+q=q==null?0:q.af(B.bd,a,q.gbh())
 q=Math.max(s,q)
 p=p.i(0,B.hi)
-p=p==null?0:p.af(B.bc,a,p.gbh())
+p=p==null?0:p.af(B.bd,a,p.gbh())
 return r+q+p},
 gAr(){var s,r,q,p=this,o=null,n=p.F,m=new A.v(n.a,n.b).ab(0,4),l=p.dO$.i(0,B.eE)!=null
 $label0$0:{s=!0
@@ -73382,7 +73388,7 @@ if(o.d.a.cx.a){s=q.d
 if(s==null)q.d=p
 else p=s}else q.d=null
 r=o.c.i(0,p)
-if(r==null){$label0$0:{if(B.b3===p){o=B.mN
+if(r==null){$label0$0:{if(B.b4===p){o=B.mN
 break $label0$0}if(B.bJ===p||B.df===p||B.dB===p||B.cP===p||B.dA===p){o=B.rX
 break $label0$0}o=null}r=o}o=q.a
 return r.ZQ(o.d,a,o.e,o.f,o.r,q.$ti.c)}}
@@ -73615,7 +73621,7 @@ if(o==null)o=n.d.gbw()
 return new A.dH(new A.b7(i,l,A.x(l).h("b7<aV.T>")),!1,A.hc(B.aa,!0,m,new A.bJ(B.JF,n.e.ag(0,k.a.d.k2.gl(0)),n.f.ag(0,k.a.d.k2.gl(0)),b,m),q,s,p,m,r,j,o,m,B.eX),m)},
 $S:431}
 A.aWp.prototype={
-n0(a){return A.ST(new A.a1(A.S(1/0,a.a,a.b),A.S(1/0,a.c,a.d))).nN(B.ba.a3(0,this.f))},
+n0(a){return A.ST(new A.a1(A.S(1/0,a.a,a.b),A.S(1/0,a.c,a.d))).nN(B.bb.a3(0,this.f))},
 n3(a,b){var s,r,q,p,o,n,m=this,l=m.b,k=l.b,j=l.a,i=l.c
 if(j>i)s=a.a-i-b.a
 else if(j<i)s=j
@@ -73755,7 +73761,7 @@ if(p==null)p=l.f
 s=s.w
 if(s==null){A.d4(a,B.aI,t.v).toString
 s=m}o.a.toString
-return A.bl(p,!0,r,q,o.gP5(),B.ba,n,n,s)}}
+return A.bl(p,!0,r,q,o.gP5(),B.bb,n,n,s)}}
 A.aDm.prototype={
 $1(a){var s=this.a
 if(s.c==null)return null
@@ -74368,7 +74374,7 @@ s.aU$=null
 s.aB()}}
 A.a_L.prototype={
 q(a){var s=this,r=null
-if(A.ab(a).w===B.b3)return new A.zO(8,B.h2,s.c,s.d,s.e===!0,B.aa8,3,r,B.iX,B.TR,A.Rp(),r,r,r)
+if(A.ab(a).w===B.b4)return new A.zO(8,B.h2,s.c,s.d,s.e===!0,B.aa8,3,r,B.iX,B.TR,A.Rp(),r,r,r)
 return new A.DP(s.c,s.d,s.e,r,r,r,B.ck,B.iY,A.Rp(),r,r,r)}}
 A.DP.prototype={
 S(){var s=null
@@ -76699,7 +76705,7 @@ s.aJ()
 return s},
 aM(a,b){b.sazu(this.e)
 b.sNe(this.f)},
-cp(a){return new A.aax(A.eb(t.h),this,B.b5)}}
+cp(a){return new A.aax(A.eb(t.h),this,B.b6)}}
 A.aax.prototype={}
 A.a8D.prototype={
 sazu(a){if(a===this.F)return
@@ -77396,13 +77402,13 @@ agh(){var s,r=this.c
 r.toString
 s=A.ab(r).w
 $label0$0:{if(B.cP===s||B.dA===s||B.dB===s){r=24
-break $label0$0}if(B.bJ===s||B.df===s||B.b3===s){r=32
+break $label0$0}if(B.bJ===s||B.df===s||B.b4===s){r=32
 break $label0$0}r=null}return r},
 agg(){var s,r=this.c
 r.toString
 s=A.ab(r).w
 $label0$0:{if(B.cP===s||B.dA===s||B.dB===s){r=B.o9
-break $label0$0}if(B.bJ===s||B.df===s||B.b3===s){r=B.UT
+break $label0$0}if(B.bJ===s||B.df===s||B.b4===s){r=B.UT
 break $label0$0}r=null}return r},
 acz(a5){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3=this,a4=null
 a3.a.toString
@@ -80594,7 +80600,7 @@ dG(a,b,c){var s
 switch(b.b){case B.a0:s=a.c
 if(s==null){s=A.M(t.k,t.PM)
 a.c=s}break
-case B.b_:s=a.d
+case B.b0:s=a.d
 if(s==null){s=A.M(t.k,t.PM)
 a.d=s}break
 default:s=null}return s.bv(0,b.a,new A.aNw(c,b))}}
@@ -81717,7 +81723,7 @@ A.aEF.prototype={
 $2(a,b){return new A.a1(a.af(B.bD,1/0,a.gbD()),0)},
 $S:58}
 A.aEE.prototype={
-$2(a,b){return new A.a1(a.af(B.bc,1/0,a.gbh()),0)},
+$2(a,b){return new A.a1(a.af(B.bd,1/0,a.gbh()),0)},
 $S:58}
 A.a8g.prototype={
 gb0(a){return t.CA.a(A.I.prototype.gb0.call(this,0))},
@@ -82192,7 +82198,7 @@ dK(){return this.a7V()}}
 A.aEK.prototype={
 $2(a,b){var s,r,q=this.a,p=q?b.b:b.d
 if(isFinite(p))s=p
-else s=q?a.af(B.bc,1/0,a.gbh()):a.af(B.bR,1/0,a.gbQ())
+else s=q?a.af(B.bd,1/0,a.gbh()):a.af(B.bR,1/0,a.gbQ())
 r=this.b
 return q?new A.a1(s,r.$2(a,s)):new A.a1(r.$2(a,s),s)},
 $S:58}
@@ -82200,7 +82206,7 @@ A.aEP.prototype={
 $2(a,b){return a.af(B.bD,b,a.gbD())},
 $S:59}
 A.aEN.prototype={
-$2(a,b){return a.af(B.bc,b,a.gbh())},
+$2(a,b){return a.af(B.bd,b,a.gbh())},
 $S:59}
 A.aEO.prototype={
 $2(a,b){return a.af(B.bE,b,a.gbC())},
@@ -82855,10 +82861,10 @@ A.aF1.prototype={
 $1(a){return a.af(B.bD,this.a,a.gbD())},
 $S:24}
 A.aEX.prototype={
-$1(a){return a.af(B.bc,this.a,a.gbh())},
+$1(a){return a.af(B.bd,this.a,a.gbh())},
 $S:24}
 A.aEY.prototype={
-$1(a){return a.af(B.bc,this.a,a.gbh())},
+$1(a){return a.af(B.bd,this.a,a.gbh())},
 $S:24}
 A.aEZ.prototype={
 $1(a){return a.af(B.bE,this.a,a.gbC())},
@@ -84096,9 +84102,9 @@ k=g
 j=s.b
 k=j
 i=l
-h.bY=A.asT(new A.v(i,0),new A.v(k,0),A.a([B.m,B.tf],t.W),g,B.aU,g)}else{k=h.gu(0).b
+h.bY=A.asT(new A.v(i,0),new A.v(k,0),A.a([B.m,B.tf],t.W),g,B.aV,g)}else{k=h.gu(0).b
 s=m.b.a.c
-h.bY=A.asT(new A.v(0,k-s.gb1(s)/2),new A.v(0,k),A.a([B.m,B.tf],t.W),g,B.aU,g)}m.m()
+h.bY=A.asT(new A.v(0,k-s.gb1(s)/2),new A.v(0,k),A.a([B.m,B.tf],t.W),g,B.aV,g)}m.m()
 break}else{h.C=!1
 h.bY=null}},
 dc(a,b){this.a_R(a,b)},
@@ -84270,7 +84276,7 @@ A.aFb.prototype={
 $2(a,b){return new A.a1(a.af(B.bD,1/0,a.gbD()),0)},
 $S:58}
 A.aFa.prototype={
-$2(a,b){return new A.a1(a.af(B.bc,1/0,a.gbh()),0)},
+$2(a,b){return new A.a1(a.af(B.bd,1/0,a.gbh()),0)},
 $S:58}
 A.aF9.prototype={
 $0(){var s=this.a,r=s.bG.i(0,this.b)
@@ -85073,7 +85079,7 @@ bb(a){var s=this.C$
 s=s==null?null:s.af(B.bD,a,s.gbD())
 return s==null?0:s},
 b9(a){var s=this.C$
-s=s==null?null:s.af(B.bc,a,s.gbh())
+s=s==null?null:s.af(B.bd,a,s.gbh())
 return s==null?0:s},
 ba(a){var s=this.C$
 s=s==null?null:s.af(B.bE,a,s.gbC())
@@ -85170,21 +85176,21 @@ sa6n(a){if(a==this.E)return
 this.E=a
 this.a0()},
 sa6m(a){return},
-bb(a){return this.af(B.bc,a,this.gbh())},
+bb(a){return this.af(B.bd,a,this.gbh())},
 b9(a){var s=this.C$
 if(s==null)return 0
-return A.aEU(s.af(B.bc,a,s.gbh()),this.E)},
+return A.aEU(s.af(B.bd,a,s.gbh()),this.E)},
 ba(a){var s,r=this
 if(r.C$==null)return 0
-if(!isFinite(a))a=r.af(B.bc,1/0,r.gbh())
+if(!isFinite(a))a=r.af(B.bd,1/0,r.gbh())
 s=r.C$
 return A.aEU(s.af(B.bE,a,s.gbC()),r.a7)},
 b8(a){var s,r=this
 if(r.C$==null)return 0
-if(!isFinite(a))a=r.af(B.bc,1/0,r.gbh())
+if(!isFinite(a))a=r.af(B.bd,1/0,r.gbh())
 s=r.C$
 return A.aEU(s.af(B.bR,a,s.gbQ()),r.a7)},
-Rj(a,b){var s=b.a>=b.b?null:A.aEU(a.af(B.bc,b.d,a.gbh()),this.E)
+Rj(a,b){var s=b.a>=b.b?null:A.aEU(a.af(B.bd,b.d,a.gbh()),this.E)
 return b.yZ(null,s)},
 w_(a,b){var s=this.C$
 return s==null?new A.a1(A.S(0,a.a,a.b),A.S(0,a.c,a.d)):b.$2(s,this.Rj(s,a))},
@@ -86070,13 +86076,13 @@ if(s==null)return 0
 return(this.A&1)===1?s.af(B.bE,a,s.gbC()):s.af(B.bD,a,s.gbD())},
 b9(a){var s=this.C$
 if(s==null)return 0
-return(this.A&1)===1?s.af(B.bR,a,s.gbQ()):s.af(B.bc,a,s.gbh())},
+return(this.A&1)===1?s.af(B.bR,a,s.gbQ()):s.af(B.bd,a,s.gbh())},
 ba(a){var s=this.C$
 if(s==null)return 0
 return(this.A&1)===1?s.af(B.bD,a,s.gbD()):s.af(B.bE,a,s.gbC())},
 b8(a){var s=this.C$
 if(s==null)return 0
-return(this.A&1)===1?s.af(B.bc,a,s.gbh()):s.af(B.bR,a,s.gbQ())},
+return(this.A&1)===1?s.af(B.bd,a,s.gbh()):s.af(B.bR,a,s.gbQ())},
 cf(a){var s,r=this.C$
 if(r==null)return new A.a1(A.S(0,a.a,a.b),A.S(0,a.c,a.d))
 s=(this.A&1)===1?a.gDM():a
@@ -86179,7 +86185,7 @@ bb(a){var s=this.C$
 s=s==null?null:s.af(B.bD,a,s.gbD())
 return s==null?0:s},
 b9(a){var s=this.C$
-s=s==null?null:s.af(B.bc,a,s.gbh())
+s=s==null?null:s.af(B.bd,a,s.gbh())
 return s==null?0:s},
 ba(a){var s=this.C$
 s=s==null?null:s.af(B.bE,a,s.gbC())
@@ -86222,7 +86228,7 @@ bb(a){var s=this.gpe(),r=this.C$
 if(r!=null)return r.af(B.bD,Math.max(0,a-(s.gbL(0)+s.gbP(0))),r.gbD())+s.gcC()
 return s.gcC()},
 b9(a){var s=this.gpe(),r=this.C$
-if(r!=null)return r.af(B.bc,Math.max(0,a-(s.gbL(0)+s.gbP(0))),r.gbh())+s.gcC()
+if(r!=null)return r.af(B.bd,Math.max(0,a-(s.gbL(0)+s.gbP(0))),r.gbh())+s.gcC()
 return s.gcC()},
 ba(a){var s=this.gpe(),r=this.C$
 if(r!=null)return r.af(B.bE,Math.max(0,a-s.gcC()),r.gbC())+(s.gbL(0)+s.gbP(0))
@@ -87415,7 +87421,7 @@ A.aFu.prototype={
 $1(a){return a.af(B.bD,this.a,a.gbD())},
 $S:24}
 A.aFs.prototype={
-$1(a){return a.af(B.bc,this.a,a.gbh())},
+$1(a){return a.af(B.bd,this.a,a.gbh())},
 $S:24}
 A.aFt.prototype={
 $1(a){return a.af(B.bE,this.a,a.gbC())},
@@ -88059,8 +88065,8 @@ q=t.Xp.a(q).a
 q.toString
 s=t.u
 r=A.qy(s.a(A.I.prototype.gY.call(a)).a,s.a(A.I.prototype.gY.call(a)).b)
-$label0$0:{if(B.aR===r||B.ec===r){q=b-q
-break $label0$0}if(B.b0===r){q=this.gu(0).b-b-q
+$label0$0:{if(B.aS===r||B.ec===r){q=b-q
+break $label0$0}if(B.b1===r){q=this.gu(0).b-b-q
 break $label0$0}if(B.cx===r){q=this.gu(0).a-b-q
 break $label0$0}q=null}return q},
 gKI(){var s,r,q=A.a([],t.Ry),p=this.cr$
@@ -88172,7 +88178,7 @@ case 1:return n.af(B.ao,new A.aK(0,1/0,0,a),n.gc9()).a}},
 b9(a){var s,r,q,p,o,n=this
 switch(n.A.a){case 0:s=n.a_$
 for(r=A.x(n).h("aB.1"),q=0;s!=null;){p=s.gbh()
-o=B.bc.dG(s.fx,1/0,p)
+o=B.bd.dG(s.fx,1/0,p)
 q+=o
 p=s.b
 p.toString
@@ -89362,7 +89368,7 @@ while(true)switch(s){case 0:s=3
 return A.N(p.kT(0,a),$async$oi)
 case 3:n=d
 n.byteLength
-o=B.b6.c_(0,A.aLr(n,0,null))
+o=B.b7.c_(0,A.aLr(n,0,null))
 q=o
 s=1
 break
@@ -89398,7 +89404,7 @@ $2(a,b){this.b.b.H(0,this.c)
 this.a.b.mx(a,b)},
 $S:69}
 A.aCX.prototype={
-kT(a,b){var s,r=B.ee.d_(A.aw(null,A.Eq(B.oQ,b,B.b6,!1),null).e),q=$.fR.xC$
+kT(a,b){var s,r=B.ee.d_(A.aw(null,A.Eq(B.oQ,b,B.b7,!1),null).e),q=$.fR.xC$
 q===$&&A.e()
 s=q.G7(0,"flutter/assets",A.b5G(r)).bg(new A.aCY(b),t.V4)
 return s},
@@ -89785,7 +89791,7 @@ j(a){return"MissingPluginException("+A.u(this.a)+")"},
 $icF:1}
 A.aJ5.prototype={
 hV(a){if(a==null)return null
-return B.b6.c_(0,A.aLr(a,0,null))},
+return B.b7.c_(0,A.aLr(a,0,null))},
 cK(a){if(a==null)return null
 return A.b5G(B.ee.d_(a))}}
 A.awg.prototype={
@@ -91499,7 +91505,7 @@ o=m.gcD(m).length===0?"/":m.gcD(m)
 l=m.gqn()
 l=l.gai(l)?null:m.gqn()
 o=A.aw(m.gjW().length===0?null:m.gjW(),o,l).ga9()
-o=n.Ji(A.lr(o,0,o.length,B.b6,!1),null,t.X)
+o=n.Ji(A.lr(o,0,o.length,B.b7,!1),null,t.X)
 o.toString
 n.dl(o)
 q=!0
@@ -91657,7 +91663,7 @@ A.b0d.prototype={
 $1(a){A.bfA(a,this.a)},
 $S:21}
 A.abf.prototype={
-cp(a){return new A.abe(A.iK(null,null,null,t.h,t.X),this,B.b5)}}
+cp(a){return new A.abe(A.iK(null,null,null,t.h,t.X),this,B.b6)}}
 A.kH.prototype={
 cw(a){return this.w!==a.w}}
 A.Yj.prototype={
@@ -91863,7 +91869,7 @@ s.aJ()
 s.saW(null)
 return s},
 aM(a,b){b.sEB(this.e)},
-cp(a){return new A.a6P(this,B.b5)}}
+cp(a){return new A.a6P(this,B.b6)}}
 A.a6P.prototype={}
 A.WW.prototype={
 aI(a){var s=null,r=this.e
@@ -91919,7 +91925,7 @@ b.skz(s.w)
 b.sep(s.e)
 r=A.e6(a)
 b.sc4(r)},
-cp(a){return new A.a5F(A.eb(t.h),this,B.b5)}}
+cp(a){return new A.a5F(A.eb(t.h),this,B.b6)}}
 A.a5F.prototype={
 gap(){return t.c_.a(A.bg.prototype.gap.call(this))}}
 A.rT.prototype={
@@ -92181,7 +92187,7 @@ xn(){return A.dw(!1,t.y)},
 ti(a){var s=a.giL(),r=s.gcD(s).length===0?"/":s.gcD(s),q=s.gqn()
 q=q.gai(q)?null:s.gqn()
 r=A.aw(s.gjW().length===0?null:s.gjW(),r,q).ga9()
-A.lr(r,0,r.length,B.b6,!1)
+A.lr(r,0,r.length,B.b7,!1)
 return A.dw(!1,t.y)},
 Li(){},
 a_Z(){},
@@ -92333,7 +92339,7 @@ r.dP$=new A.JO(this.b,"[root]",null).aty(s,q)
 if(q==null)$.cs.LG()},
 $S:0}
 A.JO.prototype={
-cp(a){return new A.JM(this,B.b5)},
+cp(a){return new A.JM(this,B.b6)},
 aty(a,b){var s,r={}
 r.a=b
 if(b==null){a.a1U(new A.aFY(r,this,a))
@@ -92345,7 +92351,7 @@ r.toString
 return r},
 dK(){return this.c}}
 A.aFY.prototype={
-$0(){var s=this.a.a=new A.JM(this.b,B.b5)
+$0(){var s=this.a.a=new A.JM(this.b,B.b6)
 s.f=this.c
 s.r=new A.T_(null,A.a([],t.lX))},
 $S:0}
@@ -93047,7 +93053,7 @@ if(s!==0){r=r.b
 r=!(r.a===0&&r.b===s)}else r=!1
 return r}},
 gaA8(){var s,r,q
-if(A.bI()!==B.b3)return!1
+if(A.bI()!==B.b4)return!1
 s=this.a
 if(!s.f){s=s.c.a
 r=s.b
@@ -93056,7 +93062,7 @@ r=r.b
 s=q!==r&&B.j.cJ(B.j.W(s.a,q,r))!==""}else s=!1
 return s},
 ga5i(){var s,r,q
-if(A.bI()!==B.b3)return!1
+if(A.bI()!==B.b4)return!1
 s=this.a
 if(!s.f){s=s.c.a
 r=s.b
@@ -93285,14 +93291,14 @@ s.toString
 if(A.ye(s).a!==o.aQ){o.z.toString
 s=o.a.a1
 s=(s==null?o:s).glX()
-$.dn().JK(s)}}if(A.bI()!==B.b3&&A.bI()!==B.bJ)return
+$.dn().JK(s)}}if(A.bI()!==B.b4&&A.bI()!==B.bJ)return
 s=o.c
 s.toString
 p=A.b(s,B.ml,t.w).w.glM(0)
 s=o.k1
 if(s==null){o.k1=p
 return}if(p!==s){o.k1=p
-if(A.bI()===B.b3)o.lG(!1)
+if(A.bI()===B.b4)o.lG(!1)
 if(A.bI()===B.bJ)o.hE()}if(o.ax){s=o.as
 if(s!=null)s.N(0,o.gIe())
 s=o.c
@@ -93888,7 +93894,7 @@ Wi(){return this.Wj(null)},
 YE(a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=this,a=null
 b.a.toString
 s=A.bI()
-if(s!==B.b3)return
+if(s!==B.b4)return
 if(B.d.gaN(b.ghq().f).k4!==B.ih)return
 s=b.ga8().aP.e
 s.toString
@@ -94138,7 +94144,7 @@ if(i.a.k2===1)return
 s=i.ga8().ki(i.a.c.a.b.gdN())
 r=t._N.a(i.ay.gP())
 r.toString
-q=A.aGK(r,new A.fP(a.gDO(a)?B.aR:B.b0,B.jE))
+q=A.aGK(r,new A.fP(a.gDO(a)?B.aS:B.b1,B.jE))
 p=B.d.gaN(i.ghq().f)
 if(a.gDO(a)){o=i.a.c.a
 if(o.b.d>=o.a.length)return
@@ -94307,7 +94313,7 @@ i=a0.a
 h=i.c
 g=i.d
 f=i.cx
-i=i.k2!==1?B.aR:B.ec
+i=i.k2!==1?B.aS:B.ec
 e=a0.ghq()
 d=a0.a
 c=d.bF
@@ -95324,7 +95330,7 @@ n.toString
 n.NF(p.a.c)
 n=p.a
 s=n.d
-if(n.at){if(A.bI()!==B.b3){n=p.f
+if(n.at){if(A.bI()!==B.b4){n=p.f
 n===$&&A.e()}else n=!1
 n=n?p.gcO(0).gaCN():o
 r=p.f
@@ -95812,7 +95818,7 @@ p=n==null?A.x(p).h("bM.T").a(n):n
 l.a=o+(p==null?k:p)}}if(l.a.length!==0){k=this.c.V(t.I)
 k.toString
 m=k.w
-if(A.bI()===B.b3)A.bbG(new A.as1(l,m),t.H)
+if(A.bI()===B.b4)A.bbG(new A.as1(l,m),t.H)
 else A.ns(l.a,m,B.rj)}return!q}}
 A.arY.prototype={
 $1(a){var s=a.f,r=s.y
@@ -95979,9 +95985,9 @@ k(a,b){if(b==null)return!1
 return this.qT(0,b)},
 gv(a){return A.a2.prototype.gv.call(this,0)}}
 A.J.prototype={
-cp(a){return new A.Cz(this,B.b5)}}
+cp(a){return new A.Cz(this,B.b6)}}
 A.ad.prototype={
-cp(a){var s=this.S(),r=new A.jA(s,this,B.b5)
+cp(a){var s=this.S(),r=new A.jA(s,this,B.b6)
 s.c=r
 s.a=this
 return r}}
@@ -95999,16 +96005,16 @@ m(){},
 bc(){}}
 A.bq.prototype={}
 A.fy.prototype={
-cp(a){return new A.rN(this,B.b5,A.x(this).h("rN<fy.T>"))}}
+cp(a){return new A.rN(this,B.b6,A.x(this).h("rN<fy.T>"))}}
 A.bF.prototype={
 cp(a){return A.bp3(this)}}
 A.aU.prototype={
 aM(a,b){},
 xp(a){}}
 A.Xk.prototype={
-cp(a){return new A.Xj(this,B.b5)}}
+cp(a){return new A.Xj(this,B.b6)}}
 A.bw.prototype={
-cp(a){return new A.Kp(this,B.b5)}}
+cp(a){return new A.Kp(this,B.b6)}}
 A.fk.prototype={
 cp(a){return A.bpH(this)}}
 A.Ds.prototype={
@@ -97675,7 +97681,7 @@ bM(){this.cT()
 this.cF()
 this.ht()}}
 A.kM.prototype={
-cp(a){return new A.Hs(A.iK(null,null,null,t.h,t.X),this,B.b5,A.x(this).h("Hs<kM.T>"))}}
+cp(a){return new A.Hs(A.iK(null,null,null,t.h,t.X),this,B.b6,A.x(this).h("Hs<kM.T>"))}}
 A.Hs.prototype={
 O1(a,b){var s=this.ae,r=this.$ti,q=r.h("ce<1>?").a(s.i(0,a)),p=q==null
 if(!p&&q.gai(q))return
@@ -97692,7 +97698,7 @@ r=s}else r=!0
 if(r)b.bc()}}
 A.kN.prototype={
 cw(a){return a.f!==this.f},
-cp(a){var s=new A.DH(A.iK(null,null,null,t.h,t.X),this,B.b5,A.x(this).h("DH<kN.T>"))
+cp(a){var s=new A.DH(A.iK(null,null,null,t.h,t.X),this,B.b6,A.x(this).h("DH<kN.T>"))
 this.f.a4(0,s.gIo())
 return s}}
 A.DH.prototype={
@@ -97732,7 +97738,7 @@ q(a){var s,r,q,p=this.d
 for(s=this.c,r=s.length,q=0;q<s.length;s.length===r||(0,A.ag)(s),++q)p=s[q].qu(0,a,p)
 return p}}
 A.o7.prototype={
-cp(a){return new A.DJ(this,B.b5,A.x(this).h("DJ<o7.0>"))}}
+cp(a){return new A.DJ(this,B.b6,A.x(this).h("DJ<o7.0>"))}}
 A.DJ.prototype={
 ga2(){return this.$ti.h("ia<1,I>").a(A.bL.prototype.ga2.call(this))},
 gmu(){var s,r=this,q=r.p2
@@ -98571,7 +98577,7 @@ return A.N(A.iJ(B.ck,null,t.H),$async$$1)
 case 5:B.hm.h1(0,B.vZ.Ft(o))
 s=2
 break
-case 4:if(B.b3===p){B.hm.h1(0,B.vZ.Ft(q.a.w))
+case 4:if(B.b4===p){B.hm.h1(0,B.vZ.Ft(q.a.w))
 s=2
 break}s=2
 break
@@ -99240,7 +99246,7 @@ this.er(s)
 return"Notification("+B.d.b5(s,", ")+")"},
 er(a){}}
 A.ed.prototype={
-cp(a){return new A.Od(this,B.b5,this.$ti.h("Od<1>"))}}
+cp(a){return new A.Od(this,B.b6,this.$ti.h("Od<1>"))}}
 A.Od.prototype={
 a2d(a){var s,r=this.e
 r.toString
@@ -99345,7 +99351,7 @@ n=s.a(q).ah$}return r+o.A*(o.ci$-1)},
 b9(a){var s,r,q,p,o=this,n=o.a_$
 if(n==null)return 0
 for(s=A.x(o).h("aB.1"),r=0;n!=null;){q=n.gbh()
-p=B.bc.dG(n.fx,1/0,q)
+p=B.bd.dG(n.fx,1/0,q)
 r+=p
 q=n.b
 q.toString
@@ -99661,7 +99667,7 @@ A.aBX.prototype={
 $0(){},
 $S:0}
 A.Q_.prototype={
-cp(a){return new A.aaH(A.eb(t.h),this,B.b5)},
+cp(a){return new A.aaH(A.eb(t.h),this,B.b6)},
 aI(a){var s=a.V(t.I)
 s.toString
 s=new A.tY(s.w,this.e,this.f,A.aI(t.O5),0,null,null,new A.be(),A.aI(t.T))
@@ -99901,7 +99907,7 @@ A.aY0.prototype={
 $1(a){return a.af(B.bD,this.a,a.gbD())},
 $S:24}
 A.aXZ.prototype={
-$1(a){return a.af(B.bc,this.a,a.gbh())},
+$1(a){return a.af(B.bd,this.a,a.gbh())},
 $S:24}
 A.aY_.prototype={
 $1(a){return a.af(B.bE,this.a,a.gbC())},
@@ -99984,7 +99990,7 @@ return"_OverlayEntryLocation["+s+"] "}}
 A.yz.prototype={
 cw(a){return a.f!==this.f||a.r!==this.r}}
 A.DX.prototype={
-cp(a){return new A.a6S(this,B.b5)},
+cp(a){return new A.a6S(this,B.b6)},
 aI(a){var s=new A.OM(null,new A.be(),A.aI(t.T))
 s.aJ()
 s.saW(null)
@@ -100774,7 +100780,7 @@ s.toString
 r=A.b4Y(s.w)
 this.a.toString
 return r
-case 1:return B.aR}},
+case 1:return B.aS}},
 q(a){var s,r,q=this,p=null,o=q.agi(a),n=q.a,m=n.w
 if(m==null){n=n.ax
 n=n==null?p:n.oH(a)}else n=m
@@ -102627,8 +102633,8 @@ case 2:s=B.f4
 break
 default:s=null}return s},
 abM(a){var s,r=this.w.a.c
-$label0$0:{if(B.b0===r||B.cx===r){s=this.alZ(a)
-break $label0$0}if(B.aR===r||B.ec===r){s=a
+$label0$0:{if(B.b1===r||B.cx===r){s=this.alZ(a)
+break $label0$0}if(B.aS===r||B.ec===r){s=a
 break $label0$0}s=null}return s},
 xv(a,b,c,d,e,f){return this.awV(a,b,c,d,e,f)},
 awV(a,b,c,d,e,f){var s=0,r=A.W(t.H),q,p=this,o,n,m,l,k,j
@@ -103750,7 +103756,7 @@ $label0$0:{if(B.GC===r||B.GD===r){s=this.Q.b
 break $label0$0}if(B.aaG===r||B.GE===r){s=this.Q.a
 break $label0$0}s=null}return s},
 gJg(){var s=this.dx
-if(s===B.aR||s===B.b0)return this.e===B.bk?B.GD:B.GC
+if(s===B.aS||s===B.b1)return this.e===B.bk?B.GD:B.GC
 return B.GE},
 dL(a,b,c){var s,r=this,q=r.db,p=!1
 if(q!=null)if(Math.max(q.gek()-q.gjq(),0)===Math.max(b.gek()-b.gjq(),0))if(r.db.gpL()===b.gpL()){q=r.db
@@ -103788,7 +103794,7 @@ s+=2*e.x
 r=e.db.d
 r.toString
 p=e.dx
-p=p===B.aR||p===B.b0
+p=p===B.aS||p===B.b1
 o=e.Q
 n=new A.a1(s,r-(p?o.gbL(0)+o.gbP(0):o.gcC()))
 r=e.x
@@ -103802,7 +103808,7 @@ j=k.a3(0,new A.v(s,0))
 i=e.db.d
 i.toString
 p=e.dx
-p=p===B.aR||p===B.b0
+p=p===B.aS||p===B.b1
 h=e.Q
 p=p?h.gbL(0)+h.gbP(0):h.gcC()
 g=new A.v(r+s,l+(i-p))
@@ -103816,7 +103822,7 @@ r=e.x
 p=e.db.d
 p.toString
 o=e.dx
-o=o===B.aR||o===B.b0
+o=o===B.aS||o===B.b1
 l=e.Q
 o=o?l.gbL(0)+l.gbP(0):l.gcC()
 n=new A.a1(s+2*r,p-o)
@@ -103831,7 +103837,7 @@ k=new A.v(p,r)
 s=e.db.d
 s.toString
 l=e.dx
-l=l===B.aR||l===B.b0
+l=l===B.aS||l===B.b1
 i=e.Q
 g=new A.v(p,r+(s-(l?i.gbL(0)+i.gbP(0):i.gcC())))
 j=k
@@ -103843,7 +103849,7 @@ q=new A.a1(s,e.f)
 s=e.db.d
 s.toString
 r=e.dx
-r=r===B.aR||r===B.b0
+r=r===B.aS||r===B.b1
 p=e.Q
 r=r?p.gbL(0)+p.gbP(0):p.gcC()
 p=e.f
@@ -103860,7 +103866,7 @@ j=k.a3(0,new A.v(0,p))
 l=e.db.d
 l.toString
 i=e.dx
-i=i===B.aR||i===B.b0
+i=i===B.aS||i===B.b1
 h=e.Q
 g=new A.v(o+(l-(i?h.gbL(0)+h.gbP(0):h.gcC())),s+p)
 m=r
@@ -103871,7 +103877,7 @@ q=new A.a1(s,e.f)
 s=e.db.d
 s.toString
 r=e.dx
-r=r===B.aR||r===B.b0
+r=r===B.aS||r===B.b1
 p=e.Q
 r=r?p.gbL(0)+p.gbP(0):p.gcC()
 p=e.f
@@ -103886,7 +103892,7 @@ k=new A.v(o,p)
 s=e.db.d
 s.toString
 l=e.dx
-l=l===B.aR||l===B.b0
+l=l===B.aS||l===B.b1
 i=e.Q
 g=new A.v(o+(s-(l?i.gbL(0)+i.gbP(0):i.gcC())),p)
 j=k
@@ -103924,7 +103930,7 @@ s=f<=s
 f=s}}if(f)return
 f=h.db.d
 f.toString
-g=g===B.aR||g===B.b0
+g=g===B.aS||g===B.b1
 s=h.Q
 g=g?s.gbL(0)+s.gbP(0):s.gcC()
 if(f-g-2*h.w<=0)return
@@ -103934,7 +103940,7 @@ f.toString
 if(f==1/0||f==-1/0)return
 g=g.gpL()
 f=h.dx
-f=f===B.aR||f===B.b0
+f=f===B.aS||f===B.b1
 s=h.Q
 f=f?s.gbL(0)+s.gbP(0):s.gcC()
 s=h.db
@@ -103945,21 +103951,21 @@ q.toString
 s=s.d
 s.toString
 p=h.dx
-p=p===B.aR||p===B.b0
+p=p===B.aS||p===B.b1
 o=h.Q
 p=p?o.gbL(0)+o.gbP(0):o.gcC()
 n=A.S((g-f)/(r-q+s-p),0,1)
 p=h.db.d
 p.toString
 g=h.dx
-g=g===B.aR||g===B.b0
+g=g===B.aS||g===B.b1
 f=h.Q
 g=g?f.gbL(0)+f.gbP(0):f.gcC()
 g=Math.min(p-g-2*h.w,h.at)
 p=h.db.d
 p.toString
 f=h.dx
-f=f===B.aR||f===B.b0
+f=f===B.aS||f===B.b1
 s=h.Q
 f=f?s.gbL(0)+s.gbP(0):s.gcC()
 m=Math.max(g,(p-f-2*h.w)*n)
@@ -103968,15 +103974,15 @@ p=h.db.d
 p.toString
 g=h.as
 s=h.dx
-s=s===B.aR||s===B.b0
+s=s===B.aS||s===B.b1
 r=h.Q
 s=s?r.gbL(0)+r.gbP(0):r.gcC()
 l=Math.min(g,p-s-2*h.w)
 g=h.dx
-g=g===B.b0||g===B.cx
+g=g===B.b1||g===B.cx
 s=h.db
 if((g?Math.max(s.gjp()-s.gek(),0):Math.max(s.gek()-s.gjq(),0))>0){g=h.dx
-g=g===B.b0||g===B.cx
+g=g===B.b1||g===B.cx
 s=h.db
 s=(g?Math.max(s.gek()-s.gjq(),0):Math.max(s.gjp()-s.gek(),0))>0
 g=s}else g=!1
@@ -103984,7 +103990,7 @@ k=g?l:l*(1-A.S(1-f/p,0,0.2)/0.2)
 g=h.db.d
 g.toString
 f=h.dx
-f=f===B.aR||f===B.b0
+f=f===B.aS||f===B.b1
 s=h.Q
 f=f?s.gbL(0)+s.gbP(0):s.gcC()
 f=A.S(m,k,g-f-2*h.w)
@@ -103999,11 +104005,11 @@ if(j>0){s=g.c
 s.toString
 i=A.S((s-r)/j,0,1)}else i=0
 s=h.dx
-r=s===B.b0
+r=s===B.b1
 q=r||s===B.cx?1-i:i
 g=g.d
 g.toString
-s=s===B.aR||r
+s=s===B.aS||r
 r=h.Q
 s=s?r.gbL(0)+r.gbP(0):r.gcC()
 h.cx=q*(g-s-2*h.w-f)+(h.gvM()+h.w)
@@ -104015,7 +104021,7 @@ s.toString
 n=n.d
 n.toString
 r=o.dx
-r=r===B.aR||r===B.b0
+r=r===B.aS||r===B.b1
 q=o.Q
 r=r?q.gbL(0)+q.gbP(0):q.gcC()
 q=o.w
@@ -104245,7 +104251,7 @@ m=A.S(p/n,0,1)}else m=0
 q=q.d
 q.toString
 p=s.dx
-p=p===B.aR||p===B.b0
+p=p===B.aS||p===B.b1
 o=s.Q
 p=p?o.gbL(0)+o.gbP(0):o.gcC()
 o=s.w
@@ -104281,7 +104287,7 @@ s=A.pQ(s)
 r=n.c
 r.toString
 q=s.kj(r)
-$label0$0:{if(B.b3===q||B.bJ===q){s=b.a
+$label0$0:{if(B.b4===q||B.bJ===q){s=b.a
 s=new A.li(new A.v(-s.a,-s.b))
 break $label0$0}s=B.it
 break $label0$0}r=$.ao.a1$.x.i(0,n.z).ga2()
@@ -104303,7 +104309,7 @@ switch(A.bO(m.a.c).a){case 1:r=n.CW
 r===$&&A.e()
 r=r.cx
 r===$&&A.e()
-q=a.c.b>r?B.aR:B.b0
+q=a.c.b>r?B.aS:B.b1
 break
 case 0:r=n.CW
 r===$&&A.e()
@@ -105144,7 +105150,7 @@ s=this.r
 if(s!==b.I){b.I=s
 b.aA()
 b.bj()}},
-cp(a){return new A.a9D(this,B.b5)}}
+cp(a){return new A.a9D(this,B.b6)}}
 A.a9D.prototype={}
 A.OU.prototype={
 shw(a){if(a===this.A)return
@@ -105186,7 +105192,7 @@ bb(a){var s=this.C$
 s=s==null?null:s.af(B.bD,a,s.gbD())
 return s==null?0:s},
 b9(a){var s=this.C$
-s=s==null?null:s.af(B.bc,a,s.gbh())
+s=s==null?null:s.af(B.bd,a,s.gbh())
 return s==null?0:s},
 ba(a){var s=this.C$
 s=s==null?null:s.af(B.bE,a,s.gbC())
@@ -105555,7 +105561,7 @@ this.Q3()}}
 A.Kz.prototype={}
 A.jw.prototype={
 cp(a){var s=A.x(this),r=t.h
-return new A.KA(A.M(s.h("jw.0"),r),A.M(t.D2,r),this,B.b5,s.h("KA<jw.0,jw.1>"))}}
+return new A.KA(A.M(s.h("jw.0"),r),A.M(t.D2,r),this,B.b6,s.h("KA<jw.0,jw.1>"))}}
 A.nt.prototype={
 geb(a){return this.dO$.gaY(0)},
 hg(){J.ky(this.geb(this),this.gNB())},
@@ -106660,7 +106666,7 @@ q=n.b
 k=n.d-q
 r=Math.max((k-(p-r))/2,0)
 p=f.a
-j=p.z===B.io&&A.bI()===B.b3
+j=p.z===B.io&&A.bI()===B.b4
 p=p.c
 i=f.d
 i===$&&A.e()
@@ -106977,7 +106983,7 @@ s.toString
 s.ik()}q.r=!1
 q.d=q.e=0
 s=!1
-if(A.bI()===B.b3){r=q.a
+if(A.bI()===B.b4){r=q.a
 if(r.geW()){s=r.gad().gP()
 s.toString
 s=s.a.c.a.b
@@ -107158,7 +107164,7 @@ case null:case void 0:break}return
 case 4:case 3:case 5:i=i.gad().gP()
 i.toString
 return i.ga8().zz(B.bI,p.a5(0,r).a5(0,s),q)}}s=j.f
-if(s.a!==s.b)s=A.bI()!==B.b3&&A.bI()!==B.cP
+if(s.a!==s.b)s=A.bI()!==B.b4&&A.bI()!==B.cP
 else s=!0
 if(s)return j.rh(a.d,B.bI)
 s=i.gad().gP()
@@ -107255,7 +107261,7 @@ $S:697}
 A.b_K.prototype={
 $1(a){var s
 a.at=B.nI
-a.ch=A.bI()!==B.b3
+a.ch=A.bI()!==B.b4
 s=this.a
 a.DG$=s.gU4()
 a.DH$=s.gU3()
@@ -107670,7 +107676,7 @@ yN(){this.JI(0,this.d.yN())
 this.Ch()},
 Ch(){var s=this.gvt(),r=this.d,q=r.a,p=q.length!==0&&r.b>0
 s.sl(0,new A.D1(p,r.gZY()))
-if(A.bI()!==B.b3)return
+if(A.bI()!==B.b4)return
 s=$.adM()
 if(s.b===this){q=q.length!==0&&r.b>0
 r=r.gZY()
@@ -107859,7 +107865,7 @@ $2(a,b){var s=this.a
 return new A.yG(s.c,new A.Om(b,s.d,null),null)},
 $S:707}
 A.Ov.prototype={
-cp(a){return new A.a7R(this,B.b5)},
+cp(a){return new A.a7R(this,B.b6)},
 aI(a){return this.f}}
 A.a7R.prototype={
 gmd(){var s=this.e
@@ -107972,7 +107978,7 @@ b.scu(0,s.w)
 b.sau2(s.y)
 b.sau3(s.z)
 b.skz(s.Q)},
-cp(a){return new A.abv(A.eb(t.h),this,B.b5)}}
+cp(a){return new A.abv(A.eb(t.h),this,B.b6)}}
 A.abv.prototype={
 ga2(){return t.E1.a(A.k7.prototype.ga2.call(this))},
 eU(a,b){var s=this
@@ -108125,7 +108131,7 @@ s=s==null?null:s.af(B.bR,a/this.A,s.gbQ())
 if(s==null)s=0
 return s*this.A},
 b9(a){var s=this.C$
-s=s==null?null:s.af(B.bc,a/this.A,s.gbh())
+s=s==null?null:s.af(B.bd,a/this.A,s.gbh())
 if(s==null)s=0
 return s*this.A},
 ba(a){var s=this.C$
@@ -108342,7 +108348,7 @@ $1(a){var s=this.a
 return A.bwr(new A.aJD(s,this.b),a,"Load Bytes",A.x(s).h("q_.T?"),t.V4)},
 $S(){return A.x(this.a).h("aJ<d0>(q_.T?)")}}
 A.aJD.prototype={
-$1(a2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=null,c="PathOps library was not initialized.",b=B.b6.a_M(0,A.eq(a2.buffer,0,d),!0),a=t.N,a0=A.pg(10,t.ik),a1=new A.mb(new A.a0P(new A.as(4278190080),14,7),d,new A.a25(b,B.rW,!1,!1,!1,!1,!1).gan(0),!1,new A.a8I(A.M(a,t.Pg),A.M(a,t.R1),A.M(a,t.YN),A.M(a,t.lf)),a0,A.b6(a),B.h6)
+$1(a2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=null,c="PathOps library was not initialized.",b=B.b7.a_M(0,A.eq(a2.buffer,0,d),!0),a=t.N,a0=A.pg(10,t.ik),a1=new A.mb(new A.a0P(new A.as(4278190080),14,7),d,new A.a25(b,B.rW,!1,!1,!1,!1,!1).gan(0),!1,new A.a8I(A.M(a,t.Pg),A.M(a,t.R1),A.M(a,t.YN),A.M(a,t.lf)),a0,A.b6(a),B.h6)
 a1.y=a1.x=a1.w=!1
 a1.anI()
 b=a1.Q
@@ -109069,7 +109075,7 @@ A.aGc.prototype={
 $0(){return A.a([],t.K1)},
 $S:249}
 A.aGa.prototype={
-$2(a,b){return new A.bv(a,A.lr(b,0,b.length,B.b6,!1),t.lv)},
+$2(a,b){return new A.bv(a,A.lr(b,0,b.length,B.b7,!1),t.lv)},
 $S:730}
 A.aGb.prototype={
 $0(){return A.a([],t.K1)},
@@ -109217,7 +109223,7 @@ r.d!==$&&A.c6()
 r.d=s},
 q(a){var s=null,r=this.a,q=r.c,p=this.d
 p===$&&A.e()
-return A.ji(s,A.r(s,r.d,B.h,p,s,s,s,s,s,B.ba,s,s,s),B.G,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,q,s,s,s,s,s,s)}}
+return A.ji(s,A.r(s,r.d,B.h,p,s,s,s,s,s,B.bb,s,s,s),B.G,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,q,s,s,s,s,s,s)}}
 A.Wc.prototype={
 j(a){return"GoError: "+this.a}}
 A.Av.prototype={
@@ -110574,7 +110580,7 @@ return B.e.be(r,s)},
 $S:750}
 A.Bd.prototype={
 q(a){throw A.i(A.ai("implemented internally"))},
-cp(a){return new A.a6C(A.b6(t.ai),null,this,B.b5)},
+cp(a){return new A.a6C(A.b6(t.ai),null,this,B.b6)},
 $itk:1}
 A.a6C.prototype={
 gap(){return t.SK.a(A.bg.prototype.gap.call(this))},
@@ -110589,7 +110595,7 @@ q.de()}r=r.d
 q.sazd(r)
 if(!(r instanceof A.tS))break}return m}}
 A.tS.prototype={
-cp(a){return new A.tT(this,B.b5)},
+cp(a){return new A.tT(this,B.b6)},
 q(a){return A.ar(A.ai("handled internally"))}}
 A.tT.prototype={
 gap(){return t.Fn.a(A.bg.prototype.gap.call(this))},
@@ -110792,7 +110798,7 @@ iJ(a){return this.us(a,!1)},
 oh(a){return!1},
 Nh(a){var s
 if(a.geV()===""||a.geV()==="file"){s=a.gcD(a)
-return A.lr(s,0,s.length,B.b6,!1)}throw A.i(A.cT("Uri "+a.j(0)+" must have scheme 'file:'.",null))},
+return A.lr(s,0,s.length,B.b7,!1)}throw A.i(A.cT("Uri "+a.j(0)+" must have scheme 'file:'.",null))},
 giE(){return"posix"},
 gqD(){return"/"}}
 A.aLN.prototype={
@@ -110845,7 +110851,7 @@ if(a.geV()!==""&&a.geV()!=="file")throw A.i(A.cT("Uri "+a.j(0)+" must have schem
 s=a.gcD(a)
 if(a.gq3(a)===""){if(s.length>=3&&B.j.bB(s,"/")&&A.bh7(s,1)!=null)s=B.j.l2(s,"/","")}else s="\\\\"+a.gq3(a)+s
 r=A.j7(s,"/","\\")
-return A.lr(r,0,r.length,B.b6,!1)},
+return A.lr(r,0,r.length,B.b7,!1)},
 aut(a,b){var s
 if(a===b)return!0
 if(a===47)return b===92
@@ -111617,13 +111623,13 @@ $0(){var s=this.a
 return s==null?null:s.N(0,this.b.ga1Y())},
 $S:0}
 A.AH.prototype={
-cp(a){return new A.NC(null,this,B.b5,this.$ti.h("NC<1>"))},
+cp(a){return new A.NC(null,this,B.b6,this.$ti.h("NC<1>"))},
 ZR(a,b){b.toString
 return new A.hR(this,b,null,this.$ti.h("hR<1?>"))}}
 A.NC.prototype={}
 A.hR.prototype={
 cw(a){return!1},
-cp(a){return new A.ys(A.iK(null,null,null,t.h,t.X),this,B.b5,this.$ti.h("ys<1>"))}}
+cp(a){return new A.ys(A.iK(null,null,null,t.h,t.X),this,B.b6,this.$ti.h("ys<1>"))}}
 A.ys.prototype={
 gvr(){var s,r=this,q=r.e1
 if(q===$){s=new A.Mx(r.$ti.h("hR<1>").a(A.bg.prototype.gap.call(r)).f.e.$ti.h("Mx<1>"))
@@ -112329,7 +112335,7 @@ n=m.f
 n===$&&A.e()
 n=A.p(n)
 s=s.cx
-return A.jT(A.r(l,new A.a_k(A.Xq(m.r*2-1,new A.b_W(m,r),!0,t.F),!1,B.az,l),B.h,l,l,new A.P(q,l,l,n,l,l,B.q),l,s+p,new A.K(p,p,p,p),l,l,l,l),l,l,new A.U8(p,new A.bm(8,8),new A.em(B.d0,B.eF,B.aU,o,l,l),l),B.ag)},
+return A.jT(A.r(l,new A.a_k(A.Xq(m.r*2-1,new A.b_W(m,r),!0,t.F),!1,B.az,l),B.h,l,l,new A.P(q,l,l,n,l,l,B.q),l,s+p,new A.K(p,p,p,p),l,l,l,l),l,l,new A.U8(p,new A.bm(8,8),new A.em(B.d0,B.eF,B.aV,o,l,l),l),B.ag)},
 aqO(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=null
 f.a.toString
 s=f.c
@@ -112372,7 +112378,7 @@ s=s.x[m]
 m=f.ari(o,m)
 f.a.toString
 s=A.B(A.a([B.O,new A.e9(1,B.bv,A.r(e,A.c(s,e,B.ae,e,e,m,e,e,e),B.h,e,e,e,e,e,e,new A.K(0,0,0,0),e,e,e),e)],t.p),B.i,B.K,B.b,e)
-return new A.e9(1,B.bv,A.ji(e,A.kA(B.S,s,new A.aK(0,h,0,1/0),B.bK,new A.P(e,e,e,l,e,new A.em(B.d0,B.eF,B.aU,n,e,e),B.q),k,e,e,e,B.fy,e,e,e),B.G,!1,e,e,e,e,e,e,e,e,e,e,e,e,e,new A.b_V(f,c,b),e,e,e,e,e,e),e)},
+return new A.e9(1,B.bv,A.ji(e,A.kA(B.S,s,new A.aK(0,h,0,1/0),B.bK,new A.P(e,e,e,l,e,new A.em(B.d0,B.eF,B.aV,n,e,e),B.q),k,e,e,e,B.fy,e,e,e),B.G,!1,e,e,e,e,e,e,e,e,e,e,e,e,e,new A.b_V(f,c,b),e,e,e,e,e,e),e)},
 C9(a){return this.aj0(a)},
 aj0(a){var s=0,r=A.W(t.H),q,p=this,o,n,m
 var $async$C9=A.X(function(b,c){if(b===1)return A.T(c,r)
@@ -112428,7 +112434,7 @@ if(b<o)for(s=p.a,r=b;r<o;++r)s[r]=0
 else{o=p.a.length
 if(b>o){if(o===0)q=new Uint8Array(b)
 else q=p.Cc(b)
-B.aQ.hL(q,0,p.b,p.a)
+B.aR.hL(q,0,p.b,p.a)
 p.a=q}}p.b=b},
 JG(a,b){var s=this,r=s.b
 if(r===s.a.length)s.Y0(r)
@@ -112450,36 +112456,36 @@ q=o.b+r
 o.ary(q)
 s=o.a
 p=a+r
-B.aQ.co(s,p,o.b+r,s,a)
-B.aQ.co(o.a,a,p,b,c)
+B.aR.co(s,p,o.b+r,s,a)
+B.aR.co(o.a,a,p,b,c)
 o.b=q},
 i3(a,b,c){var s,r,q=this,p=q.b
 if(b>p)throw A.i(A.dk(b,0,p,null,null))
 s=q.a
-if(p<s.length){B.aQ.co(s,b+1,p+1,s,b)
+if(p<s.length){B.aR.co(s,b+1,p+1,s,b)
 q.a[b]=c;++q.b
 return}r=q.Cc(null)
-B.aQ.hL(r,0,b,q.a)
-B.aQ.co(r,b+1,q.b+1,q.a,b)
+B.aR.hL(r,0,b,q.a)
+B.aR.co(r,b+1,q.b+1,q.a,b)
 r[b]=c;++q.b
 q.a=r},
 ary(a){var s,r=this
 if(a<=r.a.length)return
 s=r.Cc(a)
-B.aQ.hL(s,0,r.b,r.a)
+B.aR.hL(s,0,r.b,r.a)
 r.a=s},
 Cc(a){var s=this.a.length*2
 if(a!=null&&s<a)s=a
 else if(s<8)s=8
 return new Uint8Array(s)},
 Y0(a){var s=this.Cc(null)
-B.aQ.hL(s,0,a,this.a)
+B.aR.hL(s,0,a,this.a)
 this.a=s},
 co(a,b,c,d,e){var s=this.b
 if(c>s)throw A.i(A.dk(c,0,s,null,null))
 s=this.a
-if(A.x(this).h("q7<q7.E>").b(d))B.aQ.co(s,b,c,d.a,e)
-else B.aQ.co(s,b,c,d,e)}}
+if(A.x(this).h("q7<q7.E>").b(d))B.aR.co(s,b,c,d.a,e)
+else B.aR.co(s,b,c,d,e)}}
 A.a5N.prototype={}
 A.LF.prototype={}
 A.ax1.prototype={
@@ -118794,7 +118800,7 @@ B.jv=A.Im.prototype
 B.fV=A.In.prototype
 B.a7g=A.Ip.prototype
 B.pe=A.Iq.prototype
-B.aQ=A.pn.prototype
+B.aR=A.pn.prototype
 B.Gb=J.YR.prototype
 B.qO=J.nF.prototype
 B.Jr=new A.qI("Start","with eG",null)
@@ -118860,9 +118866,9 @@ B.rk=new A.F8(!1,"",B.aw,B.Q,null)
 B.hk=new A.mF(0,"disabled")
 B.k4=new A.mF(1,"always")
 B.hl=new A.mF(3,"onUnfocus")
-B.b0=new A.z4(0,"up")
+B.b1=new A.z4(0,"up")
 B.ec=new A.z4(1,"right")
-B.aR=new A.z4(2,"down")
+B.aS=new A.z4(2,"down")
 B.cx=new A.z4(3,"left")
 B.aJ=new A.St(0,"horizontal")
 B.R=new A.St(1,"vertical")
@@ -118962,7 +118968,7 @@ B.aC=new A.kR(B.a2v,4288585374)
 B.ff=new A.bo(B.aC,1,B.a2,-1)
 B.KT=new A.bo(B.o,1.5,B.a2,-1)
 B.QL=new A.q(4293453544)
-B.bd=new A.bo(B.QL,1,B.a2,-1)
+B.be=new A.bo(B.QL,1,B.a2,-1)
 B.bV=new A.SL(0,"none")
 B.w=new A.bo(B.l,0,B.bV,-1)
 B.QQ=new A.q(4293519596)
@@ -119010,9 +119016,9 @@ B.Lb=new A.aK(0,1/0,56,56)
 B.Lc=new A.aK(112,280,0,1/0)
 B.ry=new A.aK(0,640,0,1/0)
 B.mL=new A.aK(1/0,1/0,1/0,1/0)
-B.aU=new A.y4(0,"clamp")
+B.aV=new A.y4(0,"clamp")
 B.Zs=A.a(s([B.o,B.o,B.o,B.m]),t.W)
-B.YG=new A.em(B.cS,B.eb,B.aU,B.Zs,null,null)
+B.YG=new A.em(B.cS,B.eb,B.aV,B.Zs,null,null)
 B.q=new A.SX(0,"rectangle")
 B.Ld=new A.P(null,null,null,null,null,B.YG,B.q)
 B.KE=new A.cq(B.f0,B.f0,B.f0,B.f0)
@@ -119026,7 +119032,7 @@ B.a_e=A.a(s([B.LU,B.LV]),t.V)
 B.tH=new A.q(4293187318)
 B.R_=new A.q(4293847794)
 B.a0i=A.a(s([B.tH,B.R_,B.tH]),t.W)
-B.YD=new A.em(B.d0,B.eF,B.aU,B.a0i,null,null)
+B.YD=new A.em(B.d0,B.eF,B.aV,B.a0i,null,null)
 B.Le=new A.P(null,null,null,B.KE,B.a_e,B.YD,B.q)
 B.tz=new A.q(4286868719)
 B.JN=new A.kD("assets/images/businessappln.png",null,null)
@@ -119051,10 +119057,10 @@ B.KU=new A.bo(B.kk,0,B.a2,-1)
 B.KX=new A.dM(B.w,B.w,B.KU,B.w)
 B.Lh=new A.P(null,null,B.KX,null,null,null,B.q)
 B.a_D=A.a(s([B.dG,B.dG,B.dG]),t.W)
-B.YE=new A.em(B.d0,B.eF,B.aU,B.a_D,null,null)
+B.YE=new A.em(B.d0,B.eF,B.aV,B.a_D,null,null)
 B.Li=new A.P(null,null,null,null,null,B.YE,B.q)
 B.a_2=A.a(s([B.m,B.o,B.o,B.o]),t.W)
-B.YH=new A.em(B.rf,B.rg,B.aU,B.a_2,null,null)
+B.YH=new A.em(B.rf,B.rg,B.aV,B.a_2,null,null)
 B.mM=new A.P(null,null,null,null,null,B.YH,B.q)
 B.aK=new A.P(B.o,null,null,null,null,null,B.q)
 B.QV=new A.q(4293780983)
@@ -119262,10 +119268,10 @@ B.ME=new A.aBP()
 B.mQ=new A.a2()
 B.MF=new A.Ym()
 B.bJ=new A.id(0,"android")
-B.b3=new A.id(2,"iOS")
+B.b4=new A.id(2,"iOS")
 B.cP=new A.id(4,"macOS")
 B.rX=new A.a2b()
-B.Ca=new A.cC([B.bJ,B.rX,B.b3,B.mN,B.cP,B.mN],A.aA("cC<id,pv>"))
+B.Ca=new A.cC([B.bJ,B.rX,B.b4,B.mN,B.cP,B.mN],A.aA("cC<id,pv>"))
 B.MG=new A.Yq()
 B.bB=new A.l4(4,"keyboard")
 B.rP=new A.rO()
@@ -119295,7 +119301,7 @@ B.MY=new A.aKz()
 B.rT=new A.tu()
 B.rU=new A.tx()
 B.MZ=new A.aLK()
-B.b6=new A.a1G()
+B.b7=new A.a1G()
 B.ee=new A.a1H()
 B.ht=new A.aLP()
 B.iu=new A.a1P(0,0,0,0)
@@ -119431,7 +119437,7 @@ B.tg=new A.q(2155905152)
 B.fl=new A.q(2250054684)
 B.at=new A.q(2315255808)
 B.NS=new A.q(2583691263)
-B.aV=new A.q(3019898879)
+B.aW=new A.q(3019898879)
 B.am=new A.q(3707764736)
 B.hw=new A.q(3708159494)
 B.NU=new A.q(402653184)
@@ -119451,7 +119457,7 @@ B.hx=new A.q(4281216301)
 B.tp=new A.q(4281282351)
 B.d4=new A.q(4281347887)
 B.bn=new A.q(4281677109)
-B.b7=new A.q(4281742645)
+B.b8=new A.q(4281742645)
 B.fn=new A.q(4282137403)
 B.z=new A.q(4282269246)
 B.ef=new A.q(4282334782)
@@ -119476,7 +119482,7 @@ B.Qu=new A.q(4292461556)
 B.hA=new A.q(4292861148)
 B.hB=new A.q(4293257463)
 B.QI=new A.q(4293319157)
-B.aS=new A.q(4293452276)
+B.aT=new A.q(4293452276)
 B.tI=new A.q(4293519078)
 B.hC=new A.q(4293520370)
 B.QR=new A.q(4293650407)
@@ -119488,14 +119494,14 @@ B.aL=new A.q(4293716974)
 B.iR=new A.q(4293848043)
 B.dF=new A.q(4293913839)
 B.nq=new A.q(4293914093)
-B.aP=new A.q(4294044908)
+B.aQ=new A.q(4294044908)
 B.bX=new A.q(4294176751)
 B.Rh=new A.q(4294236134)
-B.be=new A.q(4294243317)
+B.bf=new A.q(4294243317)
 B.hD=new A.q(4294309367)
 B.ej=new A.q(4294375160)
 B.ek=new A.q(4294505723)
-B.aW=new A.q(4294506489)
+B.aX=new A.q(4294506489)
 B.eM=new A.q(4294506744)
 B.dH=new A.q(4294507263)
 B.cD=new A.q(4294637816)
@@ -119878,7 +119884,7 @@ B.bY=new A.K(0,40,15,40)
 B.Ut=new A.K(0,40,20,0)
 B.nS=new A.K(0,40,20,40)
 B.Uu=new A.K(0,48,0,0)
-B.bf=new A.K(0,4,0,4)
+B.bg=new A.K(0,4,0,4)
 B.Uv=new A.K(0,50,0,0)
 B.nT=new A.K(0,50,0,30)
 B.Uw=new A.K(0,50,0,40)
@@ -119889,7 +119895,7 @@ B.Uz=new A.K(10,0,0,0)
 B.fy=new A.K(10,0,10,0)
 B.nU=new A.K(10,0,20,0)
 B.UA=new A.K(10,0,40,20)
-B.aX=new A.K(10,10,10,10)
+B.aY=new A.K(10,10,10,10)
 B.UB=new A.K(10,10,5,0)
 B.UC=new A.K(10,130,10,30)
 B.UD=new A.K(10,20,10,20)
@@ -119904,7 +119910,7 @@ B.UH=new A.K(10,8,10,8)
 B.vj=new A.K(10,90,10,0)
 B.UI=new A.K(12,0,12,0)
 B.j1=new A.K(12,12,12,12)
-B.aT=new A.K(12,40,12,40)
+B.aU=new A.K(12,40,12,40)
 B.nX=new A.K(12,50,10,0)
 B.vk=new A.K(12,6,12,6)
 B.UJ=new A.K(12,8,12,8)
@@ -119961,7 +119967,7 @@ B.UZ=new A.K(24,2,24,2)
 B.V_=new A.K(24,5,24,5)
 B.V0=new A.K(24,8,24,8)
 B.V1=new A.K(25,0,25,25)
-B.b8=new A.K(25,10,25,25)
+B.b9=new A.K(25,10,25,25)
 B.V2=new A.K(25,16,25,16)
 B.V3=new A.K(25,20,20,20)
 B.cu=new A.K(25,25,25,25)
@@ -119985,11 +119991,11 @@ B.o3=new A.K(35,35,35,35)
 B.Vc=new A.K(36,36,36,36)
 B.a9=new A.K(40,0,0,0)
 B.o4=new A.K(40,0,40,0)
-B.aY=new A.K(40,0,40,20)
+B.aZ=new A.K(40,0,40,20)
 B.vx=new A.K(40,10,0,0)
 B.Vd=new A.K(40,14,40,14)
 B.Ve=new A.K(40,20,0,10)
-B.b9=new A.K(40,20,0,20)
+B.ba=new A.K(40,20,0,20)
 B.Vf=new A.K(40,20,20,50)
 B.Vg=new A.K(40,24,40,24)
 B.kH=new A.K(40,30,0,0)
@@ -120038,7 +120044,7 @@ B.dQ=new A.K(8,0,8,0)
 B.Vy=new A.K(8,2,8,5)
 B.o9=new A.K(8,4,8,4)
 B.oa=new A.K(8,8,8,10)
-B.ba=new A.K(8,8,8,8)
+B.bb=new A.K(8,8,8,8)
 B.ob=new A.K(3.3333333333333335,3.3333333333333335,3.3333333333333335,3.3333333333333335)
 B.vD=new A.K(0.5,1,0.5,1)
 B.VA=new A.K(14,13.333333333333334,14,13.333333333333334)
@@ -120215,7 +120221,7 @@ B.dU=new A.Hi(0,"deferToChild")
 B.bG=new A.Hi(1,"opaque")
 B.dV=new A.Hi(2,"translucent")
 B.Wm=new A.Wq(null)
-B.bg=new A.Hj("egAcademy",null)
+B.aN=new A.Hj("egAcademy",null)
 B.Wn=new A.Hj("homePage",null)
 B.Wq=new A.Wt(null)
 B.Wr=new A.Wu(null)
@@ -120285,7 +120291,7 @@ B.Xh=new A.bR(58834,"MaterialIcons",null,!0)
 B.PK=new A.q(4287904234)
 B.ox=new A.di(B.Xh,20,B.PK,null,null)
 B.wm=new A.di(B.l0,null,B.o,null,null)
-B.aN=new A.di(B.l0,22,B.o,null,null)
+B.aO=new A.di(B.l0,22,B.o,null,null)
 B.WQ=new A.bR(57689,"MaterialIcons",null,!1)
 B.wn=new A.di(B.WQ,100,B.o,null,null)
 B.WL=new A.bR(57415,"MaterialIcons",null,!1)
@@ -120304,7 +120310,7 @@ B.WK=new A.bR(57402,"MaterialIcons",null,!1)
 B.wp=new A.di(B.WK,50,B.o,null,null)
 B.Xw=new A.di(B.l2,null,null,null,null)
 B.l4=new A.di(B.l1,null,null,null,null)
-B.aZ=new A.di(B.l1,16,null,null,null)
+B.b_=new A.di(B.l1,16,null,null,null)
 B.X9=new A.bR(58336,"MaterialIcons",null,!1)
 B.Xx=new A.di(B.X9,null,null,null,null)
 B.X6=new A.bR(58289,"MaterialIcons",null,!1)
@@ -120402,21 +120408,21 @@ B.wC=new A.HU(0,"opportunity")
 B.oB=new A.HU(2,"mandatory")
 B.wD=new A.HU(3,"endOfText")
 B.a__=A.a(s([B.o,B.o]),t.W)
-B.wE=new A.em(B.d0,B.eF,B.aU,B.a__,null,null)
+B.wE=new A.em(B.d0,B.eF,B.aV,B.a__,null,null)
 B.wP=A.a(s([B.m,B.m]),t.W)
-B.wF=new A.em(B.d0,B.eF,B.aU,B.wP,null,null)
-B.oC=new A.em(B.cS,B.eb,B.aU,B.wP,null,null)
+B.wF=new A.em(B.d0,B.eF,B.aV,B.wP,null,null)
+B.oC=new A.em(B.cS,B.eb,B.aV,B.wP,null,null)
 B.Ph=new A.q(4286262496)
 B.ZZ=A.a(s([B.o,B.Ph]),t.W)
-B.YF=new A.em(B.d0,B.eF,B.aU,B.ZZ,null,null)
+B.YF=new A.em(B.d0,B.eF,B.aV,B.ZZ,null,null)
 B.a0d=A.a(s([B.m,B.m,B.m]),t.W)
-B.wG=new A.em(B.cS,B.eb,B.aU,B.a0d,null,null)
+B.wG=new A.em(B.cS,B.eb,B.aV,B.a0d,null,null)
 B.a_B=A.a(s([B.C,B.C,B.C]),t.W)
-B.oD=new A.em(B.cS,B.eb,B.aU,B.a_B,null,null)
+B.oD=new A.em(B.cS,B.eb,B.aV,B.a_B,null,null)
 B.R7=new A.q(4293979381)
 B.QY=new A.q(4293845754)
 B.YV=A.a(s([B.R7,B.m,B.QY]),t.W)
-B.YI=new A.em(B.cS,B.eb,B.aU,B.YV,null,null)
+B.YI=new A.em(B.cS,B.eb,B.aV,B.YV,null,null)
 B.YJ=new A.pf(B.hr,A.aA("pf<hK>"))
 B.la=new A.pf(B.hr,A.aA("pf<fW>"))
 B.eS=new A.HW(0,"leading")
@@ -120467,7 +120473,7 @@ B.Zu=A.a(s([4,9,14,19]),t.t)
 B.ZE=A.a(s([65533]),t.t)
 B.Ma=new A.qJ()
 B.jE=new A.a_H(1,"page")
-B.lJ=new A.fP(B.aR,B.jE)
+B.lJ=new A.fP(B.aS,B.jE)
 B.ZM=A.a(s([B.Ma,B.lJ]),A.aA("G<bV>"))
 B.adx=new A.Cu(0,"serverAndCache")
 B.ady=new A.Cu(1,"server")
@@ -120781,7 +120787,7 @@ B.a_g=A.a(s([B.Ln]),t.V)
 B.qC=new A.y4(1,"repeated")
 B.akr=new A.y4(2,"mirror")
 B.aks=new A.y4(3,"decal")
-B.wS=A.a(s([B.aU,B.qC,B.akr,B.aks]),A.aA("G<y4>"))
+B.wS=A.a(s([B.aV,B.qC,B.akr,B.aks]),A.aA("G<y4>"))
 B.a0D=new A.n9("en","US")
 B.oG=A.a(s([B.a0D]),t.ss)
 B.wT=A.a(s([0,0,65490,12287,65535,34815,65534,18431]),t.t)
@@ -120923,7 +120929,7 @@ B.oO=A.a(s([B.Lq,B.LW]),t.V)
 B.df=new A.id(1,"fuchsia")
 B.dA=new A.id(3,"linux")
 B.dB=new A.id(5,"windows")
-B.a0p=A.a(s([B.bJ,B.df,B.b3,B.dA,B.cP,B.dB]),A.aA("G<id>"))
+B.a0p=A.a(s([B.bJ,B.df,B.b4,B.dA,B.cP,B.dB]),A.aA("G<id>"))
 B.amO=new A.jJ(0,1)
 B.amW=new A.jJ(0.5,1)
 B.amQ=new A.jJ(0.5375,0.75)
@@ -121125,7 +121131,7 @@ B.a28=new A.cC([0,"FontWeight.w100",1,"FontWeight.w200",2,"FontWeight.w300",3,"F
 B.a7V={"deleteBackward:":0,"deleteWordBackward:":1,"deleteToBeginningOfLine:":2,"deleteForward:":3,"deleteWordForward:":4,"deleteToEndOfLine:":5,"moveLeft:":6,"moveRight:":7,"moveForward:":8,"moveBackward:":9,"moveUp:":10,"moveDown:":11,"moveLeftAndModifySelection:":12,"moveRightAndModifySelection:":13,"moveUpAndModifySelection:":14,"moveDownAndModifySelection:":15,"moveWordLeft:":16,"moveWordRight:":17,"moveToBeginningOfParagraph:":18,"moveToEndOfParagraph:":19,"moveWordLeftAndModifySelection:":20,"moveWordRightAndModifySelection:":21,"moveParagraphBackwardAndModifySelection:":22,"moveParagraphForwardAndModifySelection:":23,"moveToLeftEndOfLine:":24,"moveToRightEndOfLine:":25,"moveToBeginningOfDocument:":26,"moveToEndOfDocument:":27,"moveToLeftEndOfLineAndModifySelection:":28,"moveToRightEndOfLineAndModifySelection:":29,"moveToBeginningOfDocumentAndModifySelection:":30,"moveToEndOfDocumentAndModifySelection:":31,"transpose:":32,"scrollToBeginningOfDocument:":33,"scrollToEndOfDocument:":34,"scrollPageUp:":35,"scrollPageDown:":36,"pageUpAndModifySelection:":37,"pageDownAndModifySelection:":38,"cancelOperation:":39,"insertTab:":40,"insertBacktab:":41}
 B.GA=new A.pR(!1)
 B.GB=new A.pR(!0)
-B.pG=new A.fP(B.b0,B.jE)
+B.pG=new A.fP(B.b1,B.jE)
 B.rJ=new A.je()
 B.mP=new A.nd()
 B.rQ=new A.nm()
@@ -121616,8 +121622,8 @@ B.jL=new A.b2(B.jl,!1,!1,!1,!1,B.Y)
 B.MJ=new A.pH()
 B.rI=new A.qS()
 B.lI=new A.a_H(0,"line")
-B.aaB=new A.fP(B.b0,B.lI)
-B.aaD=new A.fP(B.aR,B.lI)
+B.aaB=new A.fP(B.b1,B.lI)
+B.aaD=new A.fP(B.aS,B.lI)
 B.aaA=new A.fP(B.cx,B.lI)
 B.aaC=new A.fP(B.ec,B.lI)
 B.a2s=new A.cC([B.lV,B.MJ,B.jO,B.rI,B.abQ,B.rI,B.Hs,B.rJ,B.Hq,B.mP,B.Hr,B.rQ,B.ik,B.aaB,B.il,B.aaD,B.jM,B.aaA,B.jN,B.aaC,B.jP,B.pG,B.jL,B.lJ],t.Fp)
@@ -122388,9 +122394,9 @@ B.jA=new A.nl("Join for Free",B.ajS,null,t.wI)
 B.ak6=new A.bU("Sign In",null,null,null,null,null,null,null,null,null,null)
 B.jB=new A.nl("Sign In",B.ak6,null,t.wI)
 B.akh=new A.bU("Sign In Now",null,null,null,null,null,null,null,null,null,null)
-B.b1=new A.nl("Sign In",B.akh,null,t.wI)
+B.b2=new A.nl("Sign In",B.akh,null,t.wI)
 B.akj=new A.bU("Sign Up Now",null,null,null,null,null,null,null,null,null,null)
-B.b2=new A.nl("Join for Free",B.akj,null,t.wI)
+B.b3=new A.nl("Join for Free",B.akj,null,t.wI)
 B.aa0=new A.BA(null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.aa1=new A.xi(null)
 B.pr=new A.xj(0,"platformDefault")
@@ -122588,7 +122594,7 @@ B.H3=new A.fw([B.c5,B.cY,B.f_,B.cL,B.e1],t.Lu)
 B.abk=new A.fw([32,8203],t.Ih)
 B.a7q={serif:0,"sans-serif":1,monospace:2,cursive:3,fantasy:4,"system-ui":5,math:6,emoji:7,fangsong:8}
 B.abl=new A.h5(B.a7q,9,t.fF)
-B.abm=new A.fw([B.bJ,B.b3,B.df],t.MA)
+B.abm=new A.fw([B.bJ,B.b4,B.df],t.MA)
 B.ad=new A.d8(0,"hovered")
 B.abn=new A.fw([B.ad],t.El)
 B.a7D={"canvaskit.js":0}
@@ -122749,7 +122755,7 @@ B.acQ=new A.a1(496,346)
 B.acS=new A.a1(77.37,37.9)
 B.acT=new A.a1(1/0,46)
 B.cN=new A.a1(1/0,50)
-B.aO=new A.a1(1/0,60)
+B.aP=new A.a1(1/0,60)
 B.ai=new A.a1(1/0,80)
 B.bC=new A.bY(0,0,null,null)
 B.Hy=new A.bY(0,null,null,null)
@@ -122909,7 +122915,7 @@ B.aeF=new A.L4(null)
 B.I_=new A.a0Y(0)
 B.I0=new A.a0Y(-1)
 B.a0=new A.nz(0,"alphabetic")
-B.b_=new A.nz(1,"ideographic")
+B.b0=new A.nz(1,"ideographic")
 B.aeG=new A.L6(null)
 B.qp=new A.CM(3,"none")
 B.I1=new A.L8(B.qp)
@@ -123072,34 +123078,34 @@ B.ajo=new A.z(!0,B.am,null,"Segoe UI",null,null,null,null,null,null,null,null,nu
 B.ah_=new A.z(!0,B.l,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackRedmond labelMedium",null,null,null,null)
 B.aiE=new A.z(!0,B.l,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackRedmond labelSmall",null,null,null,null)
 B.ajz=new A.fm(B.ajp,B.ag4,B.agY,B.aiM,B.aix,B.afX,B.aiO,B.aiR,B.ajf,B.aiQ,B.agL,B.afH,B.ajo,B.ah_,B.aiE)
-B.aif=new A.z(!0,B.aV,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity displayLarge",null,null,null,null)
-B.aj2=new A.z(!0,B.aV,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity displayMedium",null,null,null,null)
-B.aig=new A.z(!0,B.aV,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity displaySmall",null,null,null,null)
-B.aj7=new A.z(!0,B.aV,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity headlineLarge",null,null,null,null)
-B.ahy=new A.z(!0,B.aV,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity headlineMedium",null,null,null,null)
+B.aif=new A.z(!0,B.aW,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity displayLarge",null,null,null,null)
+B.aj2=new A.z(!0,B.aW,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity displayMedium",null,null,null,null)
+B.aig=new A.z(!0,B.aW,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity displaySmall",null,null,null,null)
+B.aj7=new A.z(!0,B.aW,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity headlineLarge",null,null,null,null)
+B.ahy=new A.z(!0,B.aW,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity headlineMedium",null,null,null,null)
 B.ahZ=new A.z(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity headlineSmall",null,null,null,null)
 B.agH=new A.z(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity titleLarge",null,null,null,null)
 B.afP=new A.z(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity titleMedium",null,null,null,null)
 B.agg=new A.z(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity titleSmall",null,null,null,null)
 B.aic=new A.z(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity bodyLarge",null,null,null,null)
 B.aj0=new A.z(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity bodyMedium",null,null,null,null)
-B.afJ=new A.z(!0,B.aV,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity bodySmall",null,null,null,null)
+B.afJ=new A.z(!0,B.aW,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity bodySmall",null,null,null,null)
 B.agh=new A.z(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity labelLarge",null,null,null,null)
 B.agq=new A.z(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity labelMedium",null,null,null,null)
 B.afL=new A.z(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedwoodCity labelSmall",null,null,null,null)
 B.ajA=new A.fm(B.aif,B.aj2,B.aig,B.aj7,B.ahy,B.ahZ,B.agH,B.afP,B.agg,B.aic,B.aj0,B.afJ,B.agh,B.agq,B.afL)
-B.ahB=new A.z(!0,B.aV,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView displayLarge",null,null,null,null)
-B.agT=new A.z(!0,B.aV,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView displayMedium",null,null,null,null)
-B.aji=new A.z(!0,B.aV,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView displaySmall",null,null,null,null)
-B.afQ=new A.z(!0,B.aV,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView headlineLarge",null,null,null,null)
-B.age=new A.z(!0,B.aV,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView headlineMedium",null,null,null,null)
+B.ahB=new A.z(!0,B.aW,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView displayLarge",null,null,null,null)
+B.agT=new A.z(!0,B.aW,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView displayMedium",null,null,null,null)
+B.aji=new A.z(!0,B.aW,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView displaySmall",null,null,null,null)
+B.afQ=new A.z(!0,B.aW,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView headlineLarge",null,null,null,null)
+B.age=new A.z(!0,B.aW,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView headlineMedium",null,null,null,null)
 B.ail=new A.z(!0,B.m,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView headlineSmall",null,null,null,null)
 B.ag7=new A.z(!0,B.m,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView titleLarge",null,null,null,null)
 B.agn=new A.z(!0,B.m,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView titleMedium",null,null,null,null)
 B.ahF=new A.z(!0,B.m,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView titleSmall",null,null,null,null)
 B.aij=new A.z(!0,B.m,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView bodyLarge",null,null,null,null)
 B.ag3=new A.z(!0,B.m,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView bodyMedium",null,null,null,null)
-B.ag9=new A.z(!0,B.aV,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView bodySmall",null,null,null,null)
+B.ag9=new A.z(!0,B.aW,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView bodySmall",null,null,null,null)
 B.aj8=new A.z(!0,B.m,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView labelLarge",null,null,null,null)
 B.ajm=new A.z(!0,B.m,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView labelMedium",null,null,null,null)
 B.aiZ=new A.z(!0,B.m,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteMountainView labelSmall",null,null,null,null)
@@ -123120,51 +123126,51 @@ B.aiK=new A.z(!0,B.am,null,"CupertinoSystemText",null,null,null,null,null,null,n
 B.agd=new A.z(!0,B.l,null,"CupertinoSystemText",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackCupertino labelMedium",null,null,null,null)
 B.ahP=new A.z(!0,B.l,null,"CupertinoSystemText",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackCupertino labelSmall",null,null,null,null)
 B.ajC=new A.fm(B.aiH,B.aiC,B.ajj,B.agp,B.aiI,B.afo,B.afU,B.agf,B.aio,B.afk,B.aib,B.ahT,B.aiK,B.agd,B.ahP)
-B.aja=new A.z(!1,null,null,null,null,null,57,B.I,null,-0.25,null,B.b_,1.12,B.al,null,null,null,null,null,null,null,"dense displayLarge 2021",null,null,null,null)
-B.afn=new A.z(!1,null,null,null,null,null,45,B.I,null,0,null,B.b_,1.16,B.al,null,null,null,null,null,null,null,"dense displayMedium 2021",null,null,null,null)
-B.afq=new A.z(!1,null,null,null,null,null,36,B.I,null,0,null,B.b_,1.22,B.al,null,null,null,null,null,null,null,"dense displaySmall 2021",null,null,null,null)
-B.aiD=new A.z(!1,null,null,null,null,null,32,B.I,null,0,null,B.b_,1.25,B.al,null,null,null,null,null,null,null,"dense headlineLarge 2021",null,null,null,null)
-B.ajv=new A.z(!1,null,null,null,null,null,28,B.I,null,0,null,B.b_,1.29,B.al,null,null,null,null,null,null,null,"dense headlineMedium 2021",null,null,null,null)
-B.agi=new A.z(!1,null,null,null,null,null,24,B.I,null,0,null,B.b_,1.33,B.al,null,null,null,null,null,null,null,"dense headlineSmall 2021",null,null,null,null)
-B.agE=new A.z(!1,null,null,null,null,null,22,B.I,null,0,null,B.b_,1.27,B.al,null,null,null,null,null,null,null,"dense titleLarge 2021",null,null,null,null)
-B.agP=new A.z(!1,null,null,null,null,null,16,B.p,null,0.15,null,B.b_,1.5,B.al,null,null,null,null,null,null,null,"dense titleMedium 2021",null,null,null,null)
-B.aft=new A.z(!1,null,null,null,null,null,14,B.p,null,0.1,null,B.b_,1.43,B.al,null,null,null,null,null,null,null,"dense titleSmall 2021",null,null,null,null)
-B.agA=new A.z(!1,null,null,null,null,null,16,B.I,null,0.5,null,B.b_,1.5,B.al,null,null,null,null,null,null,null,"dense bodyLarge 2021",null,null,null,null)
-B.aiU=new A.z(!1,null,null,null,null,null,14,B.I,null,0.25,null,B.b_,1.43,B.al,null,null,null,null,null,null,null,"dense bodyMedium 2021",null,null,null,null)
-B.aiV=new A.z(!1,null,null,null,null,null,12,B.I,null,0.4,null,B.b_,1.33,B.al,null,null,null,null,null,null,null,"dense bodySmall 2021",null,null,null,null)
-B.ahK=new A.z(!1,null,null,null,null,null,14,B.p,null,0.1,null,B.b_,1.43,B.al,null,null,null,null,null,null,null,"dense labelLarge 2021",null,null,null,null)
-B.afZ=new A.z(!1,null,null,null,null,null,12,B.p,null,0.5,null,B.b_,1.33,B.al,null,null,null,null,null,null,null,"dense labelMedium 2021",null,null,null,null)
-B.aip=new A.z(!1,null,null,null,null,null,11,B.p,null,0.5,null,B.b_,1.45,B.al,null,null,null,null,null,null,null,"dense labelSmall 2021",null,null,null,null)
+B.aja=new A.z(!1,null,null,null,null,null,57,B.I,null,-0.25,null,B.b0,1.12,B.al,null,null,null,null,null,null,null,"dense displayLarge 2021",null,null,null,null)
+B.afn=new A.z(!1,null,null,null,null,null,45,B.I,null,0,null,B.b0,1.16,B.al,null,null,null,null,null,null,null,"dense displayMedium 2021",null,null,null,null)
+B.afq=new A.z(!1,null,null,null,null,null,36,B.I,null,0,null,B.b0,1.22,B.al,null,null,null,null,null,null,null,"dense displaySmall 2021",null,null,null,null)
+B.aiD=new A.z(!1,null,null,null,null,null,32,B.I,null,0,null,B.b0,1.25,B.al,null,null,null,null,null,null,null,"dense headlineLarge 2021",null,null,null,null)
+B.ajv=new A.z(!1,null,null,null,null,null,28,B.I,null,0,null,B.b0,1.29,B.al,null,null,null,null,null,null,null,"dense headlineMedium 2021",null,null,null,null)
+B.agi=new A.z(!1,null,null,null,null,null,24,B.I,null,0,null,B.b0,1.33,B.al,null,null,null,null,null,null,null,"dense headlineSmall 2021",null,null,null,null)
+B.agE=new A.z(!1,null,null,null,null,null,22,B.I,null,0,null,B.b0,1.27,B.al,null,null,null,null,null,null,null,"dense titleLarge 2021",null,null,null,null)
+B.agP=new A.z(!1,null,null,null,null,null,16,B.p,null,0.15,null,B.b0,1.5,B.al,null,null,null,null,null,null,null,"dense titleMedium 2021",null,null,null,null)
+B.aft=new A.z(!1,null,null,null,null,null,14,B.p,null,0.1,null,B.b0,1.43,B.al,null,null,null,null,null,null,null,"dense titleSmall 2021",null,null,null,null)
+B.agA=new A.z(!1,null,null,null,null,null,16,B.I,null,0.5,null,B.b0,1.5,B.al,null,null,null,null,null,null,null,"dense bodyLarge 2021",null,null,null,null)
+B.aiU=new A.z(!1,null,null,null,null,null,14,B.I,null,0.25,null,B.b0,1.43,B.al,null,null,null,null,null,null,null,"dense bodyMedium 2021",null,null,null,null)
+B.aiV=new A.z(!1,null,null,null,null,null,12,B.I,null,0.4,null,B.b0,1.33,B.al,null,null,null,null,null,null,null,"dense bodySmall 2021",null,null,null,null)
+B.ahK=new A.z(!1,null,null,null,null,null,14,B.p,null,0.1,null,B.b0,1.43,B.al,null,null,null,null,null,null,null,"dense labelLarge 2021",null,null,null,null)
+B.afZ=new A.z(!1,null,null,null,null,null,12,B.p,null,0.5,null,B.b0,1.33,B.al,null,null,null,null,null,null,null,"dense labelMedium 2021",null,null,null,null)
+B.aip=new A.z(!1,null,null,null,null,null,11,B.p,null,0.5,null,B.b0,1.45,B.al,null,null,null,null,null,null,null,"dense labelSmall 2021",null,null,null,null)
 B.ajD=new A.fm(B.aja,B.afn,B.afq,B.aiD,B.ajv,B.agi,B.agE,B.agP,B.aft,B.agA,B.aiU,B.aiV,B.ahK,B.afZ,B.aip)
-B.bb=A.a(s(["Ubuntu","Cantarell","DejaVu Sans","Liberation Sans","Arial"]),t.s)
-B.aiW=new A.z(!0,B.aV,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki displayLarge",null,null,null,null)
-B.aiy=new A.z(!0,B.aV,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki displayMedium",null,null,null,null)
-B.ajq=new A.z(!0,B.aV,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki displaySmall",null,null,null,null)
-B.aj4=new A.z(!0,B.aV,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki headlineLarge",null,null,null,null)
-B.ahw=new A.z(!0,B.aV,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki headlineMedium",null,null,null,null)
-B.agM=new A.z(!0,B.m,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki headlineSmall",null,null,null,null)
-B.ajn=new A.z(!0,B.m,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki titleLarge",null,null,null,null)
-B.ai0=new A.z(!0,B.m,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki titleMedium",null,null,null,null)
-B.afs=new A.z(!0,B.m,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki titleSmall",null,null,null,null)
-B.aj3=new A.z(!0,B.m,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki bodyLarge",null,null,null,null)
-B.agQ=new A.z(!0,B.m,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki bodyMedium",null,null,null,null)
-B.aiP=new A.z(!0,B.aV,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki bodySmall",null,null,null,null)
-B.ahx=new A.z(!0,B.m,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki labelLarge",null,null,null,null)
-B.aj5=new A.z(!0,B.m,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki labelMedium",null,null,null,null)
-B.aff=new A.z(!0,B.m,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki labelSmall",null,null,null,null)
+B.bc=A.a(s(["Ubuntu","Cantarell","DejaVu Sans","Liberation Sans","Arial"]),t.s)
+B.aiW=new A.z(!0,B.aW,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki displayLarge",null,null,null,null)
+B.aiy=new A.z(!0,B.aW,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki displayMedium",null,null,null,null)
+B.ajq=new A.z(!0,B.aW,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki displaySmall",null,null,null,null)
+B.aj4=new A.z(!0,B.aW,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki headlineLarge",null,null,null,null)
+B.ahw=new A.z(!0,B.aW,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki headlineMedium",null,null,null,null)
+B.agM=new A.z(!0,B.m,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki headlineSmall",null,null,null,null)
+B.ajn=new A.z(!0,B.m,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki titleLarge",null,null,null,null)
+B.ai0=new A.z(!0,B.m,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki titleMedium",null,null,null,null)
+B.afs=new A.z(!0,B.m,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki titleSmall",null,null,null,null)
+B.aj3=new A.z(!0,B.m,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki bodyLarge",null,null,null,null)
+B.agQ=new A.z(!0,B.m,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki bodyMedium",null,null,null,null)
+B.aiP=new A.z(!0,B.aW,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki bodySmall",null,null,null,null)
+B.ahx=new A.z(!0,B.m,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki labelLarge",null,null,null,null)
+B.aj5=new A.z(!0,B.m,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki labelMedium",null,null,null,null)
+B.aff=new A.z(!0,B.m,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteHelsinki labelSmall",null,null,null,null)
 B.ajE=new A.fm(B.aiW,B.aiy,B.ajq,B.aj4,B.ahw,B.agM,B.ajn,B.ai0,B.afs,B.aj3,B.agQ,B.aiP,B.ahx,B.aj5,B.aff)
-B.aiG=new A.z(!0,B.aV,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond displayLarge",null,null,null,null)
-B.agl=new A.z(!0,B.aV,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond displayMedium",null,null,null,null)
-B.ajk=new A.z(!0,B.aV,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond displaySmall",null,null,null,null)
-B.ain=new A.z(!0,B.aV,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond headlineLarge",null,null,null,null)
-B.ag0=new A.z(!0,B.aV,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond headlineMedium",null,null,null,null)
+B.aiG=new A.z(!0,B.aW,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond displayLarge",null,null,null,null)
+B.agl=new A.z(!0,B.aW,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond displayMedium",null,null,null,null)
+B.ajk=new A.z(!0,B.aW,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond displaySmall",null,null,null,null)
+B.ain=new A.z(!0,B.aW,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond headlineLarge",null,null,null,null)
+B.ag0=new A.z(!0,B.aW,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond headlineMedium",null,null,null,null)
 B.afg=new A.z(!0,B.m,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond headlineSmall",null,null,null,null)
 B.ais=new A.z(!0,B.m,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond titleLarge",null,null,null,null)
 B.agr=new A.z(!0,B.m,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond titleMedium",null,null,null,null)
 B.aiN=new A.z(!0,B.m,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond titleSmall",null,null,null,null)
 B.afh=new A.z(!0,B.m,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond bodyLarge",null,null,null,null)
 B.ai7=new A.z(!0,B.m,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond bodyMedium",null,null,null,null)
-B.ahS=new A.z(!0,B.aV,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond bodySmall",null,null,null,null)
+B.ahS=new A.z(!0,B.aW,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond bodySmall",null,null,null,null)
 B.afV=new A.z(!0,B.m,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond labelLarge",null,null,null,null)
 B.ag1=new A.z(!0,B.m,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond labelMedium",null,null,null,null)
 B.afj=new A.z(!0,B.m,null,"Segoe UI",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteRedmond labelSmall",null,null,null,null)
@@ -123201,34 +123207,34 @@ B.agS=new A.z(!1,null,null,null,null,null,15,B.k,null,null,null,B.a0,null,null,n
 B.ahe=new A.z(!1,null,null,null,null,null,12,B.I,null,null,null,B.a0,null,null,null,null,null,null,null,null,null,"tall labelMedium 2014",null,null,null,null)
 B.agW=new A.z(!1,null,null,null,null,null,11,B.I,null,null,null,B.a0,null,null,null,null,null,null,null,null,null,"tall labelSmall 2014",null,null,null,null)
 B.ajH=new A.fm(B.ahQ,B.aiY,B.ahM,B.aho,B.agk,B.ahk,B.ahc,B.ahi,B.ahX,B.agX,B.ajh,B.ags,B.agS,B.ahe,B.agW)
-B.ag6=new A.z(!1,null,null,null,null,null,112,B.hV,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense displayLarge 2014",null,null,null,null)
-B.aiS=new A.z(!1,null,null,null,null,null,56,B.I,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense displayMedium 2014",null,null,null,null)
-B.afT=new A.z(!1,null,null,null,null,null,45,B.I,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense displaySmall 2014",null,null,null,null)
-B.ahm=new A.z(!1,null,null,null,null,null,40,B.I,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense headlineLarge 2014",null,null,null,null)
-B.ahr=new A.z(!1,null,null,null,null,null,34,B.I,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense headlineMedium 2014",null,null,null,null)
-B.aj6=new A.z(!1,null,null,null,null,null,24,B.I,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense headlineSmall 2014",null,null,null,null)
-B.afu=new A.z(!1,null,null,null,null,null,21,B.p,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense titleLarge 2014",null,null,null,null)
-B.ahf=new A.z(!1,null,null,null,null,null,17,B.I,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense titleMedium 2014",null,null,null,null)
-B.agG=new A.z(!1,null,null,null,null,null,15,B.p,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense titleSmall 2014",null,null,null,null)
-B.ahA=new A.z(!1,null,null,null,null,null,15,B.p,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense bodyLarge 2014",null,null,null,null)
-B.agZ=new A.z(!1,null,null,null,null,null,15,B.I,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense bodyMedium 2014",null,null,null,null)
-B.ag5=new A.z(!1,null,null,null,null,null,13,B.I,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense bodySmall 2014",null,null,null,null)
-B.ahv=new A.z(!1,null,null,null,null,null,15,B.p,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense labelLarge 2014",null,null,null,null)
-B.afy=new A.z(!1,null,null,null,null,null,12,B.I,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense labelMedium 2014",null,null,null,null)
-B.ahn=new A.z(!1,null,null,null,null,null,11,B.I,null,null,null,B.b_,null,null,null,null,null,null,null,null,null,"dense labelSmall 2014",null,null,null,null)
+B.ag6=new A.z(!1,null,null,null,null,null,112,B.hV,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense displayLarge 2014",null,null,null,null)
+B.aiS=new A.z(!1,null,null,null,null,null,56,B.I,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense displayMedium 2014",null,null,null,null)
+B.afT=new A.z(!1,null,null,null,null,null,45,B.I,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense displaySmall 2014",null,null,null,null)
+B.ahm=new A.z(!1,null,null,null,null,null,40,B.I,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense headlineLarge 2014",null,null,null,null)
+B.ahr=new A.z(!1,null,null,null,null,null,34,B.I,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense headlineMedium 2014",null,null,null,null)
+B.aj6=new A.z(!1,null,null,null,null,null,24,B.I,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense headlineSmall 2014",null,null,null,null)
+B.afu=new A.z(!1,null,null,null,null,null,21,B.p,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense titleLarge 2014",null,null,null,null)
+B.ahf=new A.z(!1,null,null,null,null,null,17,B.I,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense titleMedium 2014",null,null,null,null)
+B.agG=new A.z(!1,null,null,null,null,null,15,B.p,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense titleSmall 2014",null,null,null,null)
+B.ahA=new A.z(!1,null,null,null,null,null,15,B.p,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense bodyLarge 2014",null,null,null,null)
+B.agZ=new A.z(!1,null,null,null,null,null,15,B.I,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense bodyMedium 2014",null,null,null,null)
+B.ag5=new A.z(!1,null,null,null,null,null,13,B.I,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense bodySmall 2014",null,null,null,null)
+B.ahv=new A.z(!1,null,null,null,null,null,15,B.p,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense labelLarge 2014",null,null,null,null)
+B.afy=new A.z(!1,null,null,null,null,null,12,B.I,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense labelMedium 2014",null,null,null,null)
+B.ahn=new A.z(!1,null,null,null,null,null,11,B.I,null,null,null,B.b0,null,null,null,null,null,null,null,null,null,"dense labelSmall 2014",null,null,null,null)
 B.ajI=new A.fm(B.ag6,B.aiS,B.afT,B.ahm,B.ahr,B.aj6,B.afu,B.ahf,B.agG,B.ahA,B.agZ,B.ag5,B.ahv,B.afy,B.ahn)
-B.afG=new A.z(!0,B.aV,null,"CupertinoSystemDisplay",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino displayLarge",null,null,null,null)
-B.aiT=new A.z(!0,B.aV,null,"CupertinoSystemDisplay",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino displayMedium",null,null,null,null)
-B.ajc=new A.z(!0,B.aV,null,"CupertinoSystemDisplay",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino displaySmall",null,null,null,null)
-B.agz=new A.z(!0,B.aV,null,"CupertinoSystemDisplay",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino headlineLarge",null,null,null,null)
-B.ahp=new A.z(!0,B.aV,null,"CupertinoSystemDisplay",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino headlineMedium",null,null,null,null)
+B.afG=new A.z(!0,B.aW,null,"CupertinoSystemDisplay",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino displayLarge",null,null,null,null)
+B.aiT=new A.z(!0,B.aW,null,"CupertinoSystemDisplay",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino displayMedium",null,null,null,null)
+B.ajc=new A.z(!0,B.aW,null,"CupertinoSystemDisplay",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino displaySmall",null,null,null,null)
+B.agz=new A.z(!0,B.aW,null,"CupertinoSystemDisplay",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino headlineLarge",null,null,null,null)
+B.ahp=new A.z(!0,B.aW,null,"CupertinoSystemDisplay",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino headlineMedium",null,null,null,null)
 B.afW=new A.z(!0,B.m,null,"CupertinoSystemDisplay",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino headlineSmall",null,null,null,null)
 B.ah9=new A.z(!0,B.m,null,"CupertinoSystemDisplay",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino titleLarge",null,null,null,null)
 B.afO=new A.z(!0,B.m,null,"CupertinoSystemText",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino titleMedium",null,null,null,null)
 B.agw=new A.z(!0,B.m,null,"CupertinoSystemText",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino titleSmall",null,null,null,null)
 B.agm=new A.z(!0,B.m,null,"CupertinoSystemText",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino bodyLarge",null,null,null,null)
 B.agF=new A.z(!0,B.m,null,"CupertinoSystemText",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino bodyMedium",null,null,null,null)
-B.ai6=new A.z(!0,B.aV,null,"CupertinoSystemText",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino bodySmall",null,null,null,null)
+B.ai6=new A.z(!0,B.aW,null,"CupertinoSystemText",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino bodySmall",null,null,null,null)
 B.ai_=new A.z(!0,B.m,null,"CupertinoSystemText",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino labelLarge",null,null,null,null)
 B.agJ=new A.z(!0,B.m,null,"CupertinoSystemText",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino labelMedium",null,null,null,null)
 B.ag_=new A.z(!0,B.m,null,"CupertinoSystemText",null,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"whiteCupertino labelSmall",null,null,null,null)
@@ -123249,21 +123255,21 @@ B.agU=new A.z(!1,null,null,null,null,null,14,B.p,null,0.1,null,B.a0,1.43,B.al,nu
 B.afM=new A.z(!1,null,null,null,null,null,12,B.p,null,0.5,null,B.a0,1.33,B.al,null,null,null,null,null,null,null,"englishLike labelMedium 2021",null,null,null,null)
 B.ah8=new A.z(!1,null,null,null,null,null,11,B.p,null,0.5,null,B.a0,1.45,B.al,null,null,null,null,null,null,null,"englishLike labelSmall 2021",null,null,null,null)
 B.ajK=new A.fm(B.afR,B.agN,B.aj_,B.ai3,B.air,B.afY,B.ahJ,B.aid,B.aiJ,B.ajg,B.ahY,B.ajr,B.agU,B.afM,B.ah8)
-B.aj9=new A.z(!0,B.at,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki displayLarge",null,null,null,null)
-B.ag2=new A.z(!0,B.at,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki displayMedium",null,null,null,null)
-B.ah0=new A.z(!0,B.at,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki displaySmall",null,null,null,null)
-B.ai1=new A.z(!0,B.at,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki headlineLarge",null,null,null,null)
-B.aik=new A.z(!0,B.at,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki headlineMedium",null,null,null,null)
-B.afl=new A.z(!0,B.am,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki headlineSmall",null,null,null,null)
-B.agy=new A.z(!0,B.am,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki titleLarge",null,null,null,null)
-B.afr=new A.z(!0,B.am,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki titleMedium",null,null,null,null)
-B.ahH=new A.z(!0,B.l,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki titleSmall",null,null,null,null)
-B.aiz=new A.z(!0,B.am,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki bodyLarge",null,null,null,null)
-B.ah6=new A.z(!0,B.am,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki bodyMedium",null,null,null,null)
-B.aiA=new A.z(!0,B.at,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki bodySmall",null,null,null,null)
-B.aiL=new A.z(!0,B.am,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki labelLarge",null,null,null,null)
-B.ai2=new A.z(!0,B.l,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki labelMedium",null,null,null,null)
-B.aii=new A.z(!0,B.l,null,"Roboto",B.bb,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki labelSmall",null,null,null,null)
+B.aj9=new A.z(!0,B.at,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki displayLarge",null,null,null,null)
+B.ag2=new A.z(!0,B.at,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki displayMedium",null,null,null,null)
+B.ah0=new A.z(!0,B.at,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki displaySmall",null,null,null,null)
+B.ai1=new A.z(!0,B.at,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki headlineLarge",null,null,null,null)
+B.aik=new A.z(!0,B.at,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki headlineMedium",null,null,null,null)
+B.afl=new A.z(!0,B.am,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki headlineSmall",null,null,null,null)
+B.agy=new A.z(!0,B.am,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki titleLarge",null,null,null,null)
+B.afr=new A.z(!0,B.am,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki titleMedium",null,null,null,null)
+B.ahH=new A.z(!0,B.l,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki titleSmall",null,null,null,null)
+B.aiz=new A.z(!0,B.am,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki bodyLarge",null,null,null,null)
+B.ah6=new A.z(!0,B.am,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki bodyMedium",null,null,null,null)
+B.aiA=new A.z(!0,B.at,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki bodySmall",null,null,null,null)
+B.aiL=new A.z(!0,B.am,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki labelLarge",null,null,null,null)
+B.ai2=new A.z(!0,B.l,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki labelMedium",null,null,null,null)
+B.aii=new A.z(!0,B.l,null,"Roboto",B.bc,null,null,null,null,null,null,null,null,null,null,null,null,B.E,null,null,null,"blackHelsinki labelSmall",null,null,null,null)
 B.ajL=new A.fm(B.aj9,B.ag2,B.ah0,B.ai1,B.aik,B.afl,B.agy,B.afr,B.ahH,B.aiz,B.ah6,B.aiA,B.aiL,B.ai2,B.aii)
 B.aie=new A.z(!1,null,null,null,null,null,57,B.I,null,-0.25,null,B.a0,1.12,B.al,null,null,null,null,null,null,null,"tall displayLarge 2021",null,null,null,null)
 B.ago=new A.z(!1,null,null,null,null,null,45,B.I,null,0,null,B.a0,1.16,B.al,null,null,null,null,null,null,null,"tall displayMedium 2021",null,null,null,null)
@@ -123291,7 +123297,7 @@ B.IB=new A.bU("Default order",null,B.ahq,null,null,null,null,null,null,null,null
 B.ajs=new A.z(!0,B.o,null,null,null,null,18,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.IC=new A.bU("Go to Home",null,B.ajs,null,null,null,null,null,null,null,null)
 B.aiw=new A.z(!0,B.m,null,null,null,null,12,B.k,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.b4=new A.bU("Home",null,B.aiw,null,null,null,null,null,null,null,null)
+B.b5=new A.bU("Home",null,B.aiw,null,null,null,null,null,null,null,null)
 B.Ij=new A.z(!0,B.m,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.ajQ=new A.bU("Go to home page",null,B.Ij,null,null,null,null,null,null,null,null)
 B.iq=new A.bU("Join for free",null,null,null,null,null,null,null,null,null,null)
@@ -123491,7 +123497,7 @@ B.me=new A.cl(B.Hw,t.W7)
 B.acR=new A.a1(64,40)
 B.J1=new A.cl(B.acR,t.W7)
 B.am1=new A.cl(B.mU,t.li)
-B.mf=new A.cl(B.ba,t.mD)
+B.mf=new A.cl(B.bb,t.mD)
 B.mg=new A.d8(3,"dragged")
 B.qQ=new A.d8(5,"scrolledUnder")
 B.a5=new A.d8(6,"disabled")
@@ -123548,7 +123554,7 @@ B.Jc=new A.MY(1,"possible")
 B.qW=new A.MZ(1,"possible")
 B.k_=new A.MY(2,"accepted")
 B.iA=new A.MZ(2,"accepted")
-B.b5=new A.Ds(0,"initial")
+B.b6=new A.Ds(0,"initial")
 B.hf=new A.Ds(1,"active")
 B.amy=new A.Ds(2,"inactive")
 B.Jd=new A.Ds(3,"defunct")
@@ -123574,7 +123580,7 @@ B.iB=new A.tL(1,"hover")
 B.Jg=new A.tL(2,"focus")
 B.amN=new A.aSK(0,"standard")
 B.bD=new A.yt(0,"minWidth")
-B.bc=new A.yt(1,"maxWidth")
+B.bd=new A.yt(1,"maxWidth")
 B.bE=new A.yt(2,"minHeight")
 B.bR=new A.yt(3,"maxHeight")
 B.X=new A.kq(1)
@@ -123964,7 +123970,7 @@ s($,"bDH","bjZ",()=>new A.b1c().$0())
 s($,"bDI","bk_",()=>new A.b1b().$0())
 s($,"bDl","b90",()=>A.bpQ(A.ho(A.a([-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-1,-2,-2,-2,-2,-2,62,-2,62,-2,63,52,53,54,55,56,57,58,59,60,61,-2,-2,-2,-1,-2,-2,-2,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,-2,-2,-2,-2,63,-2,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,-2,-2,-2,-2,-2],t.t))))
 r($,"bDk","bjJ",()=>A.aBo(0))
-s($,"bAQ","bir",()=>A.C(["iso_8859-1:1987",B.dp,"iso-ir-100",B.dp,"iso_8859-1",B.dp,"iso-8859-1",B.dp,"latin1",B.dp,"l1",B.dp,"ibm819",B.dp,"cp819",B.dp,"csisolatin1",B.dp,"iso-ir-6",B.dn,"ansi_x3.4-1968",B.dn,"ansi_x3.4-1986",B.dn,"iso_646.irv:1991",B.dn,"iso646-us",B.dn,"us-ascii",B.dn,"us",B.dn,"ibm367",B.dn,"cp367",B.dn,"csascii",B.dn,"ascii",B.dn,"csutf8",B.b6,"utf-8",B.b6],t.N,A.aA("vj")))
+s($,"bAQ","bir",()=>A.C(["iso_8859-1:1987",B.dp,"iso-ir-100",B.dp,"iso_8859-1",B.dp,"iso-8859-1",B.dp,"latin1",B.dp,"l1",B.dp,"ibm819",B.dp,"cp819",B.dp,"csisolatin1",B.dp,"iso-ir-6",B.dn,"ansi_x3.4-1968",B.dn,"ansi_x3.4-1986",B.dn,"iso_646.irv:1991",B.dn,"iso646-us",B.dn,"us-ascii",B.dn,"us",B.dn,"ibm367",B.dn,"cp367",B.dn,"csascii",B.dn,"ascii",B.dn,"csutf8",B.b7,"utf-8",B.b7],t.N,A.aA("vj")))
 s($,"bDL","RL",()=>A.bux())
 s($,"bDF","bjX",()=>A.ca("^[\\-\\.0-9A-Z_a-z~]*$",!0,!1))
 s($,"bDG","bjY",()=>typeof URLSearchParams=="function")
@@ -124047,7 +124053,7 @@ s($,"bDA","bjU",()=>A.ii(0.75,1,t.i))
 s($,"bDB","bjV",()=>A.mR(B.akn))
 s($,"bBj","biD",()=>A.mR(B.bF))
 s($,"bBk","biE",()=>A.mR(B.Y6))
-r($,"bCW","b8Y",()=>new A.a15(new A.aKF(),A.bI()===B.b3))
+r($,"bCW","b8Y",()=>new A.a15(new A.aKF(),A.bI()===B.b4))
 s($,"bDU","bk9",()=>{var q=t.i
 return A.a([A.beB(A.ii(0,0.4,q).lt(A.mR(B.SN)),0.166666,q),A.beB(A.ii(0.4,1,q).lt(A.mR(B.SP)),0.833334,q)],t.x0)})
 s($,"bDT","adO",()=>A.beA($.bk9(),t.i))
@@ -124251,7 +124257,7 @@ q.p(0,B.lT,B.a1)
 q.p(0,B.Hi,B.a1)
 q.p(0,B.Hh,B.a1)
 return q})
-r($,"bDx","b91",()=>new A.a6I(B.ank,B.b5))
+r($,"bDx","b91",()=>new A.a6I(B.ank,B.b6))
 s($,"bDu","bjR",()=>A.ii(1,0,t.i))
 s($,"bCe","mA",()=>A.GN(t.uK))
 s($,"bDt","bjQ",()=>A.eK(16667,0))
