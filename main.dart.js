@@ -52743,8 +52743,8 @@ s.push(A.n(p.c[16],q.a.b*0.65,o))}if(A.b(a,o,l).w.a.a<=380){q=A.b(a,o,l).w
 s.push(A.n(p.c[16],q.a.b*1.8,o))}if(A.c7(a)){q=A.b(a,o,l).w
 s.push(A.n(p.c[16],q.a.b*1.35,o))}if(A.hU(a)){q=A.b(a,o,l).w
 s.push(A.n(p.c[16],q.a.b*1.5,o))}if(A.b(a,o,l).w.a.a>=700){q=A.b(a,o,l).w
-s.push(A.n(p.c[11],q.a.b*0.9,o))}if(A.b(a,o,l).w.a.a<=380){q=A.b(a,o,l).w
-s.push(A.n(p.c[11],q.a.b*1.85,o))}if(A.c7(a)){q=A.b(a,o,l).w
+s.push(A.n(p.c[11],q.a.b*0.9,o))}if(A.b(a,o,l).w.a.a<=380)s.push(A.n(p.c[11],1380,o))
+if(A.c7(a)){q=A.b(a,o,l).w
 s.push(A.n(p.c[11],q.a.b*1.48,o))}if(A.hU(a)){q=A.b(a,o,l).w
 s.push(A.n(p.c[11],q.a.b*1.64,o))}if(A.b(a,o,l).w.a.a>=700){q=A.b(a,o,l).w
 s.push(A.n(p.c[15],q.a.b*0.75,o))}if(A.b(a,o,l).w.a.a<=380){q=A.b(a,o,l).w
