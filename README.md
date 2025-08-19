@@ -28,4 +28,4 @@ Flexible Learning Options: Access courses online from anywhere, at your own pace
 Career Support: Benefit from career guidance and placement assistance to help you achieve your goals.
 
 ### Contact Us
-Ready to embark on your educational journey with eduGuardian? Visit www.myeduguardian.com to learn more about our courses and enrollment process.
+Ready to embark on your educational journey with eduGuardian? Visit www.myedugrow.com to learn more about our courses and enrollment process.
